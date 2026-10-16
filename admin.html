@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Admin · Đăng bài lên thiên hà</title>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<header class="top">
+  <h1>✦ Trạm điều khiển thiên hà <small>(chỉ dành cho chủ trang)</small></h1>
+  <div class="top-actions">
+    <span id="status" class="status">Chưa kết nối</span>
+    <button id="settingsBtn" class="btn ghost">⚙ Kết nối GitHub</button>
+    <a class="btn ghost" href="index.html" target="_blank">Xem trang ↗</a>
+  </div>
+</header>
+
+<main class="layout">
+  <aside class="side">
+    <button id="newBtn" class="btn primary wide">＋ Bài mới</button>
+    <div id="postList" class="post-list"><p class="muted">Hãy kết nối GitHub để tải danh sách bài.</p></div>
+  </aside>
+
+  <section class="editor-pane">
+    <div class="grid2">
+      <label>Thiên hà
+        <select id="fGalaxy"></select>
+      </label>
+      <label>Nhãn (tag)
+        <input id="fTag" placeholder="Thơ tình / Nhật ký du hành…">
+      </label>
+    </div>
+    <label>Tiêu đề <input id="fTitle" placeholder="Tiêu đề bài viết"></label>
+    <div class="grid3">
+      <label>Ngày <input id="fDate" placeholder="18.09.2025"></label>
+      <label>Địa điểm <input id="fLocation" placeholder="Đà Lạt"></label>
+      <label>Thời tiết <input id="fWeather" placeholder="14°C · Sương sớm"></label>
+    </div>
+
+    <div class="grid2 cover-row">
+      <div>
+        <span class="lbl">Ảnh bìa</span>
+        <div class="cover-box">
+          <img id="coverPrev" alt="" hidden>
+          <input type="file" id="coverFile" accept="image/*">
+          <button id="coverClear" class="btn ghost small" type="button">Bỏ ảnh bìa</button>
+        </div>
+      </div>
+      <div>
+        <span class="lbl">Vị trí ngôi sao (bấm lên bản đồ) <em id="posText"></em></span>
+        <div id="picker" class="picker"></div>
+      </div>
+    </div>
+
+    <span class="lbl">Nội dung</span>
+    <div class="toolbar" id="toolbar">
+      <select id="tbFont" title="Font chữ">
+        <option value="">Font</option>
+        <option value="'Be Vietnam Pro',sans-serif">Be Vietnam Pro</option>
+        <option value="'Cormorant Garamond',serif">Cormorant Garamond</option>
+        <option value="'Lora',serif">Lora</option>
+        <option value="'Playfair Display',serif">Playfair Display</option>
+        <option value="'Dancing Script',cursive">Dancing Script (viết tay)</option>
+        <option value="'Patrick Hand',cursive">Patrick Hand (viết tay)</option>
+      </select>
+      <select id="tbSize" title="Cỡ chữ">
+        <option value="">Cỡ</option>
+        <option>0.9rem</option><option>1.1rem</option><option>1.32rem</option>
+        <option>1.6rem</option><option>2rem</option><option>2.6rem</option>
+      </select>
+      <input type="color" id="tbColor" value="#ffc4e6" title="Màu chữ">
+      <button data-cmd="bold" title="Đậm"><b>B</b></button>
+      <button data-cmd="italic" title="Nghiêng"><i>I</i></button>
+      <button data-cmd="underline" title="Gạch chân"><u>U</u></button>
+      <button data-cmd="justifyLeft" title="Căn trái">⯇</button>
+      <button data-cmd="justifyCenter" title="Căn giữa">≡</button>
+      <button data-cmd="justifyRight" title="Căn phải">⯈</button>
+      <button data-cmd="insertUnorderedList" title="Danh sách">•</button>
+      <button data-block="blockquote" title="Trích dẫn">❝</button>
+      <button data-block="h3" title="Tiêu đề nhỏ">H</button>
+      <button id="tbImg" title="Chèn ảnh">🖼 Ảnh</button>
+      <button data-cmd="removeFormat" title="Xóa định dạng">⌫</button>
+      <input type="file" id="imgFile" accept="image/*" multiple hidden>
+    </div>
+    <div id="editor" class="editor" contenteditable="true" spellcheck="false"></div>
+
+    <div class="actions">
+      <button id="publishBtn" class="btn primary">🚀 Đăng bài</button>
+      <button id="deleteBtn" class="btn danger" hidden>🗑 Xóa bài này</button>
+      <button id="exportBtn" class="btn ghost" title="Tải poems.json về máy (dự phòng)">⬇ Xuất JSON</button>
+      <span id="msg" class="msg"></span>
+    </div>
+  </section>
+</main>
+
+<dialog id="settings">
+  <form method="dialog" class="dlg">
+    <h2>Kết nối GitHub</h2>
+    <p class="muted">Token chỉ lưu trong trình duyệt của bạn (localStorage), không nằm trong code hay trên GitHub.
+      Tạo <b>Fine-grained personal access token</b> chỉ cho repo của trang này, quyền <b>Contents: Read and write</b>.</p>
+    <label>Tên tài khoản (owner) <input id="sOwner" placeholder="tri"></label>
+    <label>Tên repo <input id="sRepo" placeholder="tri.github.io hoặc Poem"></label>
+    <label>Nhánh <input id="sBranch" value="main"></label>
+    <label>Token <input id="sToken" type="password" placeholder="github_pat_…"></label>
+    <div class="actions">
+      <button id="sSave" class="btn primary" value="save">Lưu & kết nối</button>
+      <button class="btn ghost" value="cancel">Đóng</button>
+      <button id="sForget" class="btn danger" value="forget" type="button">Quên token</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="js/render.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

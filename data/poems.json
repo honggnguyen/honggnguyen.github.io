@@ -1,0 +1,3394 @@
+{
+  "categories": [
+    {
+      "id": "mongmo",
+      "name": "Mộng Mơ",
+      "shortName": "Thơ",
+      "icon": "✦",
+      "galaxies": [
+        {
+          "id": "mongmo",
+          "name": "Chòm sao Mộng Mơ",
+          "subtitle": "thơ tình · thơ tự sự",
+          "kind": "Mộng Mơ",
+          "bg": 0,
+          "stars": [
+            {
+              "id": "mongmo_1",
+              "x": 4.9,
+              "y": 53.6,
+              "tag": "Thơ tình",
+              "title": "Ngôi sao đầu tiên",
+              "date": "12.03.2025",
+              "location": "Ban công tầng 3",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Có một vì sao tự nhận mình là của em,",
+                "dù ánh sáng ấy đã đi lạc suốt triệu năm.",
+                "Anh gửi vào đêm một lời nhắn nhỏ:",
+                "nếu em ngước lên, hãy thấy anh ở đó."
+              ]
+            },
+            {
+              "id": "mongmo_2",
+              "x": 8.4,
+              "y": 19.7,
+              "tag": "Mộng Mơ · Vì sao #2",
+              "title": "Dấu chân mây #2",
+              "date": "Đêm thứ 2",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Mây không vội vã, gió không dừng chân.",
+                "Cứ an nhiên như dòng nước mát trôi xuôi."
+              ]
+            },
+            {
+              "id": "mongmo_3",
+              "x": 9.7,
+              "y": 42.7,
+              "tag": "Mộng Mơ · Vì sao #3",
+              "title": "Cánh buồm trong mơ #3",
+              "date": "Đêm thứ 3",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Thả một ước mơ vào hư không,",
+                "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+              ]
+            },
+            {
+              "id": "mongmo_4",
+              "x": 12.2,
+              "y": 33.0,
+              "tag": "Mộng Mơ · Vì sao #4",
+              "title": "Hương cỏ dại #4",
+              "date": "Đêm thứ 4",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+                "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+              ]
+            },
+            {
+              "id": "mongmo_5",
+              "x": 17.1,
+              "y": 24.4,
+              "tag": "Mộng Mơ · Vì sao #5",
+              "title": "Tiếng mưa tí tách #5",
+              "date": "Đêm thứ 5",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Mưa gõ nhịp trên mái ngói rêu phong,",
+                "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+              ]
+            },
+            {
+              "id": "mongmo_6",
+              "x": 19.7,
+              "y": 66.5,
+              "tag": "Mộng Mơ · Vì sao #6",
+              "title": "Góc quán quen #6",
+              "date": "Đêm thứ 6",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Một góc quán nhỏ bên phố vắng người qua,",
+                "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+              ]
+            },
+            {
+              "id": "mongmo_7",
+              "x": 26.0,
+              "y": 36.9,
+              "tag": "Tự sự",
+              "title": "Gió đêm",
+              "date": "03.05.2025",
+              "location": "Bên khung cửa sổ vòm",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Gió đi ngang cửa sổ,",
+                "khẽ hỏi em còn thức không.",
+                "Em nói: còn, vì thơ chưa viết xong,",
+                "và trăng vẫn chưa chịu ngủ."
+              ]
+            },
+            {
+              "id": "mongmo_8",
+              "x": 33.1,
+              "y": 85.8,
+              "tag": "Mộng Mơ · Vì sao #8",
+              "title": "Bản hòa ca của đêm #8",
+              "date": "Đêm thứ 8",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Đêm không hề im lặng,",
+                "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+              ]
+            },
+            {
+              "id": "mongmo_9",
+              "x": 37.7,
+              "y": 29.5,
+              "tag": "Mộng Mơ · Vì sao #9",
+              "title": "Ngọn nến lung linh #9",
+              "date": "Đêm thứ 9",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+                "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+              ]
+            },
+            {
+              "id": "mongmo_10",
+              "x": 42.7,
+              "y": 44.8,
+              "tag": "Mộng Mơ · Vì sao #10",
+              "title": "Dòng sông kỷ niệm #10",
+              "date": "Đêm thứ 10",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+                "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+              ]
+            },
+            {
+              "id": "mongmo_11",
+              "x": 47.2,
+              "y": 41.6,
+              "tag": "Mộng Mơ · Vì sao #11",
+              "title": "Chiếc lá rơi #11",
+              "date": "Đêm thứ 11",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+                "kết thúc một mùa xanh bằng nụ cười thanh thản."
+              ]
+            },
+            {
+              "id": "mongmo_12",
+              "x": 47.6,
+              "y": 13.1,
+              "tag": "Mộng Mơ · Vì sao #12",
+              "title": "Lời hẹn với trăng #12",
+              "date": "Đêm thứ 12",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Đêm nay trăng tròn và sáng quá,",
+                "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+              ]
+            },
+            {
+              "id": "mongmo_13",
+              "x": 48.2,
+              "y": 49.6,
+              "tag": "Tản văn",
+              "title": "Thư chưa gửi",
+              "date": "21.07.2025",
+              "location": "Bàn trà nhỏ",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Tôi gấp lại nỗi nhớ thành chiếc thuyền giấy,",
+                "thả xuống dòng sông của đêm.",
+                "Nếu có ai nhặt được,",
+                "xin hãy đọc chậm thôi."
+              ]
+            },
+            {
+              "id": "mongmo_14",
+              "x": 49.5,
+              "y": 75.6,
+              "tag": "Mộng Mơ · Vì sao #14",
+              "title": "Dấu chân mây #14",
+              "date": "Đêm thứ 14",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Mây không vội vã, gió không dừng chân.",
+                "Cứ an nhiên như dòng nước mát trôi xuôi."
+              ]
+            },
+            {
+              "id": "mongmo_15",
+              "x": 55.3,
+              "y": 43.1,
+              "tag": "Mộng Mơ · Vì sao #15",
+              "title": "Cánh buồm trong mơ #15",
+              "date": "Đêm thứ 15",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Thả một ước mơ vào hư không,",
+                "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+              ]
+            },
+            {
+              "id": "mongmo_16",
+              "x": 56.1,
+              "y": 55.9,
+              "tag": "Mộng Mơ · Vì sao #16",
+              "title": "Hương cỏ dại #16",
+              "date": "Đêm thứ 16",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+                "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+              ]
+            },
+            {
+              "id": "mongmo_17",
+              "x": 57.0,
+              "y": 50.0,
+              "tag": "Mộng Mơ · Vì sao #17",
+              "title": "Tiếng mưa tí tách #17",
+              "date": "Đêm thứ 17",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Mưa gõ nhịp trên mái ngói rêu phong,",
+                "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+              ]
+            },
+            {
+              "id": "mongmo_18",
+              "x": 62.0,
+              "y": 14.7,
+              "tag": "Mộng Mơ · Vì sao #18",
+              "title": "Góc quán quen #18",
+              "date": "Đêm thứ 18",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Một góc quán nhỏ bên phố vắng người qua,",
+                "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+              ]
+            },
+            {
+              "id": "mongmo_19",
+              "x": 67.5,
+              "y": 32.8,
+              "tag": "Thơ ngắn",
+              "title": "Hoa tím",
+              "date": "15.08.2025",
+              "location": "Góc vườn khuya",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Bên thềm hoa tím nở âm thầm,",
+                "như nỗi niềm xưa chẳng gọi tên.",
+                "Người qua chỉ thấy sương đọng lá,",
+                "đâu biết lòng ai ngập nhớ thương."
+              ]
+            },
+            {
+              "id": "mongmo_20",
+              "x": 68.0,
+              "y": 74.2,
+              "tag": "Mộng Mơ · Vì sao #20",
+              "title": "Bản hòa ca của đêm #20",
+              "date": "Đêm thứ 20",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Đêm không hề im lặng,",
+                "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+              ]
+            },
+            {
+              "id": "mongmo_21",
+              "x": 75.1,
+              "y": 58.8,
+              "tag": "Mộng Mơ · Vì sao #21",
+              "title": "Ngọn nến lung linh #21",
+              "date": "Đêm thứ 21",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+                "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+              ]
+            },
+            {
+              "id": "mongmo_22",
+              "x": 81.7,
+              "y": 74.7,
+              "tag": "Mộng Mơ · Vì sao #22",
+              "title": "Dòng sông kỷ niệm #22",
+              "date": "Đêm thứ 22",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+                "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+              ]
+            },
+            {
+              "id": "mongmo_23",
+              "x": 86.8,
+              "y": 40.5,
+              "tag": "Mộng Mơ · Vì sao #23",
+              "title": "Chiếc lá rơi #23",
+              "date": "Đêm thứ 23",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+                "kết thúc một mùa xanh bằng nụ cười thanh thản."
+              ]
+            },
+            {
+              "id": "mongmo_24",
+              "x": 88.7,
+              "y": 86.1,
+              "tag": "Mộng Mơ · Vì sao #24",
+              "title": "Lời hẹn với trăng #24",
+              "date": "Đêm thứ 24",
+              "location": "Miền Mộng Mơ",
+              "body": [
+                "Đêm nay trăng tròn và sáng quá,",
+                "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+              ]
+            }
+          ],
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_0.webp",
+          "creature": "Khúc Ca Đêm"
+        },
+        {
+          "id": "pisces",
+          "category": "mongmo",
+          "name": "Chòm sao Song Ngư",
+          "subtitle": "mộng ảo · tình yêu biển sâu",
+          "kind": "Song Ngư",
+          "bgImg": "assets/img/galaxy_pisces.webp",
+          "creature": "Đôi Cá Song Ngư",
+          "stars": [
+            {
+              "id": "pisces_1",
+              "x": 6.6,
+              "y": 10.2,
+              "tag": "Song Ngư · Thơ mộng",
+              "title": "Đôi cá bơi ngược dòng",
+              "date": "Đêm trăng khuyết",
+              "location": "Đại dương ngàn sao",
+              "body": [
+                "Một con cá bơi về miền ký ức,",
+                "con còn lại hướng về cõi tương lai.",
+                "Ở giữa là trái tim ta đứng lặng,",
+                "nơi những giấc mơ không bao giờ phai."
+              ]
+            },
+            {
+              "id": "pisces_2",
+              "x": 7.5,
+              "y": 67.8,
+              "tag": "Song Ngư · Thơ mộng",
+              "title": "Biển sâu không đáy",
+              "date": "Đêm trăng khuyết",
+              "location": "Đại dương ngàn sao",
+              "body": [
+                "Đáy biển sâu giấu muôn lời không nói,",
+                "như tình yêu giữ kín tận đáy lòng.",
+                "Chỉ cần em nhìn vào mắt ta một lần,",
+                "sẽ thấy cả một đại dương chờ mong."
+              ]
+            },
+            {
+              "id": "pisces_3",
+              "x": 9.7,
+              "y": 80.7,
+              "tag": "Song Ngư · Thơ mộng",
+              "title": "Bọt sóng tan",
+              "date": "Đêm trăng khuyết",
+              "location": "Đại dương ngàn sao",
+              "body": [
+                "Mỗi đợt sóng xô bờ rồi tan biến,",
+                "để lại cát vàng lấp lánh hạt sương khuya.",
+                "Có những nỗi buồn đẹp như thế đó,",
+                "chạm khẽ vào tim rồi nhẹ bước chia lìa."
+              ]
+            },
+            {
+              "id": "pisces_4",
+              "x": 10.7,
+              "y": 13.0,
+              "tag": "Song Ngư · Thơ mộng",
+              "title": "Hải âu lạc lối",
+              "date": "Đêm trăng khuyết",
+              "location": "Đại dương ngàn sao",
+              "body": [
+                "Cánh chim hải âu bay mỏi mòn giữa đêm giông,",
+                "tìm một ngọn hải đăng le lói nơi chân trời.",
+                "Em chính là ánh đèn soi tỏ,",
+                "giữa trùng khơi tăm tối của cuộc đời."
+              ]
+            },
+            {
+              "id": "pisces_5",
+              "x": 11.7,
+              "y": 37.8,
+              "tag": "Song Ngư · Vì sao #5",
+              "title": "Dòng hải lưu số #5",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_6",
+              "x": 13.6,
+              "y": 48.4,
+              "tag": "Song Ngư · Vì sao #6",
+              "title": "Dòng hải lưu số #6",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_7",
+              "x": 14.0,
+              "y": 67.9,
+              "tag": "Song Ngư · Vì sao #7",
+              "title": "Dòng hải lưu số #7",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_8",
+              "x": 23.2,
+              "y": 33.7,
+              "tag": "Song Ngư · Vì sao #8",
+              "title": "Dòng hải lưu số #8",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_9",
+              "x": 23.7,
+              "y": 43.4,
+              "tag": "Song Ngư · Vì sao #9",
+              "title": "Dòng hải lưu số #9",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_10",
+              "x": 26.8,
+              "y": 39.4,
+              "tag": "Song Ngư · Vì sao #10",
+              "title": "Dòng hải lưu số #10",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_11",
+              "x": 28.0,
+              "y": 71.8,
+              "tag": "Song Ngư · Vì sao #11",
+              "title": "Dòng hải lưu số #11",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_12",
+              "x": 28.9,
+              "y": 52.2,
+              "tag": "Song Ngư · Vì sao #12",
+              "title": "Dòng hải lưu số #12",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_13",
+              "x": 38.8,
+              "y": 45.5,
+              "tag": "Song Ngư · Vì sao #13",
+              "title": "Dòng hải lưu số #13",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_14",
+              "x": 47.2,
+              "y": 76.7,
+              "tag": "Song Ngư · Vì sao #14",
+              "title": "Dòng hải lưu số #14",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_15",
+              "x": 56.4,
+              "y": 26.1,
+              "tag": "Song Ngư · Vì sao #15",
+              "title": "Dòng hải lưu số #15",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_16",
+              "x": 60.8,
+              "y": 53.9,
+              "tag": "Song Ngư · Vì sao #16",
+              "title": "Dòng hải lưu số #16",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_17",
+              "x": 70.7,
+              "y": 18.0,
+              "tag": "Song Ngư · Vì sao #17",
+              "title": "Dòng hải lưu số #17",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_18",
+              "x": 76.7,
+              "y": 95.0,
+              "tag": "Song Ngư · Vì sao #18",
+              "title": "Dòng hải lưu số #18",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_19",
+              "x": 81.8,
+              "y": 50.6,
+              "tag": "Song Ngư · Vì sao #19",
+              "title": "Dòng hải lưu số #19",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_20",
+              "x": 84.9,
+              "y": 8.3,
+              "tag": "Song Ngư · Vì sao #20",
+              "title": "Dòng hải lưu số #20",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_21",
+              "x": 86.6,
+              "y": 44.9,
+              "tag": "Song Ngư · Vì sao #21",
+              "title": "Dòng hải lưu số #21",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_22",
+              "x": 90.3,
+              "y": 68.4,
+              "tag": "Song Ngư · Vì sao #22",
+              "title": "Dòng hải lưu số #22",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_23",
+              "x": 92.5,
+              "y": 25.5,
+              "tag": "Song Ngư · Vì sao #23",
+              "title": "Dòng hải lưu số #23",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            },
+            {
+              "id": "pisces_24",
+              "x": 97.2,
+              "y": 66.6,
+              "tag": "Song Ngư · Vì sao #24",
+              "title": "Dòng hải lưu số #24",
+              "date": "Đêm đại dương",
+              "location": "Dải Ngân Hà Song Ngư",
+              "body": [
+                "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+                "dẫn lối cho những linh hồn mộng mơ tìm về."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ursamajor",
+          "category": "mongmo",
+          "name": "Đại Hùng & Tiểu Hùng",
+          "subtitle": "sao Bắc Đẩu · kiên định soi đường",
+          "kind": "Đại Hùng",
+          "bgImg": "assets/img/galaxy_ursamajor.webp",
+          "creature": "Gấu Mẹ & Sao Bắc Đẩu",
+          "stars": [
+            {
+              "id": "ursa_1",
+              "x": 2.7,
+              "y": 51.0,
+              "tag": "Đại Hùng · Bắc Đẩu",
+              "title": "Sao Bắc Đẩu chỉ đường",
+              "date": "Đêm cực quang",
+              "location": "Bầu trời phương Bắc",
+              "body": [
+                "Bảy ngôi sao sáng hình chiếc gáo vàng,",
+                "chỉ về phương Bắc ngàn đời không đổi.",
+                "Dù lạc bước giữa muôn trùng bão nổi,",
+                "vẫn có một niềm tin dẫn lối ta về."
+              ]
+            },
+            {
+              "id": "ursa_2",
+              "x": 3.7,
+              "y": 19.0,
+              "tag": "Đại Hùng · Bắc Đẩu",
+              "title": "Vòng tay gấu mẹ",
+              "date": "Đêm cực quang",
+              "location": "Bầu trời phương Bắc",
+              "body": [
+                "Đại Hùng che chở cho Tiểu Hùng qua mùa đông giá lạnh,",
+                "bầu trời phương Bắc ấm áp tình mẫu tử thiêng liêng.",
+                "Những đêm tuyết phủ trắng xóa triền đồi,",
+                "chỉ cần bên nhau, giông bão hóa bình yên."
+              ]
+            },
+            {
+              "id": "ursa_3",
+              "x": 4.5,
+              "y": 31.1,
+              "tag": "Đại Hùng · Bắc Đẩu",
+              "title": "Cây gáo thần tiên",
+              "date": "Đêm cực quang",
+              "location": "Bầu trời phương Bắc",
+              "body": [
+                "Múc một gáo sao trời uống cạn,",
+                "thấy lòng mình nhẹ bẫng tựa hư không.",
+                "Trần thế có muôn vàn điều toan tính,",
+                "sao bằng ngước mắt ngắm trời mênh mông."
+              ]
+            },
+            {
+              "id": "ursa_4",
+              "x": 6.6,
+              "y": 10.2,
+              "tag": "Đại Hùng · Bắc Đẩu",
+              "title": "Đêm cực quang",
+              "date": "Đêm cực quang",
+              "location": "Bầu trời phương Bắc",
+              "body": [
+                "Vệt sáng xanh rực rỡ uốn lượn lưng trời,",
+                "như tà áo lụa của tiên nga giáng thế.",
+                "Đứng dưới bầu trời Bắc cực diệu kỳ,",
+                "mới biết trần gian đẹp biết nhường nào."
+              ]
+            },
+            {
+              "id": "ursa_5",
+              "x": 17.8,
+              "y": 33.3,
+              "tag": "Đại Hùng · Vì sao #5",
+              "title": "Bắc Đẩu tinh tú #5",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_6",
+              "x": 33.3,
+              "y": 55.1,
+              "tag": "Đại Hùng · Vì sao #6",
+              "title": "Bắc Đẩu tinh tú #6",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_7",
+              "x": 37.6,
+              "y": 82.8,
+              "tag": "Đại Hùng · Vì sao #7",
+              "title": "Bắc Đẩu tinh tú #7",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_8",
+              "x": 43.5,
+              "y": 57.5,
+              "tag": "Đại Hùng · Vì sao #8",
+              "title": "Bắc Đẩu tinh tú #8",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_9",
+              "x": 48.6,
+              "y": 79.2,
+              "tag": "Đại Hùng · Vì sao #9",
+              "title": "Bắc Đẩu tinh tú #9",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_10",
+              "x": 48.8,
+              "y": 73.9,
+              "tag": "Đại Hùng · Vì sao #10",
+              "title": "Bắc Đẩu tinh tú #10",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_11",
+              "x": 49.7,
+              "y": 41.5,
+              "tag": "Đại Hùng · Vì sao #11",
+              "title": "Bắc Đẩu tinh tú #11",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_12",
+              "x": 51.8,
+              "y": 52.2,
+              "tag": "Đại Hùng · Vì sao #12",
+              "title": "Bắc Đẩu tinh tú #12",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_13",
+              "x": 57.3,
+              "y": 44.3,
+              "tag": "Đại Hùng · Vì sao #13",
+              "title": "Bắc Đẩu tinh tú #13",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_14",
+              "x": 58.5,
+              "y": 62.4,
+              "tag": "Đại Hùng · Vì sao #14",
+              "title": "Bắc Đẩu tinh tú #14",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_15",
+              "x": 73.0,
+              "y": 23.4,
+              "tag": "Đại Hùng · Vì sao #15",
+              "title": "Bắc Đẩu tinh tú #15",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_16",
+              "x": 74.9,
+              "y": 72.0,
+              "tag": "Đại Hùng · Vì sao #16",
+              "title": "Bắc Đẩu tinh tú #16",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_17",
+              "x": 75.5,
+              "y": 35.0,
+              "tag": "Đại Hùng · Vì sao #17",
+              "title": "Bắc Đẩu tinh tú #17",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_18",
+              "x": 78.8,
+              "y": 14.9,
+              "tag": "Đại Hùng · Vì sao #18",
+              "title": "Bắc Đẩu tinh tú #18",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_19",
+              "x": 79.6,
+              "y": 47.3,
+              "tag": "Đại Hùng · Vì sao #19",
+              "title": "Bắc Đẩu tinh tú #19",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_20",
+              "x": 79.7,
+              "y": 30.0,
+              "tag": "Đại Hùng · Vì sao #20",
+              "title": "Bắc Đẩu tinh tú #20",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_21",
+              "x": 81.9,
+              "y": 76.6,
+              "tag": "Đại Hùng · Vì sao #21",
+              "title": "Bắc Đẩu tinh tú #21",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_22",
+              "x": 83.9,
+              "y": 36.8,
+              "tag": "Đại Hùng · Vì sao #22",
+              "title": "Bắc Đẩu tinh tú #22",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_23",
+              "x": 85.9,
+              "y": 71.8,
+              "tag": "Đại Hùng · Vì sao #23",
+              "title": "Bắc Đẩu tinh tú #23",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            },
+            {
+              "id": "ursa_24",
+              "x": 89.0,
+              "y": 13.9,
+              "tag": "Đại Hùng · Vì sao #24",
+              "title": "Bắc Đẩu tinh tú #24",
+              "date": "Đêm sao sáng",
+              "location": "Chòm sao Gấu Lớn",
+              "body": [
+                "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+                "soi sáng nẻo đường người tìm lại chính mình."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "viendu",
+      "name": "Viễn Du",
+      "shortName": "Viễn Du",
+      "icon": "⟡",
+      "galaxies": [
+        {
+          "id": "vien-du",
+          "name": "Chòm sao Viễn Du",
+          "subtitle": "nhật ký du hành · ký sự đất trời",
+          "kind": "Viễn Du",
+          "bg": 1,
+          "stars": [
+            {
+              "id": "vien-du_1",
+              "x": 6.6,
+              "y": 10.3,
+              "tag": "Nhật ký du hành",
+              "title": "Sáng ở Đà Lạt: Khói thông & Sương sớm",
+              "date": "18.09.2025",
+              "location": "Đồi chè Cầu Đất, Đà Lạt",
+              "weather": "14°C · Sương sớm se lạnh",
+              "coverImage": "assets/photos/dalat.jpg",
+              "body": [
+                "Đà Lạt đón chúng mình bằng một màn sương dày đặc trôi lững lờ qua những rặng thông già. Căn nhà gỗ nhỏ nép mình bên sườn đồi, khói từ ống khói bốc lên thơm mùi gỗ thông cháy dở.",
+                "Sáng sớm ở đây yên tĩnh đến mức nghe rõ từng giọt sương rơi trên phiến lá trà. Cầm tách cà phê nóng trên tay, hơi ấm lan tỏa qua từng đầu ngón tay lạnh buốt.",
+                "\"Có những vùng đất ta đến không phải để chinh phục, mà chỉ để được thả lỏng tâm hồn, hít thở một nhịp thật sâu và nhận ra mình vẫn đang sống trọn vẹn từng khoảnh khắc.\"",
+                "Đi dạo dọc con đường đất đỏ mòn quanh triền dốc, ánh bình minh vàng ươm xuyên qua lớp sương mù tạo thành những vệt sáng huyền ảo như bước vào một thế giới cổ tích."
+              ]
+            },
+            {
+              "id": "vien-du_2",
+              "x": 9.8,
+              "y": 81.3,
+              "tag": "Viễn Du · Vì sao #2",
+              "title": "Dòng sông kỷ niệm #2",
+              "date": "Đêm thứ 2",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+                "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+              ]
+            },
+            {
+              "id": "vien-du_3",
+              "x": 11.7,
+              "y": 37.8,
+              "tag": "Viễn Du · Vì sao #3",
+              "title": "Chiếc lá rơi #3",
+              "date": "Đêm thứ 3",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+                "kết thúc một mùa xanh bằng nụ cười thanh thản."
+              ]
+            },
+            {
+              "id": "vien-du_4",
+              "x": 13.8,
+              "y": 48.1,
+              "tag": "Viễn Du · Vì sao #4",
+              "title": "Lời hẹn với trăng #4",
+              "date": "Đêm thứ 4",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Đêm nay trăng tròn và sáng quá,",
+                "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+              ]
+            },
+            {
+              "id": "vien-du_5",
+              "x": 16.4,
+              "y": 71.5,
+              "tag": "Viễn Du · Vì sao #5",
+              "title": "Ánh sáng nghìn năm #5",
+              "date": "Đêm thứ 5",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+                "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+              ]
+            },
+            {
+              "id": "vien-du_6",
+              "x": 18.4,
+              "y": 16.2,
+              "tag": "Viễn Du · Vì sao #6",
+              "title": "Dấu chân mây #6",
+              "date": "Đêm thứ 6",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mây không vội vã, gió không dừng chân.",
+                "Cứ an nhiên như dòng nước mát trôi xuôi."
+              ]
+            },
+            {
+              "id": "vien-du_7",
+              "x": 23.2,
+              "y": 33.7,
+              "tag": "Ký sự biển đêm",
+              "title": "Biển Quy Nhơn: Gió lộng & Bờ đá xanh",
+              "date": "04.06.2025",
+              "location": "Eo Gió, Quy Nhơn",
+              "weather": "25°C · Nắng chiều vàng rực",
+              "coverImage": "assets/photos/quynhon.jpg",
+              "body": [
+                "Buổi chiều muộn ở Eo Gió, khi những con sóng biển màu ngọc bích xô mạnh vào ghềnh đá hoa cương tung bọt trắng xóa. Gió biển mặn mòi thổi tung mái tóc.",
+                "Mình đứng chân trần trên những tảng đá nhẵn bóng sau hàng ngàn năm sóng vỗ, nhìn ra phía chân trời xa xôi nơi mặt trời đang dần chìm vào ráng chiều màu tím cam.",
+                "\"Biển cả luôn có một sức mạnh kỳ diệu để dung thứ cho mọi muộn phiền của con người. Đứng trước sự mênh mông vô tận ấy, những bận tâm thường nhật bỗng chốc trở nên nhỏ bé như hạt cát.\"",
+                "Khi màn đêm buông xuống, những chiếc thuyền câu mực bắt đầu thắp đèn sáng lấp lánh như một thành phố nổi trôi giữa đại dương bao la."
+              ]
+            },
+            {
+              "id": "vien-du_8",
+              "x": 28.1,
+              "y": 71.8,
+              "tag": "Viễn Du · Vì sao #8",
+              "title": "Hương cỏ dại #8",
+              "date": "Đêm thứ 8",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+                "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+              ]
+            },
+            {
+              "id": "vien-du_9",
+              "x": 31.6,
+              "y": 65.0,
+              "tag": "Viễn Du · Vì sao #9",
+              "title": "Tiếng mưa tí tách #9",
+              "date": "Đêm thứ 9",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mưa gõ nhịp trên mái ngói rêu phong,",
+                "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+              ]
+            },
+            {
+              "id": "vien-du_10",
+              "x": 46.7,
+              "y": 38.3,
+              "tag": "Viễn Du · Vì sao #10",
+              "title": "Góc quán quen #10",
+              "date": "Đêm thứ 10",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Một góc quán nhỏ bên phố vắng người qua,",
+                "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+              ]
+            },
+            {
+              "id": "vien-du_11",
+              "x": 53.7,
+              "y": 29.6,
+              "tag": "Viễn Du · Vì sao #11",
+              "title": "Bình minh trên đồi #11",
+              "date": "Đêm thứ 11",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+                "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+              ]
+            },
+            {
+              "id": "vien-du_12",
+              "x": 57.1,
+              "y": 20.4,
+              "tag": "Viễn Du · Vì sao #12",
+              "title": "Bản hòa ca của đêm #12",
+              "date": "Đêm thứ 12",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Đêm không hề im lặng,",
+                "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+              ]
+            },
+            {
+              "id": "vien-du_13",
+              "x": 57.4,
+              "y": 39.4,
+              "tag": "Du hành",
+              "title": "Chuyến bay đêm",
+              "date": "29.10.2025",
+              "location": "Độ cao 10.000m",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Nhìn qua khung cửa sổ máy bay tròn nhỏ,",
+                "thành phố bên dưới thu nhỏ lại như một dải thiên hà đom đóm.",
+                "Ở độ cao mười ngàn mét tĩnh lặng,",
+                "tôi nghe rõ nhịp đập của chính mình giữa lưng chừng mây."
+              ]
+            },
+            {
+              "id": "vien-du_14",
+              "x": 63.6,
+              "y": 25.6,
+              "tag": "Viễn Du · Vì sao #14",
+              "title": "Dòng sông kỷ niệm #14",
+              "date": "Đêm thứ 14",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+                "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+              ]
+            },
+            {
+              "id": "vien-du_15",
+              "x": 67.8,
+              "y": 51.6,
+              "tag": "Viễn Du · Vì sao #15",
+              "title": "Chiếc lá rơi #15",
+              "date": "Đêm thứ 15",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+                "kết thúc một mùa xanh bằng nụ cười thanh thản."
+              ]
+            },
+            {
+              "id": "vien-du_16",
+              "x": 68.3,
+              "y": 20.4,
+              "tag": "Viễn Du · Vì sao #16",
+              "title": "Lời hẹn với trăng #16",
+              "date": "Đêm thứ 16",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Đêm nay trăng tròn và sáng quá,",
+                "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+              ]
+            },
+            {
+              "id": "vien-du_17",
+              "x": 69.5,
+              "y": 32.8,
+              "tag": "Viễn Du · Vì sao #17",
+              "title": "Ánh sáng nghìn năm #17",
+              "date": "Đêm thứ 17",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+                "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+              ]
+            },
+            {
+              "id": "vien-du_18",
+              "x": 73.2,
+              "y": 43.8,
+              "tag": "Viễn Du · Vì sao #18",
+              "title": "Dấu chân mây #18",
+              "date": "Đêm thứ 18",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mây không vội vã, gió không dừng chân.",
+                "Cứ an nhiên như dòng nước mát trôi xuôi."
+              ]
+            },
+            {
+              "id": "vien-du_19",
+              "x": 73.5,
+              "y": 54.6,
+              "tag": "Hoài niệm",
+              "title": "Ga nhỏ ở Huế",
+              "date": "14.11.2025",
+              "location": "Ga Huế lúc chiều tà",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Tiếng còi tàu xé tan chiều mưa ảm đạm,",
+                "những thanh ray ướt đẫm kéo dài vào màn sương.",
+                "Huế níu chân người bằng vẻ cổ kính dịu dàng,",
+                "bằng tách trà sen thơm ngát và bước chân chậm rãi."
+              ]
+            },
+            {
+              "id": "vien-du_20",
+              "x": 74.1,
+              "y": 15.9,
+              "tag": "Viễn Du · Vì sao #20",
+              "title": "Hương cỏ dại #20",
+              "date": "Đêm thứ 20",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+                "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+              ]
+            },
+            {
+              "id": "vien-du_21",
+              "x": 76.6,
+              "y": 34.3,
+              "tag": "Viễn Du · Vì sao #21",
+              "title": "Tiếng mưa tí tách #21",
+              "date": "Đêm thứ 21",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Mưa gõ nhịp trên mái ngói rêu phong,",
+                "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+              ]
+            },
+            {
+              "id": "vien-du_22",
+              "x": 84.9,
+              "y": 8.3,
+              "tag": "Viễn Du · Vì sao #22",
+              "title": "Góc quán quen #22",
+              "date": "Đêm thứ 22",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Một góc quán nhỏ bên phố vắng người qua,",
+                "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+              ]
+            },
+            {
+              "id": "vien-du_23",
+              "x": 96.1,
+              "y": 41.2,
+              "tag": "Viễn Du · Vì sao #23",
+              "title": "Bình minh trên đồi #23",
+              "date": "Đêm thứ 23",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+                "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+              ]
+            },
+            {
+              "id": "vien-du_24",
+              "x": 97.2,
+              "y": 66.5,
+              "tag": "Viễn Du · Vì sao #24",
+              "title": "Bản hòa ca của đêm #24",
+              "date": "Đêm thứ 24",
+              "location": "Miền Viễn Du",
+              "body": [
+                "Đêm không hề im lặng,",
+                "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+              ]
+            }
+          ],
+          "category": "viendu",
+          "bgImg": "assets/img/galaxy_1.webp",
+          "creature": "Cánh Chim Viễn Xứ"
+        }
+      ]
+    },
+    {
+      "id": "kyniem",
+      "name": "Kỷ Niệm",
+      "shortName": "Kỷ Niệm",
+      "icon": "✧",
+      "galaxies": [
+        {
+          "id": "ky-niem",
+          "name": "Chòm sao Kỷ Niệm",
+          "subtitle": "kỷ vật cũ · hoài niệm dấu yêu",
+          "kind": "Kỷ Niệm",
+          "bg": 2,
+          "stars": [
+            {
+              "id": "ky-niem_1",
+              "x": 9.3,
+              "y": 51.8,
+              "tag": "Kỷ niệm ngọt ngào",
+              "title": "Chú cún ngủ say",
+              "date": "10.04.2025",
+              "location": "Góc lò sưởi",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Chú cún con cuộn tròn dưới chân ghế bập bênh,",
+                "hơi thở đều đặn êm đềm như một khúc ca ru.",
+                "Ngoài kia bão giông hay sao đổi ngôi,",
+                "trong căn phòng này, bình yên là có thật."
+              ]
+            },
+            {
+              "id": "ky-niem_2",
+              "x": 13.9,
+              "y": 19.8,
+              "tag": "Kỷ Niệm · Vì sao #2",
+              "title": "Góc quán quen #2",
+              "date": "Đêm thứ 2",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Một góc quán nhỏ bên phố vắng người qua,",
+                "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+              ]
+            },
+            {
+              "id": "ky-niem_3",
+              "x": 20.2,
+              "y": 24.8,
+              "tag": "Kỷ Niệm · Vì sao #3",
+              "title": "Bình minh trên đồi #3",
+              "date": "Đêm thứ 3",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+                "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+              ]
+            },
+            {
+              "id": "ky-niem_4",
+              "x": 21.5,
+              "y": 64.4,
+              "tag": "Kỷ Niệm · Vì sao #4",
+              "title": "Bản hòa ca của đêm #4",
+              "date": "Đêm thứ 4",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Đêm không hề im lặng,",
+                "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+              ]
+            },
+            {
+              "id": "ky-niem_5",
+              "x": 28.4,
+              "y": 34.7,
+              "tag": "Kỷ Niệm · Vì sao #5",
+              "title": "Ngọn nến lung linh #5",
+              "date": "Đêm thứ 5",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+                "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+              ]
+            },
+            {
+              "id": "ky-niem_6",
+              "x": 30.5,
+              "y": 26.5,
+              "tag": "Kỷ Niệm · Vì sao #6",
+              "title": "Dòng sông kỷ niệm #6",
+              "date": "Đêm thứ 6",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+                "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+              ]
+            },
+            {
+              "id": "ky-niem_7",
+              "x": 37.9,
+              "y": 29.6,
+              "tag": "Giai điệu",
+              "title": "Khúc đàn nửa đêm",
+              "date": "08.08.2025",
+              "location": "Căn phòng nhỏ",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Những phím đàn dương cầm vang lên ngân nga,",
+                "từng nốt nhạc hòa vào tiếng dế rả rích đêm hè.",
+                "Một bản valse cho riêng mình tôi,",
+                "khi cả thế giới đã chìm sâu vào giấc mộng."
+              ]
+            },
+            {
+              "id": "ky-niem_8",
+              "x": 41.1,
+              "y": 66.6,
+              "tag": "Kỷ Niệm · Vì sao #8",
+              "title": "Lời hẹn với trăng #8",
+              "date": "Đêm thứ 8",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Đêm nay trăng tròn và sáng quá,",
+                "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+              ]
+            },
+            {
+              "id": "ky-niem_9",
+              "x": 43.2,
+              "y": 59.6,
+              "tag": "Kỷ Niệm · Vì sao #9",
+              "title": "Ánh sáng nghìn năm #9",
+              "date": "Đêm thứ 9",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+                "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+              ]
+            },
+            {
+              "id": "ky-niem_10",
+              "x": 46.6,
+              "y": 14.3,
+              "tag": "Kỷ Niệm · Vì sao #10",
+              "title": "Dấu chân mây #10",
+              "date": "Đêm thứ 10",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Mây không vội vã, gió không dừng chân.",
+                "Cứ an nhiên như dòng nước mát trôi xuôi."
+              ]
+            },
+            {
+              "id": "ky-niem_11",
+              "x": 46.6,
+              "y": 42.5,
+              "tag": "Kỷ Niệm · Vì sao #11",
+              "title": "Cánh buồm trong mơ #11",
+              "date": "Đêm thứ 11",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Thả một ước mơ vào hư không,",
+                "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+              ]
+            },
+            {
+              "id": "ky-niem_12",
+              "x": 49.3,
+              "y": 73.9,
+              "tag": "Kỷ Niệm · Vì sao #12",
+              "title": "Hương cỏ dại #12",
+              "date": "Đêm thứ 12",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+                "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+              ]
+            },
+            {
+              "id": "ky-niem_13",
+              "x": 54.5,
+              "y": 29.3,
+              "tag": "Kỷ vật",
+              "title": "Trang nhật ký đã ố vàng",
+              "date": "01.01.2025",
+              "location": "Ngăn kéo bàn học",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Mở lại cuốn sổ bìa da năm cũ,",
+                "mùi giấy mực quen thuộc vẫn còn vương vấn.",
+                "Những nét chữ nguệch ngoạc của tuổi mười tám,",
+                "ước mơ thuở ấy ngây ngô nhưng rạng ngời."
+              ]
+            },
+            {
+              "id": "ky-niem_14",
+              "x": 58.8,
+              "y": 47.9,
+              "tag": "Kỷ Niệm · Vì sao #14",
+              "title": "Góc quán quen #14",
+              "date": "Đêm thứ 14",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Một góc quán nhỏ bên phố vắng người qua,",
+                "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+              ]
+            },
+            {
+              "id": "ky-niem_15",
+              "x": 62.6,
+              "y": 13.0,
+              "tag": "Kỷ Niệm · Vì sao #15",
+              "title": "Bình minh trên đồi #15",
+              "date": "Đêm thứ 15",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+                "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+              ]
+            },
+            {
+              "id": "ky-niem_16",
+              "x": 62.7,
+              "y": 51.6,
+              "tag": "Kỷ Niệm · Vì sao #16",
+              "title": "Bản hòa ca của đêm #16",
+              "date": "Đêm thứ 16",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Đêm không hề im lặng,",
+                "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+              ]
+            },
+            {
+              "id": "ky-niem_17",
+              "x": 66.5,
+              "y": 72.6,
+              "tag": "Kỷ Niệm · Vì sao #17",
+              "title": "Ngọn nến lung linh #17",
+              "date": "Đêm thứ 17",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+                "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+              ]
+            },
+            {
+              "id": "ky-niem_18",
+              "x": 71.7,
+              "y": 68.3,
+              "tag": "Kỷ Niệm · Vì sao #18",
+              "title": "Dòng sông kỷ niệm #18",
+              "date": "Đêm thứ 18",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+                "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+              ]
+            },
+            {
+              "id": "ky-niem_19",
+              "x": 72.2,
+              "y": 54.8,
+              "tag": "Thư gửi tương lai",
+              "title": "Thư gửi ngày mai",
+              "date": "31.12.2025",
+              "location": "Đêm giao thừa",
+              "weather": "",
+              "coverImage": "",
+              "body": [
+                "Gửi tôi của những năm tháng sau này:",
+                "Dù đường đời có gập ghềnh nhiều chông gai,",
+                "xin hãy luôn giữ lại cho mình một trái tim biết rung động,",
+                "và một đôi mắt vẫn biết ngước nhìn những vì sao."
+              ]
+            },
+            {
+              "id": "ky-niem_20",
+              "x": 77.0,
+              "y": 61.4,
+              "tag": "Kỷ Niệm · Vì sao #20",
+              "title": "Lời hẹn với trăng #20",
+              "date": "Đêm thứ 20",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Đêm nay trăng tròn và sáng quá,",
+                "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+              ]
+            },
+            {
+              "id": "ky-niem_21",
+              "x": 81.1,
+              "y": 73.5,
+              "tag": "Kỷ Niệm · Vì sao #21",
+              "title": "Ánh sáng nghìn năm #21",
+              "date": "Đêm thứ 21",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+                "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+              ]
+            },
+            {
+              "id": "ky-niem_22",
+              "x": 82.8,
+              "y": 65.8,
+              "tag": "Kỷ Niệm · Vì sao #22",
+              "title": "Dấu chân mây #22",
+              "date": "Đêm thứ 22",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Mây không vội vã, gió không dừng chân.",
+                "Cứ an nhiên như dòng nước mát trôi xuôi."
+              ]
+            },
+            {
+              "id": "ky-niem_23",
+              "x": 83.4,
+              "y": 60.3,
+              "tag": "Kỷ Niệm · Vì sao #23",
+              "title": "Cánh buồm trong mơ #23",
+              "date": "Đêm thứ 23",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Thả một ước mơ vào hư không,",
+                "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+              ]
+            },
+            {
+              "id": "ky-niem_24",
+              "x": 84.3,
+              "y": 43.7,
+              "tag": "Kỷ Niệm · Vì sao #24",
+              "title": "Hương cỏ dại #24",
+              "date": "Đêm thứ 24",
+              "location": "Miền Kỷ Niệm",
+              "body": [
+                "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+                "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+              ]
+            }
+          ],
+          "category": "kyniem",
+          "bgImg": "assets/img/galaxy_2.webp",
+          "creature": "Tinh Cầu Kỷ Niệm"
+        }
+      ]
+    }
+  ],
+  "constellations": [
+    {
+      "id": "mongmo",
+      "name": "Chòm sao Mộng Mơ",
+      "subtitle": "thơ tình · thơ tự sự",
+      "kind": "Mộng Mơ",
+      "bg": 0,
+      "stars": [
+        {
+          "id": "mongmo_1",
+          "x": 4.9,
+          "y": 53.6,
+          "tag": "Thơ tình",
+          "title": "Ngôi sao đầu tiên",
+          "date": "12.03.2025",
+          "location": "Ban công tầng 3",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Có một vì sao tự nhận mình là của em,",
+            "dù ánh sáng ấy đã đi lạc suốt triệu năm.",
+            "Anh gửi vào đêm một lời nhắn nhỏ:",
+            "nếu em ngước lên, hãy thấy anh ở đó."
+          ]
+        },
+        {
+          "id": "mongmo_2",
+          "x": 8.4,
+          "y": 19.7,
+          "tag": "Mộng Mơ · Vì sao #2",
+          "title": "Dấu chân mây #2",
+          "date": "Đêm thứ 2",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Mây không vội vã, gió không dừng chân.",
+            "Cứ an nhiên như dòng nước mát trôi xuôi."
+          ]
+        },
+        {
+          "id": "mongmo_3",
+          "x": 9.7,
+          "y": 42.7,
+          "tag": "Mộng Mơ · Vì sao #3",
+          "title": "Cánh buồm trong mơ #3",
+          "date": "Đêm thứ 3",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Thả một ước mơ vào hư không,",
+            "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+          ]
+        },
+        {
+          "id": "mongmo_4",
+          "x": 12.2,
+          "y": 33.0,
+          "tag": "Mộng Mơ · Vì sao #4",
+          "title": "Hương cỏ dại #4",
+          "date": "Đêm thứ 4",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+            "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+          ]
+        },
+        {
+          "id": "mongmo_5",
+          "x": 17.1,
+          "y": 24.4,
+          "tag": "Mộng Mơ · Vì sao #5",
+          "title": "Tiếng mưa tí tách #5",
+          "date": "Đêm thứ 5",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Mưa gõ nhịp trên mái ngói rêu phong,",
+            "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+          ]
+        },
+        {
+          "id": "mongmo_6",
+          "x": 19.7,
+          "y": 66.5,
+          "tag": "Mộng Mơ · Vì sao #6",
+          "title": "Góc quán quen #6",
+          "date": "Đêm thứ 6",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Một góc quán nhỏ bên phố vắng người qua,",
+            "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+          ]
+        },
+        {
+          "id": "mongmo_7",
+          "x": 26.0,
+          "y": 36.9,
+          "tag": "Tự sự",
+          "title": "Gió đêm",
+          "date": "03.05.2025",
+          "location": "Bên khung cửa sổ vòm",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Gió đi ngang cửa sổ,",
+            "khẽ hỏi em còn thức không.",
+            "Em nói: còn, vì thơ chưa viết xong,",
+            "và trăng vẫn chưa chịu ngủ."
+          ]
+        },
+        {
+          "id": "mongmo_8",
+          "x": 33.1,
+          "y": 85.8,
+          "tag": "Mộng Mơ · Vì sao #8",
+          "title": "Bản hòa ca của đêm #8",
+          "date": "Đêm thứ 8",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Đêm không hề im lặng,",
+            "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+          ]
+        },
+        {
+          "id": "mongmo_9",
+          "x": 37.7,
+          "y": 29.5,
+          "tag": "Mộng Mơ · Vì sao #9",
+          "title": "Ngọn nến lung linh #9",
+          "date": "Đêm thứ 9",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+            "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+          ]
+        },
+        {
+          "id": "mongmo_10",
+          "x": 42.7,
+          "y": 44.8,
+          "tag": "Mộng Mơ · Vì sao #10",
+          "title": "Dòng sông kỷ niệm #10",
+          "date": "Đêm thứ 10",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+            "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+          ]
+        },
+        {
+          "id": "mongmo_11",
+          "x": 47.2,
+          "y": 41.6,
+          "tag": "Mộng Mơ · Vì sao #11",
+          "title": "Chiếc lá rơi #11",
+          "date": "Đêm thứ 11",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+            "kết thúc một mùa xanh bằng nụ cười thanh thản."
+          ]
+        },
+        {
+          "id": "mongmo_12",
+          "x": 47.6,
+          "y": 13.1,
+          "tag": "Mộng Mơ · Vì sao #12",
+          "title": "Lời hẹn với trăng #12",
+          "date": "Đêm thứ 12",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Đêm nay trăng tròn và sáng quá,",
+            "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+          ]
+        },
+        {
+          "id": "mongmo_13",
+          "x": 48.2,
+          "y": 49.6,
+          "tag": "Tản văn",
+          "title": "Thư chưa gửi",
+          "date": "21.07.2025",
+          "location": "Bàn trà nhỏ",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Tôi gấp lại nỗi nhớ thành chiếc thuyền giấy,",
+            "thả xuống dòng sông của đêm.",
+            "Nếu có ai nhặt được,",
+            "xin hãy đọc chậm thôi."
+          ]
+        },
+        {
+          "id": "mongmo_14",
+          "x": 49.5,
+          "y": 75.6,
+          "tag": "Mộng Mơ · Vì sao #14",
+          "title": "Dấu chân mây #14",
+          "date": "Đêm thứ 14",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Mây không vội vã, gió không dừng chân.",
+            "Cứ an nhiên như dòng nước mát trôi xuôi."
+          ]
+        },
+        {
+          "id": "mongmo_15",
+          "x": 55.3,
+          "y": 43.1,
+          "tag": "Mộng Mơ · Vì sao #15",
+          "title": "Cánh buồm trong mơ #15",
+          "date": "Đêm thứ 15",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Thả một ước mơ vào hư không,",
+            "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+          ]
+        },
+        {
+          "id": "mongmo_16",
+          "x": 56.1,
+          "y": 55.9,
+          "tag": "Mộng Mơ · Vì sao #16",
+          "title": "Hương cỏ dại #16",
+          "date": "Đêm thứ 16",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+            "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+          ]
+        },
+        {
+          "id": "mongmo_17",
+          "x": 57.0,
+          "y": 50.0,
+          "tag": "Mộng Mơ · Vì sao #17",
+          "title": "Tiếng mưa tí tách #17",
+          "date": "Đêm thứ 17",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Mưa gõ nhịp trên mái ngói rêu phong,",
+            "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+          ]
+        },
+        {
+          "id": "mongmo_18",
+          "x": 62.0,
+          "y": 14.7,
+          "tag": "Mộng Mơ · Vì sao #18",
+          "title": "Góc quán quen #18",
+          "date": "Đêm thứ 18",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Một góc quán nhỏ bên phố vắng người qua,",
+            "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+          ]
+        },
+        {
+          "id": "mongmo_19",
+          "x": 67.5,
+          "y": 32.8,
+          "tag": "Thơ ngắn",
+          "title": "Hoa tím",
+          "date": "15.08.2025",
+          "location": "Góc vườn khuya",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Bên thềm hoa tím nở âm thầm,",
+            "như nỗi niềm xưa chẳng gọi tên.",
+            "Người qua chỉ thấy sương đọng lá,",
+            "đâu biết lòng ai ngập nhớ thương."
+          ]
+        },
+        {
+          "id": "mongmo_20",
+          "x": 68.0,
+          "y": 74.2,
+          "tag": "Mộng Mơ · Vì sao #20",
+          "title": "Bản hòa ca của đêm #20",
+          "date": "Đêm thứ 20",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Đêm không hề im lặng,",
+            "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+          ]
+        },
+        {
+          "id": "mongmo_21",
+          "x": 75.1,
+          "y": 58.8,
+          "tag": "Mộng Mơ · Vì sao #21",
+          "title": "Ngọn nến lung linh #21",
+          "date": "Đêm thứ 21",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+            "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+          ]
+        },
+        {
+          "id": "mongmo_22",
+          "x": 81.7,
+          "y": 74.7,
+          "tag": "Mộng Mơ · Vì sao #22",
+          "title": "Dòng sông kỷ niệm #22",
+          "date": "Đêm thứ 22",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+            "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+          ]
+        },
+        {
+          "id": "mongmo_23",
+          "x": 86.8,
+          "y": 40.5,
+          "tag": "Mộng Mơ · Vì sao #23",
+          "title": "Chiếc lá rơi #23",
+          "date": "Đêm thứ 23",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+            "kết thúc một mùa xanh bằng nụ cười thanh thản."
+          ]
+        },
+        {
+          "id": "mongmo_24",
+          "x": 88.7,
+          "y": 86.1,
+          "tag": "Mộng Mơ · Vì sao #24",
+          "title": "Lời hẹn với trăng #24",
+          "date": "Đêm thứ 24",
+          "location": "Miền Mộng Mơ",
+          "body": [
+            "Đêm nay trăng tròn và sáng quá,",
+            "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+          ]
+        }
+      ],
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_0.webp",
+      "creature": "Khúc Ca Đêm"
+    },
+    {
+      "id": "pisces",
+      "category": "mongmo",
+      "name": "Chòm sao Song Ngư",
+      "subtitle": "mộng ảo · tình yêu biển sâu",
+      "kind": "Song Ngư",
+      "bgImg": "assets/img/galaxy_pisces.webp",
+      "creature": "Đôi Cá Song Ngư",
+      "stars": [
+        {
+          "id": "pisces_1",
+          "x": 6.6,
+          "y": 10.2,
+          "tag": "Song Ngư · Thơ mộng",
+          "title": "Đôi cá bơi ngược dòng",
+          "date": "Đêm trăng khuyết",
+          "location": "Đại dương ngàn sao",
+          "body": [
+            "Một con cá bơi về miền ký ức,",
+            "con còn lại hướng về cõi tương lai.",
+            "Ở giữa là trái tim ta đứng lặng,",
+            "nơi những giấc mơ không bao giờ phai."
+          ]
+        },
+        {
+          "id": "pisces_2",
+          "x": 7.5,
+          "y": 67.8,
+          "tag": "Song Ngư · Thơ mộng",
+          "title": "Biển sâu không đáy",
+          "date": "Đêm trăng khuyết",
+          "location": "Đại dương ngàn sao",
+          "body": [
+            "Đáy biển sâu giấu muôn lời không nói,",
+            "như tình yêu giữ kín tận đáy lòng.",
+            "Chỉ cần em nhìn vào mắt ta một lần,",
+            "sẽ thấy cả một đại dương chờ mong."
+          ]
+        },
+        {
+          "id": "pisces_3",
+          "x": 9.7,
+          "y": 80.7,
+          "tag": "Song Ngư · Thơ mộng",
+          "title": "Bọt sóng tan",
+          "date": "Đêm trăng khuyết",
+          "location": "Đại dương ngàn sao",
+          "body": [
+            "Mỗi đợt sóng xô bờ rồi tan biến,",
+            "để lại cát vàng lấp lánh hạt sương khuya.",
+            "Có những nỗi buồn đẹp như thế đó,",
+            "chạm khẽ vào tim rồi nhẹ bước chia lìa."
+          ]
+        },
+        {
+          "id": "pisces_4",
+          "x": 10.7,
+          "y": 13.0,
+          "tag": "Song Ngư · Thơ mộng",
+          "title": "Hải âu lạc lối",
+          "date": "Đêm trăng khuyết",
+          "location": "Đại dương ngàn sao",
+          "body": [
+            "Cánh chim hải âu bay mỏi mòn giữa đêm giông,",
+            "tìm một ngọn hải đăng le lói nơi chân trời.",
+            "Em chính là ánh đèn soi tỏ,",
+            "giữa trùng khơi tăm tối của cuộc đời."
+          ]
+        },
+        {
+          "id": "pisces_5",
+          "x": 11.7,
+          "y": 37.8,
+          "tag": "Song Ngư · Vì sao #5",
+          "title": "Dòng hải lưu số #5",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_6",
+          "x": 13.6,
+          "y": 48.4,
+          "tag": "Song Ngư · Vì sao #6",
+          "title": "Dòng hải lưu số #6",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_7",
+          "x": 14.0,
+          "y": 67.9,
+          "tag": "Song Ngư · Vì sao #7",
+          "title": "Dòng hải lưu số #7",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_8",
+          "x": 23.2,
+          "y": 33.7,
+          "tag": "Song Ngư · Vì sao #8",
+          "title": "Dòng hải lưu số #8",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_9",
+          "x": 23.7,
+          "y": 43.4,
+          "tag": "Song Ngư · Vì sao #9",
+          "title": "Dòng hải lưu số #9",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_10",
+          "x": 26.8,
+          "y": 39.4,
+          "tag": "Song Ngư · Vì sao #10",
+          "title": "Dòng hải lưu số #10",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_11",
+          "x": 28.0,
+          "y": 71.8,
+          "tag": "Song Ngư · Vì sao #11",
+          "title": "Dòng hải lưu số #11",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_12",
+          "x": 28.9,
+          "y": 52.2,
+          "tag": "Song Ngư · Vì sao #12",
+          "title": "Dòng hải lưu số #12",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_13",
+          "x": 38.8,
+          "y": 45.5,
+          "tag": "Song Ngư · Vì sao #13",
+          "title": "Dòng hải lưu số #13",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_14",
+          "x": 47.2,
+          "y": 76.7,
+          "tag": "Song Ngư · Vì sao #14",
+          "title": "Dòng hải lưu số #14",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_15",
+          "x": 56.4,
+          "y": 26.1,
+          "tag": "Song Ngư · Vì sao #15",
+          "title": "Dòng hải lưu số #15",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_16",
+          "x": 60.8,
+          "y": 53.9,
+          "tag": "Song Ngư · Vì sao #16",
+          "title": "Dòng hải lưu số #16",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_17",
+          "x": 70.7,
+          "y": 18.0,
+          "tag": "Song Ngư · Vì sao #17",
+          "title": "Dòng hải lưu số #17",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_18",
+          "x": 76.7,
+          "y": 95.0,
+          "tag": "Song Ngư · Vì sao #18",
+          "title": "Dòng hải lưu số #18",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_19",
+          "x": 81.8,
+          "y": 50.6,
+          "tag": "Song Ngư · Vì sao #19",
+          "title": "Dòng hải lưu số #19",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_20",
+          "x": 84.9,
+          "y": 8.3,
+          "tag": "Song Ngư · Vì sao #20",
+          "title": "Dòng hải lưu số #20",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_21",
+          "x": 86.6,
+          "y": 44.9,
+          "tag": "Song Ngư · Vì sao #21",
+          "title": "Dòng hải lưu số #21",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_22",
+          "x": 90.3,
+          "y": 68.4,
+          "tag": "Song Ngư · Vì sao #22",
+          "title": "Dòng hải lưu số #22",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_23",
+          "x": 92.5,
+          "y": 25.5,
+          "tag": "Song Ngư · Vì sao #23",
+          "title": "Dòng hải lưu số #23",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        },
+        {
+          "id": "pisces_24",
+          "x": 97.2,
+          "y": 66.6,
+          "tag": "Song Ngư · Vì sao #24",
+          "title": "Dòng hải lưu số #24",
+          "date": "Đêm đại dương",
+          "location": "Dải Ngân Hà Song Ngư",
+          "body": [
+            "Hai chú cá quẫy đuôi dệt thành ánh sáng,",
+            "dẫn lối cho những linh hồn mộng mơ tìm về."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ursamajor",
+      "category": "mongmo",
+      "name": "Đại Hùng & Tiểu Hùng",
+      "subtitle": "sao Bắc Đẩu · kiên định soi đường",
+      "kind": "Đại Hùng",
+      "bgImg": "assets/img/galaxy_ursamajor.webp",
+      "creature": "Gấu Mẹ & Sao Bắc Đẩu",
+      "stars": [
+        {
+          "id": "ursa_1",
+          "x": 2.7,
+          "y": 51.0,
+          "tag": "Đại Hùng · Bắc Đẩu",
+          "title": "Sao Bắc Đẩu chỉ đường",
+          "date": "Đêm cực quang",
+          "location": "Bầu trời phương Bắc",
+          "body": [
+            "Bảy ngôi sao sáng hình chiếc gáo vàng,",
+            "chỉ về phương Bắc ngàn đời không đổi.",
+            "Dù lạc bước giữa muôn trùng bão nổi,",
+            "vẫn có một niềm tin dẫn lối ta về."
+          ]
+        },
+        {
+          "id": "ursa_2",
+          "x": 3.7,
+          "y": 19.0,
+          "tag": "Đại Hùng · Bắc Đẩu",
+          "title": "Vòng tay gấu mẹ",
+          "date": "Đêm cực quang",
+          "location": "Bầu trời phương Bắc",
+          "body": [
+            "Đại Hùng che chở cho Tiểu Hùng qua mùa đông giá lạnh,",
+            "bầu trời phương Bắc ấm áp tình mẫu tử thiêng liêng.",
+            "Những đêm tuyết phủ trắng xóa triền đồi,",
+            "chỉ cần bên nhau, giông bão hóa bình yên."
+          ]
+        },
+        {
+          "id": "ursa_3",
+          "x": 4.5,
+          "y": 31.1,
+          "tag": "Đại Hùng · Bắc Đẩu",
+          "title": "Cây gáo thần tiên",
+          "date": "Đêm cực quang",
+          "location": "Bầu trời phương Bắc",
+          "body": [
+            "Múc một gáo sao trời uống cạn,",
+            "thấy lòng mình nhẹ bẫng tựa hư không.",
+            "Trần thế có muôn vàn điều toan tính,",
+            "sao bằng ngước mắt ngắm trời mênh mông."
+          ]
+        },
+        {
+          "id": "ursa_4",
+          "x": 6.6,
+          "y": 10.2,
+          "tag": "Đại Hùng · Bắc Đẩu",
+          "title": "Đêm cực quang",
+          "date": "Đêm cực quang",
+          "location": "Bầu trời phương Bắc",
+          "body": [
+            "Vệt sáng xanh rực rỡ uốn lượn lưng trời,",
+            "như tà áo lụa của tiên nga giáng thế.",
+            "Đứng dưới bầu trời Bắc cực diệu kỳ,",
+            "mới biết trần gian đẹp biết nhường nào."
+          ]
+        },
+        {
+          "id": "ursa_5",
+          "x": 17.8,
+          "y": 33.3,
+          "tag": "Đại Hùng · Vì sao #5",
+          "title": "Bắc Đẩu tinh tú #5",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_6",
+          "x": 33.3,
+          "y": 55.1,
+          "tag": "Đại Hùng · Vì sao #6",
+          "title": "Bắc Đẩu tinh tú #6",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_7",
+          "x": 37.6,
+          "y": 82.8,
+          "tag": "Đại Hùng · Vì sao #7",
+          "title": "Bắc Đẩu tinh tú #7",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_8",
+          "x": 43.5,
+          "y": 57.5,
+          "tag": "Đại Hùng · Vì sao #8",
+          "title": "Bắc Đẩu tinh tú #8",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_9",
+          "x": 48.6,
+          "y": 79.2,
+          "tag": "Đại Hùng · Vì sao #9",
+          "title": "Bắc Đẩu tinh tú #9",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_10",
+          "x": 48.8,
+          "y": 73.9,
+          "tag": "Đại Hùng · Vì sao #10",
+          "title": "Bắc Đẩu tinh tú #10",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_11",
+          "x": 49.7,
+          "y": 41.5,
+          "tag": "Đại Hùng · Vì sao #11",
+          "title": "Bắc Đẩu tinh tú #11",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_12",
+          "x": 51.8,
+          "y": 52.2,
+          "tag": "Đại Hùng · Vì sao #12",
+          "title": "Bắc Đẩu tinh tú #12",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_13",
+          "x": 57.3,
+          "y": 44.3,
+          "tag": "Đại Hùng · Vì sao #13",
+          "title": "Bắc Đẩu tinh tú #13",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_14",
+          "x": 58.5,
+          "y": 62.4,
+          "tag": "Đại Hùng · Vì sao #14",
+          "title": "Bắc Đẩu tinh tú #14",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_15",
+          "x": 73.0,
+          "y": 23.4,
+          "tag": "Đại Hùng · Vì sao #15",
+          "title": "Bắc Đẩu tinh tú #15",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_16",
+          "x": 74.9,
+          "y": 72.0,
+          "tag": "Đại Hùng · Vì sao #16",
+          "title": "Bắc Đẩu tinh tú #16",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_17",
+          "x": 75.5,
+          "y": 35.0,
+          "tag": "Đại Hùng · Vì sao #17",
+          "title": "Bắc Đẩu tinh tú #17",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_18",
+          "x": 78.8,
+          "y": 14.9,
+          "tag": "Đại Hùng · Vì sao #18",
+          "title": "Bắc Đẩu tinh tú #18",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_19",
+          "x": 79.6,
+          "y": 47.3,
+          "tag": "Đại Hùng · Vì sao #19",
+          "title": "Bắc Đẩu tinh tú #19",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_20",
+          "x": 79.7,
+          "y": 30.0,
+          "tag": "Đại Hùng · Vì sao #20",
+          "title": "Bắc Đẩu tinh tú #20",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_21",
+          "x": 81.9,
+          "y": 76.6,
+          "tag": "Đại Hùng · Vì sao #21",
+          "title": "Bắc Đẩu tinh tú #21",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_22",
+          "x": 83.9,
+          "y": 36.8,
+          "tag": "Đại Hùng · Vì sao #22",
+          "title": "Bắc Đẩu tinh tú #22",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_23",
+          "x": 85.9,
+          "y": 71.8,
+          "tag": "Đại Hùng · Vì sao #23",
+          "title": "Bắc Đẩu tinh tú #23",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        },
+        {
+          "id": "ursa_24",
+          "x": 89.0,
+          "y": 13.9,
+          "tag": "Đại Hùng · Vì sao #24",
+          "title": "Bắc Đẩu tinh tú #24",
+          "date": "Đêm sao sáng",
+          "location": "Chòm sao Gấu Lớn",
+          "body": [
+            "Ngôi sao kiên định dõi theo từng bước chân lãng du,",
+            "soi sáng nẻo đường người tìm lại chính mình."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vien-du",
+      "name": "Chòm sao Viễn Du",
+      "subtitle": "nhật ký du hành · ký sự đất trời",
+      "kind": "Viễn Du",
+      "bg": 1,
+      "stars": [
+        {
+          "id": "vien-du_1",
+          "x": 6.6,
+          "y": 10.3,
+          "tag": "Nhật ký du hành",
+          "title": "Sáng ở Đà Lạt: Khói thông & Sương sớm",
+          "date": "18.09.2025",
+          "location": "Đồi chè Cầu Đất, Đà Lạt",
+          "weather": "14°C · Sương sớm se lạnh",
+          "coverImage": "assets/photos/dalat.jpg",
+          "body": [
+            "Đà Lạt đón chúng mình bằng một màn sương dày đặc trôi lững lờ qua những rặng thông già. Căn nhà gỗ nhỏ nép mình bên sườn đồi, khói từ ống khói bốc lên thơm mùi gỗ thông cháy dở.",
+            "Sáng sớm ở đây yên tĩnh đến mức nghe rõ từng giọt sương rơi trên phiến lá trà. Cầm tách cà phê nóng trên tay, hơi ấm lan tỏa qua từng đầu ngón tay lạnh buốt.",
+            "\"Có những vùng đất ta đến không phải để chinh phục, mà chỉ để được thả lỏng tâm hồn, hít thở một nhịp thật sâu và nhận ra mình vẫn đang sống trọn vẹn từng khoảnh khắc.\"",
+            "Đi dạo dọc con đường đất đỏ mòn quanh triền dốc, ánh bình minh vàng ươm xuyên qua lớp sương mù tạo thành những vệt sáng huyền ảo như bước vào một thế giới cổ tích."
+          ]
+        },
+        {
+          "id": "vien-du_2",
+          "x": 9.8,
+          "y": 81.3,
+          "tag": "Viễn Du · Vì sao #2",
+          "title": "Dòng sông kỷ niệm #2",
+          "date": "Đêm thứ 2",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+            "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+          ]
+        },
+        {
+          "id": "vien-du_3",
+          "x": 11.7,
+          "y": 37.8,
+          "tag": "Viễn Du · Vì sao #3",
+          "title": "Chiếc lá rơi #3",
+          "date": "Đêm thứ 3",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+            "kết thúc một mùa xanh bằng nụ cười thanh thản."
+          ]
+        },
+        {
+          "id": "vien-du_4",
+          "x": 13.8,
+          "y": 48.1,
+          "tag": "Viễn Du · Vì sao #4",
+          "title": "Lời hẹn với trăng #4",
+          "date": "Đêm thứ 4",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Đêm nay trăng tròn và sáng quá,",
+            "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+          ]
+        },
+        {
+          "id": "vien-du_5",
+          "x": 16.4,
+          "y": 71.5,
+          "tag": "Viễn Du · Vì sao #5",
+          "title": "Ánh sáng nghìn năm #5",
+          "date": "Đêm thứ 5",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+            "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+          ]
+        },
+        {
+          "id": "vien-du_6",
+          "x": 18.4,
+          "y": 16.2,
+          "tag": "Viễn Du · Vì sao #6",
+          "title": "Dấu chân mây #6",
+          "date": "Đêm thứ 6",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mây không vội vã, gió không dừng chân.",
+            "Cứ an nhiên như dòng nước mát trôi xuôi."
+          ]
+        },
+        {
+          "id": "vien-du_7",
+          "x": 23.2,
+          "y": 33.7,
+          "tag": "Ký sự biển đêm",
+          "title": "Biển Quy Nhơn: Gió lộng & Bờ đá xanh",
+          "date": "04.06.2025",
+          "location": "Eo Gió, Quy Nhơn",
+          "weather": "25°C · Nắng chiều vàng rực",
+          "coverImage": "assets/photos/quynhon.jpg",
+          "body": [
+            "Buổi chiều muộn ở Eo Gió, khi những con sóng biển màu ngọc bích xô mạnh vào ghềnh đá hoa cương tung bọt trắng xóa. Gió biển mặn mòi thổi tung mái tóc.",
+            "Mình đứng chân trần trên những tảng đá nhẵn bóng sau hàng ngàn năm sóng vỗ, nhìn ra phía chân trời xa xôi nơi mặt trời đang dần chìm vào ráng chiều màu tím cam.",
+            "\"Biển cả luôn có một sức mạnh kỳ diệu để dung thứ cho mọi muộn phiền của con người. Đứng trước sự mênh mông vô tận ấy, những bận tâm thường nhật bỗng chốc trở nên nhỏ bé như hạt cát.\"",
+            "Khi màn đêm buông xuống, những chiếc thuyền câu mực bắt đầu thắp đèn sáng lấp lánh như một thành phố nổi trôi giữa đại dương bao la."
+          ]
+        },
+        {
+          "id": "vien-du_8",
+          "x": 28.1,
+          "y": 71.8,
+          "tag": "Viễn Du · Vì sao #8",
+          "title": "Hương cỏ dại #8",
+          "date": "Đêm thứ 8",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+            "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+          ]
+        },
+        {
+          "id": "vien-du_9",
+          "x": 31.6,
+          "y": 65.0,
+          "tag": "Viễn Du · Vì sao #9",
+          "title": "Tiếng mưa tí tách #9",
+          "date": "Đêm thứ 9",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mưa gõ nhịp trên mái ngói rêu phong,",
+            "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+          ]
+        },
+        {
+          "id": "vien-du_10",
+          "x": 46.7,
+          "y": 38.3,
+          "tag": "Viễn Du · Vì sao #10",
+          "title": "Góc quán quen #10",
+          "date": "Đêm thứ 10",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Một góc quán nhỏ bên phố vắng người qua,",
+            "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+          ]
+        },
+        {
+          "id": "vien-du_11",
+          "x": 53.7,
+          "y": 29.6,
+          "tag": "Viễn Du · Vì sao #11",
+          "title": "Bình minh trên đồi #11",
+          "date": "Đêm thứ 11",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+            "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+          ]
+        },
+        {
+          "id": "vien-du_12",
+          "x": 57.1,
+          "y": 20.4,
+          "tag": "Viễn Du · Vì sao #12",
+          "title": "Bản hòa ca của đêm #12",
+          "date": "Đêm thứ 12",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Đêm không hề im lặng,",
+            "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+          ]
+        },
+        {
+          "id": "vien-du_13",
+          "x": 57.4,
+          "y": 39.4,
+          "tag": "Du hành",
+          "title": "Chuyến bay đêm",
+          "date": "29.10.2025",
+          "location": "Độ cao 10.000m",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Nhìn qua khung cửa sổ máy bay tròn nhỏ,",
+            "thành phố bên dưới thu nhỏ lại như một dải thiên hà đom đóm.",
+            "Ở độ cao mười ngàn mét tĩnh lặng,",
+            "tôi nghe rõ nhịp đập của chính mình giữa lưng chừng mây."
+          ]
+        },
+        {
+          "id": "vien-du_14",
+          "x": 63.6,
+          "y": 25.6,
+          "tag": "Viễn Du · Vì sao #14",
+          "title": "Dòng sông kỷ niệm #14",
+          "date": "Đêm thứ 14",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+            "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+          ]
+        },
+        {
+          "id": "vien-du_15",
+          "x": 67.8,
+          "y": 51.6,
+          "tag": "Viễn Du · Vì sao #15",
+          "title": "Chiếc lá rơi #15",
+          "date": "Đêm thứ 15",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Chiếc lá vàng nhẹ rơi nghiêng mình trong gió biếc,",
+            "kết thúc một mùa xanh bằng nụ cười thanh thản."
+          ]
+        },
+        {
+          "id": "vien-du_16",
+          "x": 68.3,
+          "y": 20.4,
+          "tag": "Viễn Du · Vì sao #16",
+          "title": "Lời hẹn với trăng #16",
+          "date": "Đêm thứ 16",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Đêm nay trăng tròn và sáng quá,",
+            "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+          ]
+        },
+        {
+          "id": "vien-du_17",
+          "x": 69.5,
+          "y": 32.8,
+          "tag": "Viễn Du · Vì sao #17",
+          "title": "Ánh sáng nghìn năm #17",
+          "date": "Đêm thứ 17",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+            "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+          ]
+        },
+        {
+          "id": "vien-du_18",
+          "x": 73.2,
+          "y": 43.8,
+          "tag": "Viễn Du · Vì sao #18",
+          "title": "Dấu chân mây #18",
+          "date": "Đêm thứ 18",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mây không vội vã, gió không dừng chân.",
+            "Cứ an nhiên như dòng nước mát trôi xuôi."
+          ]
+        },
+        {
+          "id": "vien-du_19",
+          "x": 73.5,
+          "y": 54.6,
+          "tag": "Hoài niệm",
+          "title": "Ga nhỏ ở Huế",
+          "date": "14.11.2025",
+          "location": "Ga Huế lúc chiều tà",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Tiếng còi tàu xé tan chiều mưa ảm đạm,",
+            "những thanh ray ướt đẫm kéo dài vào màn sương.",
+            "Huế níu chân người bằng vẻ cổ kính dịu dàng,",
+            "bằng tách trà sen thơm ngát và bước chân chậm rãi."
+          ]
+        },
+        {
+          "id": "vien-du_20",
+          "x": 74.1,
+          "y": 15.9,
+          "tag": "Viễn Du · Vì sao #20",
+          "title": "Hương cỏ dại #20",
+          "date": "Đêm thứ 20",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+            "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+          ]
+        },
+        {
+          "id": "vien-du_21",
+          "x": 76.6,
+          "y": 34.3,
+          "tag": "Viễn Du · Vì sao #21",
+          "title": "Tiếng mưa tí tách #21",
+          "date": "Đêm thứ 21",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Mưa gõ nhịp trên mái ngói rêu phong,",
+            "như lời thì thầm của một người bạn tri âm từ kiếp trước."
+          ]
+        },
+        {
+          "id": "vien-du_22",
+          "x": 84.9,
+          "y": 8.3,
+          "tag": "Viễn Du · Vì sao #22",
+          "title": "Góc quán quen #22",
+          "date": "Đêm thứ 22",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Một góc quán nhỏ bên phố vắng người qua,",
+            "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+          ]
+        },
+        {
+          "id": "vien-du_23",
+          "x": 96.1,
+          "y": 41.2,
+          "tag": "Viễn Du · Vì sao #23",
+          "title": "Bình minh trên đồi #23",
+          "date": "Đêm thứ 23",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+            "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+          ]
+        },
+        {
+          "id": "vien-du_24",
+          "x": 97.2,
+          "y": 66.5,
+          "tag": "Viễn Du · Vì sao #24",
+          "title": "Bản hòa ca của đêm #24",
+          "date": "Đêm thứ 24",
+          "location": "Miền Viễn Du",
+          "body": [
+            "Đêm không hề im lặng,",
+            "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+          ]
+        }
+      ],
+      "category": "viendu",
+      "bgImg": "assets/img/galaxy_1.webp",
+      "creature": "Cánh Chim Viễn Xứ"
+    },
+    {
+      "id": "ky-niem",
+      "name": "Chòm sao Kỷ Niệm",
+      "subtitle": "kỷ vật cũ · hoài niệm dấu yêu",
+      "kind": "Kỷ Niệm",
+      "bg": 2,
+      "stars": [
+        {
+          "id": "ky-niem_1",
+          "x": 9.3,
+          "y": 51.8,
+          "tag": "Kỷ niệm ngọt ngào",
+          "title": "Chú cún ngủ say",
+          "date": "10.04.2025",
+          "location": "Góc lò sưởi",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Chú cún con cuộn tròn dưới chân ghế bập bênh,",
+            "hơi thở đều đặn êm đềm như một khúc ca ru.",
+            "Ngoài kia bão giông hay sao đổi ngôi,",
+            "trong căn phòng này, bình yên là có thật."
+          ]
+        },
+        {
+          "id": "ky-niem_2",
+          "x": 13.9,
+          "y": 19.8,
+          "tag": "Kỷ Niệm · Vì sao #2",
+          "title": "Góc quán quen #2",
+          "date": "Đêm thứ 2",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Một góc quán nhỏ bên phố vắng người qua,",
+            "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+          ]
+        },
+        {
+          "id": "ky-niem_3",
+          "x": 20.2,
+          "y": 24.8,
+          "tag": "Kỷ Niệm · Vì sao #3",
+          "title": "Bình minh trên đồi #3",
+          "date": "Đêm thứ 3",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+            "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+          ]
+        },
+        {
+          "id": "ky-niem_4",
+          "x": 21.5,
+          "y": 64.4,
+          "tag": "Kỷ Niệm · Vì sao #4",
+          "title": "Bản hòa ca của đêm #4",
+          "date": "Đêm thứ 4",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Đêm không hề im lặng,",
+            "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+          ]
+        },
+        {
+          "id": "ky-niem_5",
+          "x": 28.4,
+          "y": 34.7,
+          "tag": "Kỷ Niệm · Vì sao #5",
+          "title": "Ngọn nến lung linh #5",
+          "date": "Đêm thứ 5",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+            "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+          ]
+        },
+        {
+          "id": "ky-niem_6",
+          "x": 30.5,
+          "y": 26.5,
+          "tag": "Kỷ Niệm · Vì sao #6",
+          "title": "Dòng sông kỷ niệm #6",
+          "date": "Đêm thứ 6",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+            "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+          ]
+        },
+        {
+          "id": "ky-niem_7",
+          "x": 37.9,
+          "y": 29.6,
+          "tag": "Giai điệu",
+          "title": "Khúc đàn nửa đêm",
+          "date": "08.08.2025",
+          "location": "Căn phòng nhỏ",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Những phím đàn dương cầm vang lên ngân nga,",
+            "từng nốt nhạc hòa vào tiếng dế rả rích đêm hè.",
+            "Một bản valse cho riêng mình tôi,",
+            "khi cả thế giới đã chìm sâu vào giấc mộng."
+          ]
+        },
+        {
+          "id": "ky-niem_8",
+          "x": 41.1,
+          "y": 66.6,
+          "tag": "Kỷ Niệm · Vì sao #8",
+          "title": "Lời hẹn với trăng #8",
+          "date": "Đêm thứ 8",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Đêm nay trăng tròn và sáng quá,",
+            "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+          ]
+        },
+        {
+          "id": "ky-niem_9",
+          "x": 43.2,
+          "y": 59.6,
+          "tag": "Kỷ Niệm · Vì sao #9",
+          "title": "Ánh sáng nghìn năm #9",
+          "date": "Đêm thứ 9",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+            "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+          ]
+        },
+        {
+          "id": "ky-niem_10",
+          "x": 46.6,
+          "y": 14.3,
+          "tag": "Kỷ Niệm · Vì sao #10",
+          "title": "Dấu chân mây #10",
+          "date": "Đêm thứ 10",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Mây không vội vã, gió không dừng chân.",
+            "Cứ an nhiên như dòng nước mát trôi xuôi."
+          ]
+        },
+        {
+          "id": "ky-niem_11",
+          "x": 46.6,
+          "y": 42.5,
+          "tag": "Kỷ Niệm · Vì sao #11",
+          "title": "Cánh buồm trong mơ #11",
+          "date": "Đêm thứ 11",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Thả một ước mơ vào hư không,",
+            "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+          ]
+        },
+        {
+          "id": "ky-niem_12",
+          "x": 49.3,
+          "y": 73.9,
+          "tag": "Kỷ Niệm · Vì sao #12",
+          "title": "Hương cỏ dại #12",
+          "date": "Đêm thứ 12",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+            "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+          ]
+        },
+        {
+          "id": "ky-niem_13",
+          "x": 54.5,
+          "y": 29.3,
+          "tag": "Kỷ vật",
+          "title": "Trang nhật ký đã ố vàng",
+          "date": "01.01.2025",
+          "location": "Ngăn kéo bàn học",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Mở lại cuốn sổ bìa da năm cũ,",
+            "mùi giấy mực quen thuộc vẫn còn vương vấn.",
+            "Những nét chữ nguệch ngoạc của tuổi mười tám,",
+            "ước mơ thuở ấy ngây ngô nhưng rạng ngời."
+          ]
+        },
+        {
+          "id": "ky-niem_14",
+          "x": 58.8,
+          "y": 47.9,
+          "tag": "Kỷ Niệm · Vì sao #14",
+          "title": "Góc quán quen #14",
+          "date": "Đêm thứ 14",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Một góc quán nhỏ bên phố vắng người qua,",
+            "tách trà hoa cúc ấm thơm và một cuốn sách dở dang."
+          ]
+        },
+        {
+          "id": "ky-niem_15",
+          "x": 62.6,
+          "y": 13.0,
+          "tag": "Kỷ Niệm · Vì sao #15",
+          "title": "Bình minh trên đồi #15",
+          "date": "Đêm thứ 15",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Ánh bình minh đầu tiên vừa hé mở sau rặng núi xa,",
+            "đánh thức vạn vật bằng sự dịu dàng và ấm áp vô ngần."
+          ]
+        },
+        {
+          "id": "ky-niem_16",
+          "x": 62.7,
+          "y": 51.6,
+          "tag": "Kỷ Niệm · Vì sao #16",
+          "title": "Bản hòa ca của đêm #16",
+          "date": "Đêm thứ 16",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Đêm không hề im lặng,",
+            "đêm tràn ngập thanh âm của sự lắng đọng và hồi sinh."
+          ]
+        },
+        {
+          "id": "ky-niem_17",
+          "x": 66.5,
+          "y": 72.6,
+          "tag": "Kỷ Niệm · Vì sao #17",
+          "title": "Ngọn nến lung linh #17",
+          "date": "Đêm thứ 17",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Dù chỉ là ngọn nến nhỏ nhoi trước màn đêm vô tận,",
+            "nó vẫn đủ sức thắp sáng một niềm tin yêu cuộc đời."
+          ]
+        },
+        {
+          "id": "ky-niem_18",
+          "x": 71.7,
+          "y": 68.3,
+          "tag": "Kỷ Niệm · Vì sao #18",
+          "title": "Dòng sông kỷ niệm #18",
+          "date": "Đêm thứ 18",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Kỷ niệm như dòng sông chảy êm đềm trong lòng,",
+            "dù năm tháng trôi qua vẫn trong trẻo như ban đầu."
+          ]
+        },
+        {
+          "id": "ky-niem_19",
+          "x": 72.2,
+          "y": 54.8,
+          "tag": "Thư gửi tương lai",
+          "title": "Thư gửi ngày mai",
+          "date": "31.12.2025",
+          "location": "Đêm giao thừa",
+          "weather": "",
+          "coverImage": "",
+          "body": [
+            "Gửi tôi của những năm tháng sau này:",
+            "Dù đường đời có gập ghềnh nhiều chông gai,",
+            "xin hãy luôn giữ lại cho mình một trái tim biết rung động,",
+            "và một đôi mắt vẫn biết ngước nhìn những vì sao."
+          ]
+        },
+        {
+          "id": "ky-niem_20",
+          "x": 77.0,
+          "y": 61.4,
+          "tag": "Kỷ Niệm · Vì sao #20",
+          "title": "Lời hẹn với trăng #20",
+          "date": "Đêm thứ 20",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Đêm nay trăng tròn và sáng quá,",
+            "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+          ]
+        },
+        {
+          "id": "ky-niem_21",
+          "x": 81.1,
+          "y": 73.5,
+          "tag": "Kỷ Niệm · Vì sao #21",
+          "title": "Ánh sáng nghìn năm #21",
+          "date": "Đêm thứ 21",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Mỗi tia sáng ta thấy hôm nay đều bắt đầu hành trình từ rất lâu.",
+            "Cũng như tình yêu, có những điều đã đi qua nhưng vẫn soi rọi mãi mãi."
+          ]
+        },
+        {
+          "id": "ky-niem_22",
+          "x": 82.8,
+          "y": 65.8,
+          "tag": "Kỷ Niệm · Vì sao #22",
+          "title": "Dấu chân mây #22",
+          "date": "Đêm thứ 22",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Mây không vội vã, gió không dừng chân.",
+            "Cứ an nhiên như dòng nước mát trôi xuôi."
+          ]
+        },
+        {
+          "id": "ky-niem_23",
+          "x": 83.4,
+          "y": 60.3,
+          "tag": "Kỷ Niệm · Vì sao #23",
+          "title": "Cánh buồm trong mơ #23",
+          "date": "Đêm thứ 23",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Thả một ước mơ vào hư không,",
+            "biết đâu ngày mai trăng tròn sẽ chở nó về bến bờ."
+          ]
+        },
+        {
+          "id": "ky-niem_24",
+          "x": 84.3,
+          "y": 43.7,
+          "tag": "Kỷ Niệm · Vì sao #24",
+          "title": "Hương cỏ dại #24",
+          "date": "Đêm thứ 24",
+          "location": "Miền Kỷ Niệm",
+          "body": [
+            "Mùi cỏ dại sau cơn mưa rào buổi sớm mai,",
+            "thanh sạch và thơm lành như tiếng cười trẻ thơ."
+          ]
+        }
+      ],
+      "category": "kyniem",
+      "bgImg": "assets/img/galaxy_2.webp",
+      "creature": "Tinh Cầu Kỷ Niệm"
+    }
+  ]
+}

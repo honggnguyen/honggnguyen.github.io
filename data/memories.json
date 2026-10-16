@@ -1,0 +1,39 @@
+[
+  {
+    "id": "memory_puppy",
+    "type": "photo",
+    "badge": "✦ Ký ức ngọt ngào · Chú cún Xù",
+    "title": "Buổi Chiều Mưa Nhặt Được Em",
+    "image": "assets/photos/puppy_small.jpg",
+    "date": "Mùa đông năm ấy",
+    "caption": "\"Chiếc khăn len cũ quấn quanh em, ngoài hiên mưa lạnh nhưng trong phòng bỗng ấm áp lạ kỳ.\"",
+    "content": "Hôm ấy trời mưa rả rích từ trưa đến sẩm tối. Lúc mở cửa ra để lấy củi khô bên thềm, tôi nghe tiếng 'ăng ẳng' run rẩy dưới gầm ghế gỗ. Một cục bông ướt nhẹp với đôi mắt to tròn long lanh nhìn trân trân vào tôi. Tôi ẵm em vào nhà, lấy chiếc khăn len vàng quấn lấy chú cún nhỏ rồi đặt bên bếp lửa. Giờ đây em đã lớn, vẫn nằm cuộn tròn dưới chân mỗi đêm tôi thức đọc thơ..."
+  },
+  {
+    "id": "memory_poem_stardust",
+    "type": "poem",
+    "badge": "✦ Bài thơ ẩn giấu · Sao Băng Ký Ức",
+    "title": "Nguyện Ước Dưới Mưa Sao Băng",
+    "date": "Đêm nguyệt thực",
+    "caption": "\"Nếu có một điều ước được gửi vào vũ trụ, tôi ước những ngày bình yên này dài mãi mãi.\"",
+    "content": "Có những vệt sao rơi rất khẽ\nChạm vào thung lũng của hoàng hôn\nEm gom tro lạnh bên song cửa\nThắp lại một trời đốm lửa thơm.\n\nNgười đi qua triệu năm ánh sáng\nĐể kịp gặp nhau lúc nửa đời\nChỉ xin một thoáng lòng tĩnh lặng\nNghe tiếng ngàn sao hát ru người."
+  },
+  {
+    "id": "memory_quote_wander",
+    "type": "quote",
+    "badge": "✦ Lời nhắn từ vì sao xa",
+    "title": "Gửi Bản Thân Của Những Chuyến Đi",
+    "date": "Tọa độ 11°56'N, 108°26'E",
+    "caption": "\"Vũ trụ không vội vã, nhưng mọi bông hoa đều nở đúng mùa của nó.\"",
+    "content": "Đừng lo lắng nếu con đường bạn đang đi có đôi chút mịt mờ sương khói. Giống như những vì sao chỉ lấp lánh rực rỡ nhất khi màn đêm buông xuống thẳm sâu nhất. Hãy cứ bước tiếp, hái từng cánh hoa ven đường, gom từng câu thơ vào túi áo, rồi bạn sẽ thấy cả bầu trời đang mỉm cười đón đợi mình."
+  },
+  {
+    "id": "memory_secret_note",
+    "type": "poem",
+    "badge": "✦ Thư gửi chú cún Xù",
+    "title": "Giấc Mơ Của Chú Cún Nhỏ",
+    "date": "Bên bếp lò tí tách",
+    "caption": "\"Em ngủ say sưa, bốn chân khẽ đạp vào không khí như đang đuổi theo đàn bướm đêm.\"",
+    "content": "Em ngủ ngoan nhé, ngoài kia trời lạnh\nGió rít từng cơn qua kẽ lá thông\nTrong này có lửa hồng và có chị\nĐêm nay em sẽ mơ thấy cánh đồng.\n\nCánh đồng bồ công anh bay trong gió\nNơi em tha thẩn nhặt nhạnh sao trời\nChẳng cần bận tâm ngày mai mưa nắng\nBên nhau bình dị trọn một đời."
+  }
+]
