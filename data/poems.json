@@ -59,7 +59,7 @@
             {
               "id": "mongmo_4",
               "x": 12.2,
-              "y": 33.0,
+              "y": 33,
               "tag": "Mộng Mơ · Vì sao #4",
               "title": "Hương cỏ dại #4",
               "date": "Đêm thứ 4",
@@ -97,7 +97,7 @@
             },
             {
               "id": "mongmo_7",
-              "x": 26.0,
+              "x": 26,
               "y": 36.9,
               "tag": "Tự sự",
               "title": "Gió đêm",
@@ -235,8 +235,8 @@
             },
             {
               "id": "mongmo_17",
-              "x": 57.0,
-              "y": 50.0,
+              "x": 57,
+              "y": 50,
               "tag": "Mộng Mơ · Vì sao #17",
               "title": "Tiếng mưa tí tách #17",
               "date": "Đêm thứ 17",
@@ -248,7 +248,7 @@
             },
             {
               "id": "mongmo_18",
-              "x": 62.0,
+              "x": 62,
               "y": 14.7,
               "tag": "Mộng Mơ · Vì sao #18",
               "title": "Góc quán quen #18",
@@ -278,7 +278,7 @@
             },
             {
               "id": "mongmo_20",
-              "x": 68.0,
+              "x": 68,
               "y": 74.2,
               "tag": "Mộng Mơ · Vì sao #20",
               "title": "Bản hòa ca của đêm #20",
@@ -403,7 +403,7 @@
             {
               "id": "pisces_4",
               "x": 10.7,
-              "y": 13.0,
+              "y": 13,
               "tag": "Song Ngư · Thơ mộng",
               "title": "Hải âu lạc lối",
               "date": "Đêm trăng khuyết",
@@ -443,7 +443,7 @@
             },
             {
               "id": "pisces_7",
-              "x": 14.0,
+              "x": 14,
               "y": 67.9,
               "tag": "Song Ngư · Vì sao #7",
               "title": "Dòng hải lưu số #7",
@@ -495,7 +495,7 @@
             },
             {
               "id": "pisces_11",
-              "x": 28.0,
+              "x": 28,
               "y": 71.8,
               "tag": "Song Ngư · Vì sao #11",
               "title": "Dòng hải lưu số #11",
@@ -574,7 +574,7 @@
             {
               "id": "pisces_17",
               "x": 70.7,
-              "y": 18.0,
+              "y": 18,
               "tag": "Song Ngư · Vì sao #17",
               "title": "Dòng hải lưu số #17",
               "date": "Đêm đại dương",
@@ -587,7 +587,7 @@
             {
               "id": "pisces_18",
               "x": 76.7,
-              "y": 95.0,
+              "y": 95,
               "tag": "Song Ngư · Vì sao #18",
               "title": "Dòng hải lưu số #18",
               "date": "Đêm đại dương",
@@ -689,7 +689,7 @@
             {
               "id": "ursa_1",
               "x": 2.7,
-              "y": 51.0,
+              "y": 51,
               "tag": "Đại Hùng · Bắc Đẩu",
               "title": "Sao Bắc Đẩu chỉ đường",
               "date": "Đêm cực quang",
@@ -704,7 +704,7 @@
             {
               "id": "ursa_2",
               "x": 3.7,
-              "y": 19.0,
+              "y": 19,
               "tag": "Đại Hùng · Bắc Đẩu",
               "title": "Vòng tay gấu mẹ",
               "date": "Đêm cực quang",
@@ -878,7 +878,7 @@
             },
             {
               "id": "ursa_15",
-              "x": 73.0,
+              "x": 73,
               "y": 23.4,
               "tag": "Đại Hùng · Vì sao #15",
               "title": "Bắc Đẩu tinh tú #15",
@@ -892,7 +892,7 @@
             {
               "id": "ursa_16",
               "x": 74.9,
-              "y": 72.0,
+              "y": 72,
               "tag": "Đại Hùng · Vì sao #16",
               "title": "Bắc Đẩu tinh tú #16",
               "date": "Đêm sao sáng",
@@ -905,7 +905,7 @@
             {
               "id": "ursa_17",
               "x": 75.5,
-              "y": 35.0,
+              "y": 35,
               "tag": "Đại Hùng · Vì sao #17",
               "title": "Bắc Đẩu tinh tú #17",
               "date": "Đêm sao sáng",
@@ -944,7 +944,7 @@
             {
               "id": "ursa_20",
               "x": 79.7,
-              "y": 30.0,
+              "y": 30,
               "tag": "Đại Hùng · Vì sao #20",
               "title": "Bắc Đẩu tinh tú #20",
               "date": "Đêm sao sáng",
@@ -995,7 +995,7 @@
             },
             {
               "id": "ursa_24",
-              "x": 89.0,
+              "x": 89,
               "y": 13.9,
               "tag": "Đại Hùng · Vì sao #24",
               "title": "Bắc Đẩu tinh tú #24",
@@ -1138,7 +1138,7 @@
             {
               "id": "vien-du_9",
               "x": 31.6,
-              "y": 65.0,
+              "y": 65,
               "tag": "Viễn Du · Vì sao #9",
               "title": "Tiếng mưa tí tách #9",
               "date": "Đêm thứ 9",
@@ -1568,7 +1568,7 @@
             {
               "id": "ky-niem_15",
               "x": 62.6,
-              "y": 13.0,
+              "y": 13,
               "tag": "Kỷ Niệm · Vì sao #15",
               "title": "Bình minh trên đồi #15",
               "date": "Đêm thứ 15",
@@ -1636,7 +1636,7 @@
             },
             {
               "id": "ky-niem_20",
-              "x": 77.0,
+              "x": 77,
               "y": 61.4,
               "tag": "Kỷ Niệm · Vì sao #20",
               "title": "Lời hẹn với trăng #20",
@@ -1761,7 +1761,7 @@
         {
           "id": "mongmo_4",
           "x": 12.2,
-          "y": 33.0,
+          "y": 33,
           "tag": "Mộng Mơ · Vì sao #4",
           "title": "Hương cỏ dại #4",
           "date": "Đêm thứ 4",
@@ -1799,7 +1799,7 @@
         },
         {
           "id": "mongmo_7",
-          "x": 26.0,
+          "x": 26,
           "y": 36.9,
           "tag": "Tự sự",
           "title": "Gió đêm",
@@ -1937,8 +1937,8 @@
         },
         {
           "id": "mongmo_17",
-          "x": 57.0,
-          "y": 50.0,
+          "x": 57,
+          "y": 50,
           "tag": "Mộng Mơ · Vì sao #17",
           "title": "Tiếng mưa tí tách #17",
           "date": "Đêm thứ 17",
@@ -1950,7 +1950,7 @@
         },
         {
           "id": "mongmo_18",
-          "x": 62.0,
+          "x": 62,
           "y": 14.7,
           "tag": "Mộng Mơ · Vì sao #18",
           "title": "Góc quán quen #18",
@@ -1980,7 +1980,7 @@
         },
         {
           "id": "mongmo_20",
-          "x": 68.0,
+          "x": 68,
           "y": 74.2,
           "tag": "Mộng Mơ · Vì sao #20",
           "title": "Bản hòa ca của đêm #20",
@@ -2041,6 +2041,23 @@
           "body": [
             "Đêm nay trăng tròn và sáng quá,",
             "nhắc ta về một lời hẹn chưa kịp ngỏ cùng người."
+          ]
+        },
+        {
+          "id": "mongmo_mvbbguaa",
+          "x": 8.7,
+          "y": 19.5,
+          "tag": "",
+          "title": "Lá",
+          "date": "18.10.2026",
+          "location": "Hà Nội",
+          "weather": "Mưa",
+          "coverImage": "",
+          "html": "<p>Lá xanh xanh biếc một màu</p><p>Lòng tràng ý trí&nbsp;</p><p>ai ngầu hơn ai</p>",
+          "body": [
+            "Lá xanh xanh biếc một màu",
+            "Lòng tràng ý trí",
+            "ai ngầu hơn ai"
           ]
         }
       ],
@@ -2105,7 +2122,7 @@
         {
           "id": "pisces_4",
           "x": 10.7,
-          "y": 13.0,
+          "y": 13,
           "tag": "Song Ngư · Thơ mộng",
           "title": "Hải âu lạc lối",
           "date": "Đêm trăng khuyết",
@@ -2145,7 +2162,7 @@
         },
         {
           "id": "pisces_7",
-          "x": 14.0,
+          "x": 14,
           "y": 67.9,
           "tag": "Song Ngư · Vì sao #7",
           "title": "Dòng hải lưu số #7",
@@ -2197,7 +2214,7 @@
         },
         {
           "id": "pisces_11",
-          "x": 28.0,
+          "x": 28,
           "y": 71.8,
           "tag": "Song Ngư · Vì sao #11",
           "title": "Dòng hải lưu số #11",
@@ -2276,7 +2293,7 @@
         {
           "id": "pisces_17",
           "x": 70.7,
-          "y": 18.0,
+          "y": 18,
           "tag": "Song Ngư · Vì sao #17",
           "title": "Dòng hải lưu số #17",
           "date": "Đêm đại dương",
@@ -2289,7 +2306,7 @@
         {
           "id": "pisces_18",
           "x": 76.7,
-          "y": 95.0,
+          "y": 95,
           "tag": "Song Ngư · Vì sao #18",
           "title": "Dòng hải lưu số #18",
           "date": "Đêm đại dương",
@@ -2391,7 +2408,7 @@
         {
           "id": "ursa_1",
           "x": 2.7,
-          "y": 51.0,
+          "y": 51,
           "tag": "Đại Hùng · Bắc Đẩu",
           "title": "Sao Bắc Đẩu chỉ đường",
           "date": "Đêm cực quang",
@@ -2406,7 +2423,7 @@
         {
           "id": "ursa_2",
           "x": 3.7,
-          "y": 19.0,
+          "y": 19,
           "tag": "Đại Hùng · Bắc Đẩu",
           "title": "Vòng tay gấu mẹ",
           "date": "Đêm cực quang",
@@ -2580,7 +2597,7 @@
         },
         {
           "id": "ursa_15",
-          "x": 73.0,
+          "x": 73,
           "y": 23.4,
           "tag": "Đại Hùng · Vì sao #15",
           "title": "Bắc Đẩu tinh tú #15",
@@ -2594,7 +2611,7 @@
         {
           "id": "ursa_16",
           "x": 74.9,
-          "y": 72.0,
+          "y": 72,
           "tag": "Đại Hùng · Vì sao #16",
           "title": "Bắc Đẩu tinh tú #16",
           "date": "Đêm sao sáng",
@@ -2607,7 +2624,7 @@
         {
           "id": "ursa_17",
           "x": 75.5,
-          "y": 35.0,
+          "y": 35,
           "tag": "Đại Hùng · Vì sao #17",
           "title": "Bắc Đẩu tinh tú #17",
           "date": "Đêm sao sáng",
@@ -2646,7 +2663,7 @@
         {
           "id": "ursa_20",
           "x": 79.7,
-          "y": 30.0,
+          "y": 30,
           "tag": "Đại Hùng · Vì sao #20",
           "title": "Bắc Đẩu tinh tú #20",
           "date": "Đêm sao sáng",
@@ -2697,7 +2714,7 @@
         },
         {
           "id": "ursa_24",
-          "x": 89.0,
+          "x": 89,
           "y": 13.9,
           "tag": "Đại Hùng · Vì sao #24",
           "title": "Bắc Đẩu tinh tú #24",
@@ -2832,7 +2849,7 @@
         {
           "id": "vien-du_9",
           "x": 31.6,
-          "y": 65.0,
+          "y": 65,
           "tag": "Viễn Du · Vì sao #9",
           "title": "Tiếng mưa tí tách #9",
           "date": "Đêm thứ 9",
@@ -3254,7 +3271,7 @@
         {
           "id": "ky-niem_15",
           "x": 62.6,
-          "y": 13.0,
+          "y": 13,
           "tag": "Kỷ Niệm · Vì sao #15",
           "title": "Bình minh trên đồi #15",
           "date": "Đêm thứ 15",
@@ -3322,7 +3339,7 @@
         },
         {
           "id": "ky-niem_20",
-          "x": 77.0,
+          "x": 77,
           "y": 61.4,
           "tag": "Kỷ Niệm · Vì sao #20",
           "title": "Lời hẹn với trăng #20",
