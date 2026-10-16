@@ -278,8 +278,8 @@ button:focus-visible{outline:2px dashed var(--pink-soft);outline-offset:4px}
 .m-dog{left:22%;bottom:0;width:80%;transition:opacity .4s}
 .mascot.dog-out .m-dog{opacity:0}
 
-/* Chú chó đi dạo dưới đáy màn hình thiên hà */
-.walk-dog{position:absolute;left:0;bottom:1.2vh;height:21vh;z-index:5;pointer-events:none;
+/* Chú chó đi dạo dưới đáy màn hình thiên hà - kích thước tỉ lệ chuẩn 1:1 với người ngồi */
+.walk-dog{position:absolute;left:0;bottom:2.2vh;height:clamp(56px, 7.2vh, 72px);z-index:5;pointer-events:none;
   opacity:0;transition:opacity .45s ease;will-change:transform}
 .walk-dog.show{opacity:1}
 .walk-dog img{height:100%;width:auto;display:block;image-rendering:pixelated;
