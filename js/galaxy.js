@@ -36,6 +36,9 @@ const Galaxy = (() => {
       };
     }
 
+    // Khởi tạo menu tổng hợp bài viết góc trên cùng bên phải
+    initArticleMenu();
+
     addEventListener('keydown', e => {
       if (!modal.classList.contains('show')) {
         if (!$('galaxy').classList.contains('active')) return;
@@ -218,6 +221,13 @@ const Galaxy = (() => {
       tb.style.display = isViendu ? 'inline-flex' : 'none';
     }
 
+    // Cập nhật danh mục bài viết cho trang hiện tại
+    const badge = $('ambBadge');
+    if (badge) badge.textContent = c.stars.length;
+    const titleEl = $('adGalaxyTitle');
+    if (titleEl) titleEl.textContent = c.name;
+    renderArticleDropdownList();
+
     updateProgress();
   }
 
@@ -304,6 +314,135 @@ const Galaxy = (() => {
   function closeModal() {
     modal.classList.remove('show'); modal.setAttribute('aria-hidden', 'true');
     lastFocus && lastFocus.focus({ preventScroll: true });
+  }
+
+  /* ================= MENU TỔNG HỢP BÀI VIẾT (TOP-RIGHT DROPDOWN) ================= */
+  function initArticleMenu() {
+    const wrap = $('articleMenuWrap');
+    const btn = $('articleMenuBtn');
+    const dropdown = $('articleDropdown');
+    const closeBtn = $('adCloseBtn');
+    const searchInput = $('adSearchInput');
+    if (!btn || !dropdown) return;
+
+    btn.onclick = e => {
+      e.stopPropagation();
+      toggleArticleDropdown();
+    };
+
+    if (closeBtn) {
+      closeBtn.onclick = e => {
+        e.stopPropagation();
+        closeArticleDropdown();
+      };
+    }
+
+    if (searchInput) {
+      searchInput.oninput = () => {
+        renderArticleDropdownList(searchInput.value.trim().toLowerCase());
+      };
+    }
+
+    document.addEventListener('click', e => {
+      if (wrap && !wrap.contains(e.target)) {
+        closeArticleDropdown();
+      }
+    });
+
+    addEventListener('keydown', e => {
+      if (e.key === 'Escape' && dropdown.classList.contains('show')) {
+        closeArticleDropdown();
+      }
+    });
+  }
+
+  function toggleArticleDropdown() {
+    const dropdown = $('articleDropdown');
+    const btn = $('articleMenuBtn');
+    if (!dropdown) return;
+    const isShowing = dropdown.classList.contains('show');
+    if (isShowing) {
+      closeArticleDropdown();
+    } else {
+      dropdown.classList.add('show');
+      dropdown.setAttribute('aria-hidden', 'false');
+      btn && btn.classList.add('active');
+      const searchInput = $('adSearchInput');
+      if (searchInput) {
+        searchInput.value = '';
+        searchInput.focus();
+      }
+      renderArticleDropdownList();
+    }
+  }
+
+  function closeArticleDropdown() {
+    const dropdown = $('articleDropdown');
+    const btn = $('articleMenuBtn');
+    if (dropdown) {
+      dropdown.classList.remove('show');
+      dropdown.setAttribute('aria-hidden', 'true');
+    }
+    if (btn) btn.classList.remove('active');
+  }
+
+  function renderArticleDropdownList(filterQuery = '') {
+    const c = constellations[cur];
+    if (!c) return;
+
+    const listEl = $('adScrollList');
+    if (!listEl) return;
+    listEl.innerHTML = '';
+
+    const stars = c.stars || [];
+    const filtered = filterQuery
+      ? stars.filter(s => {
+          const text = `${s.title || ''} ${s.tag || ''} ${s.location || ''} ${s.date || ''}`.toLowerCase();
+          return text.includes(filterQuery);
+        })
+      : stars;
+
+    if (filtered.length === 0) {
+      listEl.innerHTML = '<div class="ad-empty">Không tìm thấy bài viết phù hợp</div>';
+      return;
+    }
+
+    filtered.forEach((s, idx) => {
+      const isRead = read.has(s.id);
+      const item = document.createElement('button');
+      item.className = 'ad-item' + (isRead ? ' read' : '');
+      item.setAttribute('role', 'listitem');
+      item.innerHTML = `
+        <span class="ad-item-icon">${isRead ? '✦' : '✧'}</span>
+        <div class="ad-item-content">
+          <span class="ad-item-title">${s.title}</span>
+          <div class="ad-item-meta">
+            ${s.tag ? `<span class="ad-item-tag">${s.tag}</span>` : ''}
+            <span>${s.date || ''}</span>
+            ${s.location ? `<span>· 📍 ${s.location}</span>` : ''}
+          </div>
+        </div>
+        <span class="ad-item-arrow">›</span>
+      `;
+
+      item.onclick = e => {
+        e.stopPropagation();
+        closeArticleDropdown();
+        const starNode = svg.querySelector(`[data-id="${s.id}"]`);
+        open(s, c, starNode || null);
+        if (starNode) {
+          starNode.focus({ preventScroll: true });
+        }
+      };
+
+      listEl.appendChild(item);
+    });
+
+    const readCount = stars.filter(s => read.has(s.id)).length;
+    const statEl = $('adReadStat');
+    if (statEl) {
+      statEl.textContent = `✦ Đã hái: ${readCount} / ${stars.length} vì sao`;
+    }
   }
 
   /* ================= HIỆU ỨNG PARALLAX ĐA TẦNG (3 TẦNG KHÔNG GIAN) ================= */

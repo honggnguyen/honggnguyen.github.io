@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Press+Start+2P&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261018d">
+  <link rel="stylesheet" href="css/style.css?v=20261018e">
 </head>
 <body>
 <main id="app">
@@ -40,6 +40,38 @@
       <span class="tb-icon">🚀</span>
       <span class="tb-text">Hành Trình Viễn Du</span>
     </button>
+
+    <!-- Nút mở Danh mục bài viết (Menu góc trên cùng bên phải) -->
+    <div class="article-menu-wrap" id="articleMenuWrap">
+      <button class="article-menu-btn" id="articleMenuBtn" title="Tổng hợp các bài viết trong trang này" aria-label="Mục lục bài viết" aria-expanded="false">
+        <span class="amb-icon">☰</span>
+        <span class="amb-text">Mục Lục</span>
+        <span class="amb-badge" id="ambBadge">0</span>
+      </button>
+
+      <!-- Panel danh sách cuộn bài viết -->
+      <div class="article-dropdown" id="articleDropdown" aria-hidden="true">
+        <div class="ad-header">
+          <div class="ad-title-group">
+            <span class="ad-sub">DANH MỤC THI CA · KÝ SỰ</span>
+            <h3 class="ad-title" id="adGalaxyTitle">Chòm sao</h3>
+          </div>
+          <button class="ad-close" id="adCloseBtn" aria-label="Đóng danh mục">✕</button>
+        </div>
+
+        <div class="ad-search-box">
+          <input type="text" id="adSearchInput" placeholder="Tìm bài thơ, địa điểm, từ khóa..." autocomplete="off">
+        </div>
+
+        <div class="ad-scroll-list" id="adScrollList" role="list">
+          <!-- Các bài viết sẽ được render động vào đây -->
+        </div>
+
+        <div class="ad-footer">
+          <span class="ad-read-stat" id="adReadStat">✦ Đã hái: 0/0 vì sao</span>
+        </div>
+      </div>
+    </div>
 
     <button class="nav-arrow left" id="prevC" aria-label="Chòm sao trước">‹</button>
     <button class="nav-arrow right" id="nextC" aria-label="Chòm sao sau">›</button>
@@ -217,15 +249,15 @@
 
 </main>
 
-<script src="js/render.js?v=20261018d"></script>
-<script src="js/audio.js?v=20261018d"></script>
-<script src="js/zodiac.js?v=20261018d"></script>
-<script src="js/memory.js?v=20261018d"></script>
-<script src="js/timeline.js?v=20261018d"></script>
-<script src="js/shooting.js?v=20261018d"></script>
-<script src="js/galaxy.js?v=20261018d"></script>
-<script src="js/intro.js?v=20261018d"></script>
-<script src="js/main.js?v=20261018d"></script>
-<script src="js/dog.js?v=20261018d"></script>
+<script src="js/render.js?v=20261018e"></script>
+<script src="js/audio.js?v=20261018e"></script>
+<script src="js/zodiac.js?v=20261018e"></script>
+<script src="js/memory.js?v=20261018e"></script>
+<script src="js/timeline.js?v=20261018e"></script>
+<script src="js/shooting.js?v=20261018e"></script>
+<script src="js/galaxy.js?v=20261018e"></script>
+<script src="js/intro.js?v=20261018e"></script>
+<script src="js/main.js?v=20261018e"></script>
+<script src="js/dog.js?v=20261018e"></script>
 </body>
 </html>
