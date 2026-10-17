@@ -27,7 +27,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 #intro.open .bg-open{opacity:1}
 
 .sprite{position:absolute;image-rendering:pixelated;pointer-events:none;transition:opacity 1.6s ease}
-.girl{left:56%;top:27.5%;width:28.2%;transform-origin:50% 94%;
+.girl{left:56%;top:27.5%;width:28.2%;z-index:5;transform-origin:50% 94%;
   animation:rock 5.2s ease-in-out infinite;filter:drop-shadow(0 6px 0 rgba(0,0,0,.18))}
 .dog{left:41%;top:71%;width:27%;z-index:2;transform-origin:50% 100%;
   animation:breathe 4.4s ease-in-out infinite}
@@ -1200,11 +1200,11 @@ body.blog-open{
    ========================================================================== */
 .calcifer-container {
   position: absolute;
-  left: 77.725%;
-  top: 42.383%;
-  width: 22.275%;
-  height: 50.000%;
-  z-index: 4;
+  left: 77.435%;
+  top: 42.253%;
+  width: 22.565%;
+  height: 50.130%;
+  z-index: 2;
   cursor: pointer;
   outline: none;
   border: none;
