@@ -4563,16 +4563,15 @@
         },
         {
           "id": "taurus_9",
-          "num": 31,
-          "x": 81.1,
-          "y": 42.6,
+          "x": 69.8,
+          "y": 68.1,
           "tag": "Thơ #31 · Vivi",
           "title": "#31. |Bí ẩn Tequila|",
-          "shortTitle": "|Bí ẩn Tequila|",
           "date": "8.5.2022",
-          "author": "Vivi",
           "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
+          "coverImage": "",
+          "html": "<p>Say nhau một ánh mắt</p><p>Cùng hòa điệu Chacha</p><p>Ta nâng ly giai điệu</p><p>Bí ẩn Tequila</p><p>A cô gái nóng bỏng</p><p>Phóng khoáng và man dại</p><p>Khiến ta phải điêu đứng</p><p>Sững sờ: \"Hồn nơi đâu?\"</p><p>Chỉ muốn nói một câu</p><p>Câu nói tỏ lòng mình</p><p>Thình thịch tim vẫn chạy</p><p>Say tình chết mất thôi!</p><p>Thôi thôi phải dũng khí</p><p>Xứng đáng bậc nam nhi</p><p>Tôi khe khẽ thầm thì</p><blockquote class=\"blog-quote\">Mê em như điếu đổ.</blockquote><p>- An</p><p>À thì mình có sửa lại í.</p>",
           "body": [
             "Say nhau một ánh mắt",
             "Cùng hòa điệu Chacha",
@@ -4589,7 +4588,7 @@
             "Thôi thôi phải dũng khí",
             "Xứng đáng bậc nam nhi",
             "Tôi khe khẽ thầm thì",
-            "\"Mê em như điếu đổ.\"",
+            "Mê em như điếu đổ.",
             "- An",
             "À thì mình có sửa lại í."
           ]
