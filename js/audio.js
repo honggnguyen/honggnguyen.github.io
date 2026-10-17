@@ -1,61 +1,54 @@
 /* Hệ thống âm nhạc thiên hà mở (Celestial Ambient Sound System)
    - Tự do, không giới hạn 12 cung hoàng đạo.
-   - Thư viện 15+ bản hòa âm không gian (Lofi, Piano, Chuông gió, Ambient, Thiền...).
    - Hỗ trợ thêm file nhạc riêng (.mp3) vào assets/audio/ tùy ý.
 */
 const Ambience = (() => {
-  const TRACKS = [
-    { id: 'track_1', title: 'Nguyện Cầu Dưới Sao', mood: 'Ambient · Êm dịu',
-      chords: [[261.63, 329.63, 392.00, 523.25], [293.66, 369.99, 440.00, 587.33], [220.00, 277.18, 329.63, 440.00]],
-      penta: [523.25, 659.25, 783.99, 880.00, 1046.50], padType: 'triangle', filterFreq: 1100, tempo: 4800 },
-    { id: 'track_2', title: 'Đêm Thung Lũng Mù Sương', mood: 'Acoustic · Bình yên',
-      chords: [[174.61, 220.00, 261.63, 329.63], [220.00, 261.63, 329.63, 392.00], [196.00, 246.94, 293.66, 392.00]],
-      penta: [440.00, 523.25, 587.33, 659.25, 783.99], padType: 'sine', filterFreq: 750, tempo: 6000 },
-    { id: 'track_3', title: 'Gió Nguyện Cầu', mood: 'Chuông gió · Bay bổng',
-      chords: [[220.00, 261.63, 329.63, 392.00], [246.94, 293.66, 369.99, 440.00], [261.63, 329.63, 392.00, 493.88]],
-      penta: [587.33, 659.25, 739.99, 880.00, 1174.66], padType: 'triangle', filterFreq: 1250, tempo: 4400 },
-    { id: 'track_4', title: 'Ánh Trăng Mặt Hồ', mood: 'Lullaby · Dịu ngọt',
-      chords: [[220.00, 261.63, 329.63, 392.00], [174.61, 220.00, 261.63, 349.23], [164.81, 196.00, 246.94, 329.63]],
-      penta: [523.25, 587.33, 659.25, 783.99, 880.00], padType: 'sine', filterFreq: 680, tempo: 6800 },
-    { id: 'track_5', title: 'Bình Minh Tinh Cầu', mood: 'Hào quang · Tươi sáng',
-      chords: [[261.63, 329.63, 392.00, 493.88], [329.63, 392.00, 493.88, 587.33], [220.00, 277.18, 329.63, 440.00]],
-      penta: [659.25, 783.99, 987.77, 1046.50, 1318.51], padType: 'triangle', filterFreq: 1400, tempo: 5000 },
-    { id: 'track_6', title: 'Sương Đêm Tinh Khiết', mood: 'Pristine · Trong trẻo',
-      chords: [[220.00, 261.63, 329.63, 392.00], [261.63, 329.63, 392.00, 493.88], [174.61, 220.00, 261.63, 329.63]],
-      penta: [523.25, 659.25, 783.99, 880.00, 1046.50], padType: 'sine', filterFreq: 950, tempo: 5800 },
-    { id: 'track_7', title: 'Vũ Khúc Cân Bằng', mood: 'Mellow · Thư thái',
-      chords: [[261.63, 329.63, 392.00, 493.88], [220.00, 261.63, 329.63, 392.00], [174.61, 220.00, 261.63, 329.63]],
-      penta: [523.25, 587.33, 659.25, 783.99, 880.00, 1046.5], padType: 'sine', filterFreq: 900, tempo: 6000 },
-    { id: 'track_8', title: 'Đêm Thẳm Huyền Bí', mood: 'Ethereal · Chiều sâu',
-      chords: [[146.83, 174.61, 220.00, 261.63], [130.81, 164.81, 196.00, 246.94], [110.00, 138.59, 164.81, 220.00]],
-      penta: [440.00, 493.88, 523.25, 659.25, 783.99], padType: 'sawtooth', filterFreq: 520, tempo: 7200 },
-    { id: 'track_9', title: 'Cánh Cung Viễn Xứ', mood: 'Wanderlust · Tự do',
-      chords: [[196.00, 246.94, 293.66, 392.00], [220.00, 277.18, 329.63, 440.00], [261.63, 329.63, 392.00, 523.25]],
-      penta: [587.33, 659.25, 783.99, 880.00, 1174.66], padType: 'triangle', filterFreq: 1200, tempo: 4600 },
-    { id: 'track_10', title: 'Khói Thông Đà Lạt', mood: 'Cozy Lofi · Trầm ấm',
-      chords: [[130.81, 164.81, 196.00, 246.94], [164.81, 196.00, 246.94, 293.66], [146.83, 174.61, 220.00, 261.63]],
-      penta: [392.00, 440.00, 493.88, 587.33, 659.25], padType: 'sine', filterFreq: 600, tempo: 7000 },
-    { id: 'track_11', title: 'Dải Ngân Hà Vô Tận', mood: 'Cosmic · Vũ trụ sâu',
-      chords: [[220.00, 277.18, 329.63, 440.00], [246.94, 293.66, 369.99, 440.00], [196.00, 246.94, 293.66, 392.00]],
-      penta: [659.25, 739.99, 880.00, 987.77, 1318.51], padType: 'triangle', filterFreq: 1250, tempo: 5200 },
-    { id: 'track_12', title: 'Giấc Mơ Đại Dương', mood: 'Harp · Sóng vỗ',
-      chords: [[174.61, 220.00, 261.63, 329.63], [220.00, 261.63, 329.63, 392.00], [164.81, 196.00, 246.94, 329.63]],
-      penta: [440.00, 523.25, 659.25, 783.99, 880.00, 1046.50], padType: 'sine', filterFreq: 700, tempo: 6600 },
-    { id: 'track_13', title: 'Bên Bờ Sóng Vỗ', mood: 'Tiếng biển · Tĩnh lặng',
-      chords: [[196.00, 246.94, 293.66, 392.00], [174.61, 220.00, 261.63, 329.63], [146.83, 174.61, 220.00, 261.63]],
-      penta: [523.25, 659.25, 783.99, 880.00, 1046.5], padType: 'sine', filterFreq: 800, tempo: 6200 },
-    { id: 'track_14', title: 'Khúc Ca Bên Lò Sưởi', mood: 'Ấm cúng · Mộc mạc',
-      chords: [[261.63, 329.63, 392.00, 523.25], [220.00, 261.63, 329.63, 392.00], [174.61, 220.00, 261.63, 329.63]],
-      penta: [440.00, 523.25, 659.25, 783.99, 880.00], padType: 'triangle', filterFreq: 950, tempo: 5400 },
-    { id: 'track_15', title: 'Chiếc Lá Cuối Thu', mood: 'Hoài niệm · Lắng đọng',
-      chords: [[220.00, 261.63, 329.63, 392.00], [174.61, 220.00, 261.63, 349.23], [196.00, 246.94, 293.66, 392.00]],
-      penta: [523.25, 587.33, 659.25, 783.99, 1046.5], padType: 'sine', filterFreq: 820, tempo: 6400 }
+  const DEFAULT_SYNTH = [
+    { chords: [[261.63, 329.63, 392.00, 523.25], [293.66, 369.99, 440.00, 587.33], [220.00, 277.18, 329.63, 440.00]], penta: [523.25, 659.25, 783.99, 880.00, 1046.50], padType: 'triangle', filterFreq: 1100, tempo: 4800 },
+    { chords: [[174.61, 220.00, 261.63, 329.63], [220.00, 261.63, 329.63, 392.00], [196.00, 246.94, 293.66, 392.00]], penta: [440.00, 523.25, 587.33, 659.25, 783.99], padType: 'sine', filterFreq: 750, tempo: 6000 },
+    { chords: [[220.00, 261.63, 329.63, 392.00], [246.94, 293.66, 369.99, 440.00], [261.63, 329.63, 392.00, 493.88]], penta: [587.33, 659.25, 739.99, 880.00, 1174.66], padType: 'triangle', filterFreq: 1250, tempo: 4400 },
+    { chords: [[220.00, 261.63, 329.63, 392.00], [174.61, 220.00, 261.63, 349.23], [164.81, 196.00, 246.94, 329.63]], penta: [523.25, 587.33, 659.25, 783.99, 880.00], padType: 'sine', filterFreq: 680, tempo: 6800 },
+    { chords: [[261.63, 329.63, 392.00, 493.88], [329.63, 392.00, 493.88, 587.33], [220.00, 277.18, 329.63, 440.00]], penta: [659.25, 783.99, 987.77, 1046.50, 1318.51], padType: 'triangle', filterFreq: 1400, tempo: 5000 },
+    { chords: [[130.81, 164.81, 196.00, 246.94], [164.81, 196.00, 246.94, 293.66], [146.83, 174.61, 220.00, 261.63]], penta: [392.00, 440.00, 493.88, 587.33, 659.25], padType: 'sine', filterFreq: 600, tempo: 7000 }
+  ];
+
+  let TRACKS = [
+    { id: 'track_1', title: 'Nguyện Cầu Dưới Sao', mood: 'Ambient · Êm dịu', ...DEFAULT_SYNTH[0] },
+    { id: 'track_2', title: 'Đêm Thung Lũng Mù Sương', mood: 'Acoustic · Bình yên', ...DEFAULT_SYNTH[1] },
+    { id: 'track_3', title: 'Gió Nguyện Cầu', mood: 'Chuông gió · Bay bổng', ...DEFAULT_SYNTH[2] },
+    { id: 'track_4', title: 'Ánh Trăng Mặt Hồ', mood: 'Lullaby · Dịu ngọt', ...DEFAULT_SYNTH[3] },
+    { id: 'track_5', title: 'Bình Minh Tinh Cầu', mood: 'Hào quang · Tươi sáng', ...DEFAULT_SYNTH[4] }
   ];
 
   let ctx, master, padTimer, bellTimer, started = false, muted = false, fileAudio = null;
   let currentTrackIdx = 0;
   let step = 0;
   let listeners = [];
+
+  async function loadPlaylist() {
+    try {
+      const res = await fetch('data/playlist.json?v=' + Date.now());
+      if (res.ok) {
+        const list = await res.json();
+        if (Array.isArray(list) && list.length > 0) {
+          TRACKS = list.map((t, i) => {
+            const synth = DEFAULT_SYNTH[i % DEFAULT_SYNTH.length];
+            return { ...synth, ...t };
+          });
+          if (currentTrackIdx >= TRACKS.length) currentTrackIdx = 0;
+          notify();
+          if (window.ZodiacPlayer && typeof window.ZodiacPlayer.rebuild === 'function') {
+            window.ZodiacPlayer.rebuild();
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('Could not load custom playlist.json, using default.', e);
+    }
+  }
+
+  // Auto load playlist on script load
+  loadPlaylist();
 
   function pad(freqs, t, dur, type, filterFreq) {
     if (!ctx || muted) return;
@@ -98,6 +91,7 @@ const Ambience = (() => {
   function tick() {
     if (!started || muted || fileAudio) return;
     const t = TRACKS[currentTrackIdx];
+    if (!t || !t.chords) return;
     const time = ctx.currentTime + .05;
     pad(t.chords[step++ % t.chords.length], time, t.tempo / 1000, t.padType, t.filterFreq);
   }
@@ -105,17 +99,19 @@ const Ambience = (() => {
   function scheduleBells() {
     if (!started) return;
     const t = TRACKS[currentTrackIdx];
-    if (!muted && !fileAudio) bell(ctx.currentTime + .05, t.penta);
+    if (t && !muted && !fileAudio) bell(ctx.currentTime + .05, t.penta);
     bellTimer = setTimeout(scheduleBells, 1600 + Math.random() * 3200);
   }
 
   async function checkCustomTrack(idx) {
     const t = TRACKS[idx];
+    if (!t) return null;
+    if (t.src) return encodeURI(t.src);
     const paths = [`assets/audio/${t.id}.mp3`, `assets/audio/track_${idx + 1}.mp3`, `assets/audio/${idx + 1}.mp3`];
     for (const p of paths) {
       try {
         const r = await fetch(p, { method: 'HEAD' });
-        if (r.ok) return p;
+        if (r.ok) return encodeURI(p);
       } catch (e) {}
     }
     return null;
@@ -273,6 +269,7 @@ const Ambience = (() => {
     getState,
     get muted() { return muted; },
     get currentTrack() { return TRACKS[currentTrackIdx]; },
-    tracks: TRACKS
+    get tracks() { return TRACKS; },
+    loadPlaylist
   };
 })();

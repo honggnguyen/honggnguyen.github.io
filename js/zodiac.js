@@ -92,6 +92,10 @@ const ZodiacPlayer = (() => {
     const { muted, currentIdx, currentTrack, isShuffle, isRepeat } = state;
     mascot.classList.toggle('muted', muted);
 
+    if (scrollList.children.length !== Ambience.tracks.length) {
+      buildPlaylist();
+    }
+
     const items = scrollList.querySelectorAll('.track-item');
     items.forEach(it => {
       const isCur = +it.dataset.idx === currentIdx;
@@ -101,9 +105,11 @@ const ZodiacPlayer = (() => {
       if (badge) badge.textContent = isCur ? (muted ? 'Tạm dừng' : 'Đang phát ♪') : 'Chọn phát';
     });
 
-    $('npSymbol').textContent = '♪';
-    $('npTitle').textContent = currentTrack.title;
-    $('npSub').textContent = currentTrack.mood;
+    if (currentTrack) {
+      $('npSymbol').textContent = '♪';
+      $('npTitle').textContent = currentTrack.title || 'Giai điệu không gian';
+      $('npSub').textContent = currentTrack.mood || '';
+    }
     $('npPlayBtn').textContent = muted ? '▶ Tiếp tục phát' : '❚❚ Tạm dừng';
     $('npPlayBtn').classList.toggle('paused', muted);
 
@@ -139,5 +145,5 @@ const ZodiacPlayer = (() => {
     modal.setAttribute('aria-hidden', 'true');
   }
 
-  return { init, openModal, closeModal };
+  return { init, openModal, closeModal, rebuild: buildPlaylist };
 })();

@@ -1,0 +1,126 @@
+[
+  {
+    "id": "custom_1",
+    "title": "City Of Stars",
+    "mood": "La La Land · Romantic Soundtrack",
+    "src": "assets/audio/City Of Stars (From -La La Land- Soundtrack).mp3"
+  },
+  {
+    "id": "custom_2",
+    "title": "Come Back To Me",
+    "mood": "Deep Acoustic · Trầm lắng",
+    "src": "assets/audio/Come Back To Me.mp3"
+  },
+  {
+    "id": "custom_3",
+    "title": "Comptine d'un Autre Été",
+    "mood": "Yann Tiersen · Piano lãng mạn",
+    "src": "assets/audio/Comptine d'un Autre Été - Yann Tiersen - TheChiefEmperor.mp3"
+  },
+  {
+    "id": "custom_4",
+    "title": "To All of You (Không sao đâu)",
+    "mood": "Mingginyu · Lofi Healing",
+    "src": "assets/audio/Không sao đâu, mọi chuyện rồi sẽ ổn thôi밍기뉴 (Mingginyu)나의 모든 이들에게[Vietsub+Han+Rom]-To All of You.mp3"
+  },
+  {
+    "id": "custom_5",
+    "title": "La Valse d'Amélie",
+    "mood": "Yann Tiersen · Piano Waltz",
+    "src": "assets/audio/La Valse d'Amélie (Version piano).mp3"
+  },
+  {
+    "id": "custom_6",
+    "title": "Lullaby In The Peaceful Light",
+    "mood": "Khúc hát ru · Bình yên",
+    "src": "assets/audio/Lullaby In The Peaceful Light.mp3"
+  },
+  {
+    "id": "custom_7",
+    "title": "Music from The Hours",
+    "mood": "Philip Glass · Dòng chảy thời gian",
+    "src": "assets/audio/Philip Glass - Music from The Hours - complete.mp3"
+  },
+  {
+    "id": "custom_8",
+    "title": "Singin' in the Rain",
+    "mood": "Gene Kelly · Vũ điệu dưới mưa",
+    "src": "assets/audio/Singin' in the Rain (Full Song-Dance - '52) - Gene Kelly - Musical Romantic Comedies - 1950s Movies.mp3"
+  },
+  {
+    "id": "custom_9",
+    "title": "The Bird Song",
+    "mood": "Acoustic · Bay bổng tự do",
+    "src": "assets/audio/The Bird Song.mp3"
+  },
+  {
+    "id": "custom_10",
+    "title": "Soldier, Poet, King",
+    "mood": "The Oh Hellos · Folk Ballad",
+    "src": "assets/audio/The Oh Hellos- Soldier, Poet, King.mp3"
+  },
+  {
+    "id": "custom_11",
+    "title": "Dead Poets Society Playlist",
+    "mood": "Hoài niệm · Thơ ca & Lãng mạn",
+    "src": "assets/audio/The dead poets society, a playlist..mp3"
+  },
+  {
+    "id": "custom_12",
+    "title": "Torches",
+    "mood": "Ánh đuốc ấm áp · Hy vọng",
+    "src": "assets/audio/Torches.mp3"
+  },
+  {
+    "id": "custom_13",
+    "title": "Vincent (Starry Night)",
+    "mood": "Giai điệu Van Gogh · Dịu êm",
+    "src": "assets/audio/Van Gogh.mp3"
+  },
+  {
+    "id": "custom_14",
+    "title": "Suffering & Healing",
+    "mood": "Không gian tĩnh lặng · Chiêm nghiệm",
+    "src": "assets/audio/suffering.mp3"
+  },
+  {
+    "id": "amb_1",
+    "title": "Nguyện Cầu Dưới Sao",
+    "mood": "Ambient · Êm dịu"
+  },
+  {
+    "id": "amb_2",
+    "title": "Đêm Thung Lũng Mù Sương",
+    "mood": "Acoustic · Bình yên"
+  },
+  {
+    "id": "amb_3",
+    "title": "Gió Nguyện Cầu",
+    "mood": "Chuông gió · Bay bổng"
+  },
+  {
+    "id": "amb_4",
+    "title": "Ánh Trăng Mặt Hồ",
+    "mood": "Lullaby · Dịu ngọt"
+  },
+  {
+    "id": "amb_5",
+    "title": "Bình Minh Tinh Cầu",
+    "mood": "Hào quang · Tươi sáng"
+  },
+  {
+    "id": "amb_6",
+    "title": "Khói Thông Đà Lạt",
+    "mood": "Cozy Lofi · Trầm ấm"
+  },
+  {
+    "id": "amb_7",
+    "title": "Dải Ngân Hà Vô Tận",
+    "mood": "Cosmic · Vũ trụ sâu"
+  },
+  {
+    "id": "amb_8",
+    "title": "Giấc Mơ Đại Dương",
+    "mood": "Harp · Sóng vỗ"
+  }
+]
