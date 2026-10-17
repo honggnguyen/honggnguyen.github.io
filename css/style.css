@@ -18,7 +18,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   will-change:transform;
 }
 .stage img.bg{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;display:block}
-.stage .galaxy-bg{position:absolute;inset:0;width:100%;height:100%;image-rendering:auto;image-rendering:smooth;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:block}
+.stage .galaxy-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;image-rendering:auto;image-rendering:smooth;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:block}
+#galaxy .stage{width:min(100vw,calc(100vh * var(--ratio)));height:min(100vh,calc(100vw / var(--ratio)))}
 
 /* ================= INTRO ================= */
 #intro{z-index:5;transition:opacity 1.4s ease;background:#07030f}

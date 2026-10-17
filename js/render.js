@@ -40,6 +40,7 @@ const PoemRender = (() => {
   function legacy(lines) {
     return (lines || []).map(l => {
       const t = l.trim();
+      if (!t) return `<div class="stanza-break" style="height:16px"></div>`;
       if (t.startsWith('"') && t.endsWith('"')) return `<blockquote class="blog-quote">${t.slice(1, -1)}</blockquote>`;
       return `<p>${l.replace(/\n/g, '<br>')}</p>`;
     }).join('');
