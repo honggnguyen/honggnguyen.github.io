@@ -3605,16 +3605,15 @@
       "stars": [
         {
           "id": "mongmo_1",
-          "num": 1,
-          "x": 10.5,
-          "y": 38.8,
+          "x": 12.5,
+          "y": 33.6,
           "tag": "Thơ #1 · Vivi",
           "title": "#1. róc rách chảy ly trà",
-          "shortTitle": "róc rách chảy ly trà",
           "date": "15.1.2021",
-          "author": "Vivi",
           "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
+          "coverImage": "",
+          "html": "<p>nghe thoang thoảng đâu đây</p><p>sao mùi thanh mát quá</p><p>quả thực là trà ngon</p><p>mang lại hương vị mới</p><p>hương vị của An thần</p><p>của thảo Nguyên xanh mát</p>",
           "body": [
             "nghe thoang thoảng đâu đây",
             "sao mùi thanh mát quá",
