@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Press+Start+2P&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261018m">
+  <link rel="stylesheet" href="css/style.css?v=20261018n">
 </head>
 <body>
 <main id="app">
@@ -105,6 +105,40 @@
       <div class="candle-glow"></div>
       <img class="sprite dog"  src="assets/img/dog.webp"  alt="Chú cún đang ngủ">
       <img class="sprite girl" src="assets/img/girl.webp" alt="Hồng ngồi đọc sách trên ghế bập bênh">
+
+      <!-- Carte (Calcifer) trong lò sưởi -->
+      <div class="calcifer-container" id="calciferContainer" role="button" tabindex="0" title="Chạm vào Carte để trò chuyện" aria-label="Carte - Người giữ lửa của lâu đài">
+        <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp" alt="Carte người giữ lửa">
+        <div class="calcifer-hint-pill" id="calciferHint">
+          <span class="pill-fire">🔥</span>
+          <span class="pill-text">Carte</span>
+        </div>
+      </div>
+
+      <!-- Khung thoại sống động của Carte -->
+      <div class="calcifer-dialog" id="calciferDialog" role="region" aria-label="Lời kể của Carte" aria-hidden="true">
+        <div class="cd-tail" aria-hidden="true"></div>
+        <div class="cd-header">
+          <div class="cd-badge">
+            <span class="cd-flame-icon">🔥</span>
+            <span class="cd-speaker">Carte • Người Giữ Lửa</span>
+          </div>
+          <button class="cd-close" id="calciferClose" aria-label="Đóng cuộc trò chuyện">✕</button>
+        </div>
+        
+        <h4 class="cd-title" id="calciferTitle">Xin chào bạn!</h4>
+        
+        <div class="cd-body" id="calciferText"></div>
+
+        <div class="cd-footer">
+          <div class="cd-dots" id="calciferDots"></div>
+          <div class="cd-controls">
+            <button class="cd-btn cd-prev" id="calciferPrev" aria-label="Đoạn trước">‹ Trước</button>
+            <span class="cd-counter" id="calciferCounter">1 / 9</span>
+            <button class="cd-btn cd-next" id="calciferNext" aria-label="Đoạn tiếp">Tiếp tục ▸</button>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="portal-warp" id="portalWarp"></div>
     <div class="intro-shade"></div>
@@ -342,8 +376,9 @@
 <script src="js/timeline.js?v=20261018m"></script>
 <script src="js/shooting.js?v=20261018m"></script>
 <script src="js/galaxy.js?v=20261018m"></script>
-<script src="js/intro.js?v=20261018m"></script>
-<script src="js/main.js?v=20261018m"></script>
+<script src="js/intro.js?v=20261018n"></script>
+<script src="js/calcifer.js?v=20261018n"></script>
+<script src="js/main.js?v=20261018n"></script>
 <script src="js/dog.js?v=20261018m"></script>
 </body>
 </html>
