@@ -3645,36 +3645,6 @@
           ]
         },
         {
-          "id": "mongmo_3",
-          "x": 26.1,
-          "y": 37.2,
-          "tag": "Thơ #3 · Vivi",
-          "title": "#3. Đêm khuya",
-          "date": "Vivi",
-          "location": "Vườn Thơ Mộng Mơ",
-          "weather": "Trời quang · Ngàn sao",
-          "coverImage": "",
-          "html": "<p>Ngọn đèn khuya sáng tỏ</p><p>Chỉ còn anh và em</p><p>Trong căn nhà nhỏ bé</p><p>Thật ấm áp biết bao</p><p>Vì chỉ có hai ta</p><p>Nên tình yêu càng chặt</p><p>Gắn bó nhau khăng khít</p><p>Không ai rời tay ai</p><p>Chỉ chừa lại đôi tai</p><p>Để nghe ra tiếng thở</p><p>Chả biết dẫu ra sao</p><p>Nhưng tôi còn ở đây</p><p>Tin vào câu chuyện cổ</p><p>Truyện cổ tích tình yêu</p><p>Để tìm chàng bạch mã</p><p>Sẽ yêu tôi suốt đời.</p>",
-          "body": [
-            "Ngọn đèn khuya sáng tỏ",
-            "Chỉ còn anh và em",
-            "Trong căn nhà nhỏ bé",
-            "Thật ấm áp biết bao",
-            "Vì chỉ có hai ta",
-            "Nên tình yêu càng chặt",
-            "Gắn bó nhau khăng khít",
-            "Không ai rời tay ai",
-            "Chỉ chừa lại đôi tai",
-            "Để nghe ra tiếng thở",
-            "Chả biết dẫu ra sao",
-            "Nhưng tôi còn ở đây",
-            "Tin vào câu chuyện cổ",
-            "Truyện cổ tích tình yêu",
-            "Để tìm chàng bạch mã",
-            "Sẽ yêu tôi suốt đời."
-          ]
-        },
-        {
           "id": "mongmo_4",
           "num": 4,
           "x": 36.5,
