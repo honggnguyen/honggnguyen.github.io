@@ -20,15 +20,21 @@ const ZodiacPlayer = (() => {
       if (e.key === 'Escape' && open) closeModal();
     });
 
-    $('npPlayBtn').addEventListener('click', () => {
-      Ambience.toggle();
+    $('npPlayBtn').addEventListener('click', async () => {
+      if (!Ambience.getState().started) {
+        await Ambience.start();
+      } else {
+        Ambience.toggle();
+      }
     });
 
-    $('npPrev').addEventListener('click', () => {
+    $('npPrev').addEventListener('click', async () => {
+      if (!Ambience.getState().started) await Ambience.start();
       Ambience.prev();
     });
 
-    $('npNext').addEventListener('click', () => {
+    $('npNext').addEventListener('click', async () => {
+      if (!Ambience.getState().started) await Ambience.start();
       Ambience.next();
     });
 

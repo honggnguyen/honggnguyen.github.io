@@ -87,8 +87,6 @@
       </span>
       <span class="note" id="note">♪</span>
     </button>
-    <button class="music-btn" id="musicBtn" title="Danh sách nhạc" aria-label="Mở danh sách nhạc">♪ Nhạc</button>
-
     <!-- Chú chó Great Pyrenees đi dạo dưới đáy màn hình -->
     <div class="walk-dog" id="walkDog" aria-hidden="true">
       <img id="walkDogImg" src="assets/img/dog_walk1.webp?v=20261018j" alt="">
@@ -247,17 +245,105 @@
     </div>
   </div>
 
+  <!-- ============ TRANG ĐỌC BLOG KỶ NIỆM TOÀN CẢNH NỀN NHẠT (LONG-FORM MEMORY BLOG) ============ -->
+  <div class="blog-page" id="blogPage" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="blogTitle">
+    <!-- Thanh tiến trình cuộn đọc bài (Reading Progress Bar) -->
+    <div class="blog-scroll-progress" id="blogScrollProgress"></div>
+
+    <!-- Thanh tiêu đề điều hướng trên cùng (Sticky Top Bar) -->
+    <header class="blog-top-bar">
+      <button class="blog-back-btn" id="blogBackBtn" title="Quay lại bản đồ thiên hà" aria-label="Quay lại bản đồ">
+        <span class="back-arrow">←</span> Quay lại bản đồ
+      </button>
+      <div class="blog-brand">✦ GÓC KỶ NIỆM · VIVI'S BLOG ✦</div>
+      <button class="blog-close-icon" id="blogCloseBtn" title="Đóng bài viết" aria-label="Đóng bài viết">✕</button>
+    </header>
+
+    <!-- Khung nội dung bài viết dài phong cách Literary Blog -->
+    <main class="blog-main-wrap">
+      <article class="blog-article-container">
+        <header class="blog-article-header">
+          <div class="blog-badge-wrap">
+            <span class="blog-badge" id="blogBadge">✦ Kỷ Niệm · Vivi</span>
+          </div>
+          <h1 class="blog-title" id="blogTitle">Tiêu đề bài viết kỷ niệm</h1>
+          <div class="blog-meta-row">
+            <span class="blog-meta-item" id="blogDate">📅 Ngày lưu giữ</span>
+            <span class="blog-meta-sep">·</span>
+            <span class="blog-meta-item" id="blogAuthor">✍️ Vivi</span>
+            <span class="blog-meta-sep">·</span>
+            <span class="blog-meta-item" id="blogLocation">📍 Địa điểm</span>
+            <span class="blog-meta-sep">·</span>
+            <span class="blog-meta-item" id="blogWeather">☁️ Thời tiết</span>
+            <span class="blog-meta-sep">·</span>
+            <span class="blog-meta-item" id="blogReadTime">⏱️ 3 phút đọc</span>
+          </div>
+        </header>
+
+        <div class="blog-divider"><span>✦</span></div>
+
+        <figure class="blog-cover" id="blogCover" style="display:none">
+          <img id="blogCoverImg" src="" alt="Ảnh kỷ niệm" loading="lazy">
+          <figcaption id="blogCoverCaption"></figcaption>
+        </figure>
+
+        <div class="blog-content" id="blogContent">
+          <!-- Các đoạn văn bài blog sẽ được render tại đây -->
+        </div>
+
+        <footer class="blog-article-footer">
+          <div class="blog-author-signature">
+            <div class="blog-sig-icon">🌸</div>
+            <div class="blog-sig-text">
+              <h4>Vivi's Poetic Journal</h4>
+              <p>Mỗi ký ức là một vì sao sáng lấp lánh trong dải ngân hà cuộc đời.</p>
+            </div>
+          </div>
+
+          <div class="blog-pagination">
+            <button class="blog-page-btn prev" id="blogPrevBtn" style="visibility:hidden">‹ Bài trước</button>
+            <button class="blog-page-btn next" id="blogNextBtn" style="visibility:hidden">Bài sau ›</button>
+          </div>
+
+          <div class="blog-bottom-action">
+            <button class="blog-bottom-back-btn" id="blogBottomBackBtn">[ ← Trở về vũ trụ Kỷ Niệm ]</button>
+          </div>
+        </footer>
+      </article>
+    </main>
+  </div>
+
+  <!-- Nút mở danh sách nhạc toàn trang (hiển thị cả ở Intro phòng đọc lẫn Thiên Hà) -->
+  <button class="music-btn" id="musicBtn" title="Danh sách giai điệu vũ trụ" aria-label="Mở danh sách nhạc">♪ Nhạc</button>
+
+  <!-- Nút liên kết Mạng Xã Hội (Facebook & Instagram của Vivi) ở góc dưới bên phải -->
+  <div class="social-links-bar" id="socialLinksBar" aria-label="Liên kết mạng xã hội của tác giả Vivi">
+    <a href="https://www.facebook.com/hongvivid" target="_blank" rel="noopener noreferrer" class="social-link-item fb" title="Facebook của Vivi" aria-label="Facebook Vivi">
+      <svg viewBox="0 0 24 24" class="social-svg-icon" fill="currentColor">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/gongchachacha/" target="_blank" rel="noopener noreferrer" class="social-link-item ins" title="Instagram của Vivi (@gongchachacha)" aria-label="Instagram Vivi">
+      <svg viewBox="0 0 24 24" class="social-svg-icon" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+      </svg>
+    </a>
+  </div>
+
 </main>
 
-<script src="js/render.js?v=20261018k"></script>
-<script src="js/audio.js?v=20261018k"></script>
-<script src="js/zodiac.js?v=20261018k"></script>
-<script src="js/memory.js?v=20261018k"></script>
-<script src="js/timeline.js?v=20261018k"></script>
-<script src="js/shooting.js?v=20261018k"></script>
-<script src="js/galaxy.js?v=20261018k"></script>
-<script src="js/intro.js?v=20261018k"></script>
-<script src="js/main.js?v=20261018k"></script>
-<script src="js/dog.js?v=20261018k"></script>
+<script src="js/render.js?v=20261018l"></script>
+<script src="js/audio.js?v=20261018l"></script>
+<script src="js/zodiac.js?v=20261018l"></script>
+<script src="js/memory.js?v=20261018l"></script>
+<script src="js/blog.js?v=20261018l"></script>
+<script src="js/timeline.js?v=20261018l"></script>
+<script src="js/shooting.js?v=20261018l"></script>
+<script src="js/galaxy.js?v=20261018l"></script>
+<script src="js/intro.js?v=20261018l"></script>
+<script src="js/main.js?v=20261018l"></script>
+<script src="js/dog.js?v=20261018l"></script>
 </body>
 </html>

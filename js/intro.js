@@ -46,6 +46,7 @@ const Intro = (() => {
       setTimeout(() => {
         galaxy.classList.add('active');
         intro.classList.add('gone');
+        document.body.classList.add('in-galaxy');
       }, 1900);
 
       // 2.6s: Luồng sáng dịu xuống, mở ra bầu trời sao nguyên bản 100%
@@ -72,6 +73,7 @@ const Intro = (() => {
     void intro.offsetWidth;
     intro.classList.remove('gone');
     galaxy.classList.remove('active');
+    document.body.classList.remove('in-galaxy');
   }
 
   function Audio_start() { try { Ambience.start(); } catch (e) { console.warn(e); } }

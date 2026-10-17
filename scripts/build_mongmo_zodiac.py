@@ -336,10 +336,13 @@ kyniem_stars = [
         'location': 'Góc hiên nhỏ',
         'weather': 'Mưa rả rích',
         'body': [
-            'Hôm ấy trời mưa rả rích từ trưa đến sẩm tối,',
-            'tiếng nước rơi trên mái ngói tạo thành điệu nhạc êm đềm.',
-            'Chiếc khăn len cũ quấn quanh chú cún nhỏ,',
-            'ngoài hiên mưa lạnh nhưng trong phòng ấm áp lạ kỳ.'
+            'Hôm ấy trời mưa rả rích từ trưa đến sẩm tối, từng hạt mưa gõ nhịp đều đều lên mái tôn cũ kỹ như một khúc nhạc không lời từ cõi mộng. Không gian xung quanh dường như ngưng đọng lại, chỉ còn lại mùi hương của đất ẩm quyện với làn khói mỏng bốc lên từ tách trà hoa cúc còn ấm nóng trên bàn.',
+            '',
+            'Tôi ngồi bó gối bên khung cửa sổ, chiếc khăn len quàng vội còn vương chút hơi ấm của những mùa đông trước. Chú cún xù cuộn tròn một góc dưới chân ghế, đôi mắt lim dim lắng nghe tiếng gió lùa qua khe cửa. Thỉnh thoảng, một tiếng sấm xa xôi vọng lại làm nó khẽ giật mình rúc sâu hơn vào vạt áo tôi.',
+            '',
+            'Những buổi chiều mưa như thế này luôn gợi nhắc tôi về những điều tưởng chừng đã ngủ quên trong ký ức. Rằng giữa một thế giới luôn hối hả và vội vã ngoài kia, chúng ta đôi khi chỉ cần một góc nhỏ tĩnh lặng, một cơn mưa vừa đủ để gột rửa những muộn phiền, và một trái tim biết rung động trước những điều bình dị nhất.',
+            '',
+            '> "Mưa ngoài hiên có thể buốt giá, nhưng chỉ cần trong lòng ta còn thắp lên một đốm lửa dịu dàng, thì bão giông nào rồi cũng sẽ hóa thành bình yên."'
         ]
     },
     {
@@ -355,10 +358,13 @@ kyniem_stars = [
         'location': 'Vườn quê thanh bình',
         'weather': 'Nắng vàng mật ong',
         'body': [
-            'Mảnh vườn xưa đầy hoa cau thơm ngát,',
-            'những buổi trưa trốn ngủ chạy bắt chuồn chuồn ớt.',
-            'Kỷ niệm tuổi thơ ngọt ngào như viên kẹo,',
-            'đi qua năm tháng vẫn vẹn nguyên trong lòng.'
+            'Ký ức về mảnh vườn của ông bà ngày thơ bé là một vùng trời ngập tràn sắc vàng của nắng và vị ngọt của những mùa hoa. Tôi nhớ con đường đất nhỏ dẫn vào ngõ, hai bên rợp bóng những rặng tre xào xạc trong gió trưa hè.',
+            '',
+            'Những buổi trưa trốn người lớn không chịu ngủ, chân trần chạy thoăn thoắt qua từng luống rau, say sưa rình bắt những chú chuồn chuồn ớt cánh mỏng tang đậu hờ hững trên cành ổi. Tiếng ve ngân vang râm ran khắp vòm cây, hòa cùng tiếng chổi tre bà quét lá xào xạc ngoài sân gạch.',
+            '',
+            'Mỗi khi chiều tà buông xuống, hương hoa cau lại thoang thoảng bay khắp hiên nhà. Mâm cơm đạm bạc với bát canh rau tập tàng và đĩa cá kho tương thơm nức mũi mà sao ngon đến lạ kỳ. Đó là những ngày tháng mà nỗi buồn chỉ vẹn vẹn bằng que kem tan chảy dưới nắng, và niềm vui đơn giản là được ngước nhìn những vì sao đầu tiên mọc sớm nơi chân trời.',
+            '',
+            '> "Tuổi thơ như một chiếc hộp nhạc thần kỳ, dẫu năm tháng có phủ bụi thời gian, mỗi lần khẽ mở ra vẫn vang lên những giai điệu trong trẻo và ấm áp nhất."'
         ]
     },
     {
@@ -374,10 +380,13 @@ kyniem_stars = [
         'location': 'Bên bếp lửa hồng',
         'weather': 'Gió bấc se lạnh',
         'body': [
-            'Bên bếp lửa hồng tí tách nổ than hoa,',
-            'chú cún nằm lười gối đầu lên chân tôi ngủ say sưa.',
-            'Cuộc sống đôi khi chỉ cần những khoảnh khắc bình dị như thế,',
-            'đủ để sưởi ấm cả một mùa đông dài.'
+            'Mùa đông năm ấy đến sớm hơn thường lệ, những cơn gió mùa đông bắc rít từng hồi qua hàng cây sau nhà làm rụng rơi những chiếc lá cuối cùng. Căn phòng nhỏ trở nên ấm cúng lạ thường khi ánh lửa từ bếp sưởi bắt đầu tí tách nổ lách tách những đốm than hồng.',
+            '',
+            'Tôi kéo chiếc ghế bập bênh lại gần bếp lửa, mở trang sách đang đọc dở. Chú cún nằm lười biếng phơi chiếc bụng tròn xoe trước ánh lửa ấm, cái đuôi thỉnh thoảng khẽ vẫy khi nghe tôi gọi tên. Ánh sáng vàng cam dịu ngọt nhảy múa trên tường, vẽ nên những hình thù huyền ảo như trong truyện cổ tích.',
+            '',
+            'Trong cái lạnh tê tái của đêm đông, sự ấm áp không chỉ đến từ than hồng mà còn đến từ sự hiện diện của những người ta thương yêu. Cuộc đời này có biết bao ngã rẽ và thăng trầm, nhưng chỉ cần sau những chặng đường mỏi mệt, ta vẫn có một nơi chốn để trở về, có một ngọn lửa nhỏ chờ đợi ta sưởi ấm, thì đó đã là một niềm hạnh phúc vô biên.',
+            '',
+            '> "Hạnh phúc không nằm ở những điều xa xôi rực rỡ, mà ẩn hiện trong chính khoảnh khắc ta cảm nhận được hơi ấm của sự bình yên ngay dưới mái nhà mình."'
         ]
     },
     {
@@ -393,10 +402,13 @@ kyniem_stars = [
         'location': 'Khoảng trời hoài niệm',
         'weather': 'Bình yên vô tận',
         'body': [
-            'Thời gian có thể làm mờ nhạt đi nhiều thứ,',
-            'nhưng tình yêu và kỷ niệm đẹp sẽ mãi là vĩnh cửu.',
-            'Hãy giữ trong tim những vì sao sáng nhất,',
-            'để dẫn lối cho ta trên mọi nẻo đường đời.'
+            'Đứng dưới bầu trời đêm ngàn sao lấp lánh, tôi thường tự hỏi: Thời gian rốt cuộc là một dòng chảy vô tình hay là một người bạn đồng hành lặng lẽ? Nó cuốn trôi đi những tháng năm thanh xuân, làm phai mờ những kỷ niệm tưởng như không thể quên, nhưng đồng thời cũng lắng đọng lại những gì chân thành và sâu sắc nhất.',
+            '',
+            'Gửi tôi của những ngày sau, mong bạn đừng bao giờ đánh mất sự nhạy cảm và lòng trắc ẩn trong tâm hồn. Dẫu cuộc sống có thử thách bạn bằng những giông bão hay những lúc hoang mang lạc lối, hãy nhớ rằng ngay cả những đêm tối tăm nhất cũng là lúc các vì tinh tú tỏa sáng rực rỡ nhất.',
+            '',
+            'Mỗi bài thơ tôi viết, mỗi chặng đường tôi đi qua, mỗi kỷ niệm được khắc ghi trong cuốn nhật ký này đều là một mảnh ghép tạo nên con người tôi hôm nay. Hãy luôn trân trọng từng khoảnh khắc được sống, được yêu và được ước mơ.',
+            '',
+            '> "Đừng tiếc nuối những gì thời gian đã mang đi, hãy biết ơn vì nó đã để lại cho ta một trái tim từng rung động, từng yêu thương và tràn đầy ký ức tươi đẹp."'
         ]
     }
 ]

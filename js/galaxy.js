@@ -245,6 +245,19 @@ const Galaxy = (() => {
 
   function open(s, c, node) {
     lastFocus = node; tip.classList.remove('show');
+
+    // Nếu thuộc chòm sao Kỷ Niệm -> Mở giao diện Blog bài viết dài toàn cảnh nền nhạt
+    if (c.category === 'kyniem' || s.category === 'kyniem' || c.id === 'ky-niem') {
+      if (window.BlogView && typeof window.BlogView.open === 'function') {
+        window.BlogView.open(s, c, node);
+        read.add(s.id);
+        localStorage.setItem(KEY, JSON.stringify([...read]));
+        if (node) node.classList.add('read');
+        updateProgress();
+        return;
+      }
+    }
+
     $('mKind').textContent = s.tag || c.name;
 
     const loc = $('mLocation');

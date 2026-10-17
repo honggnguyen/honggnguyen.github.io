@@ -18,13 +18,10 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   will-change:transform;
 }
 .stage img.bg{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;display:block}
-.stage .galaxy-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;image-rendering:auto;image-rendering:smooth;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:block}
-#galaxy .stage{width:min(100vw,calc(100vh * var(--ratio)));height:min(100vh,calc(100vw / var(--ratio)))}
+.stage .galaxy-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;image-rendering:auto;image-rendering:smooth;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:block}
 
 /* ================= INTRO ================= */
-#intro{z-index:5;transition:opacity 1.4s ease;background:#07030f}
-/* Intro: hiển thị toàn cảnh (contain), viền tối hai bên */
-#intro .stage{width:min(100vw,calc(100vh * var(--ratio)));height:min(100vh,calc(100vw / var(--ratio)))}
+#intro{z-index:5;transition:opacity 1.4s ease;background:radial-gradient(ellipse at 45% 45%, #180928 0%, #0d051a 50%, #06020c 100%)}
 #intro.gone{opacity:0;pointer-events:none}
 .bg-open{opacity:0;transition:opacity 1.1s ease}
 #intro.open .bg-open{opacity:1}
@@ -287,11 +284,25 @@ button:focus-visible{outline:2px dashed var(--pink-soft);outline-offset:4px}
 .walk-dog img{height:100%;width:auto;display:block;image-rendering:pixelated;
   filter:drop-shadow(0 6px 10px rgba(0,0,0,.55)) drop-shadow(0 0 14px rgba(255,200,240,.25))}
 
-/* Nút mở danh sách nhạc cạnh hình góc trái */
-.music-btn{position:absolute;left:calc(2.2vw + 92px);bottom:2.5vh;z-index:6;padding:8px 14px;border-radius:20px;
-  background:rgba(24,10,48,.7);border:1px solid rgba(255,143,207,.45);color:var(--pink-soft);
-  font-size:.78rem;letter-spacing:.06em;backdrop-filter:blur(8px);transition:all .25s}
-.music-btn:hover{border-color:var(--pink);color:#fff;transform:translateY(-2px);box-shadow:0 0 16px rgba(255,143,207,.4)}
+/* Nút mở danh sách nhạc toàn trang (Intro lẫn Galaxy) */
+.music-btn{
+  position:fixed;left:2.5vw;bottom:2.2vh;z-index:25;
+  display:inline-flex;align-items:center;gap:8px;
+  padding:9px 16px;border-radius:22px;
+  background:rgba(26,8,48,.88);border:1px solid rgba(255,143,207,.45);
+  color:var(--pink-soft);font-family:'Be Vietnam Pro',sans-serif;font-weight:500;
+  font-size:.82rem;letter-spacing:.06em;backdrop-filter:blur(10px);
+  box-shadow:0 4px 16px rgba(0,0,0,.4),0 0 14px rgba(255,143,207,.2);
+  transition:all .3s cubic-bezier(.2,.8,.2,1);cursor:pointer;
+}
+body.in-galaxy .music-btn{
+  left:calc(2.2vw + 96px);
+}
+.music-btn:hover{
+  border-color:#fff;color:#fff;transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(0,0,0,.5),0 0 20px rgba(255,143,207,.6);
+  background:rgba(52,16,88,.94);
+}
 .mascot .note{position:absolute;right:-6px;top:-2px;font-size:1.1rem;color:var(--pink);text-shadow:0 0 8px var(--pink);animation:floatnote 2.4s ease-in-out infinite}
 .mascot.muted .note{opacity:.3;animation:none;text-decoration:line-through}
 .mascot.muted .mascot-inner{filter:grayscale(.7)}
@@ -772,16 +783,391 @@ button:focus-visible{outline:2px dashed var(--pink-soft);outline-offset:4px}
   display:flex;align-items:center;justify-content:space-between;
 }
 
-@media (max-width:700px){
-  .nav-arrow{width:42px;height:42px;font-size:1.6rem}
-  .minimap{display:flex;bottom:2vh;right:50%;transform:translateX(50%)}
-  .card{padding:40px 24px 26px}
-  .mascot{width:64px;height:70px}
-  .progress{display:none}
-  .zodiac-dial-container{transform:scale(.82);margin:-20px auto}
-  .article-dropdown{position:fixed;top:auto;bottom:0;left:0;right:0;width:100%;max-height:75vh;border-radius:24px 24px 0 0}
+/* ================= SOCIAL LINKS BAR (GÓC DƯỚI BÊN PHẢI) ================= */
+.social-links-bar{
+  position:fixed;
+  right:2.2vw;
+  bottom:2.2vh;
+  z-index:25;
+  display:inline-flex;
+  align-items:center;
+  gap:14px;
+  padding:7px 16px;
+  border-radius:24px;
+  background:#faeed7;
+  border:1px solid rgba(220,190,150,.45);
+  box-shadow:0 4px 16px rgba(0,0,0,.35),0 0 14px rgba(250,238,215,.25);
+  backdrop-filter:blur(10px);
+  transition:all .3s cubic-bezier(.2,.8,.2,1);
 }
-@media (prefers-reduced-motion:reduce){
-  .girl,.dog,.fire-glow,.candle-glow,.star,.mascot-inner,.ring-outer-dashed{animation:none}
+.social-links-bar:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 22px rgba(0,0,0,.45),0 0 20px rgba(250,238,215,.4);
+  background:#fff4e2;
 }
+.social-link-item{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:#1a1615;
+  text-decoration:none;
+  line-height:1;
+  transition:all .2s cubic-bezier(.2,.8,.2,1);
+}
+.social-link-item svg{
+  width:18px;
+  height:18px;
+  display:block;
+  transition:transform .2s ease,color .2s ease;
+}
+.social-link-item.fb:hover svg{
+  color:#1877f2;
+  transform:scale(1.18);
+}
+.social-link-item.ins:hover svg{
+  color:#e1306c;
+  transform:scale(1.18);
+}
+
+/* ================= GIAO DIỆN BLOG KỶ NIỆM TOÀN CẢNH NỀN NHẠT ================= */
+.blog-page{
+  position:fixed;
+  inset:0;
+  z-index:40;
+  overflow-y:auto;
+  overflow-x:hidden;
+  background:#faf6f0;
+  background-image:linear-gradient(180deg, #fcf8f2 0%, #f7f1e7 100%);
+  color:#2c2422;
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(28px);
+  transition:opacity .4s ease, transform .45s cubic-bezier(.16,1,.3,1);
+  -webkit-overflow-scrolling:touch;
+}
+.blog-page.show{
+  opacity:1;
+  pointer-events:auto;
+  transform:translateY(0);
+}
+body.blog-open{
+  overflow:hidden;
+}
+
+/* Thanh tiến trình cuộn đọc bài */
+.blog-scroll-progress{
+  position:fixed;
+  top:0;
+  left:0;
+  width:0%;
+  height:3.5px;
+  background:linear-gradient(90deg, #c2597f, #b8860b);
+  box-shadow:0 0 8px rgba(194,89,127,.6);
+  z-index:50;
+  transition:width .08s ease-out;
+}
+
+/* Thanh điều hướng trên cùng (Sticky Header) */
+.blog-top-bar{
+  position:sticky;
+  top:0;
+  left:0;
+  right:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 28px;
+  background:rgba(250,246,240,.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(210,195,175,.35);
+  z-index:45;
+}
+.blog-back-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:9px 20px;
+  border-radius:24px;
+  background:#2b193d;
+  color:#fff;
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-weight:500;
+  font-size:.86rem;
+  letter-spacing:.05em;
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 3px 12px rgba(43,25,61,.2);
+  cursor:pointer;
+  transition:all .22s ease;
+}
+.blog-back-btn:hover{
+  background:#522368;
+  transform:translateX(-3px);
+  box-shadow:0 5px 18px rgba(82,35,104,.35);
+}
+.blog-back-btn .back-arrow{
+  font-size:1.1rem;
+  line-height:1;
+  transition:transform .2s ease;
+}
+.blog-back-btn:hover .back-arrow{
+  transform:translateX(-3px);
+}
+.blog-brand{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.05rem;
+  font-weight:600;
+  letter-spacing:.18em;
+  color:#7a2c4e;
+  text-transform:uppercase;
+}
+.blog-close-icon{
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:1px solid rgba(210,195,175,.5);
+  background:rgba(255,255,255,.6);
+  color:#4a3b37;
+  font-size:1.1rem;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:all .2s ease;
+}
+.blog-close-icon:hover{
+  background:#fff;
+  color:#7a2c4e;
+  border-color:#7a2c4e;
+  transform:rotate(90deg);
+}
+
+/* Khung bài viết */
+.blog-main-wrap{
+  max-width:800px;
+  margin:0 auto;
+  padding:50px 24px 100px;
+}
+.blog-article-header{
+  text-align:center;
+  margin-bottom:32px;
+}
+.blog-badge-wrap{
+  margin-bottom:14px;
+}
+.blog-badge{
+  display:inline-block;
+  padding:5px 16px;
+  border-radius:16px;
+  background:rgba(194,89,127,.12);
+  border:1px solid rgba(194,89,127,.35);
+  color:#912e52;
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
+.blog-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(2.1rem, 4.5vw, 3rem);
+  font-weight:600;
+  line-height:1.25;
+  color:#241620;
+  margin-bottom:18px;
+  text-shadow:0 1px 2px rgba(0,0,0,.04);
+}
+.blog-meta-row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-size:.82rem;
+  color:#6c5e59;
+}
+.blog-meta-item{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+}
+.blog-meta-sep{
+  color:#c5b8b2;
+}
+
+.blog-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:28px 0 38px;
+  color:#b8860b;
+}
+.blog-divider::before,
+.blog-divider::after{
+  content:'';
+  flex:1;
+  height:1px;
+  background:linear-gradient(90deg, transparent, rgba(184,134,11,.3), transparent);
+}
+.blog-divider span{
+  padding:0 16px;
+  font-size:1.2rem;
+}
+
+/* Ảnh bìa */
+.blog-cover{
+  margin:0 0 36px;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 14px 40px rgba(0,0,0,.12);
+  background:#ebdccb;
+}
+.blog-cover img{
+  width:100%;
+  height:auto;
+  max-height:480px;
+  object-fit:cover;
+  display:block;
+}
+.blog-cover figcaption{
+  padding:10px 16px;
+  font-family:'Cormorant Garamond',serif;
+  font-style:italic;
+  font-size:1rem;
+  color:#73645e;
+  text-align:center;
+  background:#f2e8dc;
+}
+
+/* Nội dung văn bản Blog */
+.blog-content{
+  font-family:'Cormorant Garamond',Georgia,serif;
+  font-size:1.32rem;
+  line-height:2.05;
+  color:#2e2421;
+}
+.blog-content .blog-p{
+  margin-bottom:1.6em;
+  letter-spacing:.01em;
+}
+.blog-content .blog-p.drop-cap::first-letter{
+  font-family:'Cormorant Garamond',serif;
+  font-size:3.6em;
+  float:left;
+  line-height:.82;
+  margin-top:.05em;
+  padding-right:.12em;
+  color:#7a2c4e;
+  font-weight:600;
+}
+.blog-content blockquote{
+  margin:2em 0;
+  padding:18px 24px;
+  border-left:4px solid #b8860b;
+  background:rgba(184,134,11,.06);
+  border-radius:0 12px 12px 0;
+  font-style:italic;
+  color:#544641;
+}
+
+/* Footer bài viết */
+.blog-article-footer{
+  margin-top:60px;
+  padding-top:36px;
+  border-top:1px solid rgba(210,195,175,.5);
+}
+.blog-author-signature{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:20px 24px;
+  border-radius:16px;
+  background:rgba(255,255,255,.65);
+  border:1px solid rgba(210,195,175,.35);
+  box-shadow:0 4px 18px rgba(0,0,0,.04);
+  margin-bottom:36px;
+}
+.blog-sig-icon{
+  font-size:2.2rem;
+  line-height:1;
+}
+.blog-sig-text h4{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.25rem;
+  color:#241620;
+  margin-bottom:4px;
+}
+.blog-sig-text p{
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-size:.82rem;
+  color:#70605a;
+  line-height:1.5;
+}
+
+.blog-pagination{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:36px;
+}
+.blog-page-btn{
+  padding:12px 20px;
+  border-radius:12px;
+  background:rgba(255,255,255,.8);
+  border:1px solid rgba(210,195,175,.6);
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-size:.86rem;
+  color:#433430;
+  cursor:pointer;
+  transition:all .2s ease;
+  max-width:48%;
+}
+.blog-page-btn em{
+  font-style:normal;
+  font-weight:600;
+  color:#7a2c4e;
+}
+.blog-page-btn:hover{
+  background:#fff;
+  border-color:#7a2c4e;
+  box-shadow:0 4px 14px rgba(122,44,78,.15);
+  transform:translateY(-2px);
+}
+
+.blog-bottom-action{
+  text-align:center;
+}
+.blog-bottom-back-btn{
+  font-family:'Be Vietnam Pro',sans-serif;
+  font-size:.9rem;
+  letter-spacing:.06em;
+  color:#7a2c4e;
+  padding:12px 28px;
+  border-radius:24px;
+  border:1px solid rgba(122,44,78,.35);
+  background:rgba(122,44,78,.06);
+  cursor:pointer;
+  transition:all .2s ease;
+}
+.blog-bottom-back-btn:hover{
+  background:#7a2c4e;
+  color:#fff;
+  box-shadow:0 6px 20px rgba(122,44,78,.25);
+  transform:translateY(-2px);
+}
+
+@media(max-width:680px){
+  .blog-top-bar{padding:10px 16px}
+  .blog-brand{display:none}
+  .blog-main-wrap{padding:28px 16px 80px}
+  .blog-title{font-size:1.85rem}
+  .blog-content{font-size:1.18rem;line-height:1.9}
+  .blog-pagination{flex-direction:column;align-items:stretch}
+  .blog-page-btn{max-width:100%;text-align:center}
+  .social-links-bar{right:16px;bottom:16px;padding:6px 12px;gap:12px}
+  .music-btn{bottom:16px}
+}
+
 
