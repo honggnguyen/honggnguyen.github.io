@@ -17,7 +17,8 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   transform-origin:0 0;
   will-change:transform;
 }
-.stage img.bg,.stage .galaxy-bg{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;display:block}
+.stage img.bg{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;display:block}
+.stage .galaxy-bg{position:absolute;inset:0;width:100%;height:100%;image-rendering:auto;image-rendering:smooth;-webkit-backface-visibility:hidden;backface-visibility:hidden;display:block}
 
 /* ================= INTRO ================= */
 #intro{z-index:5;transition:opacity 1.4s ease;background:#07030f}
@@ -156,7 +157,7 @@ button:focus-visible{outline:2px dashed var(--pink-soft);outline-offset:4px}
 .layer-mid{z-index:4;pointer-events:auto;will-change:transform}
 .layer-fg{z-index:5;pointer-events:none;will-change:transform}
 
-.galaxy-bg{opacity:0;transition:opacity 1.2s ease, filter .4s ease}
+.galaxy-bg{opacity:0;transition:opacity 1.2s ease, filter .4s ease;image-rendering:auto;image-rendering:smooth}
 .galaxy-bg.on{opacity:1}
 /* Hiệu ứng hào quang khi rê chuột lên vùng chòm sao / linh vật */
 .stage.hover-aura .galaxy-bg.on{
