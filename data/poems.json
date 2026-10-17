@@ -4668,16 +4668,15 @@
       "stars": [
         {
           "id": "gemini_1",
-          "num": 34,
-          "x": 17.5,
-          "y": 43.6,
+          "x": 44.7,
+          "y": 45.7,
           "tag": "Thơ #34 · Vivi",
-          "title": "#34. có những người cả đời luôn thành công mà chưa biết đến thất bại / có những người cả đời thất bại mà chưa từng biết đến thành công",
-          "shortTitle": "có những người cả đời luôn thành công mà chưa biết đến thất bại / có những người cả đời thất bại mà chưa từng biết đến thành công",
+          "title": "Có những người",
           "date": "Vivi",
-          "author": "Vivi",
           "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
+          "coverImage": "",
+          "html": "<p>có những người cả đời luôn thành công mà chưa biết đến thất bại</p><p>có những người cả đời thất bại mà chưa từng biết đến thành công</p><p>mỗi người đều có một định nghĩa khác nhau về thành công hay thất bại</p><p>nhưng chẳng lẽ thất là mất hết</p><p>bại là chịu khuất phục trước kẻ thù</p><p>không. ta sinh ra không phải để như vậy</p><p>ta sinh ra cũng không phải chỉ để huy hoàng</p><p>thành hay bại là đều bởi ta</p><p>cả hai đều quan trọng</p><p>sao không tự hết mình.</p><div class=\"stanza-break\"></div><p>—</p>",
           "body": [
             "có những người cả đời luôn thành công mà chưa biết đến thất bại",
             "có những người cả đời thất bại mà chưa từng biết đến thành công",
@@ -4689,7 +4688,6 @@
             "thành hay bại là đều bởi ta",
             "cả hai đều quan trọng",
             "sao không tự hết mình.",
-            "",
             "—"
           ]
         },
