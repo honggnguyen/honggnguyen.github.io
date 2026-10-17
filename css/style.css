@@ -1200,16 +1200,16 @@ body.blog-open{
    ========================================================================== */
 .calcifer-container {
   position: absolute;
-  left: 84.993%;
-  top: 59.115%;
-  width: 11.628%;
-  height: 26.042%;
+  left: 77.725%;
+  top: 42.383%;
+  width: 22.275%;
+  height: 50.000%;
   z-index: 4;
   cursor: pointer;
   outline: none;
   border: none;
   background: transparent;
-  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.3, 1), filter 0.25s ease, opacity 0.8s ease;
+  transition: opacity 0.8s ease;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1229,7 +1229,6 @@ body.blog-open{
 
 .calcifer-container:hover .calcifer-flame {
   filter: drop-shadow(0 0 20px rgba(255, 160, 50, 0.75)) drop-shadow(0 0 35px rgba(255, 100, 20, 0.4));
-  transform: scale(1.02);
 }
 
 .calcifer-container.is-awake .calcifer-flame {
@@ -1239,8 +1238,8 @@ body.blog-open{
 /* Floating Hint Pill above Carte */
 .calcifer-hint-pill {
   position: absolute;
-  top: -28px;
-  left: 50%;
+  top: 14%;
+  left: 48%;
   transform: translateX(-50%);
   display: inline-flex;
   align-items: center;
@@ -1281,15 +1280,14 @@ body.blog-open{
   transform: translateX(-50%) translateY(-10px);
 }
 
-/* Carte Speech Dialog Balloon */
+/* Carte Speech Dialog Balloon - Placed above fireplace mantle to not block the reading girl */
 .calcifer-dialog {
   position: absolute;
-  right: 16%;
-  top: 45%;
-  width: 32%;
-  min-width: 340px;
-  max-width: 480px;
-  z-index: 8;
+  right: 28px;
+  top: 32px;
+  width: 380px;
+  max-width: calc(100vw - 56px);
+  z-index: 10;
   background: rgba(24, 10, 36, 0.94);
   border: 1.5px solid rgba(255, 180, 80, 0.45);
   border-radius: 18px;
@@ -1299,7 +1297,7 @@ body.blog-open{
   box-shadow: 0 16px 45px rgba(5, 0, 15, 0.75), 0 0 25px rgba(255, 130, 40, 0.2);
   color: #f7edff;
   opacity: 0;
-  transform: translateY(14px) scale(0.96);
+  transform: translateY(-10px) scale(0.96);
   pointer-events: none;
   transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -1310,28 +1308,28 @@ body.blog-open{
   pointer-events: auto;
 }
 
-/* Comic Speech Bubble Tail pointing right toward the fireplace */
+/* Comic Speech Bubble Tail pointing down toward the fireplace */
 .calcifer-dialog .cd-tail {
   position: absolute;
-  top: 36px;
-  right: -12px;
+  bottom: -11px;
+  right: 76px;
   width: 0;
   height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 12px solid rgba(255, 180, 80, 0.7);
-  filter: drop-shadow(4px 0 6px rgba(0, 0, 0, 0.4));
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 11px solid rgba(255, 180, 80, 0.7);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.4));
 }
 .calcifer-dialog .cd-tail::after {
   content: '';
   position: absolute;
-  top: -9px;
-  right: 2px;
+  bottom: 2px;
+  left: -9px;
   width: 0;
   height: 0;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
-  border-left: 11px solid rgba(24, 10, 36, 0.96);
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 10px solid rgba(24, 10, 36, 0.96);
 }
 
 /* Header */
