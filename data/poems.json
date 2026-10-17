@@ -4964,16 +4964,15 @@
         },
         {
           "id": "gemini_9",
-          "num": 42,
-          "x": 86,
-          "y": 46.6,
+          "x": 58.6,
+          "y": 57.7,
           "tag": "Thơ #42 · Vivi",
           "title": "#42. |Độc|",
-          "shortTitle": "|Độc|",
           "date": "Vivi",
-          "author": "Vivi",
           "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
+          "coverImage": "",
+          "html": "<p>Giờ nhìn mình bất lực</p><p>Chả chạm nổi tương lai</p><p>Chả với nổi trước mắt</p><p>Muốn chết ngay thực tại</p><p>Bất động giữa dòng người</p><p>Ngày qua ngày bất lực</p><p>Muốn ẩn nấp nơi đâu?</p><p>Để chả ai trông thấy</p><p>Mình đơn độc đến đâu?</p><p>|22.05.15|</p>",
           "body": [
             "Giờ nhìn mình bất lực",
             "Chả chạm nổi tương lai",
@@ -4984,7 +4983,6 @@
             "Muốn ẩn nấp nơi đâu?",
             "Để chả ai trông thấy",
             "Mình đơn độc đến đâu?",
-            "- An",
             "|22.05.15|"
           ]
         },
