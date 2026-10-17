@@ -4292,16 +4292,15 @@
       "stars": [
         {
           "id": "taurus_1",
-          "num": 23,
-          "x": 12.6,
-          "y": 39.6,
+          "x": 32.7,
+          "y": 25.7,
           "tag": "Thơ #23 · Vivi",
           "title": "#23. hồng hộc tôi chẳng nghĩ",
-          "shortTitle": "hồng hộc tôi chẳng nghĩ",
           "date": "Vivi",
-          "author": "Vivi",
           "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
+          "coverImage": "",
+          "html": "<p>cứ thế mà chạy thôi</p><p>đã quá 7 rưỡi rồi</p><p>sao mà bình tĩnh được</p><p>điệu thở như trâu mộng</p><p>tâm linh tôi đoán đề</p><p>ra vào phần hung bạo</p><p>đoán chẳng đúng chẳng sai</p><p>vì cũng ra sông Đà</p><p>nhưng là phần thơ mộng</p><p>không thở được bình tĩnh</p><p>tôi ngồi lắng lòng mình</p><p>đặt bút viết linh tinh.</p>",
           "body": [
             "cứ thế mà chạy thôi",
             "đã quá 7 rưỡi rồi",
