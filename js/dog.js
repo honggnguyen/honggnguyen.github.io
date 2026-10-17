@@ -1,7 +1,7 @@
 /* Chú chó Great Pyrenees đi dạo dọc đáy màn hình thiên hà khi bấm vào hình ở góc trái */
 const WalkDog = (() => {
   const $ = id => document.getElementById(id);
-  const FRAMES = [1, 2, 3, 4, 5, 6, 7, 8].map(i => `assets/img/dog_walk${i}.webp`);
+  const FRAMES = [1, 2, 3, 4, 5, 6, 7, 8].map(i => `assets/img/dog_walk${i}.webp?v=20261018i`);
   const FRAME_MS = 105, SPEED = 80;          // px / giây
   let dog, img, galaxy, mascot;
   let on = false, x = 0, dir = 1, target = 0, pauseUntil = 0;
