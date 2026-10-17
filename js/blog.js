@@ -252,6 +252,8 @@ const BlogView = (() => {
   return { init, open, close };
 })();
 
+window.BlogView = BlogView;
+
 document.addEventListener('DOMContentLoaded', () => {
   BlogView.init();
 });

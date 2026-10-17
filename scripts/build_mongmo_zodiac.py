@@ -326,8 +326,8 @@ kyniem_stars = [
     {
         'id': 'kyniem_1',
         'num': 1,
-        'x': 20.0,
-        'y': 44.0,
+        'x': 13.63,
+        'y': 13.67,
         'tag': 'Kỷ Niệm · Vivi',
         'title': 'Ký Ức Buổi Chiều Mưa',
         'shortTitle': 'Ký Ức Buổi Chiều Mưa',
@@ -348,8 +348,8 @@ kyniem_stars = [
     {
         'id': 'kyniem_2',
         'num': 2,
-        'x': 38.0,
-        'y': 28.0,
+        'x': 21.77,
+        'y': 64.39,
         'tag': 'Kỷ Niệm · Vivi',
         'title': 'Mảnh Vườn Tuổi Thơ',
         'shortTitle': 'Mảnh Vườn Tuổi Thơ',
@@ -370,8 +370,8 @@ kyniem_stars = [
     {
         'id': 'kyniem_3',
         'num': 3,
-        'x': 55.0,
-        'y': 52.0,
+        'x': 47.60,
+        'y': 37.96,
         'tag': 'Kỷ Niệm · Vivi',
         'title': 'Ngọn Lửa Sưởi Ấm Đêm Đông',
         'shortTitle': 'Ngọn Lửa Sưởi Ấm Đêm Đông',
@@ -392,8 +392,8 @@ kyniem_stars = [
     {
         'id': 'kyniem_4',
         'num': 4,
-        'x': 75.0,
-        'y': 36.0,
+        'x': 81.10,
+        'y': 72.85,
         'tag': 'Kỷ Niệm · Vivi',
         'title': 'Lời Nhắn Nhủ Thời Gian',
         'shortTitle': 'Lời Nhắn Nhủ Thời Gian',

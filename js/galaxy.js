@@ -247,9 +247,10 @@ const Galaxy = (() => {
     lastFocus = node; tip.classList.remove('show');
 
     // Nếu thuộc chòm sao Kỷ Niệm -> Mở giao diện Blog bài viết dài toàn cảnh nền nhạt
-    if (c.category === 'kyniem' || s.category === 'kyniem' || c.id === 'ky-niem') {
-      if (window.BlogView && typeof window.BlogView.open === 'function') {
-        window.BlogView.open(s, c, node);
+    if (c.category === 'kyniem' || s.category === 'kyniem' || c.id === 'ky-niem' || (c.name && c.name.includes('Kỷ Niệm'))) {
+      const blog = window.BlogView || (typeof BlogView !== 'undefined' ? BlogView : null);
+      if (blog && typeof blog.open === 'function') {
+        blog.open(s, c, node);
         read.add(s.id);
         localStorage.setItem(KEY, JSON.stringify([...read]));
         if (node) node.classList.add('read');
