@@ -3852,16 +3852,15 @@
         },
         {
           "id": "mongmo_11",
-          "num": 11,
-          "x": 55.5,
-          "y": 64.8,
+          "x": 19.7,
+          "y": 66.3,
           "tag": "Thơ #11 · Vivi",
           "title": "#11. Ngày xanh",
-          "shortTitle": "Ngày xanh",
           "date": "1.2.2022",
-          "author": "Vivi",
           "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
+          "coverImage": "",
+          "html": "<p>xanh xanh màu lá</p><p>tiếng chim ngân vang</p><p>ngày mới đón chào</p><p>em ca tiếng hát</p><p>tiếng ca thật ngọt</p><p>tiếng hát thật yêu</p><p>của sự đổi mới</p><p>mây xanh xanh lá xanh xanh</p><p>em mơ về miền xanh thắm</p><p>cây đua hoa lá vươn ra</p><p>em mơ về ngày em lớn lên.</p><p><br></p>",
           "body": [
             "xanh xanh màu lá",
             "tiếng chim ngân vang",
@@ -3873,8 +3872,7 @@
             "mây xanh xanh lá xanh xanh",
             "em mơ về miền xanh thắm",
             "cây đua hoa lá vươn ra",
-            "em mơ về ngày em lớn lên.",
-            "- An"
+            "em mơ về ngày em lớn lên."
           ]
         },
         {
