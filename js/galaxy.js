@@ -10,7 +10,7 @@ const Galaxy = (() => {
   let lastFocus = null;
 
   async function init() {
-    rawData = await (await fetch('data/poems.json')).json();
+    rawData = await (await fetch('data/poems.json?v=' + Date.now())).json();
     constellations = rawData.constellations || [];
     categories = rawData.categories || [
       { id: 'mongmo', name: 'Mộng Mơ', shortName: 'Thơ', icon: '✦', galaxies: [constellations[0]] },

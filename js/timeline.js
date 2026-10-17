@@ -13,7 +13,7 @@ const TravelTimeline = (() => {
 
   async function init() {
     try {
-      const res = await fetch('data/poems.json');
+      const res = await fetch('data/poems.json?v=' + Date.now());
       if (res.ok) {
         const data = await res.json();
         // Tìm chòm sao Viễn Du

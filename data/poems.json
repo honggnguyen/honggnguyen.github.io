@@ -2,7 +2,7 @@
   "categories": [
     {
       "id": "mongmo",
-      "name": "Mộng Mơ & Tình Yêu",
+      "name": "Mộng Mơ & Zodiac",
       "shortName": "Mộng Mơ",
       "icon": "✦",
       "galaxies": [
@@ -17,13 +17,13 @@
               "id": "mongmo_1",
               "num": 1,
               "x": 10.5,
-              "y": 38.4,
+              "y": 38.8,
               "tag": "Thơ #1 · Vivi",
               "title": "#1. róc rách chảy ly trà",
               "shortTitle": "róc rách chảy ly trà",
               "date": "15.1.2021",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "nghe thoang thoảng đâu đây",
@@ -37,14 +37,14 @@
             {
               "id": "mongmo_2",
               "num": 2,
-              "x": 20.0,
-              "y": 22.9,
+              "x": 19.0,
+              "y": 22.8,
               "tag": "Thơ #2 · Vivi",
               "title": "#2. Gió đông",
               "shortTitle": "Gió đông",
               "date": "16.01.22",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "gió thổi tóc em bay",
@@ -58,14 +58,14 @@
             {
               "id": "mongmo_3",
               "num": 3,
-              "x": 30.5,
-              "y": 44.4,
+              "x": 27.5,
+              "y": 44.8,
               "tag": "Thơ #3 · Vivi",
               "title": "#3. Đêm khuya",
               "shortTitle": "Đêm khuya",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ngọn đèn khuya sáng tỏ",
@@ -89,14 +89,14 @@
             {
               "id": "mongmo_4",
               "num": 4,
-              "x": 42.0,
-              "y": 27.4,
+              "x": 36.5,
+              "y": 26.8,
               "tag": "Thơ #4 · Vivi",
               "title": "#4. Vị lạnh",
               "shortTitle": "Vị lạnh",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một chút lạnh đột ngột",
@@ -125,14 +125,14 @@
             {
               "id": "mongmo_5",
               "num": 5,
-              "x": 50.5,
-              "y": 48.9,
+              "x": 45.0,
+              "y": 48.8,
               "tag": "Thơ #5 · Vivi",
               "title": "#5. Thân gửi bạn mến yêu",
               "shortTitle": "Thân gửi bạn mến yêu",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một chút thơ sến sến",
@@ -147,14 +147,14 @@
             {
               "id": "mongmo_6",
               "num": 6,
-              "x": 61.0,
-              "y": 24.4,
+              "x": 53.5,
+              "y": 23.8,
               "tag": "Thơ #6 · Vivi",
               "title": "#6. Con tim em tan thành trăm mảnh",
               "shortTitle": "Con tim em tan thành trăm mảnh",
               "date": "26.1.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Sao em không tựa vào vai anh",
@@ -168,14 +168,14 @@
             {
               "id": "mongmo_7",
               "num": 7,
-              "x": 70.5,
-              "y": 42.9,
+              "x": 62.0,
+              "y": 43.8,
               "tag": "Thơ #7 · Vivi",
               "title": "#7. Đi",
               "shortTitle": "Đi",
               "date": "29.1.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Đi thật nhanh thật nhanh",
@@ -206,14 +206,14 @@
             {
               "id": "mongmo_8",
               "num": 8,
-              "x": 79.0,
-              "y": 28.4,
+              "x": 70.5,
+              "y": 27.8,
               "tag": "Thơ #8 · Vivi",
               "title": "#8. chào 2022",
               "shortTitle": "chào 2022",
               "date": "1.2.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "thao thức cả đêm khuya",
@@ -233,14 +233,14 @@
             {
               "id": "mongmo_9",
               "num": 9,
-              "x": 44.5,
-              "y": 64.4,
+              "x": 79.0,
+              "y": 41.8,
               "tag": "Thơ #9 · Vivi",
               "title": "#9. Cô nàng mập",
               "shortTitle": "Cô nàng mập",
               "date": "4.2.2021",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "tui là cô nàng mập",
@@ -261,27 +261,18 @@
                 "dần trở thành \"nơi dưa\"",
                 "cho người mà tôi yêu."
               ]
-            }
-          ]
-        },
-        {
-          "id": "aries",
-          "name": "Chòm sao Bạch Dương (Aries)",
-          "subtitle": "khởi đầu tươi sáng",
-          "category": "mongmo",
-          "bgImg": "assets/img/galaxy_aries.webp",
-          "stars": [
+            },
             {
-              "id": "aries_1",
+              "id": "mongmo_10",
               "num": 10,
-              "x": 16.1,
-              "y": 42.9,
+              "x": 40.5,
+              "y": 64.8,
               "tag": "Thơ #10 · Vivi",
               "title": "#10. Môi mọng",
               "shortTitle": "Môi mọng",
               "date": "14.2.2021",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 ".Làn môi mềm ngọt",
@@ -308,16 +299,16 @@
               ]
             },
             {
-              "id": "aries_2",
+              "id": "mongmo_11",
               "num": 11,
-              "x": 25.6,
-              "y": 27.4,
+              "x": 55.5,
+              "y": 64.8,
               "tag": "Thơ #11 · Vivi",
               "title": "#11. Ngày xanh",
               "shortTitle": "Ngày xanh",
               "date": "1.2.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "xanh xanh màu lá",
@@ -333,18 +324,27 @@
                 "em mơ về ngày em lớn lên.",
                 "- An"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "aries",
+          "name": "Chòm sao Bạch Dương (Aries)",
+          "subtitle": "khởi đầu tươi sáng",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_aries.webp",
+          "stars": [
             {
-              "id": "aries_3",
+              "id": "aries_1",
               "num": 12,
-              "x": 36.1,
-              "y": 48.9,
+              "x": 15.4,
+              "y": 42.8,
               "tag": "Thơ #12 · Vivi",
               "title": "#12. Giai điệu tuổi thơ",
               "shortTitle": "Giai điệu tuổi thơ",
               "date": "15.02.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Lắng lòng tôi thơ thẩn",
@@ -379,16 +379,16 @@
               ]
             },
             {
-              "id": "aries_4",
+              "id": "aries_2",
               "num": 13,
-              "x": 47.6,
-              "y": 31.9,
+              "x": 23.9,
+              "y": 26.8,
               "tag": "Thơ #13 · Vivi",
               "title": "#13. đậm đặc",
               "shortTitle": "đậm đặc",
               "date": "18.2.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "đùng đoàng tiếng pháo nổ",
@@ -411,16 +411,16 @@
               ]
             },
             {
-              "id": "aries_5",
+              "id": "aries_3",
               "num": 14,
-              "x": 56.1,
-              "y": 53.4,
+              "x": 32.4,
+              "y": 48.8,
               "tag": "Thơ #14 · Vivi",
               "title": "#14. lẽ thường",
               "shortTitle": "lẽ thường",
               "date": "22.2.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "rưng rưng ngập tràn mắt",
@@ -438,16 +438,16 @@
               ]
             },
             {
-              "id": "aries_6",
+              "id": "aries_4",
               "num": 15,
-              "x": 66.6,
-              "y": 28.9,
+              "x": 41.4,
+              "y": 30.8,
               "tag": "Thơ #15 · Vivi",
               "title": "#15. Chữa lành cho em",
               "shortTitle": "Chữa lành cho em",
               "date": "7.2.2021",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Khép lại đôi bờ mi",
@@ -509,16 +509,16 @@
               ]
             },
             {
-              "id": "aries_7",
+              "id": "aries_5",
               "num": 16,
-              "x": 76.1,
-              "y": 47.4,
+              "x": 49.9,
+              "y": 52.8,
               "tag": "Thơ #16 · Vivi",
               "title": "#16. Nước cờ",
               "shortTitle": "Nước cờ",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Dẫn quân cờ từng bước",
@@ -542,16 +542,16 @@
               ]
             },
             {
-              "id": "aries_8",
+              "id": "aries_6",
               "num": 17,
-              "x": 84.6,
-              "y": 32.9,
+              "x": 58.4,
+              "y": 27.8,
               "tag": "Thơ #17 · Vivi",
               "title": "#17. Ly rượu trườn toàn thân",
               "shortTitle": "Ly rượu trườn toàn thân",
               "date": "4.2.22",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Thân toàn hương nồng thắm",
@@ -571,16 +571,16 @@
               ]
             },
             {
-              "id": "aries_9",
+              "id": "aries_7",
               "num": 18,
-              "x": 50.1,
-              "y": 68.9,
+              "x": 66.9,
+              "y": 47.8,
               "tag": "Thơ #18 · Vivi",
               "title": "#18. Sai?",
               "shortTitle": "Sai?",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Rưng rưng ngập trong mắt",
@@ -592,27 +592,18 @@
                 "Trải thêm chuyện ở đời",
                 "Đời này luôn rộng lớn.\""
               ]
-            }
-          ]
-        },
-        {
-          "id": "taurus",
-          "name": "Chòm sao Kim Ngưu (Taurus)",
-          "subtitle": "ấm áp · kiên định",
-          "category": "mongmo",
-          "bgImg": "assets/img/galaxy_taurus.webp",
-          "stars": [
+            },
             {
-              "id": "taurus_1",
+              "id": "aries_8",
               "num": 19,
-              "x": 12.9,
-              "y": 39.3,
+              "x": 75.4,
+              "y": 31.8,
               "tag": "Thơ #19 · Vivi",
               "title": "#19. tôi là bông hồng nhỏ",
               "shortTitle": "tôi là bông hồng nhỏ",
               "date": "11.3.22",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "thấy nắng lên mỗi ngày",
@@ -625,16 +616,16 @@
               ]
             },
             {
-              "id": "taurus_2",
+              "id": "aries_9",
               "num": 20,
-              "x": 22.4,
-              "y": 23.8,
+              "x": 83.9,
+              "y": 45.8,
               "tag": "Thơ #20 · Vivi",
               "title": "#20. Mine",
               "shortTitle": "Mine",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "ta che đi cảm xúc",
@@ -659,16 +650,16 @@
               ]
             },
             {
-              "id": "taurus_3",
+              "id": "aries_10",
               "num": 21,
-              "x": 32.9,
-              "y": 45.3,
+              "x": 45.4,
+              "y": 68.8,
               "tag": "Thơ #21 · Vivi",
               "title": "#21. Flow",
               "shortTitle": "Flow",
               "date": "18.3.22",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "cuốn mình theo dòng chảy",
@@ -704,16 +695,16 @@
               ]
             },
             {
-              "id": "taurus_4",
+              "id": "aries_11",
               "num": 22,
-              "x": 44.4,
-              "y": 28.3,
+              "x": 60.4,
+              "y": 68.8,
               "tag": "Thơ #22 · Vivi",
               "title": "#22. Tách trà cho tâm hồn",
               "shortTitle": "Tách trà cho tâm hồn",
               "date": "21.3.22",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Bung mình làn khói tỏa",
@@ -721,18 +712,27 @@
                 "Sao mà thơm thanh mát",
                 "Lắng lòng để nhâm nhi\""
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "taurus",
+          "name": "Chòm sao Kim Ngưu (Taurus)",
+          "subtitle": "ấm áp · kiên định",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_taurus.webp",
+          "stars": [
             {
-              "id": "taurus_5",
+              "id": "taurus_1",
               "num": 23,
-              "x": 52.9,
-              "y": 49.8,
+              "x": 12.6,
+              "y": 39.6,
               "tag": "Thơ #23 · Vivi",
               "title": "#23. hồng hộc tôi chẳng nghĩ",
               "shortTitle": "hồng hộc tôi chẳng nghĩ",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "cứ thế mà chạy thôi",
@@ -750,16 +750,16 @@
               ]
             },
             {
-              "id": "taurus_6",
+              "id": "taurus_2",
               "num": 24,
-              "x": 63.4,
-              "y": 25.3,
+              "x": 21.1,
+              "y": 23.6,
               "tag": "Thơ #24 · Vivi",
               "title": "#24. Ngược",
               "shortTitle": "Ngược",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Có những quả tưởng chừng ngọt lịm",
@@ -805,16 +805,16 @@
               ]
             },
             {
-              "id": "taurus_7",
+              "id": "taurus_3",
               "num": 25,
-              "x": 72.9,
-              "y": 43.8,
+              "x": 29.6,
+              "y": 45.6,
               "tag": "Thơ #25 · Vivi",
               "title": "#25. Tỉnh dậy đọc thông báo",
               "shortTitle": "Tỉnh dậy đọc thông báo",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Báo công văn nghỉ học",
@@ -853,16 +853,16 @@
               ]
             },
             {
-              "id": "taurus_8",
+              "id": "taurus_4",
               "num": 26,
-              "x": 81.4,
-              "y": 29.3,
+              "x": 38.6,
+              "y": 27.6,
               "tag": "Thơ #26 · Vivi",
               "title": "#26. bỗng sụt sùi nước mũi",
               "shortTitle": "bỗng sụt sùi nước mũi",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "mắt mũi cứ tèm nhem",
@@ -879,16 +879,16 @@
               ]
             },
             {
-              "id": "taurus_9",
+              "id": "taurus_5",
               "num": 27,
-              "x": 46.9,
-              "y": 65.3,
+              "x": 47.1,
+              "y": 49.6,
               "tag": "Thơ #27 · Vivi",
               "title": "#27. Mở",
               "shortTitle": "Mở",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Khép đôi mắt và mở",
@@ -906,27 +906,18 @@
                 "Không phải quy luật là mãi mãi",
                 "Nhưng có quy luật vẫn chẳng đổi thay."
               ]
-            }
-          ]
-        },
-        {
-          "id": "gemini",
-          "name": "Chòm sao Song Tử (Gemini)",
-          "subtitle": "tâm sự · nhịp đập đôi",
-          "category": "mongmo",
-          "bgImg": "assets/img/galaxy_gemini.webp",
-          "stars": [
+            },
             {
-              "id": "gemini_1",
+              "id": "taurus_6",
               "num": 28,
-              "x": 18.5,
-              "y": 43.8,
+              "x": 55.6,
+              "y": 24.6,
               "tag": "Thơ #28 · Vivi",
               "title": "#28. Vô ích",
               "shortTitle": "Vô ích",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Chẳng bao giờ cố gắng",
@@ -950,16 +941,16 @@
               ]
             },
             {
-              "id": "gemini_2",
+              "id": "taurus_7",
               "num": 29,
-              "x": 28.0,
-              "y": 28.3,
+              "x": 64.1,
+              "y": 44.6,
               "tag": "Thơ #29 · Vivi",
               "title": "#29. Giờ chẳng còn lại chi",
               "shortTitle": "Giờ chẳng còn lại chi",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Hai con đường đều mất",
@@ -985,16 +976,16 @@
               ]
             },
             {
-              "id": "gemini_3",
+              "id": "taurus_8",
               "num": 30,
-              "x": 38.5,
-              "y": 49.8,
+              "x": 72.6,
+              "y": 28.6,
               "tag": "Thơ #30 · Vivi",
               "title": "#30. Tàn",
               "shortTitle": "Tàn",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Đời lụi lại tàn phai",
@@ -1011,16 +1002,16 @@
               ]
             },
             {
-              "id": "gemini_4",
+              "id": "taurus_9",
               "num": 31,
-              "x": 50.0,
-              "y": 32.8,
+              "x": 81.1,
+              "y": 42.6,
               "tag": "Thơ #31 · Vivi",
               "title": "#31. |Bí ẩn Tequila|",
               "shortTitle": "|Bí ẩn Tequila|",
               "date": "8.5.2022",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Say nhau một ánh mắt",
@@ -1044,16 +1035,16 @@
               ]
             },
             {
-              "id": "gemini_5",
+              "id": "taurus_10",
               "num": 32,
-              "x": 58.5,
-              "y": 54.3,
+              "x": 42.6,
+              "y": 65.6,
               "tag": "Thơ #32 · Vivi",
               "title": "#32. Nở",
               "shortTitle": "Nở",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Nở rồi hoa lại tàn",
@@ -1076,16 +1067,16 @@
               ]
             },
             {
-              "id": "gemini_6",
+              "id": "taurus_11",
               "num": 33,
-              "x": 69.0,
-              "y": 29.8,
+              "x": 57.6,
+              "y": 65.6,
               "tag": "Thơ #33 · Vivi",
               "title": "#33. Sợ.",
               "shortTitle": "Sợ.",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 ".",
@@ -1107,18 +1098,27 @@
                 "Miễn là mình vẫn bước.",
                 ".An Nguyên"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "gemini",
+          "name": "Chòm sao Song Tử (Gemini)",
+          "subtitle": "tâm sự · nhịp đập đôi",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_gemini.webp",
+          "stars": [
             {
-              "id": "gemini_7",
+              "id": "gemini_1",
               "num": 34,
-              "x": 78.5,
-              "y": 48.3,
+              "x": 17.5,
+              "y": 43.6,
               "tag": "Thơ #34 · Vivi",
               "title": "#34. có những người cả đời luôn thành công mà chưa biết đến thất bại / có những người cả đời thất bại mà chưa từng biết đến thành công",
               "shortTitle": "có những người cả đời luôn thành công mà chưa biết đến thất bại / có những người cả đời thất bại mà chưa từng biết đến thành công",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "có những người cả đời luôn thành công mà chưa biết đến thất bại",
@@ -1136,16 +1136,16 @@
               ]
             },
             {
-              "id": "gemini_8",
+              "id": "gemini_2",
               "num": 35,
-              "x": 87.0,
-              "y": 33.8,
+              "x": 26.0,
+              "y": 27.6,
               "tag": "Thơ #35 · Vivi",
               "title": "#35. |Bella|",
               "shortTitle": "|Bella|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "! Bài này sẽ spoil phim á.",
@@ -1209,16 +1209,16 @@
               ]
             },
             {
-              "id": "gemini_9",
+              "id": "gemini_3",
               "num": 36,
-              "x": 52.5,
-              "y": 69.8,
+              "x": 34.5,
+              "y": 49.6,
               "tag": "Thơ #36 · Vivi",
               "title": "#36. Hiểu",
               "shortTitle": "Hiểu",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tiếng nói vừa cất lên",
@@ -1272,27 +1272,18 @@
                 "- An",
                 "p/s: Tớ viết hôm đi thi Anh khảo sát sau buổi trưa nói chuyện với mẹ khiến tớ khóc rất nhiều. Cãi nhau vì bất đồng quan điểm cũng có luôn. Tớ khóc rất nhiều vì nói chuyện với mẹ. Bởi có một cảm giác rất lạ như kìm nén tớ bao lâu nay í. Nhưng khi nói xong thì thật nhẹ nhõm. Và tớ thấy hai mẹ con tớ hiểu nhau hơn."
               ]
-            }
-          ]
-        },
-        {
-          "id": "cancer",
-          "name": "Chòm sao Cự Giải (Cancer)",
-          "subtitle": "dịu dàng · che chở",
-          "category": "mongmo",
-          "bgImg": "assets/img/galaxy_cancer.webp",
-          "stars": [
+            },
             {
-              "id": "cancer_1",
+              "id": "gemini_4",
               "num": 37,
-              "x": 15.3,
-              "y": 40.2,
+              "x": 43.5,
+              "y": 31.6,
               "tag": "Thơ #37 · Vivi",
               "title": "#37. |The twine of secure|",
               "shortTitle": "|The twine of secure|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Look up to the sky",
@@ -1314,16 +1305,16 @@
               ]
             },
             {
-              "id": "cancer_2",
+              "id": "gemini_5",
               "num": 38,
-              "x": 24.8,
-              "y": 24.7,
+              "x": 52.0,
+              "y": 53.6,
               "tag": "Thơ #38 · Vivi",
               "title": "#38. |Bơi cùng cá|",
               "shortTitle": "|Bơi cùng cá|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Vò đầu bứt tóc gội cái đầu",
@@ -1338,16 +1329,16 @@
               ]
             },
             {
-              "id": "cancer_3",
+              "id": "gemini_6",
               "num": 39,
-              "x": 35.3,
-              "y": 46.2,
+              "x": 60.5,
+              "y": 28.6,
               "tag": "Thơ #39 · Vivi",
               "title": "#39. |Bơi|",
               "shortTitle": "|Bơi|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Em ơi nào mình đi câu cá",
@@ -1373,16 +1364,16 @@
               ]
             },
             {
-              "id": "cancer_4",
+              "id": "gemini_7",
               "num": 40,
-              "x": 46.8,
-              "y": 29.2,
+              "x": 69.0,
+              "y": 48.6,
               "tag": "Thơ #40 · Vivi",
               "title": "#40. Ta sống chỉ mong cảm nhận những chân trời / Nhưng chân trời ai mà lại không biết?",
               "shortTitle": "Ta sống chỉ mong cảm nhận những chân trời / Nhưng chân trời ai mà lại không biết?",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ta sống chỉ mong cảm nhận những chân trời",
@@ -1398,16 +1389,16 @@
               ]
             },
             {
-              "id": "cancer_5",
+              "id": "gemini_8",
               "num": 41,
-              "x": 55.3,
-              "y": 50.7,
+              "x": 77.5,
+              "y": 32.6,
               "tag": "Thơ #41 · Vivi",
               "title": "#41. Ta thường mơ về một bức ảnh tĩnh / Một bức ảnh không có dấu chân người",
               "shortTitle": "Ta thường mơ về một bức ảnh tĩnh / Một bức ảnh không có dấu chân người",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ta thường mơ về một bức ảnh tĩnh",
@@ -1426,16 +1417,16 @@
               ]
             },
             {
-              "id": "cancer_6",
+              "id": "gemini_9",
               "num": 42,
-              "x": 65.8,
-              "y": 26.2,
+              "x": 86.0,
+              "y": 46.6,
               "tag": "Thơ #42 · Vivi",
               "title": "#42. |Độc|",
               "shortTitle": "|Độc|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Giờ nhìn mình bất lực",
@@ -1452,16 +1443,16 @@
               ]
             },
             {
-              "id": "cancer_7",
+              "id": "gemini_10",
               "num": 43,
-              "x": 75.3,
-              "y": 44.7,
+              "x": 47.5,
+              "y": 69.6,
               "tag": "Thơ #43 · Vivi",
               "title": "#43. |Yêu|",
               "shortTitle": "|Yêu|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ta má đỏ ửng hồng",
@@ -1493,16 +1484,16 @@
               ]
             },
             {
-              "id": "cancer_8",
+              "id": "gemini_11",
               "num": 44,
-              "x": 83.8,
-              "y": 30.2,
+              "x": 62.5,
+              "y": 69.6,
               "tag": "Thơ #44 · Vivi",
               "title": "#44. | Chút|",
               "shortTitle": "| Chút|",
               "date": "9.5.22",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Xoa xoa chiếc bụng tròn",
@@ -1538,18 +1529,27 @@
                 "",
                 "p/s: Annhon, à thì bài này mình viết hôm đi thi chuẩn bị kỉ yếu. Và hôm nay có ảnh nên chỉnh lại nè. Lật tung phòng để tìm tờ tớ viết á. Ban đầu tớ khá tự ti vì thấy mình không đẹp, rùi cũng khá buồn, không thích chụp ảnh. Nhưng có ảnh rùi thì thấy cũng khá đáng iu hihi."
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "cancer",
+          "name": "Chòm sao Cự Giải (Cancer)",
+          "subtitle": "dịu dàng · che chở",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_cancer.webp",
+          "stars": [
             {
-              "id": "cancer_9",
+              "id": "cancer_1",
               "num": 45,
-              "x": 49.3,
-              "y": 66.2,
+              "x": 15.7,
+              "y": 38.4,
               "tag": "Thơ #45 · Vivi",
               "title": "#45. .Hoa",
               "shortTitle": ".Hoa",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Sống là hoa sao chả biết tên mình",
@@ -1563,35 +1563,18 @@
                 "p/s: Lâu rồi không viết nên mình khá nhớ những con chữ và thấy có chút thiếu thiếu. Đây là bài mình viết hôm tìm những loài hoa nở vào mùa đông cùng với Nhi Kiều. Và đây là loài hoa poppies nhé.",
                 "|17.7.22|"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "viendu",
-      "name": "Viễn Du & Bầu Trời Đêm",
-      "shortName": "Viễn Du",
-      "icon": "⟡",
-      "galaxies": [
-        {
-          "id": "leo",
-          "name": "Chòm sao Sư Tử (Leo)",
-          "subtitle": "rực rỡ · đam mê",
-          "category": "viendu",
-          "bgImg": "assets/img/galaxy_leo.webp",
-          "stars": [
+            },
             {
-              "id": "leo_1",
+              "id": "cancer_2",
               "num": 46,
-              "x": 12.1,
-              "y": 44.7,
+              "x": 24.7,
+              "y": 23.4,
               "tag": "Thơ #46 · Vivi",
               "title": "#46. |Nhớ|",
               "shortTitle": "|Nhớ|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Chơi vơi trong bóng tối",
@@ -1609,16 +1592,16 @@
               ]
             },
             {
-              "id": "leo_2",
+              "id": "cancer_3",
               "num": 47,
-              "x": 21.6,
-              "y": 29.2,
+              "x": 34.2,
+              "y": 46.4,
               "tag": "Thơ #47 · Vivi",
               "title": "#47. |Nếu|",
               "shortTitle": "|Nếu|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Nếu mai là tận thế",
@@ -1644,16 +1627,16 @@
               ]
             },
             {
-              "id": "leo_3",
+              "id": "cancer_4",
               "num": 48,
-              "x": 32.1,
-              "y": 50.7,
+              "x": 43.7,
+              "y": 28.4,
               "tag": "Thơ #48 · Vivi",
               "title": "#48. |Ước|",
               "shortTitle": "|Ước|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ước gì em là gió",
@@ -1680,16 +1663,16 @@
               ]
             },
             {
-              "id": "leo_4",
+              "id": "cancer_5",
               "num": 49,
-              "x": 43.6,
-              "y": 33.7,
+              "x": 53.2,
+              "y": 50.4,
               "tag": "Thơ #49 · Vivi",
               "title": "#49. |Cùng em|",
               "shortTitle": "|Cùng em|",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một ước muốn phàm trần",
@@ -1705,16 +1688,16 @@
               ]
             },
             {
-              "id": "leo_5",
+              "id": "cancer_6",
               "num": 50,
-              "x": 52.1,
-              "y": 55.2,
+              "x": 62.7,
+              "y": 26.4,
               "tag": "Thơ #50 · Vivi",
               "title": "#50. Role",
               "shortTitle": "Role",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Thẫn thờ ngồi một góc",
@@ -1739,16 +1722,16 @@
               ]
             },
             {
-              "id": "leo_6",
+              "id": "cancer_7",
               "num": 51,
-              "x": 62.6,
-              "y": 30.7,
+              "x": 72.2,
+              "y": 44.4,
               "tag": "Thơ #51 · Vivi",
               "title": "#51. Thả trôi muộn phiền với an yên",
               "shortTitle": "Thả trôi muộn phiền với an yên",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tết đến đoàn bỏ muộn phiền",
@@ -1757,16 +1740,16 @@
               ]
             },
             {
-              "id": "leo_7",
+              "id": "cancer_8",
               "num": 52,
-              "x": 72.1,
-              "y": 49.2,
+              "x": 81.7,
+              "y": 30.4,
               "tag": "Thơ #52 · Vivi",
               "title": "#52. Ước",
               "shortTitle": "Ước",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Mơ thời gian dừng lại",
@@ -1781,16 +1764,16 @@
               ]
             },
             {
-              "id": "leo_8",
+              "id": "cancer_9",
               "num": 53,
-              "x": 80.6,
-              "y": 34.7,
+              "x": 46.7,
+              "y": 66.4,
               "tag": "Thơ #53 · Vivi",
               "title": "#53. .ẩn",
               "shortTitle": ".ẩn",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ẩn mình trong câu chữ",
@@ -1809,16 +1792,16 @@
               ]
             },
             {
-              "id": "leo_9",
+              "id": "cancer_10",
               "num": 54,
-              "x": 46.1,
-              "y": 70.7,
+              "x": 60.7,
+              "y": 65.4,
               "tag": "Thơ #54 · Vivi",
               "title": "#54. Lặng",
               "shortTitle": "Lặng",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tâm lặng như nước",
@@ -1834,23 +1817,23 @@
           ]
         },
         {
-          "id": "virgo",
-          "name": "Chòm sao Xử Nữ (Virgo)",
-          "subtitle": "thuần khiết · tinh tế",
-          "category": "viendu",
-          "bgImg": "assets/img/galaxy_virgo.webp",
+          "id": "leo",
+          "name": "Chòm sao Sư Tử (Leo)",
+          "subtitle": "rực rỡ · đam mê",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_leo.webp",
           "stars": [
             {
-              "id": "virgo_1",
+              "id": "leo_1",
               "num": 55,
-              "x": 17.7,
-              "y": 41.1,
+              "x": 12.9,
+              "y": 42.4,
               "tag": "Thơ #55 · Vivi",
               "title": "#55. Tịnh",
               "shortTitle": "Tịnh",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tâm tiền vô tịnh tựa như nước",
@@ -1861,16 +1844,16 @@
               ]
             },
             {
-              "id": "virgo_2",
+              "id": "leo_2",
               "num": 56,
-              "x": 27.2,
-              "y": 25.6,
+              "x": 21.9,
+              "y": 27.4,
               "tag": "Thơ #56 · Vivi",
               "title": "#56. Nghe",
               "shortTitle": "Nghe",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ta nghe tâm sự với chị Hằng",
@@ -1881,16 +1864,16 @@
               ]
             },
             {
-              "id": "virgo_3",
+              "id": "leo_3",
               "num": 57,
-              "x": 37.7,
-              "y": 47.1,
+              "x": 31.4,
+              "y": 50.4,
               "tag": "Thơ #57 · Vivi",
               "title": "#57. Xào xạc",
               "shortTitle": "Xào xạc",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Xào xạc bất động tiếng ve kêu",
@@ -1901,16 +1884,16 @@
               ]
             },
             {
-              "id": "virgo_4",
+              "id": "leo_4",
               "num": 58,
-              "x": 49.2,
-              "y": 30.1,
+              "x": 40.9,
+              "y": 32.4,
               "tag": "Thơ #58 · Vivi",
               "title": "#58. Sợ mùa đông",
               "shortTitle": "Sợ mùa đông",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tình yêu như bọt biển",
@@ -1925,16 +1908,16 @@
               ]
             },
             {
-              "id": "virgo_5",
+              "id": "leo_5",
               "num": 59,
-              "x": 57.7,
-              "y": 51.6,
+              "x": 50.4,
+              "y": 54.4,
               "tag": "Thơ #59 · Vivi",
               "title": "#59. Giờ vàng",
               "shortTitle": "Giờ vàng",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ồn ào cả công ty",
@@ -1954,16 +1937,16 @@
               ]
             },
             {
-              "id": "virgo_6",
+              "id": "leo_6",
               "num": 60,
-              "x": 68.2,
-              "y": 27.1,
+              "x": 59.9,
+              "y": 30.4,
               "tag": "Thơ #60 · Vivi",
               "title": "#60. Ngày xuân an nhàn",
               "shortTitle": "Ngày xuân an nhàn",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một ô cửa sổ",
@@ -1987,16 +1970,16 @@
               ]
             },
             {
-              "id": "virgo_7",
+              "id": "leo_7",
               "num": 61,
-              "x": 77.7,
-              "y": 45.6,
+              "x": 69.4,
+              "y": 48.4,
               "tag": "Thơ #61 · Vivi",
               "title": "#61. Giăng giăng sương lối màn che",
               "shortTitle": "Giăng giăng sương lối màn che",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Bánh xe chuyển bánh biết là về đâu",
@@ -2009,16 +1992,16 @@
               ]
             },
             {
-              "id": "virgo_8",
+              "id": "leo_8",
               "num": 62,
-              "x": 86.2,
-              "y": 31.1,
+              "x": 78.9,
+              "y": 34.4,
               "tag": "Thơ #62 · Vivi",
               "title": "#62. Sự xinh đẹp cất ở trong túi áo. / Xuân hạ thu đông kém vị trà",
               "shortTitle": "Sự xinh đẹp cất ở trong túi áo. / Xuân hạ thu đông kém vị trà",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Sự xinh đẹp cất ở trong túi áo.",
@@ -2059,16 +2042,16 @@
               ]
             },
             {
-              "id": "virgo_9",
+              "id": "leo_9",
               "num": 63,
-              "x": 51.7,
-              "y": 67.1,
+              "x": 43.9,
+              "y": 70.4,
               "tag": "Thơ #63 · Vivi",
               "title": "#63. Đôi mắt.",
               "shortTitle": "Đôi mắt.",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Đôi mắt trong veo",
@@ -2103,27 +2086,18 @@
                 "Vỡ nghẹt đời thừa",
                 "Chôn chìm đáy mắt?."
               ]
-            }
-          ]
-        },
-        {
-          "id": "libra",
-          "name": "Chòm sao Thiên Bình (Libra)",
-          "subtitle": "cân bằng · bình yên",
-          "category": "viendu",
-          "bgImg": "assets/img/galaxy_libra.webp",
-          "stars": [
+            },
             {
-              "id": "libra_1",
+              "id": "leo_10",
               "num": 64,
-              "x": 14.5,
-              "y": 45.6,
+              "x": 57.9,
+              "y": 69.4,
               "tag": "Thơ #64 · Vivi",
               "title": "#64. Ra sân nhặt nắng",
               "shortTitle": "Ra sân nhặt nắng",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Bập bẹ từng bước",
@@ -2141,18 +2115,27 @@
                 "Nhưng nắng không cho",
                 "Oa oa òa khóc."
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "virgo",
+          "name": "Chòm sao Xử Nữ (Virgo)",
+          "subtitle": "thuần khiết · tinh tế",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_virgo.webp",
+          "stars": [
             {
-              "id": "libra_2",
+              "id": "virgo_1",
               "num": 65,
-              "x": 24.0,
-              "y": 30.1,
+              "x": 17.8,
+              "y": 39.2,
               "tag": "Thơ #65 · Vivi",
               "title": "#65. Một mình",
               "shortTitle": "Một mình",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "trên đồng cỏ",
@@ -2160,16 +2143,16 @@
               ]
             },
             {
-              "id": "libra_3",
+              "id": "virgo_2",
               "num": 66,
-              "x": 34.5,
-              "y": 51.6,
+              "x": 26.8,
+              "y": 24.2,
               "tag": "Thơ #66 · Vivi",
               "title": "#66. Mỗi chuyến xe",
               "shortTitle": "Mỗi chuyến xe",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Mỗi tuyến đường",
@@ -2177,16 +2160,16 @@
               ]
             },
             {
-              "id": "libra_4",
+              "id": "virgo_3",
               "num": 67,
-              "x": 46.0,
-              "y": 34.6,
+              "x": 36.3,
+              "y": 47.2,
               "tag": "Thơ #67 · Vivi",
               "title": "#67. Hành khô đây chính chị hành",
               "shortTitle": "Hành khô đây chính chị hành",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Nào xào nào nấu nào luộc mắm chiên",
@@ -2195,16 +2178,16 @@
               ]
             },
             {
-              "id": "libra_5",
+              "id": "virgo_4",
               "num": 68,
-              "x": 54.5,
-              "y": 56.1,
+              "x": 45.8,
+              "y": 29.2,
               "tag": "Thơ #68 · Vivi",
               "title": "#68. Chào bạn tôi, lấp lánh",
               "shortTitle": "Chào bạn tôi, lấp lánh",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "nhìn cậu thật cao sang",
@@ -2226,16 +2209,16 @@
               ]
             },
             {
-              "id": "libra_6",
+              "id": "virgo_5",
               "num": 69,
-              "x": 65.0,
-              "y": 31.6,
+              "x": 55.3,
+              "y": 51.2,
               "tag": "Thơ #69 · Vivi",
               "title": "#69. em muốn là con cá",
               "shortTitle": "em muốn là con cá",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "muốn bơi lôi tung tăng",
@@ -2257,16 +2240,16 @@
               ]
             },
             {
-              "id": "libra_7",
+              "id": "virgo_6",
               "num": 70,
-              "x": 74.5,
-              "y": 50.1,
+              "x": 64.8,
+              "y": 27.2,
               "tag": "Thơ #70 · Vivi",
               "title": "#70. Khi      do dự đang...",
               "shortTitle": "Khi      do dự đang...",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "tự sướng tên mình",
@@ -2296,16 +2279,16 @@
               ]
             },
             {
-              "id": "libra_8",
+              "id": "virgo_7",
               "num": 71,
-              "x": 83.0,
-              "y": 35.6,
+              "x": 74.3,
+              "y": 45.2,
               "tag": "Thơ #71 · Vivi",
               "title": "#71. 😭 Hãy để bụng yên.",
               "shortTitle": "😭 Hãy để bụng yên.",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "No căng cái bụng này",
@@ -2320,16 +2303,16 @@
               ]
             },
             {
-              "id": "libra_9",
+              "id": "virgo_8",
               "num": 72,
-              "x": 48.5,
-              "y": 71.6,
+              "x": 83.8,
+              "y": 31.2,
               "tag": "Thơ #72 · Vivi",
               "title": "#72. Muốn được yêu sao phải khắc thân mình / Thiên thiên hạ hạ đều ao ước",
               "shortTitle": "Muốn được yêu sao phải khắc thân mình / Thiên thiên hạ hạ đều ao ước",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Muốn được yêu sao phải khắc thân mình",
@@ -2339,27 +2322,18 @@
                 "Muốn thương nhưng không tin mình xứng đáng?",
                 "Chạy chạy quanh quẩn về nơi ai?"
               ]
-            }
-          ]
-        },
-        {
-          "id": "orion",
-          "name": "Chòm sao Lạp Hộ (Orion)",
-          "subtitle": "người thợ săn sao",
-          "category": "viendu",
-          "bgImg": "assets/img/galaxy_orion.webp",
-          "stars": [
+            },
             {
-              "id": "orion_1",
+              "id": "virgo_9",
               "num": 73,
-              "x": 11.3,
-              "y": 42.0,
+              "x": 48.8,
+              "y": 67.2,
               "tag": "Thơ #73 · Vivi",
               "title": "#73. tâm hồn ta đã tha hóa từ lâu",
               "shortTitle": "tâm hồn ta đã tha hóa từ lâu",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "rơi tay Chúa, Chúa không hề oán trách",
@@ -2368,34 +2342,43 @@
               ]
             },
             {
-              "id": "orion_2",
+              "id": "virgo_10",
               "num": 74,
-              "x": 20.8,
-              "y": 26.5,
+              "x": 62.8,
+              "y": 66.2,
               "tag": "Thơ #74 · Vivi",
               "title": "#74. Tim tim hành hành",
               "shortTitle": "Tim tim hành hành",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Vắt chanh xào tỏi",
                 "Giòn giòn thơm \"chuông\"",
                 "Ngon ngon đẹp mắt ❤️"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "libra",
+          "name": "Chòm sao Thiên Bình (Libra)",
+          "subtitle": "cân bằng · bình yên",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_libra.webp",
+          "stars": [
             {
-              "id": "orion_3",
+              "id": "libra_1",
               "num": 75,
-              "x": 31.3,
-              "y": 48.0,
+              "x": 15.0,
+              "y": 43.2,
               "tag": "Thơ #75 · Vivi",
               "title": "#75. Sợ mùa đông",
               "shortTitle": "Sợ mùa đông",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Khi tình yêu hòa trong không khí",
@@ -2410,16 +2393,16 @@
               ]
             },
             {
-              "id": "orion_4",
+              "id": "libra_2",
               "num": 76,
-              "x": 42.8,
-              "y": 31.0,
+              "x": 24.0,
+              "y": 28.2,
               "tag": "Thơ #76 · Vivi",
               "title": "#76. Ta xuyên qua ánh sáng",
               "shortTitle": "Ta xuyên qua ánh sáng",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một diệu kì nhân gian",
@@ -2433,16 +2416,16 @@
               ]
             },
             {
-              "id": "orion_5",
+              "id": "libra_3",
               "num": 77,
-              "x": 51.3,
-              "y": 52.5,
+              "x": 33.5,
+              "y": 51.2,
               "tag": "Thơ #77 · Vivi",
               "title": "#77. Đâu khuất phục trên khoảng đời này / Mênh mông lải nhải vần bước qua",
               "shortTitle": "Đâu khuất phục trên khoảng đời này / Mênh mông lải nhải vần bước qua",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Đâu khuất phục trên khoảng đời này",
@@ -2456,16 +2439,16 @@
               ]
             },
             {
-              "id": "orion_6",
+              "id": "libra_4",
               "num": 78,
-              "x": 61.8,
-              "y": 28.0,
+              "x": 43.0,
+              "y": 33.2,
               "tag": "Thơ #78 · Vivi",
               "title": "#78. đá khô",
               "shortTitle": "đá khô",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "lấp suối",
@@ -2473,16 +2456,16 @@
               ]
             },
             {
-              "id": "orion_7",
+              "id": "libra_5",
               "num": 79,
-              "x": 71.3,
-              "y": 46.5,
+              "x": 52.5,
+              "y": 55.2,
               "tag": "Thơ #79 · Vivi",
               "title": "#79. Ngày đi lạc",
               "shortTitle": "Ngày đi lạc",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Đi trên hoa mang hơi thở cỏ dại",
@@ -2492,16 +2475,16 @@
               ]
             },
             {
-              "id": "orion_8",
+              "id": "libra_6",
               "num": 80,
-              "x": 79.8,
-              "y": 32.0,
+              "x": 62.0,
+              "y": 31.2,
               "tag": "Thơ #80 · Vivi",
               "title": "#80. . Nuôi",
               "shortTitle": ". Nuôi",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một cây to mang hơi thở cổ thụ",
@@ -2511,16 +2494,16 @@
               ]
             },
             {
-              "id": "orion_9",
+              "id": "libra_7",
               "num": 81,
-              "x": 45.3,
-              "y": 68.0,
+              "x": 71.5,
+              "y": 49.2,
               "tag": "Thơ #81 · Vivi",
               "title": "#81. 1",
               "shortTitle": "1",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một thân cây mang muôn vàn khuôn mặt",
@@ -2528,27 +2511,18 @@
                 "Một thân cây mang muôn vàn ủ rũ",
                 "Đến Jerusalem thoát khỏi cảnh tối tăm."
               ]
-            }
-          ]
-        },
-        {
-          "id": "vien-du",
-          "name": "Chòm sao Viễn Du",
-          "subtitle": "chân trời mới · phiêu lưu",
-          "category": "viendu",
-          "bgImg": "assets/img/galaxy_1.webp",
-          "stars": [
+            },
             {
-              "id": "vien-du_1",
+              "id": "libra_8",
               "num": 82,
-              "x": 16.9,
-              "y": 38.4,
+              "x": 81.0,
+              "y": 35.2,
               "tag": "Thơ #82 · Vivi",
               "title": "#82. Đã.",
               "shortTitle": "Đã.",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Khi sự sống không để lại dấu vết",
@@ -2562,16 +2536,16 @@
               ]
             },
             {
-              "id": "vien-du_2",
+              "id": "libra_9",
               "num": 83,
-              "x": 26.4,
-              "y": 22.9,
+              "x": 46.0,
+              "y": 71.2,
               "tag": "Thơ #83 · Vivi",
               "title": "#83. Tìm.",
               "shortTitle": "Tìm.",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tôi tìm tôi nơi kí ức hiện hình",
@@ -2587,16 +2561,16 @@
               ]
             },
             {
-              "id": "vien-du_3",
+              "id": "libra_10",
               "num": 84,
-              "x": 36.9,
-              "y": 44.4,
+              "x": 60.0,
+              "y": 70.2,
               "tag": "Thơ #84 · Vivi",
               "title": "#84. Bản hoa",
               "shortTitle": "Bản hoa",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Vì là hoa nên chỉ muốn giữ riêng mình",
@@ -2617,18 +2591,27 @@
                 "",
                 "(viết ngày Lễ Phục Sinh)"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "pisces",
+          "name": "Chòm sao Song Ngư (Pisces)",
+          "subtitle": "đại dương thi ca",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_pisces.webp",
+          "stars": [
             {
-              "id": "vien-du_4",
+              "id": "pisces_1",
               "num": 85,
-              "x": 48.4,
-              "y": 27.4,
+              "x": 12.2,
+              "y": 40.0,
               "tag": "Thơ #85 · Vivi",
               "title": "#85. Tớ chỉ đẹp khi ánh nắng xuyên qua",
               "shortTitle": "Tớ chỉ đẹp khi ánh nắng xuyên qua",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tớ cong cong trong ánh nắng chiều tà",
@@ -2637,16 +2620,16 @@
               ]
             },
             {
-              "id": "vien-du_5",
+              "id": "pisces_2",
               "num": 86,
-              "x": 56.9,
-              "y": 48.9,
+              "x": 21.2,
+              "y": 25.0,
               "tag": "Thơ #86 · Vivi",
               "title": "#86. Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
               "shortTitle": "Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Sương mờ trắng hư ảo nơi cuối phố",
@@ -2656,16 +2639,16 @@
               ]
             },
             {
-              "id": "vien-du_6",
+              "id": "pisces_3",
               "num": 87,
-              "x": 67.4,
-              "y": 24.4,
+              "x": 30.7,
+              "y": 48.0,
               "tag": "Thơ #87 · Vivi",
               "title": "#87. Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
               "shortTitle": "Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Làn hoa cỏ khẽ len qua chân phố",
@@ -2675,16 +2658,16 @@
               ]
             },
             {
-              "id": "vien-du_7",
+              "id": "pisces_4",
               "num": 88,
-              "x": 76.9,
-              "y": 42.9,
+              "x": 40.2,
+              "y": 30.0,
               "tag": "Thơ #88 · Vivi",
               "title": "#88. Chụy hành tây thái trái tim xào / Thơm ngon ta làm ra đủ món",
               "shortTitle": "Chụy hành tây thái trái tim xào / Thơm ngon ta làm ra đủ món",
               "date": "15.3.24",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Chụy hành tây thái trái tim xào",
@@ -2699,16 +2682,16 @@
               ]
             },
             {
-              "id": "vien-du_8",
+              "id": "pisces_5",
               "num": 89,
-              "x": 85.4,
-              "y": 28.4,
+              "x": 49.7,
+              "y": 52.0,
               "tag": "Thơ #89 · Vivi",
               "title": "#89. Chân bước thụt",
               "shortTitle": "Chân bước thụt",
               "date": "15.3.24",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Rơi tay nơi lòng Chúa",
@@ -2727,16 +2710,16 @@
               ]
             },
             {
-              "id": "vien-du_9",
+              "id": "pisces_6",
               "num": 90,
-              "x": 50.9,
-              "y": 64.4,
+              "x": 59.2,
+              "y": 28.0,
               "tag": "Thơ #90 · Vivi",
               "title": "#90. Ôm nhau ta cắn nhau thật đau",
               "shortTitle": "Ôm nhau ta cắn nhau thật đau",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ngâm thơ ta ngồi mang phúc",
@@ -2744,35 +2727,18 @@
                 "Tâm hồn không khỏi động phòng",
                 "Nay ngồi trên cát rung đùi mới thôi"
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "kyniem",
-      "name": "Kỷ Niệm & Trầm Tưởng",
-      "shortName": "Kỷ Niệm",
-      "icon": "✧",
-      "galaxies": [
-        {
-          "id": "pisces",
-          "name": "Chòm sao Song Ngư (Pisces)",
-          "subtitle": "đại dương thi ca",
-          "category": "kyniem",
-          "bgImg": "assets/img/galaxy_pisces.webp",
-          "stars": [
+            },
             {
-              "id": "pisces_1",
+              "id": "pisces_7",
               "num": 91,
-              "x": 15.2,
-              "y": 38.9,
+              "x": 68.7,
+              "y": 46.0,
               "tag": "Thơ #91 · Vivi",
               "title": "#91. Hướng về nhau nhưng chỉ chọn một nửa / Nửa trao nhau và một nửa cắt mình",
               "shortTitle": "Hướng về nhau nhưng chỉ chọn một nửa / Nửa trao nhau và một nửa cắt mình",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Hướng về nhau nhưng chỉ chọn một nửa",
@@ -2786,16 +2752,16 @@
               ]
             },
             {
-              "id": "pisces_2",
+              "id": "pisces_8",
               "num": 92,
-              "x": 26.7,
-              "y": 24.9,
+              "x": 78.2,
+              "y": 32.0,
               "tag": "Thơ #92 · Vivi",
               "title": "#92. Hoa đã ngắt ôi xin người trách nhiệm / Nửa chăm bông và một nửa nhìn bông",
               "shortTitle": "Hoa đã ngắt ôi xin người trách nhiệm / Nửa chăm bông và một nửa nhìn bông",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Hoa đã ngắt ôi xin người trách nhiệm",
@@ -2805,16 +2771,16 @@
               ]
             },
             {
-              "id": "pisces_3",
+              "id": "pisces_9",
               "num": 93,
-              "x": 37.2,
-              "y": 47.9,
+              "x": 43.2,
+              "y": 68.0,
               "tag": "Thơ #93 · Vivi",
               "title": "#93. Ta lặng nhìn bông hồng chán ngắt / Hoa đung đưa chỉ bới gió tạt vào",
               "shortTitle": "Ta lặng nhìn bông hồng chán ngắt / Hoa đung đưa chỉ bới gió tạt vào",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Ta lặng nhìn bông hồng chán ngắt",
@@ -2827,33 +2793,42 @@
               ]
             },
             {
-              "id": "pisces_4",
+              "id": "pisces_10",
               "num": 94,
-              "x": 49.2,
-              "y": 29.9,
+              "x": 57.2,
+              "y": 67.0,
               "tag": "Thơ #94 · Vivi",
               "title": "#94. hoa anh đào nở",
               "shortTitle": "hoa anh đào nở",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Trăng sáng",
                 "Kéo sương"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "ursamajor",
+          "name": "Chòm sao Đại Hùng (Ursa Major)",
+          "subtitle": "chỉ đường phương Bắc",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_ursamajor.webp",
+          "stars": [
             {
-              "id": "pisces_5",
+              "id": "ursamajor_1",
               "num": 95,
-              "x": 60.7,
-              "y": 50.9,
+              "x": 17.1,
+              "y": 36.8,
               "tag": "Thơ #95 · Vivi",
               "title": "#95. Angel fallen",
               "shortTitle": "Angel fallen",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "You look like an angel",
@@ -2865,16 +2840,16 @@
               ]
             },
             {
-              "id": "pisces_6",
+              "id": "ursamajor_2",
               "num": 96,
-              "x": 71.2,
-              "y": 26.9,
+              "x": 26.1,
+              "y": 21.8,
               "tag": "Thơ #96 · Vivi",
               "title": "#96. Cắn đôi môi chạm khẽ bờ tai / Hơi nồng ấm rượu vừa chia sẻ",
               "shortTitle": "Cắn đôi môi chạm khẽ bờ tai / Hơi nồng ấm rượu vừa chia sẻ",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Cắn đôi môi chạm khẽ bờ tai",
@@ -2884,16 +2859,16 @@
               ]
             },
             {
-              "id": "pisces_7",
+              "id": "ursamajor_3",
               "num": 97,
-              "x": 80.7,
-              "y": 44.9,
+              "x": 35.6,
+              "y": 44.8,
               "tag": "Thơ #97 · Vivi",
               "title": "#97. hoàng hôn nay mang vị ngọt đôi môi / ngắm ánh chiều  (không) (không) khoảng  (không) cách",
               "shortTitle": "hoàng hôn nay mang vị ngọt đôi môi / ngắm ánh chiều  (không) (không) khoảng  (không) cách",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "hoàng hôn nay mang vị ngọt đôi môi",
@@ -2904,16 +2879,16 @@
               ]
             },
             {
-              "id": "pisces_8",
+              "id": "ursamajor_4",
               "num": 98,
-              "x": 48.2,
-              "y": 66.9,
+              "x": 45.1,
+              "y": 26.8,
               "tag": "Thơ #98 · Vivi",
               "title": "#98. Một bóng hồng / Một bóng hồng mang hình ảnh của ai",
               "shortTitle": "Một bóng hồng / Một bóng hồng mang hình ảnh của ai",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Một bóng hồng",
@@ -2926,27 +2901,18 @@
                 "Bảo vệ em qua bao nhiêu thử tách",
                 "Rosita nàng thơ của anh ơi!"
               ]
-            }
-          ]
-        },
-        {
-          "id": "ursamajor",
-          "name": "Chòm sao Đại Hùng (Ursa Major)",
-          "subtitle": "chỉ đường phương Bắc",
-          "category": "kyniem",
-          "bgImg": "assets/img/galaxy_ursamajor.webp",
-          "stars": [
+            },
             {
-              "id": "ursamajor_1",
+              "id": "ursamajor_5",
               "num": 99,
-              "x": 12.0,
-              "y": 35.3,
+              "x": 54.6,
+              "y": 48.8,
               "tag": "Thơ #99 · Vivi",
               "title": "#99. Tình đẹp khi còn dang dở / Anh nắm tay nói lời hẹn thề",
               "shortTitle": "Tình đẹp khi còn dang dở / Anh nắm tay nói lời hẹn thề",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tình đẹp khi còn dang dở",
@@ -2961,16 +2927,16 @@
               ]
             },
             {
-              "id": "ursamajor_2",
+              "id": "ursamajor_6",
               "num": 100,
-              "x": 23.5,
-              "y": 21.3,
+              "x": 64.1,
+              "y": 24.8,
               "tag": "Thơ #100 · Vivi",
               "title": "#100. Cut my ear forgot my mind / Drink wine, eat bread, external life",
               "shortTitle": "Cut my ear forgot my mind / Drink wine, eat bread, external life",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Cut my ear forgot my mind",
@@ -2983,48 +2949,48 @@
               ]
             },
             {
-              "id": "ursamajor_3",
+              "id": "ursamajor_7",
               "num": 101,
-              "x": 34.0,
-              "y": 44.3,
+              "x": 73.6,
+              "y": 42.8,
               "tag": "Thơ #101 · Vivi",
               "title": "#101. ta gặp nhau mùa hạ/ anh hẹn em mùa đông/ngủ trong chăn ấm áp/bỏ hẹn anh em nằm/đắp cái chăn cho sướng/nhưng lại nhớ anh cơ/hất cái chăn ra góc/sửa soạn gặp anh nè",
               "shortTitle": "ta gặp nhau mùa hạ/ anh hẹn em mùa đông/ngủ trong chăn ấm áp/bỏ hẹn anh em nằm/đắp cái chăn cho sướng/nhưng lại nhớ anh cơ/hất cái chăn ra góc/sửa soạn gặp anh nè",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "ta gặp nhau mùa hạ/ anh hẹn em mùa đông/ngủ trong chăn ấm áp/bỏ hẹn anh em nằm/đắp cái chăn cho sướng/nhưng lại nhớ anh cơ/hất cái chăn ra góc/sửa soạn gặp anh nè"
               ]
             },
             {
-              "id": "ursamajor_4",
+              "id": "ursamajor_8",
               "num": 102,
-              "x": 46.0,
-              "y": 26.3,
+              "x": 83.1,
+              "y": 28.8,
               "tag": "Thơ #102 · Vivi",
               "title": "#102. tôi làm gì từ thứ tôi đang/tôi mê mẩn với cái gọi là/là gì là gỉ là gi/không thiết xác bóng hồng ở đâu?| tôi làm gì trừ thứ tôi đang/bạc nghề bạc phận nói cũng đành/tôi đánh vần vài chữ dang dở/chuyện của mình mình bạc với nhau",
               "shortTitle": "tôi làm gì từ thứ tôi đang/tôi mê mẩn với cái gọi là/là gì là gỉ là gi/không thiết xác bóng hồng ở đâu?| tôi làm gì trừ thứ tôi đang/bạc nghề bạc phận nói cũng đành/tôi đánh vần vài chữ dang dở/chuyện của mình mình bạc với nhau",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "tôi làm gì từ thứ tôi đang/tôi mê mẩn với cái gọi là/là gì là gỉ là gi/không thiết xác bóng hồng ở đâu?| tôi làm gì trừ thứ tôi đang/bạc nghề bạc phận nói cũng đành/tôi đánh vần vài chữ dang dở/chuyện của mình mình bạc với nhau"
               ]
             },
             {
-              "id": "ursamajor_5",
+              "id": "ursamajor_9",
               "num": 103,
-              "x": 57.5,
-              "y": 47.3,
+              "x": 48.1,
+              "y": 64.8,
               "tag": "Thơ #103 · Vivi",
               "title": "#103. những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
               "shortTitle": "những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "những vệt mực quệt trên thảm đỏ",
@@ -3034,16 +3000,16 @@
               ]
             },
             {
-              "id": "ursamajor_6",
+              "id": "ursamajor_10",
               "num": 104,
-              "x": 68.0,
-              "y": 23.3,
+              "x": 62.1,
+              "y": 63.8,
               "tag": "Thơ #104 · Vivi",
               "title": "#104. những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
               "shortTitle": "những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "những vệt mực quệt trên thảm đỏ",
@@ -3051,18 +3017,27 @@
                 "xẹt qua nhau mà giặt không hết",
                 "những chấn thương bỏ bể tí hon"
               ]
-            },
+            }
+          ]
+        },
+        {
+          "id": "orion",
+          "name": "Chòm sao Lạp Hộ (Orion)",
+          "subtitle": "người thợ săn sao",
+          "category": "mongmo",
+          "bgImg": "assets/img/galaxy_orion.webp",
+          "stars": [
             {
-              "id": "ursamajor_7",
+              "id": "orion_1",
               "num": 105,
-              "x": 77.5,
-              "y": 41.3,
+              "x": 14.3,
+              "y": 40.8,
               "tag": "Thơ #105 · Vivi",
               "title": "#105. nếu biết thời gian là mãi mãi / liệu ta có trân trọng khắc bên nhau",
               "shortTitle": "nếu biết thời gian là mãi mãi / liệu ta có trân trọng khắc bên nhau",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "nếu biết thời gian là mãi mãi",
@@ -3086,16 +3061,16 @@
               ]
             },
             {
-              "id": "ursamajor_8",
+              "id": "orion_2",
               "num": 106,
-              "x": 45.0,
-              "y": 63.3,
+              "x": 23.3,
+              "y": 25.8,
               "tag": "Thơ #106 · Vivi",
               "title": "#106. Sao lại sống? / Ta tắt mình chìm dần vào bóng tối",
               "shortTitle": "Sao lại sống? / Ta tắt mình chìm dần vào bóng tối",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Sao lại sống?",
@@ -3109,27 +3084,18 @@
                 "Là khởi đầu và cũng là kết thúc",
                 "Gần thêm nữa...Chúa cho câu trả lời."
               ]
-            }
-          ]
-        },
-        {
-          "id": "ky-niem",
-          "name": "Chòm sao Kỷ Niệm",
-          "subtitle": "góc ký ức đọng lại",
-          "category": "kyniem",
-          "bgImg": "assets/img/galaxy_2.webp",
-          "stars": [
+            },
             {
-              "id": "ky-niem_1",
+              "id": "orion_3",
               "num": 107,
-              "x": 17.6,
-              "y": 39.8,
+              "x": 32.8,
+              "y": 48.8,
               "tag": "Thơ #107 · Vivi",
               "title": "#107. Tớ chỉ đẹp khi ánh nắng xuyên qua / Tớ cong cong trong ánh nắng chiều tà",
               "shortTitle": "Tớ chỉ đẹp khi ánh nắng xuyên qua / Tớ cong cong trong ánh nắng chiều tà",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Tớ chỉ đẹp khi ánh nắng xuyên qua",
@@ -3139,16 +3105,16 @@
               ]
             },
             {
-              "id": "ky-niem_2",
+              "id": "orion_4",
               "num": 108,
-              "x": 29.1,
-              "y": 25.8,
+              "x": 42.3,
+              "y": 30.8,
               "tag": "Thơ #108 · Vivi",
               "title": "#108. Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
               "shortTitle": "Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Sương mờ trắng hư ảo nơi cuối phố",
@@ -3158,16 +3124,16 @@
               ]
             },
             {
-              "id": "ky-niem_3",
+              "id": "orion_5",
               "num": 109,
-              "x": 39.6,
-              "y": 48.8,
+              "x": 51.8,
+              "y": 52.8,
               "tag": "Thơ #109 · Vivi",
               "title": "#109. Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
               "shortTitle": "Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Làn hoa cỏ khẽ len qua chân phố",
@@ -3177,16 +3143,16 @@
               ]
             },
             {
-              "id": "ky-niem_4",
+              "id": "orion_6",
               "num": 110,
-              "x": 51.6,
-              "y": 30.8,
+              "x": 61.3,
+              "y": 28.8,
               "tag": "Thơ #110 · Vivi",
               "title": "#110. Anh biến mất không một dấu vết / Vết chân anh hằn sắt trong em",
               "shortTitle": "Anh biến mất không một dấu vết / Vết chân anh hằn sắt trong em",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Anh biến mất không một dấu vết",
@@ -3209,16 +3175,16 @@
               ]
             },
             {
-              "id": "ky-niem_5",
+              "id": "orion_7",
               "num": 111,
-              "x": 63.1,
-              "y": 51.8,
+              "x": 70.8,
+              "y": 46.8,
               "tag": "Thơ #111 · Vivi",
               "title": "#111. Anh là ai, kìa hỡi chàng trai / Lướt qua em, hương hoa cỏ dại",
               "shortTitle": "Anh là ai, kìa hỡi chàng trai / Lướt qua em, hương hoa cỏ dại",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Anh là ai, kìa hỡi chàng trai",
@@ -3239,16 +3205,16 @@
               ]
             },
             {
-              "id": "ky-niem_6",
+              "id": "orion_8",
               "num": 112,
-              "x": 73.6,
-              "y": 27.8,
+              "x": 80.3,
+              "y": 32.8,
               "tag": "Thơ #112 · Vivi",
               "title": "#112. Này đôi chân đi mãi không vừa / Chiếc giày xỏ chỉ vừa 1 size",
               "shortTitle": "Này đôi chân đi mãi không vừa / Chiếc giày xỏ chỉ vừa 1 size",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Này đôi chân đi mãi không vừa",
@@ -3258,16 +3224,16 @@
               ]
             },
             {
-              "id": "ky-niem_7",
+              "id": "orion_9",
               "num": 113,
-              "x": 83.1,
-              "y": 45.8,
+              "x": 45.3,
+              "y": 68.8,
               "tag": "Thơ #113 · Vivi",
               "title": "#113. Chờ chồng ngồi đếm vì sao / Em ngồi em thấy nao nao trông lòng",
               "shortTitle": "Chờ chồng ngồi đếm vì sao / Em ngồi em thấy nao nao trông lòng",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Chờ chồng ngồi đếm vì sao",
@@ -3277,16 +3243,16 @@
               ]
             },
             {
-              "id": "ky-niem_8",
+              "id": "orion_10",
               "num": 114,
-              "x": 50.6,
+              "x": 59.3,
               "y": 67.8,
               "tag": "Thơ #114 · Vivi",
               "title": "#114. Ngày đi lạc",
               "shortTitle": "Ngày đi lạc",
               "date": "Vivi",
               "author": "Vivi",
-              "location": "Vườn Thơ Vivi",
+              "location": "Vườn Thơ Mộng Mơ",
               "weather": "Trời quang · Ngàn sao",
               "body": [
                 "Đi trên hoa mang hơi thở cỏ dại",
@@ -3402,6 +3368,219 @@
           ]
         }
       ]
+    },
+    {
+      "id": "viendu",
+      "name": "Hành Trình Viễn Du",
+      "shortName": "Viễn Du",
+      "icon": "⟡",
+      "galaxies": [
+        {
+          "id": "vien-du",
+          "name": "Chòm sao Viễn Du",
+          "subtitle": "chân trời mới · phiêu lưu",
+          "category": "viendu",
+          "bgImg": "assets/img/galaxy_1.webp",
+          "stars": [
+            {
+              "id": "viendu_1",
+              "num": 1,
+              "x": 18.0,
+              "y": 48.0,
+              "station": "Trạm Khởi Hành · Căn Phòng Bên Cửa Sổ",
+              "tag": "Hành Trình Viễn Du · Trạm 1",
+              "title": "Trạm 1: Khởi Hành Giữa Ngàn Sao",
+              "shortTitle": "Khởi Hành Giữa Ngàn Sao",
+              "date": "Xuân 2024",
+              "author": "Vivi",
+              "location": "Căn phòng bên cửa sổ",
+              "weather": "Gió đêm se lạnh",
+              "coverImage": "assets/photos/dalat.jpg",
+              "body": [
+                "Bắt đầu một chuyến đi dài qua những tầng mây,",
+                "từ căn phòng ấm áp bên tách trà sen thơm ngát.",
+                "Cửa sổ mở ra cả một khoảng trời mênh mông,",
+                "chú cún con ngước nhìn theo từng vì sao rớt."
+              ]
+            },
+            {
+              "id": "viendu_2",
+              "num": 2,
+              "x": 32.0,
+              "y": 32.0,
+              "station": "Trạm Dừng · Sương Mờ Đà Lạt",
+              "tag": "Hành Trình Viễn Du · Trạm 2",
+              "title": "Trạm 2: Đồi Thông & Sương Mờ",
+              "shortTitle": "Đồi Thông & Sương Mờ",
+              "date": "Mùa thu 2024",
+              "author": "Vivi",
+              "location": "Đồi thông Đà Lạt",
+              "weather": "Sương mù giăng lối",
+              "coverImage": "assets/photos/dalat.jpg",
+              "body": [
+                "Đà Lạt sớm mai phủ một làn sương mỏng,",
+                "những nhành thông khẽ run rẩy đón hạt nắng đầu tiên.",
+                "Tôi bước đi giữa không gian tĩnh lặng,",
+                "nghe tiếng chim ca ríu rít gọi bình minh."
+              ]
+            },
+            {
+              "id": "viendu_3",
+              "num": 3,
+              "x": 48.0,
+              "y": 52.0,
+              "station": "Trạm Dừng · Biển Chiều Quy Nhơn",
+              "tag": "Hành Trình Viễn Du · Trạm 3",
+              "title": "Trạm 3: Biển Chiều & Hoàng Hôn Vàng",
+              "shortTitle": "Biển Chiều & Hoàng Hôn Vàng",
+              "date": "Hè 2024",
+              "author": "Vivi",
+              "location": "Bờ biển Quy Nhơn",
+              "weather": "Sóng vỗ rì rào",
+              "coverImage": "assets/photos/quynhon.jpg",
+              "body": [
+                "Sóng biển dạt dào hôn lên bờ cát mịn,",
+                "nắng chiều buông vạt áo tím trên mặt nước lung linh.",
+                "Ngồi nghe biển hát bản tình ca muôn thuở,",
+                "thấy lòng mình nhẹ bẫng tựa áng mây trôi."
+              ]
+            },
+            {
+              "id": "viendu_4",
+              "num": 4,
+              "x": 64.0,
+              "y": 28.0,
+              "station": "Trạm Dừng · Đỉnh Gió Cao Nguyên",
+              "tag": "Hành Trình Viễn Du · Trạm 4",
+              "title": "Trạm 4: Đỉnh Gió & Trời Mây",
+              "shortTitle": "Đỉnh Gió & Trời Mây",
+              "date": "Thu 2024",
+              "author": "Vivi",
+              "location": "Đỉnh đèo lộng gió",
+              "weather": "Gió thổi lồng lộng",
+              "body": [
+                "Đứng trên đỉnh cao ngắm nhìn bốn bể,",
+                "con đường uốn lượn như dải lụa mềm vắt ngang lưng trời.",
+                "Gió thổi bay những âu lo thường nhật,",
+                "chỉ còn lại sự tự do và tình yêu thiên nhiên."
+              ]
+            },
+            {
+              "id": "viendu_5",
+              "num": 5,
+              "x": 78.0,
+              "y": 44.0,
+              "station": "Trạm Đích · Vòm Trời Kỷ Niệm",
+              "tag": "Hành Trình Viễn Du · Trạm 5",
+              "title": "Trạm 5: Điểm Dừng Chân Thênh Thang",
+              "shortTitle": "Điểm Dừng Chân Thênh Thang",
+              "date": "Đông 2024",
+              "author": "Vivi",
+              "location": "Vòm trời sao",
+              "weather": "Sao sa lấp lánh",
+              "body": [
+                "Đi thật xa để trở về bên chính mình,",
+                "mỗi bước chân là một nốt nhạc trong bản giao hưởng cuộc đời.",
+                "Cảm ơn những chuyến đi đã cho tôi thêm yêu cuộc sống,",
+                "và tin vào những điều kỳ diệu quanh ta."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kyniem",
+      "name": "Kỷ Niệm",
+      "shortName": "Kỷ Niệm",
+      "icon": "✧",
+      "galaxies": [
+        {
+          "id": "ky-niem",
+          "name": "Chòm sao Kỷ Niệm",
+          "subtitle": "góc ký ức đọng lại",
+          "category": "kyniem",
+          "bgImg": "assets/img/galaxy_2.webp",
+          "stars": [
+            {
+              "id": "kyniem_1",
+              "num": 1,
+              "x": 20.0,
+              "y": 44.0,
+              "tag": "Kỷ Niệm · Vivi",
+              "title": "Ký Ức Buổi Chiều Mưa",
+              "shortTitle": "Ký Ức Buổi Chiều Mưa",
+              "date": "Mùa đông năm ấy",
+              "author": "Vivi",
+              "location": "Góc hiên nhỏ",
+              "weather": "Mưa rả rích",
+              "body": [
+                "Hôm ấy trời mưa rả rích từ trưa đến sẩm tối,",
+                "tiếng nước rơi trên mái ngói tạo thành điệu nhạc êm đềm.",
+                "Chiếc khăn len cũ quấn quanh chú cún nhỏ,",
+                "ngoài hiên mưa lạnh nhưng trong phòng ấm áp lạ kỳ."
+              ]
+            },
+            {
+              "id": "kyniem_2",
+              "num": 2,
+              "x": 38.0,
+              "y": 28.0,
+              "tag": "Kỷ Niệm · Vivi",
+              "title": "Mảnh Vườn Tuổi Thơ",
+              "shortTitle": "Mảnh Vườn Tuổi Thơ",
+              "date": "Ký ức xưa",
+              "author": "Vivi",
+              "location": "Vườn quê thanh bình",
+              "weather": "Nắng vàng mật ong",
+              "body": [
+                "Mảnh vườn xưa đầy hoa cau thơm ngát,",
+                "những buổi trưa trốn ngủ chạy bắt chuồn chuồn ớt.",
+                "Kỷ niệm tuổi thơ ngọt ngào như viên kẹo,",
+                "đi qua năm tháng vẫn vẹn nguyên trong lòng."
+              ]
+            },
+            {
+              "id": "kyniem_3",
+              "num": 3,
+              "x": 55.0,
+              "y": 52.0,
+              "tag": "Kỷ Niệm · Vivi",
+              "title": "Ngọn Lửa Sưởi Ấm Đêm Đông",
+              "shortTitle": "Ngọn Lửa Sưởi Ấm Đêm Đông",
+              "date": "Đêm giao mùa",
+              "author": "Vivi",
+              "location": "Bên bếp lửa hồng",
+              "weather": "Gió bấc se lạnh",
+              "body": [
+                "Bên bếp lửa hồng tí tách nổ than hoa,",
+                "chú cún nằm lười gối đầu lên chân tôi ngủ say sưa.",
+                "Cuộc sống đôi khi chỉ cần những khoảnh khắc bình dị như thế,",
+                "đủ để sưởi ấm cả một mùa đông dài."
+              ]
+            },
+            {
+              "id": "kyniem_4",
+              "num": 4,
+              "x": 75.0,
+              "y": 36.0,
+              "tag": "Kỷ Niệm · Vivi",
+              "title": "Lời Nhắn Nhủ Thời Gian",
+              "shortTitle": "Lời Nhắn Nhủ Thời Gian",
+              "date": "Hiện tại & Tương lai",
+              "author": "Vivi",
+              "location": "Khoảng trời hoài niệm",
+              "weather": "Bình yên vô tận",
+              "body": [
+                "Thời gian có thể làm mờ nhạt đi nhiều thứ,",
+                "nhưng tình yêu và kỷ niệm đẹp sẽ mãi là vĩnh cửu.",
+                "Hãy giữ trong tim những vì sao sáng nhất,",
+                "để dẫn lối cho ta trên mọi nẻo đường đời."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "constellations": [
@@ -3416,13 +3595,13 @@
           "id": "mongmo_1",
           "num": 1,
           "x": 10.5,
-          "y": 38.4,
+          "y": 38.8,
           "tag": "Thơ #1 · Vivi",
           "title": "#1. róc rách chảy ly trà",
           "shortTitle": "róc rách chảy ly trà",
           "date": "15.1.2021",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "nghe thoang thoảng đâu đây",
@@ -3436,14 +3615,14 @@
         {
           "id": "mongmo_2",
           "num": 2,
-          "x": 20.0,
-          "y": 22.9,
+          "x": 19.0,
+          "y": 22.8,
           "tag": "Thơ #2 · Vivi",
           "title": "#2. Gió đông",
           "shortTitle": "Gió đông",
           "date": "16.01.22",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "gió thổi tóc em bay",
@@ -3457,14 +3636,14 @@
         {
           "id": "mongmo_3",
           "num": 3,
-          "x": 30.5,
-          "y": 44.4,
+          "x": 27.5,
+          "y": 44.8,
           "tag": "Thơ #3 · Vivi",
           "title": "#3. Đêm khuya",
           "shortTitle": "Đêm khuya",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ngọn đèn khuya sáng tỏ",
@@ -3488,14 +3667,14 @@
         {
           "id": "mongmo_4",
           "num": 4,
-          "x": 42.0,
-          "y": 27.4,
+          "x": 36.5,
+          "y": 26.8,
           "tag": "Thơ #4 · Vivi",
           "title": "#4. Vị lạnh",
           "shortTitle": "Vị lạnh",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một chút lạnh đột ngột",
@@ -3524,14 +3703,14 @@
         {
           "id": "mongmo_5",
           "num": 5,
-          "x": 50.5,
-          "y": 48.9,
+          "x": 45.0,
+          "y": 48.8,
           "tag": "Thơ #5 · Vivi",
           "title": "#5. Thân gửi bạn mến yêu",
           "shortTitle": "Thân gửi bạn mến yêu",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một chút thơ sến sến",
@@ -3546,14 +3725,14 @@
         {
           "id": "mongmo_6",
           "num": 6,
-          "x": 61.0,
-          "y": 24.4,
+          "x": 53.5,
+          "y": 23.8,
           "tag": "Thơ #6 · Vivi",
           "title": "#6. Con tim em tan thành trăm mảnh",
           "shortTitle": "Con tim em tan thành trăm mảnh",
           "date": "26.1.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Sao em không tựa vào vai anh",
@@ -3567,14 +3746,14 @@
         {
           "id": "mongmo_7",
           "num": 7,
-          "x": 70.5,
-          "y": 42.9,
+          "x": 62.0,
+          "y": 43.8,
           "tag": "Thơ #7 · Vivi",
           "title": "#7. Đi",
           "shortTitle": "Đi",
           "date": "29.1.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Đi thật nhanh thật nhanh",
@@ -3605,14 +3784,14 @@
         {
           "id": "mongmo_8",
           "num": 8,
-          "x": 79.0,
-          "y": 28.4,
+          "x": 70.5,
+          "y": 27.8,
           "tag": "Thơ #8 · Vivi",
           "title": "#8. chào 2022",
           "shortTitle": "chào 2022",
           "date": "1.2.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "thao thức cả đêm khuya",
@@ -3632,14 +3811,14 @@
         {
           "id": "mongmo_9",
           "num": 9,
-          "x": 44.5,
-          "y": 64.4,
+          "x": 79.0,
+          "y": 41.8,
           "tag": "Thơ #9 · Vivi",
           "title": "#9. Cô nàng mập",
           "shortTitle": "Cô nàng mập",
           "date": "4.2.2021",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "tui là cô nàng mập",
@@ -3660,27 +3839,18 @@
             "dần trở thành \"nơi dưa\"",
             "cho người mà tôi yêu."
           ]
-        }
-      ]
-    },
-    {
-      "id": "aries",
-      "name": "Chòm sao Bạch Dương (Aries)",
-      "subtitle": "khởi đầu tươi sáng",
-      "category": "mongmo",
-      "bgImg": "assets/img/galaxy_aries.webp",
-      "stars": [
+        },
         {
-          "id": "aries_1",
+          "id": "mongmo_10",
           "num": 10,
-          "x": 16.1,
-          "y": 42.9,
+          "x": 40.5,
+          "y": 64.8,
           "tag": "Thơ #10 · Vivi",
           "title": "#10. Môi mọng",
           "shortTitle": "Môi mọng",
           "date": "14.2.2021",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             ".Làn môi mềm ngọt",
@@ -3707,16 +3877,16 @@
           ]
         },
         {
-          "id": "aries_2",
+          "id": "mongmo_11",
           "num": 11,
-          "x": 25.6,
-          "y": 27.4,
+          "x": 55.5,
+          "y": 64.8,
           "tag": "Thơ #11 · Vivi",
           "title": "#11. Ngày xanh",
           "shortTitle": "Ngày xanh",
           "date": "1.2.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "xanh xanh màu lá",
@@ -3732,18 +3902,27 @@
             "em mơ về ngày em lớn lên.",
             "- An"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "aries",
+      "name": "Chòm sao Bạch Dương (Aries)",
+      "subtitle": "khởi đầu tươi sáng",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_aries.webp",
+      "stars": [
         {
-          "id": "aries_3",
+          "id": "aries_1",
           "num": 12,
-          "x": 36.1,
-          "y": 48.9,
+          "x": 15.4,
+          "y": 42.8,
           "tag": "Thơ #12 · Vivi",
           "title": "#12. Giai điệu tuổi thơ",
           "shortTitle": "Giai điệu tuổi thơ",
           "date": "15.02.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Lắng lòng tôi thơ thẩn",
@@ -3778,16 +3957,16 @@
           ]
         },
         {
-          "id": "aries_4",
+          "id": "aries_2",
           "num": 13,
-          "x": 47.6,
-          "y": 31.9,
+          "x": 23.9,
+          "y": 26.8,
           "tag": "Thơ #13 · Vivi",
           "title": "#13. đậm đặc",
           "shortTitle": "đậm đặc",
           "date": "18.2.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "đùng đoàng tiếng pháo nổ",
@@ -3810,16 +3989,16 @@
           ]
         },
         {
-          "id": "aries_5",
+          "id": "aries_3",
           "num": 14,
-          "x": 56.1,
-          "y": 53.4,
+          "x": 32.4,
+          "y": 48.8,
           "tag": "Thơ #14 · Vivi",
           "title": "#14. lẽ thường",
           "shortTitle": "lẽ thường",
           "date": "22.2.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "rưng rưng ngập tràn mắt",
@@ -3837,16 +4016,16 @@
           ]
         },
         {
-          "id": "aries_6",
+          "id": "aries_4",
           "num": 15,
-          "x": 66.6,
-          "y": 28.9,
+          "x": 41.4,
+          "y": 30.8,
           "tag": "Thơ #15 · Vivi",
           "title": "#15. Chữa lành cho em",
           "shortTitle": "Chữa lành cho em",
           "date": "7.2.2021",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Khép lại đôi bờ mi",
@@ -3908,16 +4087,16 @@
           ]
         },
         {
-          "id": "aries_7",
+          "id": "aries_5",
           "num": 16,
-          "x": 76.1,
-          "y": 47.4,
+          "x": 49.9,
+          "y": 52.8,
           "tag": "Thơ #16 · Vivi",
           "title": "#16. Nước cờ",
           "shortTitle": "Nước cờ",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Dẫn quân cờ từng bước",
@@ -3941,16 +4120,16 @@
           ]
         },
         {
-          "id": "aries_8",
+          "id": "aries_6",
           "num": 17,
-          "x": 84.6,
-          "y": 32.9,
+          "x": 58.4,
+          "y": 27.8,
           "tag": "Thơ #17 · Vivi",
           "title": "#17. Ly rượu trườn toàn thân",
           "shortTitle": "Ly rượu trườn toàn thân",
           "date": "4.2.22",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Thân toàn hương nồng thắm",
@@ -3970,16 +4149,16 @@
           ]
         },
         {
-          "id": "aries_9",
+          "id": "aries_7",
           "num": 18,
-          "x": 50.1,
-          "y": 68.9,
+          "x": 66.9,
+          "y": 47.8,
           "tag": "Thơ #18 · Vivi",
           "title": "#18. Sai?",
           "shortTitle": "Sai?",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Rưng rưng ngập trong mắt",
@@ -3991,27 +4170,18 @@
             "Trải thêm chuyện ở đời",
             "Đời này luôn rộng lớn.\""
           ]
-        }
-      ]
-    },
-    {
-      "id": "taurus",
-      "name": "Chòm sao Kim Ngưu (Taurus)",
-      "subtitle": "ấm áp · kiên định",
-      "category": "mongmo",
-      "bgImg": "assets/img/galaxy_taurus.webp",
-      "stars": [
+        },
         {
-          "id": "taurus_1",
+          "id": "aries_8",
           "num": 19,
-          "x": 12.9,
-          "y": 39.3,
+          "x": 75.4,
+          "y": 31.8,
           "tag": "Thơ #19 · Vivi",
           "title": "#19. tôi là bông hồng nhỏ",
           "shortTitle": "tôi là bông hồng nhỏ",
           "date": "11.3.22",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "thấy nắng lên mỗi ngày",
@@ -4024,16 +4194,16 @@
           ]
         },
         {
-          "id": "taurus_2",
+          "id": "aries_9",
           "num": 20,
-          "x": 22.4,
-          "y": 23.8,
+          "x": 83.9,
+          "y": 45.8,
           "tag": "Thơ #20 · Vivi",
           "title": "#20. Mine",
           "shortTitle": "Mine",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "ta che đi cảm xúc",
@@ -4058,16 +4228,16 @@
           ]
         },
         {
-          "id": "taurus_3",
+          "id": "aries_10",
           "num": 21,
-          "x": 32.9,
-          "y": 45.3,
+          "x": 45.4,
+          "y": 68.8,
           "tag": "Thơ #21 · Vivi",
           "title": "#21. Flow",
           "shortTitle": "Flow",
           "date": "18.3.22",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "cuốn mình theo dòng chảy",
@@ -4103,16 +4273,16 @@
           ]
         },
         {
-          "id": "taurus_4",
+          "id": "aries_11",
           "num": 22,
-          "x": 44.4,
-          "y": 28.3,
+          "x": 60.4,
+          "y": 68.8,
           "tag": "Thơ #22 · Vivi",
           "title": "#22. Tách trà cho tâm hồn",
           "shortTitle": "Tách trà cho tâm hồn",
           "date": "21.3.22",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Bung mình làn khói tỏa",
@@ -4120,18 +4290,27 @@
             "Sao mà thơm thanh mát",
             "Lắng lòng để nhâm nhi\""
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "taurus",
+      "name": "Chòm sao Kim Ngưu (Taurus)",
+      "subtitle": "ấm áp · kiên định",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_taurus.webp",
+      "stars": [
         {
-          "id": "taurus_5",
+          "id": "taurus_1",
           "num": 23,
-          "x": 52.9,
-          "y": 49.8,
+          "x": 12.6,
+          "y": 39.6,
           "tag": "Thơ #23 · Vivi",
           "title": "#23. hồng hộc tôi chẳng nghĩ",
           "shortTitle": "hồng hộc tôi chẳng nghĩ",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "cứ thế mà chạy thôi",
@@ -4149,16 +4328,16 @@
           ]
         },
         {
-          "id": "taurus_6",
+          "id": "taurus_2",
           "num": 24,
-          "x": 63.4,
-          "y": 25.3,
+          "x": 21.1,
+          "y": 23.6,
           "tag": "Thơ #24 · Vivi",
           "title": "#24. Ngược",
           "shortTitle": "Ngược",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Có những quả tưởng chừng ngọt lịm",
@@ -4204,16 +4383,16 @@
           ]
         },
         {
-          "id": "taurus_7",
+          "id": "taurus_3",
           "num": 25,
-          "x": 72.9,
-          "y": 43.8,
+          "x": 29.6,
+          "y": 45.6,
           "tag": "Thơ #25 · Vivi",
           "title": "#25. Tỉnh dậy đọc thông báo",
           "shortTitle": "Tỉnh dậy đọc thông báo",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Báo công văn nghỉ học",
@@ -4252,16 +4431,16 @@
           ]
         },
         {
-          "id": "taurus_8",
+          "id": "taurus_4",
           "num": 26,
-          "x": 81.4,
-          "y": 29.3,
+          "x": 38.6,
+          "y": 27.6,
           "tag": "Thơ #26 · Vivi",
           "title": "#26. bỗng sụt sùi nước mũi",
           "shortTitle": "bỗng sụt sùi nước mũi",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "mắt mũi cứ tèm nhem",
@@ -4278,16 +4457,16 @@
           ]
         },
         {
-          "id": "taurus_9",
+          "id": "taurus_5",
           "num": 27,
-          "x": 46.9,
-          "y": 65.3,
+          "x": 47.1,
+          "y": 49.6,
           "tag": "Thơ #27 · Vivi",
           "title": "#27. Mở",
           "shortTitle": "Mở",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Khép đôi mắt và mở",
@@ -4305,27 +4484,18 @@
             "Không phải quy luật là mãi mãi",
             "Nhưng có quy luật vẫn chẳng đổi thay."
           ]
-        }
-      ]
-    },
-    {
-      "id": "gemini",
-      "name": "Chòm sao Song Tử (Gemini)",
-      "subtitle": "tâm sự · nhịp đập đôi",
-      "category": "mongmo",
-      "bgImg": "assets/img/galaxy_gemini.webp",
-      "stars": [
+        },
         {
-          "id": "gemini_1",
+          "id": "taurus_6",
           "num": 28,
-          "x": 18.5,
-          "y": 43.8,
+          "x": 55.6,
+          "y": 24.6,
           "tag": "Thơ #28 · Vivi",
           "title": "#28. Vô ích",
           "shortTitle": "Vô ích",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Chẳng bao giờ cố gắng",
@@ -4349,16 +4519,16 @@
           ]
         },
         {
-          "id": "gemini_2",
+          "id": "taurus_7",
           "num": 29,
-          "x": 28.0,
-          "y": 28.3,
+          "x": 64.1,
+          "y": 44.6,
           "tag": "Thơ #29 · Vivi",
           "title": "#29. Giờ chẳng còn lại chi",
           "shortTitle": "Giờ chẳng còn lại chi",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Hai con đường đều mất",
@@ -4384,16 +4554,16 @@
           ]
         },
         {
-          "id": "gemini_3",
+          "id": "taurus_8",
           "num": 30,
-          "x": 38.5,
-          "y": 49.8,
+          "x": 72.6,
+          "y": 28.6,
           "tag": "Thơ #30 · Vivi",
           "title": "#30. Tàn",
           "shortTitle": "Tàn",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Đời lụi lại tàn phai",
@@ -4410,16 +4580,16 @@
           ]
         },
         {
-          "id": "gemini_4",
+          "id": "taurus_9",
           "num": 31,
-          "x": 50.0,
-          "y": 32.8,
+          "x": 81.1,
+          "y": 42.6,
           "tag": "Thơ #31 · Vivi",
           "title": "#31. |Bí ẩn Tequila|",
           "shortTitle": "|Bí ẩn Tequila|",
           "date": "8.5.2022",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Say nhau một ánh mắt",
@@ -4443,16 +4613,16 @@
           ]
         },
         {
-          "id": "gemini_5",
+          "id": "taurus_10",
           "num": 32,
-          "x": 58.5,
-          "y": 54.3,
+          "x": 42.6,
+          "y": 65.6,
           "tag": "Thơ #32 · Vivi",
           "title": "#32. Nở",
           "shortTitle": "Nở",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Nở rồi hoa lại tàn",
@@ -4475,16 +4645,16 @@
           ]
         },
         {
-          "id": "gemini_6",
+          "id": "taurus_11",
           "num": 33,
-          "x": 69.0,
-          "y": 29.8,
+          "x": 57.6,
+          "y": 65.6,
           "tag": "Thơ #33 · Vivi",
           "title": "#33. Sợ.",
           "shortTitle": "Sợ.",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             ".",
@@ -4506,18 +4676,27 @@
             "Miễn là mình vẫn bước.",
             ".An Nguyên"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "gemini",
+      "name": "Chòm sao Song Tử (Gemini)",
+      "subtitle": "tâm sự · nhịp đập đôi",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_gemini.webp",
+      "stars": [
         {
-          "id": "gemini_7",
+          "id": "gemini_1",
           "num": 34,
-          "x": 78.5,
-          "y": 48.3,
+          "x": 17.5,
+          "y": 43.6,
           "tag": "Thơ #34 · Vivi",
           "title": "#34. có những người cả đời luôn thành công mà chưa biết đến thất bại / có những người cả đời thất bại mà chưa từng biết đến thành công",
           "shortTitle": "có những người cả đời luôn thành công mà chưa biết đến thất bại / có những người cả đời thất bại mà chưa từng biết đến thành công",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "có những người cả đời luôn thành công mà chưa biết đến thất bại",
@@ -4535,16 +4714,16 @@
           ]
         },
         {
-          "id": "gemini_8",
+          "id": "gemini_2",
           "num": 35,
-          "x": 87.0,
-          "y": 33.8,
+          "x": 26.0,
+          "y": 27.6,
           "tag": "Thơ #35 · Vivi",
           "title": "#35. |Bella|",
           "shortTitle": "|Bella|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "! Bài này sẽ spoil phim á.",
@@ -4608,16 +4787,16 @@
           ]
         },
         {
-          "id": "gemini_9",
+          "id": "gemini_3",
           "num": 36,
-          "x": 52.5,
-          "y": 69.8,
+          "x": 34.5,
+          "y": 49.6,
           "tag": "Thơ #36 · Vivi",
           "title": "#36. Hiểu",
           "shortTitle": "Hiểu",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tiếng nói vừa cất lên",
@@ -4671,27 +4850,18 @@
             "- An",
             "p/s: Tớ viết hôm đi thi Anh khảo sát sau buổi trưa nói chuyện với mẹ khiến tớ khóc rất nhiều. Cãi nhau vì bất đồng quan điểm cũng có luôn. Tớ khóc rất nhiều vì nói chuyện với mẹ. Bởi có một cảm giác rất lạ như kìm nén tớ bao lâu nay í. Nhưng khi nói xong thì thật nhẹ nhõm. Và tớ thấy hai mẹ con tớ hiểu nhau hơn."
           ]
-        }
-      ]
-    },
-    {
-      "id": "cancer",
-      "name": "Chòm sao Cự Giải (Cancer)",
-      "subtitle": "dịu dàng · che chở",
-      "category": "mongmo",
-      "bgImg": "assets/img/galaxy_cancer.webp",
-      "stars": [
+        },
         {
-          "id": "cancer_1",
+          "id": "gemini_4",
           "num": 37,
-          "x": 15.3,
-          "y": 40.2,
+          "x": 43.5,
+          "y": 31.6,
           "tag": "Thơ #37 · Vivi",
           "title": "#37. |The twine of secure|",
           "shortTitle": "|The twine of secure|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Look up to the sky",
@@ -4713,16 +4883,16 @@
           ]
         },
         {
-          "id": "cancer_2",
+          "id": "gemini_5",
           "num": 38,
-          "x": 24.8,
-          "y": 24.7,
+          "x": 52.0,
+          "y": 53.6,
           "tag": "Thơ #38 · Vivi",
           "title": "#38. |Bơi cùng cá|",
           "shortTitle": "|Bơi cùng cá|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Vò đầu bứt tóc gội cái đầu",
@@ -4737,16 +4907,16 @@
           ]
         },
         {
-          "id": "cancer_3",
+          "id": "gemini_6",
           "num": 39,
-          "x": 35.3,
-          "y": 46.2,
+          "x": 60.5,
+          "y": 28.6,
           "tag": "Thơ #39 · Vivi",
           "title": "#39. |Bơi|",
           "shortTitle": "|Bơi|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Em ơi nào mình đi câu cá",
@@ -4772,16 +4942,16 @@
           ]
         },
         {
-          "id": "cancer_4",
+          "id": "gemini_7",
           "num": 40,
-          "x": 46.8,
-          "y": 29.2,
+          "x": 69.0,
+          "y": 48.6,
           "tag": "Thơ #40 · Vivi",
           "title": "#40. Ta sống chỉ mong cảm nhận những chân trời / Nhưng chân trời ai mà lại không biết?",
           "shortTitle": "Ta sống chỉ mong cảm nhận những chân trời / Nhưng chân trời ai mà lại không biết?",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ta sống chỉ mong cảm nhận những chân trời",
@@ -4797,16 +4967,16 @@
           ]
         },
         {
-          "id": "cancer_5",
+          "id": "gemini_8",
           "num": 41,
-          "x": 55.3,
-          "y": 50.7,
+          "x": 77.5,
+          "y": 32.6,
           "tag": "Thơ #41 · Vivi",
           "title": "#41. Ta thường mơ về một bức ảnh tĩnh / Một bức ảnh không có dấu chân người",
           "shortTitle": "Ta thường mơ về một bức ảnh tĩnh / Một bức ảnh không có dấu chân người",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ta thường mơ về một bức ảnh tĩnh",
@@ -4825,16 +4995,16 @@
           ]
         },
         {
-          "id": "cancer_6",
+          "id": "gemini_9",
           "num": 42,
-          "x": 65.8,
-          "y": 26.2,
+          "x": 86.0,
+          "y": 46.6,
           "tag": "Thơ #42 · Vivi",
           "title": "#42. |Độc|",
           "shortTitle": "|Độc|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Giờ nhìn mình bất lực",
@@ -4851,16 +5021,16 @@
           ]
         },
         {
-          "id": "cancer_7",
+          "id": "gemini_10",
           "num": 43,
-          "x": 75.3,
-          "y": 44.7,
+          "x": 47.5,
+          "y": 69.6,
           "tag": "Thơ #43 · Vivi",
           "title": "#43. |Yêu|",
           "shortTitle": "|Yêu|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ta má đỏ ửng hồng",
@@ -4892,16 +5062,16 @@
           ]
         },
         {
-          "id": "cancer_8",
+          "id": "gemini_11",
           "num": 44,
-          "x": 83.8,
-          "y": 30.2,
+          "x": 62.5,
+          "y": 69.6,
           "tag": "Thơ #44 · Vivi",
           "title": "#44. | Chút|",
           "shortTitle": "| Chút|",
           "date": "9.5.22",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Xoa xoa chiếc bụng tròn",
@@ -4937,18 +5107,27 @@
             "",
             "p/s: Annhon, à thì bài này mình viết hôm đi thi chuẩn bị kỉ yếu. Và hôm nay có ảnh nên chỉnh lại nè. Lật tung phòng để tìm tờ tớ viết á. Ban đầu tớ khá tự ti vì thấy mình không đẹp, rùi cũng khá buồn, không thích chụp ảnh. Nhưng có ảnh rùi thì thấy cũng khá đáng iu hihi."
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "cancer",
+      "name": "Chòm sao Cự Giải (Cancer)",
+      "subtitle": "dịu dàng · che chở",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_cancer.webp",
+      "stars": [
         {
-          "id": "cancer_9",
+          "id": "cancer_1",
           "num": 45,
-          "x": 49.3,
-          "y": 66.2,
+          "x": 15.7,
+          "y": 38.4,
           "tag": "Thơ #45 · Vivi",
           "title": "#45. .Hoa",
           "shortTitle": ".Hoa",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Sống là hoa sao chả biết tên mình",
@@ -4962,27 +5141,18 @@
             "p/s: Lâu rồi không viết nên mình khá nhớ những con chữ và thấy có chút thiếu thiếu. Đây là bài mình viết hôm tìm những loài hoa nở vào mùa đông cùng với Nhi Kiều. Và đây là loài hoa poppies nhé.",
             "|17.7.22|"
           ]
-        }
-      ]
-    },
-    {
-      "id": "leo",
-      "name": "Chòm sao Sư Tử (Leo)",
-      "subtitle": "rực rỡ · đam mê",
-      "category": "viendu",
-      "bgImg": "assets/img/galaxy_leo.webp",
-      "stars": [
+        },
         {
-          "id": "leo_1",
+          "id": "cancer_2",
           "num": 46,
-          "x": 12.1,
-          "y": 44.7,
+          "x": 24.7,
+          "y": 23.4,
           "tag": "Thơ #46 · Vivi",
           "title": "#46. |Nhớ|",
           "shortTitle": "|Nhớ|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Chơi vơi trong bóng tối",
@@ -5000,16 +5170,16 @@
           ]
         },
         {
-          "id": "leo_2",
+          "id": "cancer_3",
           "num": 47,
-          "x": 21.6,
-          "y": 29.2,
+          "x": 34.2,
+          "y": 46.4,
           "tag": "Thơ #47 · Vivi",
           "title": "#47. |Nếu|",
           "shortTitle": "|Nếu|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Nếu mai là tận thế",
@@ -5035,16 +5205,16 @@
           ]
         },
         {
-          "id": "leo_3",
+          "id": "cancer_4",
           "num": 48,
-          "x": 32.1,
-          "y": 50.7,
+          "x": 43.7,
+          "y": 28.4,
           "tag": "Thơ #48 · Vivi",
           "title": "#48. |Ước|",
           "shortTitle": "|Ước|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ước gì em là gió",
@@ -5071,16 +5241,16 @@
           ]
         },
         {
-          "id": "leo_4",
+          "id": "cancer_5",
           "num": 49,
-          "x": 43.6,
-          "y": 33.7,
+          "x": 53.2,
+          "y": 50.4,
           "tag": "Thơ #49 · Vivi",
           "title": "#49. |Cùng em|",
           "shortTitle": "|Cùng em|",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một ước muốn phàm trần",
@@ -5096,16 +5266,16 @@
           ]
         },
         {
-          "id": "leo_5",
+          "id": "cancer_6",
           "num": 50,
-          "x": 52.1,
-          "y": 55.2,
+          "x": 62.7,
+          "y": 26.4,
           "tag": "Thơ #50 · Vivi",
           "title": "#50. Role",
           "shortTitle": "Role",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Thẫn thờ ngồi một góc",
@@ -5130,16 +5300,16 @@
           ]
         },
         {
-          "id": "leo_6",
+          "id": "cancer_7",
           "num": 51,
-          "x": 62.6,
-          "y": 30.7,
+          "x": 72.2,
+          "y": 44.4,
           "tag": "Thơ #51 · Vivi",
           "title": "#51. Thả trôi muộn phiền với an yên",
           "shortTitle": "Thả trôi muộn phiền với an yên",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tết đến đoàn bỏ muộn phiền",
@@ -5148,16 +5318,16 @@
           ]
         },
         {
-          "id": "leo_7",
+          "id": "cancer_8",
           "num": 52,
-          "x": 72.1,
-          "y": 49.2,
+          "x": 81.7,
+          "y": 30.4,
           "tag": "Thơ #52 · Vivi",
           "title": "#52. Ước",
           "shortTitle": "Ước",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Mơ thời gian dừng lại",
@@ -5172,16 +5342,16 @@
           ]
         },
         {
-          "id": "leo_8",
+          "id": "cancer_9",
           "num": 53,
-          "x": 80.6,
-          "y": 34.7,
+          "x": 46.7,
+          "y": 66.4,
           "tag": "Thơ #53 · Vivi",
           "title": "#53. .ẩn",
           "shortTitle": ".ẩn",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ẩn mình trong câu chữ",
@@ -5200,16 +5370,16 @@
           ]
         },
         {
-          "id": "leo_9",
+          "id": "cancer_10",
           "num": 54,
-          "x": 46.1,
-          "y": 70.7,
+          "x": 60.7,
+          "y": 65.4,
           "tag": "Thơ #54 · Vivi",
           "title": "#54. Lặng",
           "shortTitle": "Lặng",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tâm lặng như nước",
@@ -5225,23 +5395,23 @@
       ]
     },
     {
-      "id": "virgo",
-      "name": "Chòm sao Xử Nữ (Virgo)",
-      "subtitle": "thuần khiết · tinh tế",
-      "category": "viendu",
-      "bgImg": "assets/img/galaxy_virgo.webp",
+      "id": "leo",
+      "name": "Chòm sao Sư Tử (Leo)",
+      "subtitle": "rực rỡ · đam mê",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_leo.webp",
       "stars": [
         {
-          "id": "virgo_1",
+          "id": "leo_1",
           "num": 55,
-          "x": 17.7,
-          "y": 41.1,
+          "x": 12.9,
+          "y": 42.4,
           "tag": "Thơ #55 · Vivi",
           "title": "#55. Tịnh",
           "shortTitle": "Tịnh",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tâm tiền vô tịnh tựa như nước",
@@ -5252,16 +5422,16 @@
           ]
         },
         {
-          "id": "virgo_2",
+          "id": "leo_2",
           "num": 56,
-          "x": 27.2,
-          "y": 25.6,
+          "x": 21.9,
+          "y": 27.4,
           "tag": "Thơ #56 · Vivi",
           "title": "#56. Nghe",
           "shortTitle": "Nghe",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ta nghe tâm sự với chị Hằng",
@@ -5272,16 +5442,16 @@
           ]
         },
         {
-          "id": "virgo_3",
+          "id": "leo_3",
           "num": 57,
-          "x": 37.7,
-          "y": 47.1,
+          "x": 31.4,
+          "y": 50.4,
           "tag": "Thơ #57 · Vivi",
           "title": "#57. Xào xạc",
           "shortTitle": "Xào xạc",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Xào xạc bất động tiếng ve kêu",
@@ -5292,16 +5462,16 @@
           ]
         },
         {
-          "id": "virgo_4",
+          "id": "leo_4",
           "num": 58,
-          "x": 49.2,
-          "y": 30.1,
+          "x": 40.9,
+          "y": 32.4,
           "tag": "Thơ #58 · Vivi",
           "title": "#58. Sợ mùa đông",
           "shortTitle": "Sợ mùa đông",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tình yêu như bọt biển",
@@ -5316,16 +5486,16 @@
           ]
         },
         {
-          "id": "virgo_5",
+          "id": "leo_5",
           "num": 59,
-          "x": 57.7,
-          "y": 51.6,
+          "x": 50.4,
+          "y": 54.4,
           "tag": "Thơ #59 · Vivi",
           "title": "#59. Giờ vàng",
           "shortTitle": "Giờ vàng",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ồn ào cả công ty",
@@ -5345,16 +5515,16 @@
           ]
         },
         {
-          "id": "virgo_6",
+          "id": "leo_6",
           "num": 60,
-          "x": 68.2,
-          "y": 27.1,
+          "x": 59.9,
+          "y": 30.4,
           "tag": "Thơ #60 · Vivi",
           "title": "#60. Ngày xuân an nhàn",
           "shortTitle": "Ngày xuân an nhàn",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một ô cửa sổ",
@@ -5378,16 +5548,16 @@
           ]
         },
         {
-          "id": "virgo_7",
+          "id": "leo_7",
           "num": 61,
-          "x": 77.7,
-          "y": 45.6,
+          "x": 69.4,
+          "y": 48.4,
           "tag": "Thơ #61 · Vivi",
           "title": "#61. Giăng giăng sương lối màn che",
           "shortTitle": "Giăng giăng sương lối màn che",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Bánh xe chuyển bánh biết là về đâu",
@@ -5400,16 +5570,16 @@
           ]
         },
         {
-          "id": "virgo_8",
+          "id": "leo_8",
           "num": 62,
-          "x": 86.2,
-          "y": 31.1,
+          "x": 78.9,
+          "y": 34.4,
           "tag": "Thơ #62 · Vivi",
           "title": "#62. Sự xinh đẹp cất ở trong túi áo. / Xuân hạ thu đông kém vị trà",
           "shortTitle": "Sự xinh đẹp cất ở trong túi áo. / Xuân hạ thu đông kém vị trà",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Sự xinh đẹp cất ở trong túi áo.",
@@ -5450,16 +5620,16 @@
           ]
         },
         {
-          "id": "virgo_9",
+          "id": "leo_9",
           "num": 63,
-          "x": 51.7,
-          "y": 67.1,
+          "x": 43.9,
+          "y": 70.4,
           "tag": "Thơ #63 · Vivi",
           "title": "#63. Đôi mắt.",
           "shortTitle": "Đôi mắt.",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Đôi mắt trong veo",
@@ -5494,27 +5664,18 @@
             "Vỡ nghẹt đời thừa",
             "Chôn chìm đáy mắt?."
           ]
-        }
-      ]
-    },
-    {
-      "id": "libra",
-      "name": "Chòm sao Thiên Bình (Libra)",
-      "subtitle": "cân bằng · bình yên",
-      "category": "viendu",
-      "bgImg": "assets/img/galaxy_libra.webp",
-      "stars": [
+        },
         {
-          "id": "libra_1",
+          "id": "leo_10",
           "num": 64,
-          "x": 14.5,
-          "y": 45.6,
+          "x": 57.9,
+          "y": 69.4,
           "tag": "Thơ #64 · Vivi",
           "title": "#64. Ra sân nhặt nắng",
           "shortTitle": "Ra sân nhặt nắng",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Bập bẹ từng bước",
@@ -5532,18 +5693,27 @@
             "Nhưng nắng không cho",
             "Oa oa òa khóc."
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "virgo",
+      "name": "Chòm sao Xử Nữ (Virgo)",
+      "subtitle": "thuần khiết · tinh tế",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_virgo.webp",
+      "stars": [
         {
-          "id": "libra_2",
+          "id": "virgo_1",
           "num": 65,
-          "x": 24.0,
-          "y": 30.1,
+          "x": 17.8,
+          "y": 39.2,
           "tag": "Thơ #65 · Vivi",
           "title": "#65. Một mình",
           "shortTitle": "Một mình",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "trên đồng cỏ",
@@ -5551,16 +5721,16 @@
           ]
         },
         {
-          "id": "libra_3",
+          "id": "virgo_2",
           "num": 66,
-          "x": 34.5,
-          "y": 51.6,
+          "x": 26.8,
+          "y": 24.2,
           "tag": "Thơ #66 · Vivi",
           "title": "#66. Mỗi chuyến xe",
           "shortTitle": "Mỗi chuyến xe",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Mỗi tuyến đường",
@@ -5568,16 +5738,16 @@
           ]
         },
         {
-          "id": "libra_4",
+          "id": "virgo_3",
           "num": 67,
-          "x": 46.0,
-          "y": 34.6,
+          "x": 36.3,
+          "y": 47.2,
           "tag": "Thơ #67 · Vivi",
           "title": "#67. Hành khô đây chính chị hành",
           "shortTitle": "Hành khô đây chính chị hành",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Nào xào nào nấu nào luộc mắm chiên",
@@ -5586,16 +5756,16 @@
           ]
         },
         {
-          "id": "libra_5",
+          "id": "virgo_4",
           "num": 68,
-          "x": 54.5,
-          "y": 56.1,
+          "x": 45.8,
+          "y": 29.2,
           "tag": "Thơ #68 · Vivi",
           "title": "#68. Chào bạn tôi, lấp lánh",
           "shortTitle": "Chào bạn tôi, lấp lánh",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "nhìn cậu thật cao sang",
@@ -5617,16 +5787,16 @@
           ]
         },
         {
-          "id": "libra_6",
+          "id": "virgo_5",
           "num": 69,
-          "x": 65.0,
-          "y": 31.6,
+          "x": 55.3,
+          "y": 51.2,
           "tag": "Thơ #69 · Vivi",
           "title": "#69. em muốn là con cá",
           "shortTitle": "em muốn là con cá",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "muốn bơi lôi tung tăng",
@@ -5648,16 +5818,16 @@
           ]
         },
         {
-          "id": "libra_7",
+          "id": "virgo_6",
           "num": 70,
-          "x": 74.5,
-          "y": 50.1,
+          "x": 64.8,
+          "y": 27.2,
           "tag": "Thơ #70 · Vivi",
           "title": "#70. Khi      do dự đang...",
           "shortTitle": "Khi      do dự đang...",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "tự sướng tên mình",
@@ -5687,16 +5857,16 @@
           ]
         },
         {
-          "id": "libra_8",
+          "id": "virgo_7",
           "num": 71,
-          "x": 83.0,
-          "y": 35.6,
+          "x": 74.3,
+          "y": 45.2,
           "tag": "Thơ #71 · Vivi",
           "title": "#71. 😭 Hãy để bụng yên.",
           "shortTitle": "😭 Hãy để bụng yên.",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "No căng cái bụng này",
@@ -5711,16 +5881,16 @@
           ]
         },
         {
-          "id": "libra_9",
+          "id": "virgo_8",
           "num": 72,
-          "x": 48.5,
-          "y": 71.6,
+          "x": 83.8,
+          "y": 31.2,
           "tag": "Thơ #72 · Vivi",
           "title": "#72. Muốn được yêu sao phải khắc thân mình / Thiên thiên hạ hạ đều ao ước",
           "shortTitle": "Muốn được yêu sao phải khắc thân mình / Thiên thiên hạ hạ đều ao ước",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Muốn được yêu sao phải khắc thân mình",
@@ -5730,27 +5900,18 @@
             "Muốn thương nhưng không tin mình xứng đáng?",
             "Chạy chạy quanh quẩn về nơi ai?"
           ]
-        }
-      ]
-    },
-    {
-      "id": "orion",
-      "name": "Chòm sao Lạp Hộ (Orion)",
-      "subtitle": "người thợ săn sao",
-      "category": "viendu",
-      "bgImg": "assets/img/galaxy_orion.webp",
-      "stars": [
+        },
         {
-          "id": "orion_1",
+          "id": "virgo_9",
           "num": 73,
-          "x": 11.3,
-          "y": 42.0,
+          "x": 48.8,
+          "y": 67.2,
           "tag": "Thơ #73 · Vivi",
           "title": "#73. tâm hồn ta đã tha hóa từ lâu",
           "shortTitle": "tâm hồn ta đã tha hóa từ lâu",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "rơi tay Chúa, Chúa không hề oán trách",
@@ -5759,34 +5920,43 @@
           ]
         },
         {
-          "id": "orion_2",
+          "id": "virgo_10",
           "num": 74,
-          "x": 20.8,
-          "y": 26.5,
+          "x": 62.8,
+          "y": 66.2,
           "tag": "Thơ #74 · Vivi",
           "title": "#74. Tim tim hành hành",
           "shortTitle": "Tim tim hành hành",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Vắt chanh xào tỏi",
             "Giòn giòn thơm \"chuông\"",
             "Ngon ngon đẹp mắt ❤️"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "libra",
+      "name": "Chòm sao Thiên Bình (Libra)",
+      "subtitle": "cân bằng · bình yên",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_libra.webp",
+      "stars": [
         {
-          "id": "orion_3",
+          "id": "libra_1",
           "num": 75,
-          "x": 31.3,
-          "y": 48.0,
+          "x": 15.0,
+          "y": 43.2,
           "tag": "Thơ #75 · Vivi",
           "title": "#75. Sợ mùa đông",
           "shortTitle": "Sợ mùa đông",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Khi tình yêu hòa trong không khí",
@@ -5801,16 +5971,16 @@
           ]
         },
         {
-          "id": "orion_4",
+          "id": "libra_2",
           "num": 76,
-          "x": 42.8,
-          "y": 31.0,
+          "x": 24.0,
+          "y": 28.2,
           "tag": "Thơ #76 · Vivi",
           "title": "#76. Ta xuyên qua ánh sáng",
           "shortTitle": "Ta xuyên qua ánh sáng",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một diệu kì nhân gian",
@@ -5824,16 +5994,16 @@
           ]
         },
         {
-          "id": "orion_5",
+          "id": "libra_3",
           "num": 77,
-          "x": 51.3,
-          "y": 52.5,
+          "x": 33.5,
+          "y": 51.2,
           "tag": "Thơ #77 · Vivi",
           "title": "#77. Đâu khuất phục trên khoảng đời này / Mênh mông lải nhải vần bước qua",
           "shortTitle": "Đâu khuất phục trên khoảng đời này / Mênh mông lải nhải vần bước qua",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Đâu khuất phục trên khoảng đời này",
@@ -5847,16 +6017,16 @@
           ]
         },
         {
-          "id": "orion_6",
+          "id": "libra_4",
           "num": 78,
-          "x": 61.8,
-          "y": 28.0,
+          "x": 43.0,
+          "y": 33.2,
           "tag": "Thơ #78 · Vivi",
           "title": "#78. đá khô",
           "shortTitle": "đá khô",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "lấp suối",
@@ -5864,16 +6034,16 @@
           ]
         },
         {
-          "id": "orion_7",
+          "id": "libra_5",
           "num": 79,
-          "x": 71.3,
-          "y": 46.5,
+          "x": 52.5,
+          "y": 55.2,
           "tag": "Thơ #79 · Vivi",
           "title": "#79. Ngày đi lạc",
           "shortTitle": "Ngày đi lạc",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Đi trên hoa mang hơi thở cỏ dại",
@@ -5883,16 +6053,16 @@
           ]
         },
         {
-          "id": "orion_8",
+          "id": "libra_6",
           "num": 80,
-          "x": 79.8,
-          "y": 32.0,
+          "x": 62.0,
+          "y": 31.2,
           "tag": "Thơ #80 · Vivi",
           "title": "#80. . Nuôi",
           "shortTitle": ". Nuôi",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một cây to mang hơi thở cổ thụ",
@@ -5902,16 +6072,16 @@
           ]
         },
         {
-          "id": "orion_9",
+          "id": "libra_7",
           "num": 81,
-          "x": 45.3,
-          "y": 68.0,
+          "x": 71.5,
+          "y": 49.2,
           "tag": "Thơ #81 · Vivi",
           "title": "#81. 1",
           "shortTitle": "1",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một thân cây mang muôn vàn khuôn mặt",
@@ -5919,27 +6089,18 @@
             "Một thân cây mang muôn vàn ủ rũ",
             "Đến Jerusalem thoát khỏi cảnh tối tăm."
           ]
-        }
-      ]
-    },
-    {
-      "id": "vien-du",
-      "name": "Chòm sao Viễn Du",
-      "subtitle": "chân trời mới · phiêu lưu",
-      "category": "viendu",
-      "bgImg": "assets/img/galaxy_1.webp",
-      "stars": [
+        },
         {
-          "id": "vien-du_1",
+          "id": "libra_8",
           "num": 82,
-          "x": 16.9,
-          "y": 38.4,
+          "x": 81.0,
+          "y": 35.2,
           "tag": "Thơ #82 · Vivi",
           "title": "#82. Đã.",
           "shortTitle": "Đã.",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Khi sự sống không để lại dấu vết",
@@ -5953,16 +6114,16 @@
           ]
         },
         {
-          "id": "vien-du_2",
+          "id": "libra_9",
           "num": 83,
-          "x": 26.4,
-          "y": 22.9,
+          "x": 46.0,
+          "y": 71.2,
           "tag": "Thơ #83 · Vivi",
           "title": "#83. Tìm.",
           "shortTitle": "Tìm.",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tôi tìm tôi nơi kí ức hiện hình",
@@ -5978,16 +6139,16 @@
           ]
         },
         {
-          "id": "vien-du_3",
+          "id": "libra_10",
           "num": 84,
-          "x": 36.9,
-          "y": 44.4,
+          "x": 60.0,
+          "y": 70.2,
           "tag": "Thơ #84 · Vivi",
           "title": "#84. Bản hoa",
           "shortTitle": "Bản hoa",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Vì là hoa nên chỉ muốn giữ riêng mình",
@@ -6008,18 +6169,27 @@
             "",
             "(viết ngày Lễ Phục Sinh)"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "pisces",
+      "name": "Chòm sao Song Ngư (Pisces)",
+      "subtitle": "đại dương thi ca",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_pisces.webp",
+      "stars": [
         {
-          "id": "vien-du_4",
+          "id": "pisces_1",
           "num": 85,
-          "x": 48.4,
-          "y": 27.4,
+          "x": 12.2,
+          "y": 40.0,
           "tag": "Thơ #85 · Vivi",
           "title": "#85. Tớ chỉ đẹp khi ánh nắng xuyên qua",
           "shortTitle": "Tớ chỉ đẹp khi ánh nắng xuyên qua",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tớ cong cong trong ánh nắng chiều tà",
@@ -6028,16 +6198,16 @@
           ]
         },
         {
-          "id": "vien-du_5",
+          "id": "pisces_2",
           "num": 86,
-          "x": 56.9,
-          "y": 48.9,
+          "x": 21.2,
+          "y": 25.0,
           "tag": "Thơ #86 · Vivi",
           "title": "#86. Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
           "shortTitle": "Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Sương mờ trắng hư ảo nơi cuối phố",
@@ -6047,16 +6217,16 @@
           ]
         },
         {
-          "id": "vien-du_6",
+          "id": "pisces_3",
           "num": 87,
-          "x": 67.4,
-          "y": 24.4,
+          "x": 30.7,
+          "y": 48.0,
           "tag": "Thơ #87 · Vivi",
           "title": "#87. Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
           "shortTitle": "Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Làn hoa cỏ khẽ len qua chân phố",
@@ -6066,16 +6236,16 @@
           ]
         },
         {
-          "id": "vien-du_7",
+          "id": "pisces_4",
           "num": 88,
-          "x": 76.9,
-          "y": 42.9,
+          "x": 40.2,
+          "y": 30.0,
           "tag": "Thơ #88 · Vivi",
           "title": "#88. Chụy hành tây thái trái tim xào / Thơm ngon ta làm ra đủ món",
           "shortTitle": "Chụy hành tây thái trái tim xào / Thơm ngon ta làm ra đủ món",
           "date": "15.3.24",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Chụy hành tây thái trái tim xào",
@@ -6090,16 +6260,16 @@
           ]
         },
         {
-          "id": "vien-du_8",
+          "id": "pisces_5",
           "num": 89,
-          "x": 85.4,
-          "y": 28.4,
+          "x": 49.7,
+          "y": 52.0,
           "tag": "Thơ #89 · Vivi",
           "title": "#89. Chân bước thụt",
           "shortTitle": "Chân bước thụt",
           "date": "15.3.24",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Rơi tay nơi lòng Chúa",
@@ -6118,16 +6288,16 @@
           ]
         },
         {
-          "id": "vien-du_9",
+          "id": "pisces_6",
           "num": 90,
-          "x": 50.9,
-          "y": 64.4,
+          "x": 59.2,
+          "y": 28.0,
           "tag": "Thơ #90 · Vivi",
           "title": "#90. Ôm nhau ta cắn nhau thật đau",
           "shortTitle": "Ôm nhau ta cắn nhau thật đau",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ngâm thơ ta ngồi mang phúc",
@@ -6135,27 +6305,18 @@
             "Tâm hồn không khỏi động phòng",
             "Nay ngồi trên cát rung đùi mới thôi"
           ]
-        }
-      ]
-    },
-    {
-      "id": "pisces",
-      "name": "Chòm sao Song Ngư (Pisces)",
-      "subtitle": "đại dương thi ca",
-      "category": "kyniem",
-      "bgImg": "assets/img/galaxy_pisces.webp",
-      "stars": [
+        },
         {
-          "id": "pisces_1",
+          "id": "pisces_7",
           "num": 91,
-          "x": 15.2,
-          "y": 38.9,
+          "x": 68.7,
+          "y": 46.0,
           "tag": "Thơ #91 · Vivi",
           "title": "#91. Hướng về nhau nhưng chỉ chọn một nửa / Nửa trao nhau và một nửa cắt mình",
           "shortTitle": "Hướng về nhau nhưng chỉ chọn một nửa / Nửa trao nhau và một nửa cắt mình",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Hướng về nhau nhưng chỉ chọn một nửa",
@@ -6169,16 +6330,16 @@
           ]
         },
         {
-          "id": "pisces_2",
+          "id": "pisces_8",
           "num": 92,
-          "x": 26.7,
-          "y": 24.9,
+          "x": 78.2,
+          "y": 32.0,
           "tag": "Thơ #92 · Vivi",
           "title": "#92. Hoa đã ngắt ôi xin người trách nhiệm / Nửa chăm bông và một nửa nhìn bông",
           "shortTitle": "Hoa đã ngắt ôi xin người trách nhiệm / Nửa chăm bông và một nửa nhìn bông",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Hoa đã ngắt ôi xin người trách nhiệm",
@@ -6188,16 +6349,16 @@
           ]
         },
         {
-          "id": "pisces_3",
+          "id": "pisces_9",
           "num": 93,
-          "x": 37.2,
-          "y": 47.9,
+          "x": 43.2,
+          "y": 68.0,
           "tag": "Thơ #93 · Vivi",
           "title": "#93. Ta lặng nhìn bông hồng chán ngắt / Hoa đung đưa chỉ bới gió tạt vào",
           "shortTitle": "Ta lặng nhìn bông hồng chán ngắt / Hoa đung đưa chỉ bới gió tạt vào",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Ta lặng nhìn bông hồng chán ngắt",
@@ -6210,33 +6371,42 @@
           ]
         },
         {
-          "id": "pisces_4",
+          "id": "pisces_10",
           "num": 94,
-          "x": 49.2,
-          "y": 29.9,
+          "x": 57.2,
+          "y": 67.0,
           "tag": "Thơ #94 · Vivi",
           "title": "#94. hoa anh đào nở",
           "shortTitle": "hoa anh đào nở",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Trăng sáng",
             "Kéo sương"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "ursamajor",
+      "name": "Chòm sao Đại Hùng (Ursa Major)",
+      "subtitle": "chỉ đường phương Bắc",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_ursamajor.webp",
+      "stars": [
         {
-          "id": "pisces_5",
+          "id": "ursamajor_1",
           "num": 95,
-          "x": 60.7,
-          "y": 50.9,
+          "x": 17.1,
+          "y": 36.8,
           "tag": "Thơ #95 · Vivi",
           "title": "#95. Angel fallen",
           "shortTitle": "Angel fallen",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "You look like an angel",
@@ -6248,16 +6418,16 @@
           ]
         },
         {
-          "id": "pisces_6",
+          "id": "ursamajor_2",
           "num": 96,
-          "x": 71.2,
-          "y": 26.9,
+          "x": 26.1,
+          "y": 21.8,
           "tag": "Thơ #96 · Vivi",
           "title": "#96. Cắn đôi môi chạm khẽ bờ tai / Hơi nồng ấm rượu vừa chia sẻ",
           "shortTitle": "Cắn đôi môi chạm khẽ bờ tai / Hơi nồng ấm rượu vừa chia sẻ",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Cắn đôi môi chạm khẽ bờ tai",
@@ -6267,16 +6437,16 @@
           ]
         },
         {
-          "id": "pisces_7",
+          "id": "ursamajor_3",
           "num": 97,
-          "x": 80.7,
-          "y": 44.9,
+          "x": 35.6,
+          "y": 44.8,
           "tag": "Thơ #97 · Vivi",
           "title": "#97. hoàng hôn nay mang vị ngọt đôi môi / ngắm ánh chiều  (không) (không) khoảng  (không) cách",
           "shortTitle": "hoàng hôn nay mang vị ngọt đôi môi / ngắm ánh chiều  (không) (không) khoảng  (không) cách",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "hoàng hôn nay mang vị ngọt đôi môi",
@@ -6287,16 +6457,16 @@
           ]
         },
         {
-          "id": "pisces_8",
+          "id": "ursamajor_4",
           "num": 98,
-          "x": 48.2,
-          "y": 66.9,
+          "x": 45.1,
+          "y": 26.8,
           "tag": "Thơ #98 · Vivi",
           "title": "#98. Một bóng hồng / Một bóng hồng mang hình ảnh của ai",
           "shortTitle": "Một bóng hồng / Một bóng hồng mang hình ảnh của ai",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Một bóng hồng",
@@ -6309,27 +6479,18 @@
             "Bảo vệ em qua bao nhiêu thử tách",
             "Rosita nàng thơ của anh ơi!"
           ]
-        }
-      ]
-    },
-    {
-      "id": "ursamajor",
-      "name": "Chòm sao Đại Hùng (Ursa Major)",
-      "subtitle": "chỉ đường phương Bắc",
-      "category": "kyniem",
-      "bgImg": "assets/img/galaxy_ursamajor.webp",
-      "stars": [
+        },
         {
-          "id": "ursamajor_1",
+          "id": "ursamajor_5",
           "num": 99,
-          "x": 12.0,
-          "y": 35.3,
+          "x": 54.6,
+          "y": 48.8,
           "tag": "Thơ #99 · Vivi",
           "title": "#99. Tình đẹp khi còn dang dở / Anh nắm tay nói lời hẹn thề",
           "shortTitle": "Tình đẹp khi còn dang dở / Anh nắm tay nói lời hẹn thề",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tình đẹp khi còn dang dở",
@@ -6344,16 +6505,16 @@
           ]
         },
         {
-          "id": "ursamajor_2",
+          "id": "ursamajor_6",
           "num": 100,
-          "x": 23.5,
-          "y": 21.3,
+          "x": 64.1,
+          "y": 24.8,
           "tag": "Thơ #100 · Vivi",
           "title": "#100. Cut my ear forgot my mind / Drink wine, eat bread, external life",
           "shortTitle": "Cut my ear forgot my mind / Drink wine, eat bread, external life",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Cut my ear forgot my mind",
@@ -6366,48 +6527,48 @@
           ]
         },
         {
-          "id": "ursamajor_3",
+          "id": "ursamajor_7",
           "num": 101,
-          "x": 34.0,
-          "y": 44.3,
+          "x": 73.6,
+          "y": 42.8,
           "tag": "Thơ #101 · Vivi",
           "title": "#101. ta gặp nhau mùa hạ/ anh hẹn em mùa đông/ngủ trong chăn ấm áp/bỏ hẹn anh em nằm/đắp cái chăn cho sướng/nhưng lại nhớ anh cơ/hất cái chăn ra góc/sửa soạn gặp anh nè",
           "shortTitle": "ta gặp nhau mùa hạ/ anh hẹn em mùa đông/ngủ trong chăn ấm áp/bỏ hẹn anh em nằm/đắp cái chăn cho sướng/nhưng lại nhớ anh cơ/hất cái chăn ra góc/sửa soạn gặp anh nè",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "ta gặp nhau mùa hạ/ anh hẹn em mùa đông/ngủ trong chăn ấm áp/bỏ hẹn anh em nằm/đắp cái chăn cho sướng/nhưng lại nhớ anh cơ/hất cái chăn ra góc/sửa soạn gặp anh nè"
           ]
         },
         {
-          "id": "ursamajor_4",
+          "id": "ursamajor_8",
           "num": 102,
-          "x": 46.0,
-          "y": 26.3,
+          "x": 83.1,
+          "y": 28.8,
           "tag": "Thơ #102 · Vivi",
           "title": "#102. tôi làm gì từ thứ tôi đang/tôi mê mẩn với cái gọi là/là gì là gỉ là gi/không thiết xác bóng hồng ở đâu?| tôi làm gì trừ thứ tôi đang/bạc nghề bạc phận nói cũng đành/tôi đánh vần vài chữ dang dở/chuyện của mình mình bạc với nhau",
           "shortTitle": "tôi làm gì từ thứ tôi đang/tôi mê mẩn với cái gọi là/là gì là gỉ là gi/không thiết xác bóng hồng ở đâu?| tôi làm gì trừ thứ tôi đang/bạc nghề bạc phận nói cũng đành/tôi đánh vần vài chữ dang dở/chuyện của mình mình bạc với nhau",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "tôi làm gì từ thứ tôi đang/tôi mê mẩn với cái gọi là/là gì là gỉ là gi/không thiết xác bóng hồng ở đâu?| tôi làm gì trừ thứ tôi đang/bạc nghề bạc phận nói cũng đành/tôi đánh vần vài chữ dang dở/chuyện của mình mình bạc với nhau"
           ]
         },
         {
-          "id": "ursamajor_5",
+          "id": "ursamajor_9",
           "num": 103,
-          "x": 57.5,
-          "y": 47.3,
+          "x": 48.1,
+          "y": 64.8,
           "tag": "Thơ #103 · Vivi",
           "title": "#103. những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
           "shortTitle": "những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "những vệt mực quệt trên thảm đỏ",
@@ -6417,16 +6578,16 @@
           ]
         },
         {
-          "id": "ursamajor_6",
+          "id": "ursamajor_10",
           "num": 104,
-          "x": 68.0,
-          "y": 23.3,
+          "x": 62.1,
+          "y": 63.8,
           "tag": "Thơ #104 · Vivi",
           "title": "#104. những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
           "shortTitle": "những vệt mực quệt trên thảm đỏ / tôi bước đi như thể vô hình",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "những vệt mực quệt trên thảm đỏ",
@@ -6434,18 +6595,27 @@
             "xẹt qua nhau mà giặt không hết",
             "những chấn thương bỏ bể tí hon"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "orion",
+      "name": "Chòm sao Lạp Hộ (Orion)",
+      "subtitle": "người thợ săn sao",
+      "category": "mongmo",
+      "bgImg": "assets/img/galaxy_orion.webp",
+      "stars": [
         {
-          "id": "ursamajor_7",
+          "id": "orion_1",
           "num": 105,
-          "x": 77.5,
-          "y": 41.3,
+          "x": 14.3,
+          "y": 40.8,
           "tag": "Thơ #105 · Vivi",
           "title": "#105. nếu biết thời gian là mãi mãi / liệu ta có trân trọng khắc bên nhau",
           "shortTitle": "nếu biết thời gian là mãi mãi / liệu ta có trân trọng khắc bên nhau",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "nếu biết thời gian là mãi mãi",
@@ -6469,16 +6639,16 @@
           ]
         },
         {
-          "id": "ursamajor_8",
+          "id": "orion_2",
           "num": 106,
-          "x": 45.0,
-          "y": 63.3,
+          "x": 23.3,
+          "y": 25.8,
           "tag": "Thơ #106 · Vivi",
           "title": "#106. Sao lại sống? / Ta tắt mình chìm dần vào bóng tối",
           "shortTitle": "Sao lại sống? / Ta tắt mình chìm dần vào bóng tối",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Sao lại sống?",
@@ -6492,27 +6662,18 @@
             "Là khởi đầu và cũng là kết thúc",
             "Gần thêm nữa...Chúa cho câu trả lời."
           ]
-        }
-      ]
-    },
-    {
-      "id": "ky-niem",
-      "name": "Chòm sao Kỷ Niệm",
-      "subtitle": "góc ký ức đọng lại",
-      "category": "kyniem",
-      "bgImg": "assets/img/galaxy_2.webp",
-      "stars": [
+        },
         {
-          "id": "ky-niem_1",
+          "id": "orion_3",
           "num": 107,
-          "x": 17.6,
-          "y": 39.8,
+          "x": 32.8,
+          "y": 48.8,
           "tag": "Thơ #107 · Vivi",
           "title": "#107. Tớ chỉ đẹp khi ánh nắng xuyên qua / Tớ cong cong trong ánh nắng chiều tà",
           "shortTitle": "Tớ chỉ đẹp khi ánh nắng xuyên qua / Tớ cong cong trong ánh nắng chiều tà",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Tớ chỉ đẹp khi ánh nắng xuyên qua",
@@ -6522,16 +6683,16 @@
           ]
         },
         {
-          "id": "ky-niem_2",
+          "id": "orion_4",
           "num": 108,
-          "x": 29.1,
-          "y": 25.8,
+          "x": 42.3,
+          "y": 30.8,
           "tag": "Thơ #108 · Vivi",
           "title": "#108. Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
           "shortTitle": "Sương mờ trắng hư ảo nơi cuối phố / Có ngôi chùa thanh tịnh trong hư vô",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Sương mờ trắng hư ảo nơi cuối phố",
@@ -6541,16 +6702,16 @@
           ]
         },
         {
-          "id": "ky-niem_3",
+          "id": "orion_5",
           "num": 109,
-          "x": 39.6,
-          "y": 48.8,
+          "x": 51.8,
+          "y": 52.8,
           "tag": "Thơ #109 · Vivi",
           "title": "#109. Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
           "shortTitle": "Làn hoa cỏ khẽ len qua chân phố / Muốn góc yên nho nhỏ khoảng chân mây",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Làn hoa cỏ khẽ len qua chân phố",
@@ -6560,16 +6721,16 @@
           ]
         },
         {
-          "id": "ky-niem_4",
+          "id": "orion_6",
           "num": 110,
-          "x": 51.6,
-          "y": 30.8,
+          "x": 61.3,
+          "y": 28.8,
           "tag": "Thơ #110 · Vivi",
           "title": "#110. Anh biến mất không một dấu vết / Vết chân anh hằn sắt trong em",
           "shortTitle": "Anh biến mất không một dấu vết / Vết chân anh hằn sắt trong em",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Anh biến mất không một dấu vết",
@@ -6592,16 +6753,16 @@
           ]
         },
         {
-          "id": "ky-niem_5",
+          "id": "orion_7",
           "num": 111,
-          "x": 63.1,
-          "y": 51.8,
+          "x": 70.8,
+          "y": 46.8,
           "tag": "Thơ #111 · Vivi",
           "title": "#111. Anh là ai, kìa hỡi chàng trai / Lướt qua em, hương hoa cỏ dại",
           "shortTitle": "Anh là ai, kìa hỡi chàng trai / Lướt qua em, hương hoa cỏ dại",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Anh là ai, kìa hỡi chàng trai",
@@ -6622,16 +6783,16 @@
           ]
         },
         {
-          "id": "ky-niem_6",
+          "id": "orion_8",
           "num": 112,
-          "x": 73.6,
-          "y": 27.8,
+          "x": 80.3,
+          "y": 32.8,
           "tag": "Thơ #112 · Vivi",
           "title": "#112. Này đôi chân đi mãi không vừa / Chiếc giày xỏ chỉ vừa 1 size",
           "shortTitle": "Này đôi chân đi mãi không vừa / Chiếc giày xỏ chỉ vừa 1 size",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Này đôi chân đi mãi không vừa",
@@ -6641,16 +6802,16 @@
           ]
         },
         {
-          "id": "ky-niem_7",
+          "id": "orion_9",
           "num": 113,
-          "x": 83.1,
-          "y": 45.8,
+          "x": 45.3,
+          "y": 68.8,
           "tag": "Thơ #113 · Vivi",
           "title": "#113. Chờ chồng ngồi đếm vì sao / Em ngồi em thấy nao nao trông lòng",
           "shortTitle": "Chờ chồng ngồi đếm vì sao / Em ngồi em thấy nao nao trông lòng",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Chờ chồng ngồi đếm vì sao",
@@ -6660,16 +6821,16 @@
           ]
         },
         {
-          "id": "ky-niem_8",
+          "id": "orion_10",
           "num": 114,
-          "x": 50.6,
+          "x": 59.3,
           "y": 67.8,
           "tag": "Thơ #114 · Vivi",
           "title": "#114. Ngày đi lạc",
           "shortTitle": "Ngày đi lạc",
           "date": "Vivi",
           "author": "Vivi",
-          "location": "Vườn Thơ Vivi",
+          "location": "Vườn Thơ Mộng Mơ",
           "weather": "Trời quang · Ngàn sao",
           "body": [
             "Đi trên hoa mang hơi thở cỏ dại",
@@ -6780,6 +6941,203 @@
             "Em bắt vạt nắng",
             "Nhưng nắng không cho",
             "Oa oa òa khóc."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vien-du",
+      "name": "Chòm sao Viễn Du",
+      "subtitle": "chân trời mới · phiêu lưu",
+      "category": "viendu",
+      "bgImg": "assets/img/galaxy_1.webp",
+      "stars": [
+        {
+          "id": "viendu_1",
+          "num": 1,
+          "x": 18.0,
+          "y": 48.0,
+          "station": "Trạm Khởi Hành · Căn Phòng Bên Cửa Sổ",
+          "tag": "Hành Trình Viễn Du · Trạm 1",
+          "title": "Trạm 1: Khởi Hành Giữa Ngàn Sao",
+          "shortTitle": "Khởi Hành Giữa Ngàn Sao",
+          "date": "Xuân 2024",
+          "author": "Vivi",
+          "location": "Căn phòng bên cửa sổ",
+          "weather": "Gió đêm se lạnh",
+          "coverImage": "assets/photos/dalat.jpg",
+          "body": [
+            "Bắt đầu một chuyến đi dài qua những tầng mây,",
+            "từ căn phòng ấm áp bên tách trà sen thơm ngát.",
+            "Cửa sổ mở ra cả một khoảng trời mênh mông,",
+            "chú cún con ngước nhìn theo từng vì sao rớt."
+          ]
+        },
+        {
+          "id": "viendu_2",
+          "num": 2,
+          "x": 32.0,
+          "y": 32.0,
+          "station": "Trạm Dừng · Sương Mờ Đà Lạt",
+          "tag": "Hành Trình Viễn Du · Trạm 2",
+          "title": "Trạm 2: Đồi Thông & Sương Mờ",
+          "shortTitle": "Đồi Thông & Sương Mờ",
+          "date": "Mùa thu 2024",
+          "author": "Vivi",
+          "location": "Đồi thông Đà Lạt",
+          "weather": "Sương mù giăng lối",
+          "coverImage": "assets/photos/dalat.jpg",
+          "body": [
+            "Đà Lạt sớm mai phủ một làn sương mỏng,",
+            "những nhành thông khẽ run rẩy đón hạt nắng đầu tiên.",
+            "Tôi bước đi giữa không gian tĩnh lặng,",
+            "nghe tiếng chim ca ríu rít gọi bình minh."
+          ]
+        },
+        {
+          "id": "viendu_3",
+          "num": 3,
+          "x": 48.0,
+          "y": 52.0,
+          "station": "Trạm Dừng · Biển Chiều Quy Nhơn",
+          "tag": "Hành Trình Viễn Du · Trạm 3",
+          "title": "Trạm 3: Biển Chiều & Hoàng Hôn Vàng",
+          "shortTitle": "Biển Chiều & Hoàng Hôn Vàng",
+          "date": "Hè 2024",
+          "author": "Vivi",
+          "location": "Bờ biển Quy Nhơn",
+          "weather": "Sóng vỗ rì rào",
+          "coverImage": "assets/photos/quynhon.jpg",
+          "body": [
+            "Sóng biển dạt dào hôn lên bờ cát mịn,",
+            "nắng chiều buông vạt áo tím trên mặt nước lung linh.",
+            "Ngồi nghe biển hát bản tình ca muôn thuở,",
+            "thấy lòng mình nhẹ bẫng tựa áng mây trôi."
+          ]
+        },
+        {
+          "id": "viendu_4",
+          "num": 4,
+          "x": 64.0,
+          "y": 28.0,
+          "station": "Trạm Dừng · Đỉnh Gió Cao Nguyên",
+          "tag": "Hành Trình Viễn Du · Trạm 4",
+          "title": "Trạm 4: Đỉnh Gió & Trời Mây",
+          "shortTitle": "Đỉnh Gió & Trời Mây",
+          "date": "Thu 2024",
+          "author": "Vivi",
+          "location": "Đỉnh đèo lộng gió",
+          "weather": "Gió thổi lồng lộng",
+          "body": [
+            "Đứng trên đỉnh cao ngắm nhìn bốn bể,",
+            "con đường uốn lượn như dải lụa mềm vắt ngang lưng trời.",
+            "Gió thổi bay những âu lo thường nhật,",
+            "chỉ còn lại sự tự do và tình yêu thiên nhiên."
+          ]
+        },
+        {
+          "id": "viendu_5",
+          "num": 5,
+          "x": 78.0,
+          "y": 44.0,
+          "station": "Trạm Đích · Vòm Trời Kỷ Niệm",
+          "tag": "Hành Trình Viễn Du · Trạm 5",
+          "title": "Trạm 5: Điểm Dừng Chân Thênh Thang",
+          "shortTitle": "Điểm Dừng Chân Thênh Thang",
+          "date": "Đông 2024",
+          "author": "Vivi",
+          "location": "Vòm trời sao",
+          "weather": "Sao sa lấp lánh",
+          "body": [
+            "Đi thật xa để trở về bên chính mình,",
+            "mỗi bước chân là một nốt nhạc trong bản giao hưởng cuộc đời.",
+            "Cảm ơn những chuyến đi đã cho tôi thêm yêu cuộc sống,",
+            "và tin vào những điều kỳ diệu quanh ta."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ky-niem",
+      "name": "Chòm sao Kỷ Niệm",
+      "subtitle": "góc ký ức đọng lại",
+      "category": "kyniem",
+      "bgImg": "assets/img/galaxy_2.webp",
+      "stars": [
+        {
+          "id": "kyniem_1",
+          "num": 1,
+          "x": 20.0,
+          "y": 44.0,
+          "tag": "Kỷ Niệm · Vivi",
+          "title": "Ký Ức Buổi Chiều Mưa",
+          "shortTitle": "Ký Ức Buổi Chiều Mưa",
+          "date": "Mùa đông năm ấy",
+          "author": "Vivi",
+          "location": "Góc hiên nhỏ",
+          "weather": "Mưa rả rích",
+          "body": [
+            "Hôm ấy trời mưa rả rích từ trưa đến sẩm tối,",
+            "tiếng nước rơi trên mái ngói tạo thành điệu nhạc êm đềm.",
+            "Chiếc khăn len cũ quấn quanh chú cún nhỏ,",
+            "ngoài hiên mưa lạnh nhưng trong phòng ấm áp lạ kỳ."
+          ]
+        },
+        {
+          "id": "kyniem_2",
+          "num": 2,
+          "x": 38.0,
+          "y": 28.0,
+          "tag": "Kỷ Niệm · Vivi",
+          "title": "Mảnh Vườn Tuổi Thơ",
+          "shortTitle": "Mảnh Vườn Tuổi Thơ",
+          "date": "Ký ức xưa",
+          "author": "Vivi",
+          "location": "Vườn quê thanh bình",
+          "weather": "Nắng vàng mật ong",
+          "body": [
+            "Mảnh vườn xưa đầy hoa cau thơm ngát,",
+            "những buổi trưa trốn ngủ chạy bắt chuồn chuồn ớt.",
+            "Kỷ niệm tuổi thơ ngọt ngào như viên kẹo,",
+            "đi qua năm tháng vẫn vẹn nguyên trong lòng."
+          ]
+        },
+        {
+          "id": "kyniem_3",
+          "num": 3,
+          "x": 55.0,
+          "y": 52.0,
+          "tag": "Kỷ Niệm · Vivi",
+          "title": "Ngọn Lửa Sưởi Ấm Đêm Đông",
+          "shortTitle": "Ngọn Lửa Sưởi Ấm Đêm Đông",
+          "date": "Đêm giao mùa",
+          "author": "Vivi",
+          "location": "Bên bếp lửa hồng",
+          "weather": "Gió bấc se lạnh",
+          "body": [
+            "Bên bếp lửa hồng tí tách nổ than hoa,",
+            "chú cún nằm lười gối đầu lên chân tôi ngủ say sưa.",
+            "Cuộc sống đôi khi chỉ cần những khoảnh khắc bình dị như thế,",
+            "đủ để sưởi ấm cả một mùa đông dài."
+          ]
+        },
+        {
+          "id": "kyniem_4",
+          "num": 4,
+          "x": 75.0,
+          "y": 36.0,
+          "tag": "Kỷ Niệm · Vivi",
+          "title": "Lời Nhắn Nhủ Thời Gian",
+          "shortTitle": "Lời Nhắn Nhủ Thời Gian",
+          "date": "Hiện tại & Tương lai",
+          "author": "Vivi",
+          "location": "Khoảng trời hoài niệm",
+          "weather": "Bình yên vô tận",
+          "body": [
+            "Thời gian có thể làm mờ nhạt đi nhiều thứ,",
+            "nhưng tình yêu và kỷ niệm đẹp sẽ mãi là vĩnh cửu.",
+            "Hãy giữ trong tim những vì sao sáng nhất,",
+            "để dẫn lối cho ta trên mọi nẻo đường đời."
           ]
         }
       ]
