@@ -108,7 +108,8 @@
 
       <!-- Carte (Calcifer) trong lò sưởi -->
       <div class="calcifer-container" id="calciferContainer" role="button" tabindex="0" title="Chạm vào Carte để trò chuyện" aria-label="Carte - Người giữ lửa của lâu đài">
-        <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp" alt="Carte người giữ lửa">
+        <canvas class="calcifer-embers" id="calciferEmbers"></canvas>
+        <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp?v=20261018s" alt="Carte người giữ lửa">
         <div class="calcifer-hint-pill" id="calciferHint">
           <span class="pill-fire">🔥</span>
           <span class="pill-text">Carte</span>
@@ -123,7 +124,10 @@
             <span class="cd-flame-icon">🔥</span>
             <span class="cd-speaker">Carte • Người Giữ Lửa</span>
           </div>
-          <button class="cd-close" id="calciferClose" aria-label="Đóng cuộc trò chuyện">✕</button>
+          <div class="cd-header-actions">
+            <button class="cd-sound-toggle" id="calciferSoundBtn" title="Bật/Tắt âm thanh lò sưởi" aria-label="Bật/Tắt âm thanh lò sưởi">🔥 Tiếng lửa</button>
+            <button class="cd-close" id="calciferClose" aria-label="Đóng cuộc trò chuyện">✕</button>
+          </div>
         </div>
         
         <h4 class="cd-title" id="calciferTitle">Xin chào bạn!</h4>
@@ -138,6 +142,7 @@
             <button class="cd-btn cd-next" id="calciferNext" aria-label="Đoạn tiếp">Tiếp tục ▸</button>
           </div>
         </div>
+        <div class="cd-tip">Nhấn Phím Cách (Space) hoặc bấm vào để tiếp tục ▸</div>
       </div>
     </div>
     <div class="portal-warp" id="portalWarp"></div>
@@ -377,7 +382,7 @@
 <script src="js/shooting.js?v=20261018m"></script>
 <script src="js/galaxy.js?v=20261018m"></script>
 <script src="js/intro.js?v=20261018n"></script>
-<script src="js/calcifer.js?v=20261018q"></script>
+<script src="js/calcifer.js?v=20261018s"></script>
 <script src="js/main.js?v=20261018n"></script>
 <script src="js/dog.js?v=20261018m"></script>
 </body>

@@ -1227,6 +1227,17 @@ body.blog-open{
   transition: filter 0.3s ease;
 }
 
+/* Floating Ember Sparks Canvas */
+.calcifer-embers {
+  position: absolute;
+  left: -15%;
+  top: -25%;
+  width: 130%;
+  height: 135%;
+  pointer-events: none;
+  z-index: 3;
+}
+
 .calcifer-container:hover .calcifer-flame {
   filter: drop-shadow(0 0 20px rgba(255, 160, 50, 0.75)) drop-shadow(0 0 35px rgba(255, 100, 20, 0.4));
 }
@@ -1363,6 +1374,39 @@ body.blog-open{
   50% { transform: scale(1.15) rotate(4deg); }
 }
 
+.cd-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cd-sound-toggle {
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 180, 80, 0.45);
+  background: rgba(255, 140, 40, 0.18);
+  color: #ffc470;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.2s ease;
+}
+.cd-sound-toggle:hover {
+  background: rgba(255, 140, 40, 0.35);
+  border-color: rgba(255, 200, 100, 0.7);
+  color: #fff;
+  transform: translateY(-1px);
+}
+.cd-sound-toggle.is-muted {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #baa7cc;
+}
+
 .cd-close {
   width: 26px;
   height: 26px;
@@ -1405,6 +1449,18 @@ body.blog-open{
   padding-right: 4px;
 }
 
+.cd-body.is-typing::after {
+  content: '❚';
+  display: inline-block;
+  color: #ff9e42;
+  margin-left: 3px;
+  font-size: 0.85rem;
+  animation: cdCursorBlink 0.7s steps(2) infinite;
+}
+@keyframes cdCursorBlink {
+  50% { opacity: 0; }
+}
+
 .cd-body p {
   margin-bottom: 8px;
 }
@@ -1416,6 +1472,17 @@ body.blog-open{
   color: #ffbe6b;
   font-weight: 600;
   text-shadow: 0 0 8px rgba(255, 180, 80, 0.3);
+}
+
+.cd-tip {
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  font-size: 0.72rem;
+  color: rgba(255, 220, 180, 0.55);
+  letter-spacing: 0.03em;
+  font-style: italic;
+  margin-top: 6px;
+  text-align: right;
+  pointer-events: none;
 }
 
 /* Footer & Pager */
