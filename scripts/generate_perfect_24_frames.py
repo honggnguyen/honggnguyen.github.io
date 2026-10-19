@@ -49,7 +49,7 @@ OFFSETS = [
     (-71, 101)  # Frame 8
 ]
 
-def render_frame_rgba(sheet, idx, mask_arr):
+def render_frame_rgba(sheet, idx, mask_arr, clean_right_wall):
     FW, FH = 621, 770
     cw, ch = 688, 768
     c = idx % 4
@@ -60,9 +60,19 @@ def render_frame_rgba(sheet, idx, mask_arr):
     canv = Image.new('RGBA', (FW, FH), (0, 0, 0, 0))
     canv.paste(cell, (dx, dy))
     
-    canv_arr = np.array(canv, dtype=np.float32)
-    canv_arr[:, :, 3] = canv_arr[:, :, 3] * mask_arr
-    return Image.fromarray(canv_arr.astype(np.uint8))
+    canv_arr = np.array(canv)
+    
+    # Eliminate any fireplace stone pillar/arch intrusion along the right wall:
+    # Cell 4 (Frame 5, talk_5) is the gold standard with zero stone pillar.
+    # Calcifer's body/flames NEVER touch X >= 538, so we directly copy
+    # the right wall strip X=[538..560] from talk_5 for all other frames.
+    # This avoids threshold-based detection which has false positives from fire glow.
+    if idx != 4:
+        canv_arr[320:565, 538:560] = clean_right_wall[320:565, :]
+            
+    canv_arr_f = canv_arr.astype(np.float32)
+    canv_arr_f[:, :, 3] *= mask_arr
+    return Image.fromarray(canv_arr_f.astype(np.uint8))
 
 def clean_bg_apex_sparks(filepath):
     if not os.path.exists(filepath):
@@ -92,24 +102,31 @@ def main():
     # 2. Generate cavity mask
     mask_arr = make_cavity_mask()
     
-    # 3. Open sprite sheets
+    # 3. Reference clean right wall from talk_5 (Row 1, Col 0 of Flame_smile2)
+    #    X=[538..560] range - Calcifer never touches these columns.
+    cw, ch = 688, 768
+    fs2 = Image.open('Fig/Flame_smile2.png').convert('RGBA')
+    canv4 = Image.new('RGBA', (621, 770), (0, 0, 0, 0))
+    canv4.paste(fs2.crop((0 * cw, 1 * ch, 1 * cw, 2 * ch)), (-19, 91))
+    clean_right_wall = np.array(canv4)[:, 538:560]
+    
+    # 4. Open sprite sheets
     f18 = Image.open('Fig/Flame_1_8.png').convert('RGBA')
     fs1 = Image.open('Fig/Flame_smile.png').convert('RGBA')
-    fs2 = Image.open('Fig/Flame_smile2.png').convert('RGBA')
     
     print("Generating 8 idle frames (lossless transparent WebP)...")
     for i in range(8):
-        f = render_frame_rgba(f18, i, mask_arr)
+        f = render_frame_rgba(f18, i, mask_arr, clean_right_wall)
         f.save(os.path.join(out_dir, f'flame_idle_{i+1}.webp'), 'WEBP', lossless=True)
         
     print("Generating 8 smile frames (lossless transparent WebP)...")
     for i in range(8):
-        f = render_frame_rgba(fs1, i, mask_arr)
+        f = render_frame_rgba(fs1, i, mask_arr, clean_right_wall)
         f.save(os.path.join(out_dir, f'calcifer_smile_{i+1}.webp'), 'WEBP', lossless=True)
         
     print("Generating 8 talk frames (lossless transparent WebP)...")
     for i in range(8):
-        f = render_frame_rgba(fs2, i, mask_arr)
+        f = render_frame_rgba(fs2, i, mask_arr, clean_right_wall)
         f.save(os.path.join(out_dir, f'calcifer_talk_{i+1}.webp'), 'WEBP', lossless=True)
         
     print("ALL_24_FRAMES_GENERATED_SUCCESSFULLY")
