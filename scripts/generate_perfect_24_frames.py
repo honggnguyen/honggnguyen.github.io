@@ -6,42 +6,48 @@ def make_cavity_mask(width=621, height=770):
     mask = np.zeros((height, width), dtype=np.float32)
     Y, X = np.ogrid[:height, :width]
     
-    # Fireplace cavity opening geometry:
-    # Inner stone arch ring:
-    # Center X: 385.0, Center Y: 415.0
-    # Horizontal radius: rx = 158.0 (cavity opening spans X: 227..543)
-    # Vertical radius: ry = 130.0 (arch apex at Y = 285)
-    # Lower cavity body: spans X: 227..543 down to Y = 582
-    # Bottom floor cutoff: Y <= 582 (hearth floor stones start at Y = 585)
-    cx = 385.0
+    # Exact fireplace cavity opening geometry:
+    # Left groove: X = 231.0
+    # Right groove: X = 556.0
+    # Center X: (231 + 556) / 2 = 393.5
+    # Radius X: (556 - 231) / 2 = 162.5
+    # Center Y: 415.0
+    # Radius Y: 122.5 (apex at cy - ry = 292.5, strictly below stone arch rim)
+    cx = 393.5
     cy = 415.0
-    rx = 158.0
-    ry = 130.0
+    rx = 162.5
+    ry = 122.5
     
     top_ellipse = ((X - cx) / rx)**2 + ((Y - cy) / ry)**2 <= 1.0
     in_arch = top_ellipse & (Y <= cy) & (Y >= (cy - ry))
-    in_lower_cavity = (X >= (cx - rx)) & (X <= (cx + rx)) & (Y > cy) & (Y <= 582)
+    in_lower_cavity = (X >= (cx - rx)) & (X <= (cx + rx)) & (Y > cy) & (Y <= 583)
     
     mask[in_arch | in_lower_cavity] = 1.0
     
-    # 1.2px Gaussian feathering for smooth transition along inner shadow
+    # 1.2px Gaussian feathering along natural dark groove
     mask_img = Image.fromarray((mask * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.2))
     mask_arr = np.array(mask_img, dtype=np.float32) / 255.0
     
-    # Soft linear fade at the very base (Y: 576..584) so zero hard cut lines exist above the hearth
-    for y in range(576, 584):
-        weight = max(0.0, min(1.0, (584 - y) / 8.0))
+    # Soft linear fade right at bottom edge into shadow under bottom rail (Y: 581..584)
+    for y in range(581, 584):
+        weight = max(0.0, min(1.0, (584 - y) / 3.0))
         mask_arr[y, :] *= weight
     mask_arr[584:, :] = 0.0
     
     return mask_arr
 
-# Robust landmark-aligned offsets across all sheets:
-# Row 0 (frames 1..4): dy = 0
-# Row 1 (frames 5..8): dy = 97
-OFFSETS_ROW0 = [(5, 0), (10, 0), (16, 0), (11, 0)]
-OFFSETS_ROW1 = [(-11, 97), (-23, 97), (-18, 97), (-50, 97)]
-OFFSETS = OFFSETS_ROW0 + OFFSETS_ROW1
+# Exact landmark-aligned offsets across all sheets:
+# Ensures iron grate rails, posts, and hearth align to < 1px across all 24 frames
+OFFSETS = [
+    (0, 0),     # Frame 1
+    (5, 0),     # Frame 2
+    (11, 0),    # Frame 3
+    (5, 0),     # Frame 4
+    (-19, 91),  # Frame 5
+    (-36, 91),  # Frame 6
+    (-36, 91),  # Frame 7
+    (-71, 101)  # Frame 8
+]
 
 def render_frame_rgba(sheet, idx, mask_arr):
     FW, FH = 621, 770
@@ -55,17 +61,38 @@ def render_frame_rgba(sheet, idx, mask_arr):
     canv.paste(cell, (dx, dy))
     
     canv_arr = np.array(canv, dtype=np.float32)
-    # Outside the cavity mask, Alpha = 0 (100% transparent)
-    # Inside the cavity mask, Alpha = 255 (with feathered transition along inner arch shadow)
     canv_arr[:, :, 3] = canv_arr[:, :, 3] * mask_arr
     return Image.fromarray(canv_arr.astype(np.uint8))
+
+def clean_bg_apex_sparks(filepath):
+    if not os.path.exists(filepath):
+        return
+    bg = Image.open(filepath).convert('RGB')
+    bg_arr = np.array(bg)
+    BX, BY = 2131, 649
+    
+    # Clean the static tip baked into the stone arch rim (Y: 279..285, X: 348..357)
+    y1, y2 = BY + 279, BY + 286
+    x1, x2 = BX + 348, BX + 357
+    tip_mask = (bg_arr[y1:y2, x1:x2, 0] > 120) & (bg_arr[y1:y2, x1:x2, 1] > 55)
+    bg_arr[y1:y2, x1:x2][tip_mask] = [88, 48, 50]
+    
+    cleaned = Image.fromarray(bg_arr)
+    cleaned.save(filepath, 'WEBP', quality=98)
+    print(f"Cleaned static arch tip in {filepath}")
 
 def main():
     out_dir = 'assets/img/calcifer'
     os.makedirs(out_dir, exist_ok=True)
     
+    # 1. Clean background images
+    clean_bg_apex_sparks('assets/img/bg_close.webp')
+    clean_bg_apex_sparks('assets/img/bg_open.webp')
+    
+    # 2. Generate cavity mask
     mask_arr = make_cavity_mask()
     
+    # 3. Open sprite sheets
     f18 = Image.open('Fig/Flame_1_8.png').convert('RGBA')
     fs1 = Image.open('Fig/Flame_smile.png').convert('RGBA')
     fs2 = Image.open('Fig/Flame_smile2.png').convert('RGBA')

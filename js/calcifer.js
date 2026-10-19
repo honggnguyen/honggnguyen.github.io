@@ -13,14 +13,14 @@
 const Calcifer = (() => {
   // 8 frames ngọn lửa bập bùng tự nhiên từ Flame_1_8.png
   const IDLE_FRAMES = [
-    'assets/img/calcifer/flame_idle_1.webp?v=20261019b',
-    'assets/img/calcifer/flame_idle_2.webp?v=20261019b',
-    'assets/img/calcifer/flame_idle_3.webp?v=20261019b',
-    'assets/img/calcifer/flame_idle_4.webp?v=20261019b',
-    'assets/img/calcifer/flame_idle_5.webp?v=20261019b',
-    'assets/img/calcifer/flame_idle_6.webp?v=20261019b',
-    'assets/img/calcifer/flame_idle_7.webp?v=20261019b',
-    'assets/img/calcifer/flame_idle_8.webp?v=20261019b'
+    'assets/img/calcifer/flame_idle_1.webp?v=20261019c',
+    'assets/img/calcifer/flame_idle_2.webp?v=20261019c',
+    'assets/img/calcifer/flame_idle_3.webp?v=20261019c',
+    'assets/img/calcifer/flame_idle_4.webp?v=20261019c',
+    'assets/img/calcifer/flame_idle_5.webp?v=20261019c',
+    'assets/img/calcifer/flame_idle_6.webp?v=20261019c',
+    'assets/img/calcifer/flame_idle_7.webp?v=20261019c',
+    'assets/img/calcifer/flame_idle_8.webp?v=20261019c'
   ];
 
   // 9 phân đoạn hội thoại với biểu cảm và cử chỉ tương ứng
@@ -28,92 +28,92 @@ const Calcifer = (() => {
     {
       title: 'Xin chào bạn!',
       text: 'Chào bạn,\nMình là **Carte** — người giữ lửa và canh gác cho tòa lâu đài cùng với chú chó siêu to tên **Bond**.\n\nNhờ có mình mà lâu đài mới chuyển động và đi bất kì nơi nào mà cô chủ muốn.',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261019b', // giơ tay chào mừng
+      mainFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261019c', // giơ tay chào mừng
       talkFrames: [
-        'assets/img/calcifer/calcifer_talk_3.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_talk_6.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_talk_3.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_talk_6.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_2.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_talk_2.webp?v=20261019c'
     },
     {
       title: 'Cô chủ của Carte',
       text: 'Cô chủ của mình là một người thích khám phá, tò mò và cũng mơ mộng nữa.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261019b', // cười dịu dàng
+      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261019c', // cười dịu dàng
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_1.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_talk_4.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_smile_1.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261019c'
     },
     {
       title: 'Những cái tên gắn liền từng chặng đường',
       text: 'Mình có được nghe cô chủ kể trước kia cô có khá nhiều tên, mỗi cái tên gắn liền với một giai đoạn...\n\nHiện tại cô chủ mình chọn **Vivi** làm tên tiếng Việt cũng như bút danh cho việc viết, còn **Vivian** là tên tiếng Anh.',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_6.webp?v=20261019b', // mở miệng kể chuyện
+      mainFrame: 'assets/img/calcifer/calcifer_talk_6.webp?v=20261019c', // mở miệng kể chuyện
       talkFrames: [
-        'assets/img/calcifer/calcifer_talk_6.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_talk_7.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_talk_6.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_talk_7.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_5.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_talk_5.webp?v=20261019c'
     },
     {
       title: 'Đưa cô gần hơn tới các vì sao',
       text: 'Mình hay gọi cô là **Vivi** luôn cho gọn.\n\nVivi rất thích các chòm sao nên mình đã luôn phải cháy rực rỡ để đưa cô gần hơn tới các vì sao ✨ — một góc nhỏ ấm áp nơi cô có thể quan sát, nhìn ngắm, chiêm nghiệm về những điều cô đọc được, cô đi qua hay những sáng tác của cô.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261019b', // giơ tay nhiệt huyết
+      mainFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261019c', // giơ tay nhiệt huyết
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_6.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_talk_3.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_smile_6.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_talk_3.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261019c'
     },
     {
       title: 'Những khoảng ở giữa...',
       text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi... 😊\n\nCô là sự kết hợp của nhiều khoảng ở giữa…',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_2.webp?v=20261019b', // cười tít mắt `> <`
+      mainFrame: 'assets/img/calcifer/calcifer_smile_2.webp?v=20261019c', // cười tít mắt `> <`
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_2.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_smile_5.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_smile_2.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_smile_5.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_4.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_4.webp?v=20261019c'
     },
     {
       title: 'Tình yêu dành cho nghệ thuật',
       text: 'Nhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261019b', // nụ cười điềm đạm
+      mainFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261019c', // nụ cười điềm đạm
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_5.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_talk_4.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_smile_5.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261019c'
     },
     {
       title: 'Phương châm viết của Vivi',
       text: 'Vivi hay nói với mình là cô:\n\n🔥 **« VIẾT ĐỂ KHÔNG QUÊN »** 🔥',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_8.webp?v=20261019b', // cười lớn vui vẻ
+      mainFrame: 'assets/img/calcifer/calcifer_talk_8.webp?v=20261019c', // cười lớn vui vẻ
       talkFrames: [
-        'assets/img/calcifer/calcifer_talk_8.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_smile_8.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_talk_8.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_smile_8.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261019c'
     },
     {
       title: 'Những dấu chân con chữ',
       text: 'Vậy nên…\n\nNhiều khi các bài viết hay các sáng tác có thể như là một dấu chân cô đã đi và muốn lưu dấu thông qua vài con chữ lộn xộn.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261019b', // nụ cười rạng rỡ
+      mainFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261019c', // nụ cười rạng rỡ
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_7.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_talk_5.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_smile_7.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_talk_5.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261019c'
     },
     {
       title: 'Chinh phục những chân trời mới',
       text: 'Chẳng xô bồ hay cũng chẳng cần trau chuốt để ngóng chờ một chàng hoàng tử của đời.\n\nCác con chữ chỉ đơn giản vẫn ở đó và lớn dần từng ngày để tự chinh phục những điều thú vị tiếp theo. ✨',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261019b', // giơ 2 tay hạnh phúc
+      mainFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261019c', // giơ 2 tay hạnh phúc
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_3.webp?v=20261019b',
-        'assets/img/calcifer/calcifer_talk_3.webp?v=20261019b'
+        'assets/img/calcifer/calcifer_smile_3.webp?v=20261019c',
+        'assets/img/calcifer/calcifer_talk_3.webp?v=20261019c'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261019b'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261019c'
     }
   ];
 
@@ -523,22 +523,22 @@ const Calcifer = (() => {
   function preloadImages() {
     const all = [
       ...IDLE_FRAMES,
-      'assets/img/calcifer/calcifer_talk_1.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_talk_2.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_talk_3.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_talk_4.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_talk_5.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_talk_6.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_talk_7.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_talk_8.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_1.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_2.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_3.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_4.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_5.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_6.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_7.webp?v=20261019b',
-      'assets/img/calcifer/calcifer_smile_8.webp?v=20261019b'
+      'assets/img/calcifer/calcifer_talk_1.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_talk_2.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_talk_3.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_talk_4.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_talk_5.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_talk_6.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_talk_7.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_talk_8.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_1.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_2.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_3.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_4.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_5.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_6.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_7.webp?v=20261019c',
+      'assets/img/calcifer/calcifer_smile_8.webp?v=20261019c'
     ];
     all.forEach(src => {
       const img = new Image();
@@ -761,20 +761,20 @@ const Calcifer = (() => {
     // Chuỗi thức tỉnh sống động:
     // 1. Nhắm mắt ngủ
     if (flameEl) {
-      flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261019b';
+      flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261019c';
     }
 
     // 2. Mở to mắt giật mình 'O'
     setTimeout(() => {
       if (!isAwake) return;
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_2.webp?v=20261019b';
+      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_2.webp?v=20261019c';
       CalciferEmbers.burst(8);
     }, 200);
 
     // 3. Giơ 2 tay lên reo chào mừng
     setTimeout(() => {
       if (!isAwake) return;
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_3.webp?v=20261019b';
+      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_3.webp?v=20261019c';
       CalciferEmbers.burst(14);
     }, 450);
 
@@ -831,11 +831,11 @@ const Calcifer = (() => {
 
     // Mỉm cười chào rồi nhắm mắt quay lại ngọn lửa bình thường
     if (flameEl) {
-      flameEl.src = 'assets/img/calcifer/calcifer_talk_4.webp?v=20261019b';
+      flameEl.src = 'assets/img/calcifer/calcifer_talk_4.webp?v=20261019c';
     }
 
     setTimeout(() => {
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261019b';
+      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261019c';
     }, 400);
 
     setTimeout(() => {
