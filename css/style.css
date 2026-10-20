@@ -1223,6 +1223,8 @@ body.blog-open{
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   pointer-events: none;
+  /* Keep the glow inside the cavity (frame is 621x770; cavity ~X231..560, Y290..612) */
+  clip-path: inset(36.5% 9.8% 20.5% 36.2%);
   filter: drop-shadow(0 0 10px rgba(255, 140, 40, 0.35));
   transition: filter 0.3s ease;
 }
