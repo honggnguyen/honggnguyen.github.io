@@ -38,9 +38,9 @@ const Calcifer = (() => {
     {
       title: 'Cô chủ của Carte',
       text: 'Cô chủ của mình là một người thích khám phá, tò mò và cũng mơ mộng nữa.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020a', // cười dịu dàng
+      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_fixed1', // cười dịu dàng
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_1.webp?v=20261020a',
+        'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_fixed1',
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261020a'
       ],
       breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261020a'
@@ -83,7 +83,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_5.webp?v=20261020a',
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261020a'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020a'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_fixed1'
     },
     {
       title: 'Phương châm viết của Vivi',
@@ -103,7 +103,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_7.webp?v=20261020a',
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261020a'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020a'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_fixed1'
     },
     {
       title: 'Chinh phục những chân trời mới',
@@ -531,7 +531,7 @@ const Calcifer = (() => {
       'assets/img/calcifer/calcifer_talk_6.webp?v=20261020a',
       'assets/img/calcifer/calcifer_talk_7.webp?v=20261020a',
       'assets/img/calcifer/calcifer_talk_8.webp?v=20261020a',
-      'assets/img/calcifer/calcifer_smile_1.webp?v=20261020a',
+      'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_fixed1',
       'assets/img/calcifer/calcifer_smile_2.webp?v=20261020a',
       'assets/img/calcifer/calcifer_smile_3.webp?v=20261020a',
       'assets/img/calcifer/calcifer_smile_4.webp?v=20261020a',
