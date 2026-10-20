@@ -13,107 +13,107 @@
 const Calcifer = (() => {
   // 8 frames ngọn lửa bập bùng tự nhiên từ Flame_1_8.png
   const IDLE_FRAMES = [
-    'assets/img/calcifer/flame_idle_1.webp?v=20261020_v3',
-    'assets/img/calcifer/flame_idle_2.webp?v=20261020_v3',
-    'assets/img/calcifer/flame_idle_3.webp?v=20261020_v3',
-    'assets/img/calcifer/flame_idle_4.webp?v=20261020_v3',
-    'assets/img/calcifer/flame_idle_5.webp?v=20261020_v3',
-    'assets/img/calcifer/flame_idle_6.webp?v=20261020_v3',
-    'assets/img/calcifer/flame_idle_7.webp?v=20261020_v3',
-    'assets/img/calcifer/flame_idle_8.webp?v=20261020_v3'
+    'assets/img/calcifer/flame_idle_1.webp?v=20261020_v4',
+    'assets/img/calcifer/flame_idle_2.webp?v=20261020_v4',
+    'assets/img/calcifer/flame_idle_3.webp?v=20261020_v4',
+    'assets/img/calcifer/flame_idle_4.webp?v=20261020_v4',
+    'assets/img/calcifer/flame_idle_5.webp?v=20261020_v4',
+    'assets/img/calcifer/flame_idle_6.webp?v=20261020_v4',
+    'assets/img/calcifer/flame_idle_7.webp?v=20261020_v4',
+    'assets/img/calcifer/flame_idle_8.webp?v=20261020_v4'
   ];
 
-  // 9 phân đoạn hội thoại với biểu cảm và cử chỉ tương ứng
+  // 9 phân đoạn hội thoại với biểu cảm và cử chỉ phong phú, tỷ lệ hàng rào chuẩn 100%
   const DIALOGUE_PAGES = [
     {
       title: 'Xin chào bạn!',
       text: 'Chào bạn,\nMình là **Carte** — người giữ lửa và canh gác cho tòa lâu đài cùng với chú chó siêu to tên **Bond**.\n\nNhờ có mình mà lâu đài mới chuyển động và đi bất kì nơi nào mà cô chủ muốn.',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v3', // giơ tay chào mừng
+      mainFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261020_v4', // giơ 2 tay chào mừng nồng nhiệt
       talkFrames: [
-        'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_talk_6.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_smile_3.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_2.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v4'
     },
     {
       title: 'Cô chủ của Carte',
       text: 'Cô chủ của mình là một người thích khám phá, tò mò và cũng mơ mộng nữa.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v3', // cười dịu dàng
+      mainFrame: 'assets/img/calcifer/calcifer_smile_8.webp?v=20261020_v4', // tò mò với dấu chấm hỏi ?
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_smile_8.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v4'
     },
     {
       title: 'Những cái tên gắn liền từng chặng đường',
       text: 'Mình có được nghe cô chủ kể trước kia cô có khá nhiều tên, mỗi cái tên gắn liền với một giai đoạn...\n\nHiện tại cô chủ mình chọn **Vivi** làm tên tiếng Việt cũng như bút danh cho việc viết, còn **Vivian** là tên tiếng Anh.',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_6.webp?v=20261020_v3', // mở miệng kể chuyện
+      mainFrame: 'assets/img/calcifer/calcifer_talk_5.webp?v=20261020_v4', // mở miệng kể chuyện
       talkFrames: [
-        'assets/img/calcifer/calcifer_talk_6.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_talk_7.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_talk_5.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_5.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_talk_8.webp?v=20261020_v4'
     },
     {
       title: 'Đưa cô gần hơn tới các vì sao',
       text: 'Mình hay gọi cô là **Vivi** luôn cho gọn.\n\nVivi rất thích các chòm sao nên mình đã luôn phải cháy rực rỡ để đưa cô gần hơn tới các vì sao ✨ — một góc nhỏ ấm áp nơi cô có thể quan sát, nhìn ngắm, chiêm nghiệm về những điều cô đọc được, cô đi qua hay những sáng tác của cô.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v3', // giơ tay nhiệt huyết
+      mainFrame: 'assets/img/calcifer/calcifer_smile_2.webp?v=20261020_v4', // nháy mắt với ngôi sao lấp lánh ✨
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_smile_2.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_smile_4.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v4'
     },
     {
       title: 'Những khoảng ở giữa...',
       text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi... 😊\n\nCô là sự kết hợp của nhiều khoảng ở giữa…',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_2.webp?v=20261020_v3', // cười tít mắt `> <`
+      mainFrame: 'assets/img/calcifer/calcifer_talk_6.webp?v=20261020_v4', // gồng cơ bắp ngọn lửa quyết liệt
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_2.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_talk_6.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_4.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v4'
     },
     {
       title: 'Tình yêu dành cho nghệ thuật',
       text: 'Nhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v3', // nụ cười điềm đạm
+      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v4', // nụ cười điềm đạm thanh thản
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v4'
     },
     {
       title: 'Phương châm viết của Vivi',
       text: 'Vivi hay nói với mình là cô:\n\n🔥 **« VIẾT ĐỂ KHÔNG QUÊN »** 🔥',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_8.webp?v=20261020_v3', // cười lớn vui vẻ
+      mainFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v4', // hai tay giơ cao reo hò bốc lửa!
       talkFrames: [
-        'assets/img/calcifer/calcifer_talk_8.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_smile_8.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_talk_5.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v4'
     },
     {
       title: 'Những dấu chân con chữ',
       text: 'Vậy nên…\n\nNhiều khi các bài viết hay các sáng tác có thể như là một dấu chân cô đã đi và muốn lưu dấu thông qua vài con chữ lộn xộn.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v3', // nụ cười rạng rỡ
+      mainFrame: 'assets/img/calcifer/calcifer_talk_7.webp?v=20261020_v4', // cảm động rưng rưng giọt nước mắt xanh
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_talk_5.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_talk_7.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_talk_8.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v4'
     },
     {
       title: 'Chinh phục những chân trời mới',
       text: 'Chẳng xô bồ hay cũng chẳng cần trau chuốt để ngóng chờ một chàng hoàng tử của đời.\n\nCác con chữ chỉ đơn giản vẫn ở đó và lớn dần từng ngày để tự chinh phục những điều thú vị tiếp theo. ✨',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261020_v3', // giơ 2 tay hạnh phúc
+      mainFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v4', // cười rạng rỡ hạnh phúc
       talkFrames: [
-        'assets/img/calcifer/calcifer_smile_3.webp?v=20261020_v3',
-        'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v3'
+        'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v4',
+        'assets/img/calcifer/calcifer_smile_2.webp?v=20261020_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v3'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261020_v4'
     }
   ];
 
@@ -249,23 +249,19 @@ const Calcifer = (() => {
         filter.frequency.setValueAtTime(600, t);
         gain.gain.setValueAtTime(0.045, t);
         gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.04);
-        osc.stop(t + 0.045);
-      } else {
-        // Tiếng than hồng nổ lách tách giòn tan
-        osc.type = 'sawtooth';
-        osc.frequency.setValueAtTime(2200 + Math.random() * 2500, t);
-        filter.type = 'bandpass';
-        filter.frequency.setValueAtTime(2800 + Math.random() * 1200, t);
-        filter.Q.value = 3.5;
-        gain.gain.setValueAtTime(0.028, t);
-        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.015);
-        osc.stop(t + 0.02);
+      try {
+        osc.connect(filter);
+        filter.connect(gain);
+        gain.connect(masterGain);
+        osc.start(t);
+        if (isDeepWood) {
+          osc.stop(t + 0.045);
+        } else {
+          osc.stop(t + 0.02);
+        }
+      } catch (err) {
+        // Safe guard Web Audio scheduling
       }
-
-      osc.connect(filter);
-      filter.connect(gain);
-      gain.connect(masterGain);
-      osc.start(t);
     }
 
     function stopFireCrackle() {
@@ -523,22 +519,22 @@ const Calcifer = (() => {
   function preloadImages() {
     const all = [
       ...IDLE_FRAMES,
-      'assets/img/calcifer/calcifer_talk_1.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_talk_2.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_talk_5.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_talk_6.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_talk_7.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_talk_8.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_2.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_3.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_4.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v3',
-      'assets/img/calcifer/calcifer_smile_8.webp?v=20261020_v3'
+      'assets/img/calcifer/calcifer_talk_1.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_talk_2.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_talk_4.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_talk_5.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_talk_6.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_talk_7.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_talk_8.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_1.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_2.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_3.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_4.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_5.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_6.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_7.webp?v=20261020_v4',
+      'assets/img/calcifer/calcifer_smile_8.webp?v=20261020_v4'
     ];
     all.forEach(src => {
       const img = new Image();
@@ -761,20 +757,20 @@ const Calcifer = (() => {
     // Chuỗi thức tỉnh sống động:
     // 1. Nhắm mắt ngủ
     if (flameEl) {
-      flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261020_v3';
+      flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261020_v4';
     }
 
     // 2. Mở to mắt giật mình 'O'
     setTimeout(() => {
       if (!isAwake) return;
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_2.webp?v=20261020_v3';
+      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_2.webp?v=20261020_v4';
       CalciferEmbers.burst(8);
     }, 200);
 
     // 3. Giơ 2 tay lên reo chào mừng
     setTimeout(() => {
       if (!isAwake) return;
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v3';
+      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_3.webp?v=20261020_v4';
       CalciferEmbers.burst(14);
     }, 450);
 
