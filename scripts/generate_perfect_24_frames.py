@@ -2,36 +2,34 @@ import os
 import numpy as np
 from PIL import Image, ImageFilter
 
-# Cavity-local geometry shared by mask + background
+# Cavity-local geometry shared by mask + seam search
 CX, CY, RX, RY = 393.5, 415.0, 162.5, 122.5
 BX, BY = 2131, 649            # canvas origin inside the full background image
-SEAM_BAND = 4.0               # cross-dissolve width (px) around bottom seam
+RW0, RW1 = 533, 576           # right-wall strip copied from the gold frame (talk_5)
+SEAM_BAND = 4.0               # cross-dissolve width (px) around the seams
 
-# Exact landmark-aligned offsets across all 24 frames:
-# Calibrated so LeftPost X = 266, BotRail Y = 582 across every frame.
-# This aligns the grate rails, posts, cavity walls, and right groove (< 0.5px).
-OFFSETS = {
-    'flame_idle_{}': [(-5, -9), (3, 1), (8, 2), (3, 2), (-21, 73), (-38, 73), (-38, 85), (-8, 98)],
-    'calcifer_smile_{}': [(-4, -10), (3, -10), (-6, -14), (-2, -10), (-21, 73), (-38, 74), (-38, 92), (-72, 100)],
-    'calcifer_talk_{}': [(-3, -14), (0, -9), (6, -14), (3, -10), (-20, 74), (-38, 75), (-38, 94), (-72, 100)],
-}
-
-def make_cavity_mask(width=621, height=770, yb=None):
+def make_cavity_mask(width=621, height=770, yb=None, xr=None):
     """Cavity alpha mask.
-    
-    The top arch is an ellipse with apex at CY - RY = 292.5 and springline at CY = 415.0,
-    ending at X = 556.0 on the right and X = 231.0 on the left.
-    The lower cavity continues vertically from Y = 415.0 down to the floor
-    strictly between X = 231.0 and X = 556.0, meeting the arch seamlessly with ZERO ledge.
+
+    yb: per-column bottom seam Y (len=width) and xr: per-row right seam X (len=height).
+    Both come from compute_seams(); when omitted the legacy straight cuts are used.
     """
     mask = np.zeros((height, width), dtype=np.float32)
     Y, X = np.ogrid[:height, :width]
     
+    # Exact fireplace cavity opening geometry:
+    # Left groove: X = 231.0
+    # Right groove: X = 556.0
+    # Center X: (231 + 556) / 2 = 393.5
+    # Radius X: (556 - 231) / 2 = 162.5
+    # Center Y: 415.0
+    # Radius Y: 122.5 (apex at cy - ry = 292.5, strictly below stone arch rim)
     cx, cy, rx, ry = CX, CY, RX, RY
+    
     top_ellipse = ((X - cx) / rx)**2 + ((Y - cy) / ry)**2 <= 1.0
     in_arch = top_ellipse & (Y <= cy) & (Y >= (cy - ry))
-    # Lower cavity strictly bounds X between [cx - rx] (231.0) and [cx + rx] (556.0)
-    in_lower_cavity = (X >= (cx - rx)) & (X <= (cx + rx)) & (Y > cy) & (Y <= 640)
+    # Lower cavity is cut generously on the right/bottom; the seams below trim it.
+    in_lower_cavity = (X >= (cx - rx)) & (X <= RW1 - 1) & (Y > cy) & (Y <= 640)
     
     mask[in_arch | in_lower_cavity] = 1.0
     
@@ -39,13 +37,20 @@ def make_cavity_mask(width=621, height=770, yb=None):
     mask_img = Image.fromarray((mask * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.2))
     mask_arr = np.array(mask_img, dtype=np.float32) / 255.0
     
-    Yg = np.arange(height)[:, None].astype(np.float32)
+    Yg, Xg = np.mgrid[:height, :width].astype(np.float32)
     if yb is None:
-        yb = np.full(width, 584.0, dtype=np.float32)
+        yb = np.full(width, 583.0, dtype=np.float32)
+    if xr is None:
+        xr = np.full(height, cx + rx, dtype=np.float32)
     
-    # Bottom seam: dissolve across SEAM_BAND px centred on the bottom seam path
+    # Bottom seam: dissolve across SEAM_BAND px centred on the minimum-contrast path
     soft_bottom = np.clip((np.asarray(yb, np.float32)[None, :] + 0.5 - Yg) / SEAM_BAND + 0.5, 0.0, 1.0)
     mask_arr *= soft_bottom
+    
+    # Right seam (below the arch springline only; the arch itself keeps the ellipse edge)
+    soft_right = np.clip((np.asarray(xr, np.float32)[:, None] + 0.5 - Xg) / SEAM_BAND + 0.5, 0.0, 1.0)
+    soft_right[Yg <= cy] = 1.0
+    mask_arr *= soft_right
     
     return mask_arr
 
@@ -78,54 +83,96 @@ def _dp_seam(cost, maxstep=1):
         path.append(k)
     return np.array(path[::-1]), float(acc[-1].min() / L)
 
-def compute_bottom_seam(canvases, bg_paths, width=621, height=770):
-    """Find bottom cut line where every frame is closest to the background."""
+def compute_seams(canvases, bg_paths, width=621, height=770):
+    """Find bottom/right cut lines where every frame is closest to the background.
+
+    Cost = max over all frames and both backgrounds of the per-pixel RGB difference, so a
+    single static seam is valid for the whole animation (no per-frame jitter).
+    """
     stack = np.array([c[:, :, :3].astype(np.float32) for c in canvases])
     cost = np.zeros((height, width), dtype=np.float32)
     for p in bg_paths:
         bg = np.array(Image.open(p).convert('RGB').crop((BX, BY, BX + width, BY + height))).astype(np.float32)
         cost = np.maximum(cost, np.abs(stack - bg[None]).mean(3).max(0))
+    # smooth a little so the path avoids isolated lucky pixels
     cost = np.array(Image.fromarray(np.clip(cost, 0, 255).astype(np.uint8))
                     .filter(ImageFilter.GaussianBlur(0.8))).astype(np.float32)
     
-    # Bottom: search Y 580..610 between left and right groove (231..556)
-    y0, y1 = 580, 611
-    xs0, xs1 = int(CX - RX), int(CX + RX)
+    # Bottom: Calcifer's body never goes below the log line, so search only Y 578..610
+    y0, y1 = 578, 611
+    xs0, xs1 = int(CX - RX), RW1
     path_b, cb = _dp_seam(cost[y0:y1, xs0:xs1].T)
     yb = np.full(width, float(y0 + int(np.median(path_b))), dtype=np.float32)
     yb[xs0:xs1] = path_b + y0
     
+    # Right: rows below the springline, X 546..575 (anchored near the groove at X=556)
+    r0, r1 = int(CY) + 5, 566
+    x0, x1 = 546, RW1
+    pen = 0.15 * np.abs(np.arange(x0, x1) - 556)[None, :]
+    path_r, cr = _dp_seam(cost[r0:r1, x0:x1] + pen)
+    xr = np.full(height, float(CX + RX), dtype=np.float32)
+    xr[r0:r1] = path_r + x0
+    # rows 566.. keep the last value so the corner stays closed
+    xr[r1:] = xr[r1 - 1]
+    # blend into the arch springline (rows CY..r0)
+    xr[int(CY):r0] = np.linspace(CX + RX, xr[r0], r0 - int(CY))
+    # seams are integers; light smoothing removes 1px stair-steps
     k = np.ones(5) / 5.0
+    xr = np.convolve(np.pad(xr, 2, mode='edge'), k, mode='valid').astype(np.float32)
     yb = np.convolve(np.pad(yb, 2, mode='edge'), k, mode='valid').astype(np.float32)
-    print(f'Bottom seam: Y {yb[xs0:xs1].min():.0f}..{yb[xs0:xs1].max():.0f}, mean cost {cb:.1f}')
-    return yb
+    print(f'Bottom seam: Y {yb[xs0:xs1].min():.0f}..{yb[xs0:xs1].max():.0f}, mean cost {cb:.1f} '
+          f'(straight Y=583 cost {cost[583, xs0:xs1].mean():.1f})')
+    print(f'Right seam: X {xr[r0:r1].min():.0f}..{xr[r0:r1].max():.0f}, mean cost {cr:.1f} '
+          f'(straight X=556 cost {cost[r0:r1, 556].mean():.1f})')
+    return yb, xr
 
-def build_canvas(sheet_name, sheet, idx, clean_upper_wall):
-    """Place one sprite cell on the 621x770 canvas."""
+# Exact landmark-aligned offsets across all sheets:
+# Ensures iron grate rails, posts, and hearth align to < 1px across all 24 frames
+OFFSETS = [
+    (0, 0),     # Frame 1
+    (5, 0),     # Frame 2
+    (11, 0),    # Frame 3
+    (5, 0),     # Frame 4
+    (-19, 91),  # Frame 5
+    (-36, 91),  # Frame 6
+    (-36, 91),  # Frame 7
+    (-71, 101)  # Frame 8
+]
+
+def build_canvas(sheet, idx, clean_right_wall):
+    """Place one sprite cell on the 621x770 canvas (no mask applied)."""
     FW, FH = 621, 770
     cw, ch = 688, 768
     c = idx % 4
     r = idx // 4
     cell = sheet.crop((c * cw, r * ch, (c + 1) * cw, (r + 1) * ch))
-    dx, dy = OFFSETS[sheet_name][idx]
+    dx, dy = OFFSETS[idx]
     
     canv = Image.new('RGBA', (FW, FH), (0, 0, 0, 0))
     canv.paste(cell, (dx, dy))
+    
     canv_arr = np.array(canv)
     
-    # Frames 6, 7, 8 (indices 5, 6, 7) have a stone pillar intrusion in the upper cavity
-    # along X=[546..556], Y=[320..510]. Clean this using Frame 5 (idx 4) strictly above the
-    # grate (Y <= 510).
-    # Frames 1..5 are pristine and naturally end at the groove X=556 with full grate intact;
-    # they are NEVER overwritten.
-    if idx in (5, 6, 7) and clean_upper_wall is not None:
-        RW0, RW1 = 546, 557
-        w = np.clip((np.arange(RW0, RW1) - RW0 + 1) / 3.0, 0.0, 1.0)[None, :, None]
-        region = canv_arr[320:510, RW0:RW1].astype(np.float32)
-        clean = clean_upper_wall[320:510, :].astype(np.float32)
+    # Eliminate any fireplace stone pillar/arch intrusion along the right wall:
+    # Cell 4 (Frame 5, talk_5) is the gold standard with zero stone pillar.
+    # Calcifer's body/flames NEVER touch X >= 538, so we directly copy
+    # the right wall strip X=[538..576] from talk_5 for all other frames
+    # (strip widened from 560 so the right seam can sit past the groove).
+    # This avoids threshold-based detection which has false positives from fire glow.
+    if idx != 4:
+        # Short (2px) feather: long ramps let the raw frame's stone-pillar sliver ghost through.
+        w = np.clip((np.arange(RW0, RW1) - RW0 + 1) / 2.0, 0.0, 1.0)[None, :, None]
+        region = canv_arr[320:565, RW0:RW1].astype(np.float32)
+        gold = clean_right_wall[320:565, :].astype(np.float32)
         w = np.broadcast_to(w, region.shape[:2] + (1,)).copy()
-        canv_arr[320:510, RW0:RW1] = np.round(region * (1.0 - w) + clean * w).astype(np.uint8)
-        
+        # talk_5 has a static orange fire glint at X~536-537; never copy bright fire pixels
+        fire = (gold[:, :, 0] > 190) & (gold[:, :, 1] > 110)
+        grown = fire.copy()
+        for dy in (-2, -1, 0, 1, 2):
+            for dx in (-2, -1, 0, 1, 2):
+                grown |= np.roll(np.roll(fire, dy, axis=0), dx, axis=1)
+        w[grown] = 0.0
+        canv_arr[320:565, RW0:RW1] = np.round(region * (1.0 - w) + gold * w).astype(np.uint8)
     return canv_arr
 
 def render_frame_rgba(canv_arr, mask_arr):
@@ -158,34 +205,27 @@ def main():
     clean_bg_apex_sparks('assets/img/bg_close.webp')
     clean_bg_apex_sparks('assets/img/bg_open.webp')
     
-    # 2. Reference clean upper right wall from Frame 5 (idx 4)
-    #    Col X=[546..557], Row Y=[320..510]
+    # 2. Reference clean right wall from talk_5 (Row 1, Col 0 of Flame_smile2)
+    #    X=[538..576] range - Calcifer never touches these columns.
     cw, ch = 688, 768
+    fs2 = Image.open('Fig/Flame_smile2.png').convert('RGBA')
+    canv4 = Image.new('RGBA', (621, 770), (0, 0, 0, 0))
+    canv4.paste(fs2.crop((0 * cw, 1 * ch, 1 * cw, 2 * ch)), (-19, 91))
+    clean_right_wall = np.array(canv4)[:, RW0:RW1]
+    
+    # 3. Open sprite sheets and build all 24 unmasked canvases
     f18 = Image.open('Fig/Flame_1_8.png').convert('RGBA')
     fs1 = Image.open('Fig/Flame_smile.png').convert('RGBA')
-    fs2 = Image.open('Fig/Flame_smile2.png').convert('RGBA')
-    
     sheets = [('flame_idle_{}', f18), ('calcifer_smile_{}', fs1), ('calcifer_talk_{}', fs2)]
-    
-    # Build clean upper right walls per sheet from each sheet's own Frame 5
-    clean_walls = {}
-    for pattern, sheet in sheets:
-        canv5 = Image.new('RGBA', (621, 770), (0, 0, 0, 0))
-        dx5, dy5 = OFFSETS[pattern][4]
-        cell5 = sheet.crop((0 * cw, 1 * ch, 1 * cw, 2 * ch))
-        canv5.paste(cell5, (dx5, dy5))
-        clean_walls[pattern] = np.array(canv5)[:, 546:557]
-    
-    # 3. Build all 24 unmasked canvases
     canvases = {}
     for pattern, sheet in sheets:
         for i in range(8):
-            canvases[pattern.format(i + 1)] = build_canvas(pattern, sheet, i, clean_walls[pattern])
+            canvases[pattern.format(i + 1)] = build_canvas(sheet, i, clean_right_wall)
     
-    # 4. Cavity mask with minimum-contrast bottom seam valid for ALL frames
-    yb = compute_bottom_seam(list(canvases.values()),
-                             ['assets/img/bg_close.webp', 'assets/img/bg_open.webp'])
-    mask_arr = make_cavity_mask(yb=yb)
+    # 4. Cavity mask with minimum-contrast bottom/right seams valid for ALL frames
+    yb, xr = compute_seams(list(canvases.values()),
+                           ['assets/img/bg_close.webp', 'assets/img/bg_open.webp'])
+    mask_arr = make_cavity_mask(yb=yb, xr=xr)
     
     print("Generating 24 frames (lossless transparent WebP)...")
     for name, arr in canvases.items():
