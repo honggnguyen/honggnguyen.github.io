@@ -10,9 +10,10 @@ import numpy as np
 from PIL import Image
 from scipy import signal
 
-SRC_DIR = 'Fig/Flame/frames'
-OUT_DIR = 'Fig/Flame/frames_aligned'
-WEB_DIR = 'assets/img/calcifer'
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SRC_DIR = os.path.join(BASE_DIR, 'Fig/Flame/frames')
+OUT_DIR = os.path.join(BASE_DIR, 'Fig/Flame/frames_aligned')
+WEB_DIR = os.path.join(BASE_DIR, 'assets/img/calcifer')
 
 # 1. Define category ordering: plain flame frames FIRST!
 PLAIN_FLAME_FILES = [
@@ -181,6 +182,51 @@ def main():
     print(f'Successfully generated {len(manifest)} aligned frames in {OUT_DIR}/')
     print('Plain flame frames count:', sum(1 for m in manifest if m['category'] == 'plain_flame'))
 
+    # Export WebP frames to assets/img/calcifer/
+    os.makedirs(WEB_DIR, exist_ok=True)
+    target_x, target_y = 137, 180
+    FIREPLACE_W, FIREPLACE_H = 621, 770
+
+    for item in manifest:
+        fid = item['id']
+        png_path = f'{OUT_DIR}/{fid}.png'
+        im = Image.open(png_path).convert('RGBA')
+        canvas = Image.new('RGBA', (FIREPLACE_W, FIREPLACE_H), (0, 0, 0, 0))
+        canvas.alpha_composite(im, (target_x, target_y))
+        canvas.save(f'{WEB_DIR}/{fid}.webp', 'WEBP', lossless=True)
+
+    # 19 idle frames
+    for i in range(1, 20):
+        fid = f'frame_{i:03d}'
+        im = Image.open(f'{WEB_DIR}/{fid}.webp')
+        im.save(f'{WEB_DIR}/flame_idle_{i}.webp', 'WEBP', lossless=True)
+
+    # Dialogue sprite mapping
+    mapping = {
+        'calcifer_smile_1.webp': 'frame_033.webp',
+        'calcifer_smile_2.webp': 'frame_029.webp',
+        'calcifer_smile_3.webp': 'frame_037.webp',
+        'calcifer_smile_4.webp': 'frame_034.webp',
+        'calcifer_smile_5.webp': 'frame_035.webp',
+        'calcifer_smile_6.webp': 'frame_036.webp',
+        'calcifer_smile_7.webp': 'frame_085.webp',
+        'calcifer_smile_8.webp': 'frame_025.webp',
+        'calcifer_talk_1.webp': 'frame_020.webp',
+        'calcifer_talk_2.webp': 'frame_077.webp',
+        'calcifer_talk_3.webp': 'frame_045.webp',
+        'calcifer_talk_4.webp': 'frame_049.webp',
+        'calcifer_talk_5.webp': 'frame_041.webp',
+        'calcifer_talk_6.webp': 'frame_053.webp',
+        'calcifer_talk_7.webp': 'frame_081.webp',
+        'calcifer_talk_8.webp': 'frame_118.webp',
+    }
+    import shutil
+    for dst, src in mapping.items():
+        shutil.copyfile(f'{WEB_DIR}/{src}', f'{WEB_DIR}/{dst}')
+
+    print(f'Successfully exported WebP frames to {WEB_DIR}/')
+
 
 if __name__ == '__main__':
     main()
+
