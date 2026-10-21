@@ -31,53 +31,48 @@ arr_src = np.array(im_src)
 def clean_cell(cell, r_idx, c_idx):
     p = cell.astype(np.float32)
     mx, mn = p.max(2), p.min(2)
-    sat = (mx - mn) / np.maximum(mx, 1)
+    diff = mx - mn
+    sat = diff / np.maximum(mx, 1)
 
-    # Sprite detection:
-    is_flame = (sat > 0.35) & (p[:, :, 0] > 150)
+    # 1. Flame body
+    is_flame = (sat > 0.55) & (p[:, :, 0] > 175) & (p[:, :, 2] < 85)
+
+    # Sparks above head (all cells)
+    is_head_sparks = (p[:, :, 0] > 200) & (sat > 0.50) & (p[:, :, 2] < 90)
+
+    # Breath stream & star sparks (Row 2, cells 5-8)
+    if r_idx == 1:
+        is_breath = (p[:, :, 0] > 190) & (sat > 0.45) & (p[:, :, 2] < 110) & (p.mean(2) > 80)
+    else:
+        is_breath = np.zeros_like(is_flame)
+
+    # 2. Wood log at bottom (y > 330)
+    is_wood = ((p[:, :, 0] > p[:, :, 2] + 10) & (p[:, :, 0] > p[:, :, 1] + 3) & (p.mean(2) < 140) & (sat > 0.25)) | (p.mean(2) < 65)
+    is_wood[:330, :] = False
+
+    # 3. Facial features (eyes, mouth)
     is_dark = (p.mean(2) < 95) & (p[:, :, 0] >= p[:, :, 2] - 5)
-    # Wood:
-    is_wood = (p[:, :, 0] > p[:, :, 2] + 12) & (p[:, :, 0] > p[:, :, 1] - 14) & (p.mean(2) < 155) & (sat > 0.14)
-    # Smoke:
-    is_smoke = (sat > 0.07) & (p[:, :, 2] > p[:, :, 0] - 12) & (p.mean(2) > 95) & (p.mean(2) < 225)
+    is_dark_face = np.zeros_like(is_dark)
+    is_dark_face[100:380, 150:450] = is_dark[100:380, 150:450]
 
-    solid = is_flame | is_dark | is_wood | is_smoke
-    solid = ndi.binary_closing(solid, iterations=3)
-    solid = ndi.binary_fill_holes(solid)
+    # Fill body
+    body_mask = is_flame | is_wood | is_dark_face
+    body_filled = ndi.binary_fill_holes(body_mask)
 
-    # Exclude checkerboard:
-    is_grey_neutral = (mx - mn < 10)
-    solid &= ~is_grey_neutral
+    solid = body_filled | is_head_sparks | is_breath
 
-    # Keep main sprite and components
-    lab, n = ndi.label(solid)
-    if n == 0:
-        return np.zeros(cell.shape[:2] + (4,), np.uint8), (0, 0)
-    sizes = ndi.sum(solid, lab, range(1, n + 1))
-    main = int(np.argmax(sizes)) + 1
-    ys, xs = np.where(lab == main)
-    y0, y1 = max(0, ys.min() - 50), min(cell.shape[0], ys.max() + 50)
-    x0, x1 = max(0, xs.min() - 80), min(cell.shape[1], xs.max() + 200) # wider for right-side breath
-    
-    keep = (lab == main)
-    for i in range(1, n + 1):
-        if i == main: continue
-        yy, xx = np.where(lab == i)
-        # Drop text numbers in top left
-        if yy.min() < 60 and xx.min() < 60: continue
-        # Drop bottom right watermark in cell 16
-        if r_idx == 3 and c_idx == 3 and yy.max() > cell.shape[0] - 70 and xx.max() > cell.shape[1] - 70:
-            continue
-        if yy.min() >= y0 and yy.max() <= y1 and xx.min() >= x0 and xx.max() <= x1:
-            keep |= (lab == i)
-    solid &= keep
+    # Strict checkerboard exclusion:
+    is_checker = (diff < 22) & (p.mean(2) > 130) & (p.mean(2) < 240)
+    solid &= ~is_checker
 
-    # Extra cleanup
+    # Drop number in top-left
     solid[:65, :65] = False
-    if r_idx == 3 and c_idx == 3:
-        solid[-70:, -70:] = False
 
-    # Find log match against ref_log
+    # Drop watermark in cell 16
+    if r_idx == 3 and c_idx == 3:
+        solid[-80:, -80:] = False
+
+    # Find log match against ref_log for exact alignment
     cand_sub = ((solid) & (p[:, :, 0] < 160) & (p[:, :, 1] < 100) & (p[:, :, 0] > p[:, :, 2] + 10))
     ys_solid = np.where(solid)[0]
     low_y = ys_solid.max()
@@ -92,8 +87,8 @@ def clean_cell(cell, r_idx, c_idx):
     y_m = np.ogrid[:cell.shape[0], :cell.shape[1]][0]
     solid &= ~(y_m > match_y + 57)
 
-    # Soft golden aura
-    body = ndi.binary_fill_holes(ndi.binary_closing(solid & (sat > 0.35), iterations=5))
+    # Soft golden aura purely around flame body
+    body = ndi.binary_fill_holes(ndi.binary_closing(solid & (sat > 0.5), iterations=5))
     glow = ndi.gaussian_filter(body.astype(np.float32), 14)
     glow = np.clip(glow * 1.5 - 0.12, 0, 1) * 0.50
 
