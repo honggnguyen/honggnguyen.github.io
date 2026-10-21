@@ -13,8 +13,8 @@ const Calcifer = (() => {
   // 19 frame ngọn lửa bập bùng tự nhiên không lộ mặt
   const IDLE_FRAMES = Array.from({ length: 19 }, (_, i) => `assets/img/calcifer/flame_idle_${i + 1}.webp?v=20261021_dissolve`);
 
-  // 5 frame Carte nhắm mắt ngủ say êm đềm
-  const SLEEP_FRAMES = Array.from({ length: 5 }, (_, i) => `assets/img/calcifer/flame_sleep_${i + 1}.webp?v=20261021_dissolve`);
+  // 4 frame Carte nhắm mắt ngủ say êm đềm (loại bỏ flame_sleep_5)
+  const SLEEP_FRAMES = Array.from({ length: 4 }, (_, i) => `assets/img/calcifer/flame_sleep_${i + 1}.webp?v=20261021_dissolve`);
 
   // 11 Phân đoạn câu chuyện chính xác theo lời dặn của người dùng
   const STORY_SEGMENTS = [
@@ -625,13 +625,11 @@ const Calcifer = (() => {
       currentActiveFrames = IDLE_FRAMES;
       animIntervalMs = 120;
     } else if (mode === MODE_SLEEP) {
-      // Ping-pong loop cho 5 frame ngủ: 0, 1, 2, 3, 4, 3, 2, 1
+      // Ping-pong loop cho 4 frame ngủ (không dùng flame_sleep_5): 0, 1, 2, 3, 2, 1
       currentActiveFrames = [
         SLEEP_FRAMES[0],
         SLEEP_FRAMES[1],
         SLEEP_FRAMES[2],
-        SLEEP_FRAMES[3],
-        SLEEP_FRAMES[4],
         SLEEP_FRAMES[3],
         SLEEP_FRAMES[2],
         SLEEP_FRAMES[1]
