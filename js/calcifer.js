@@ -87,11 +87,10 @@ const Calcifer = (() => {
       title: 'Những khoảng ở giữa & Nghệ thuật',
       text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi,.... Cô là sự kết hợp của nhiều khoảng ở giữa….\n\nNhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
       mainFrame: 'assets/img/calcifer/calcifer_eat_01.webp?v=20261021_eat',
-      talkIntervalMs: 260,
+      talkIntervalMs: 230,
       playOnce: true,
-      keepTalkAnimation: true,
       typeStep: 2,
-      typeIntervalMs: 23,
+      typeIntervalMs: 24,
       talkFrames: [
         'assets/img/calcifer/calcifer_eat_01.webp?v=20261021_eat',
         'assets/img/calcifer/calcifer_eat_02.webp?v=20261021_eat',
@@ -114,9 +113,14 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
         'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat',
-      breatheFrames: null,
-      delayAfter: 1600
+      breatheFrame: 'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
+      breatheFrames: [
+        'assets/img/calcifer/calcifer_eat_18.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat'
+      ],
+      delayAfter: 1500
     },
     {
       id: 6,
@@ -734,6 +738,9 @@ const Calcifer = (() => {
           } else {
             clearInterval(animTimer);
             animTimer = null;
+            if (typeof options.onComplete === 'function') {
+              options.onComplete();
+            }
           }
         }
       }, animIntervalMs);
@@ -833,7 +840,17 @@ const Calcifer = (() => {
 
     // Bắt đầu động cơ mồm Carte nói chuyện sinh động theo ngữ cảm
     setMode(MODE_TALK, seg.talkFrames, seg.talkIntervalMs || 230, {
-      loop: !seg.playOnce
+      loop: !seg.playOnce,
+      onComplete: () => {
+        // Sau 20 frame ăn củi, Carte chuyển sang các frame thở (MODE_BREATHE)!
+        const livingBreatheFrames = seg.breatheFrames || [
+          seg.breatheFrame,
+          'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve',
+          seg.breatheFrame,
+          'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve'
+        ];
+        setMode(MODE_BREATHE, livingBreatheFrames, 320);
+      }
     });
     CalciferEmbers.burst(8);
 
@@ -845,17 +862,19 @@ const Calcifer = (() => {
         // Khi gõ chữ xong cho block này:
         block.classList.remove('is-typing');
 
-        if (seg.keepTalkAnimation) {
-          // Tính thời gian còn lại của chuỗi frame để khớp hoàn hảo thời gian hội thoại + chờ
+        if (seg.playOnce) {
+          // Đối với đoạn có chuỗi diễn hoạt 1 lần (như 20 frame ăn củi):
+          // Chờ 20 frame chạy xong + thở nhẹ nhàng một khoảng rồi chuyển đoạn
           const elapsed = Date.now() - segStartTime;
-          const totalAnimTime = (seg.talkFrames.length) * (seg.talkIntervalMs || 260);
-          const remainingDelay = Math.max(600, totalAnimTime - elapsed);
+          const totalAnimTime = (seg.talkFrames.length) * (seg.talkIntervalMs || 230);
+          const remainingToAnimFinish = Math.max(0, totalAnimTime - elapsed);
+          const waitTime = Math.max(seg.delayAfter || 1500, remainingToAnimFinish + (seg.delayAfter || 1500));
 
           if (idx === STORY_SEGMENTS.length - 1) {
             if (actionBtn) actionBtn.innerHTML = 'Hoàn tất ✨';
-            scheduleAutoAdvance(idx + 1, remainingDelay + 600);
+            scheduleAutoAdvance(idx + 1, waitTime + 600);
           } else {
-            scheduleAutoAdvance(idx + 1, remainingDelay);
+            scheduleAutoAdvance(idx + 1, waitTime);
           }
         } else {
           // Chuyển biểu cảm sang chuỗi frame thở nhẹ / mỉm cười lắng đọng sống động (nhịp 340ms thư thái)
@@ -1032,8 +1051,8 @@ const Calcifer = (() => {
         // Huỷ timer cũ và advance ngay
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
         const seg = STORY_SEGMENTS[currentSegmentIdx];
-        if (seg && seg.keepTalkAnimation) {
-          scheduleAutoAdvance(currentSegmentIdx + 1, 900);
+        if (seg && seg.playOnce) {
+          scheduleAutoAdvance(currentSegmentIdx + 1, 1200);
         } else {
           const livingBreatheFrames = seg.breatheFrames || [
             seg.breatheFrame,
@@ -1124,8 +1143,8 @@ const Calcifer = (() => {
       finishCurrentTyping();
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       const seg = STORY_SEGMENTS[currentSegmentIdx];
-      if (seg && seg.keepTalkAnimation) {
-        scheduleAutoAdvance(currentSegmentIdx + 1, 900);
+      if (seg && seg.playOnce) {
+        scheduleAutoAdvance(currentSegmentIdx + 1, 1200);
       } else {
         const livingBreatheFrames = seg.breatheFrames || [
           seg.breatheFrame,
