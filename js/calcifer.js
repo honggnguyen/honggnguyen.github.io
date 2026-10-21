@@ -1,110 +1,168 @@
 /* ==========================================================================
    CARTE (CALCIFER) - NGƯỜI GIỮ LỬA CỦA LÂU ĐÀI
-   - Idle: 8 frame ngọn lửa bập bùng tự nhiên từ Flame_1_8.png (chu kỳ mượt 120ms).
-   - Thức tỉnh: Mở mắt giật mình, vươn 2 tay reo vui, bung tia lửa và mở khung thoại.
-   - Hội thoại: 16 biểu cảm nói chuyện, cười, giơ tay sinh động từ Flame_smile & Flame_smile2.
-   - Khớp vòm đá: Căn chuẩn tâm cx=389px, rx=162px, xóa sạch ngọn lửa tĩnh của nền phòng.
-   - Hạt tia lửa (Embers): Canvas hạt than hồng và bụi sao lửa bay lơ lửng tự nhiên.
-   - Âm thanh lò sưởi: Bộ tổng hợp Web Audio tiếng lửa nổ lách tách và sound cues khi nói.
-   - Cử chỉ sống động: Micro-breathing thở nhẹ và phản ứng khi hover/click trong lúc đọc.
-   - Gõ chữ uyển chuyển: Hiệu ứng typewriter mượt mà với tính năng click để đọc nhanh.
+   - Ban đầu: 19 frame ngọn lửa bập bùng tự nhiên (flame_idle_1..19), không lộ mặt.
+   - Thức tỉnh: Chạm vào lò sưởi -> mở mắt ngạc nhiên, vươn 2 tay reo vui, mở dòng kể.
+   - Dòng kể điện ảnh (Cinematic Story Stream): 11 phân đoạn tự động cuộn mượt mà,
+     Carte nói chuyện liên tục, đổi biểu cảm theo ngữ cảnh, không bị khựng hình.
+   - Kết thúc câu chuyện: Carte ngáp mệt, mắt nhắm dần và chìm vào giấc ngủ say
+     (flame_sleep_1..5) êm đềm với tiếng thở zZ...
+   - Tương tác thông minh: Nút Dừng/Tiếp tục, tua nhanh, đánh thức nghe lại từ đầu.
    ========================================================================== */
 
 const Calcifer = (() => {
-  // 19 frames ngọn lửa bập bùng tự nhiên đã căn chỉnh chuẩn từng pixel, không hàng rào
+  // 19 frame ngọn lửa bập bùng tự nhiên không lộ mặt
   const IDLE_FRAMES = Array.from({ length: 19 }, (_, i) => `assets/img/calcifer/flame_idle_${i + 1}.webp?v=20261021_dissolve`);
 
-  // 9 phân đoạn hội thoại với biểu cảm và cử chỉ phong phú, tỷ lệ hàng rào chuẩn 100%
-  const DIALOGUE_PAGES = [
+  // 5 frame Carte nhắm mắt ngủ say êm đềm
+  const SLEEP_FRAMES = Array.from({ length: 5 }, (_, i) => `assets/img/calcifer/flame_sleep_${i + 1}.webp?v=20261021_dissolve`);
+
+  // 11 Phân đoạn câu chuyện chính xác theo lời dặn của người dùng
+  const STORY_SEGMENTS = [
     {
+      id: 1,
+      marker: '👋',
       title: 'Xin chào bạn!',
       text: 'Chào bạn,\nMình là **Carte** — người giữ lửa và canh gác cho tòa lâu đài cùng với chú chó siêu to tên **Bond**.\n\nNhờ có mình mà lâu đài mới chuyển động và đi bất kì nơi nào mà cô chủ muốn.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve', // giơ 2 tay chào mừng nồng nhiệt
+      mainFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve', // Vẫy 2 tay chào
       talkFrames: [
         'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve',
+        'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve',
+      delayAfter: 1900
     },
     {
+      id: 2,
+      marker: '✨',
       title: 'Cô chủ của Carte',
       text: 'Cô chủ của mình là một người thích khám phá, tò mò và cũng mơ mộng nữa.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_8.webp?v=20261021_dissolve', // tò mò với dấu chấm hỏi ?
+      mainFrame: 'assets/img/calcifer/calcifer_smile_8.webp?v=20261021_dissolve', // Tò mò với dấu ?
       talkFrames: [
         'assets/img/calcifer/calcifer_smile_8.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve',
+      delayAfter: 1600
     },
     {
-      title: 'Những cái tên gắn liền từng chặng đường',
+      id: 3,
+      marker: '📖',
+      title: 'Những cái tên',
       text: 'Mình có được nghe cô chủ kể trước kia cô có khá nhiều tên, mỗi cái tên gắn liền với một giai đoạn...\n\nHiện tại cô chủ mình chọn **Vivi** làm tên tiếng Việt cũng như bút danh cho việc viết, còn **Vivian** là tên tiếng Anh.',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve', // mở miệng kể chuyện
+      mainFrame: 'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve', // Kể chuyện
       talkFrames: [
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve',
+      delayAfter: 1900
     },
     {
-      title: 'Đưa cô gần hơn tới các vì sao',
-      text: 'Mình hay gọi cô là **Vivi** luôn cho gọn.\n\nVivi rất thích các chòm sao nên mình đã luôn phải cháy rực rỡ để đưa cô gần hơn tới các vì sao ✨ — một góc nhỏ ấm áp nơi cô có thể quan sát, nhìn ngắm, chiêm nghiệm về những điều cô đọc được, cô đi qua hay những sáng tác của cô.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve', // nháy mắt với ngôi sao lấp lánh ✨
+      id: 4,
+      marker: '🌌',
+      title: 'Gần hơn tới các vì sao',
+      text: 'Mình hay gọi cô là **Vivi** luôn cho gọn.\n\nVivi rất thích các chòm sao nên tôi đã luôn phải cháy rực rỡ để đưa cô gần hơn tới các vì sao ✨ — một góc nhỏ ấm áp nơi cô có thể quan sát, nhìn ngắm, chiêm nghiệm về những điều cô đọc được, cô đi qua hay những sáng tác của cô.',
+      mainFrame: 'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve', // Nháy mắt sao lấp lánh
       talkFrames: [
         'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve',
+        'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_smile_4.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve',
+      delayAfter: 2100
     },
     {
-      title: 'Những khoảng ở giữa...',
-      text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi... 😊\n\nCô là sự kết hợp của nhiều khoảng ở giữa…',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_6.webp?v=20261021_dissolve', // gồng cơ bắp ngọn lửa quyết liệt
+      id: 5,
+      marker: '🎭',
+      title: 'Những khoảng ở giữa',
+      text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi,.... Cô là sự kết hợp của nhiều khoảng ở giữa….',
+      mainFrame: 'assets/img/calcifer/calcifer_talk_6.webp?v=20261021_dissolve', // Gồng cơ bắp quyết liệt
       talkFrames: [
         'assets/img/calcifer/calcifer_talk_6.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve',
+      delayAfter: 2000
     },
     {
-      title: 'Tình yêu dành cho nghệ thuật',
+      id: 6,
+      marker: '🎨',
+      title: 'Tình yêu nghệ thuật',
       text: 'Nhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve', // nụ cười điềm đạm thanh thản
+      mainFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve', // Nụ cười dịu dàng
       talkFrames: [
         'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve',
+      delayAfter: 1700
     },
     {
-      title: 'Phương châm viết của Vivi',
+      id: 7,
+      marker: '🔥',
+      title: 'Phương châm viết',
       text: 'Vivi hay nói với mình là cô:\n\n🔥 **« VIẾT ĐỂ KHÔNG QUÊN »** 🔥',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve', // hai tay giơ cao reo hò bốc lửa!
+      mainFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve', // Bốc lửa reo hò
       talkFrames: [
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve',
+      delayAfter: 1900
     },
     {
-      title: 'Những dấu chân con chữ',
-      text: 'Vậy nên…\n\nNhiều khi các bài viết hay các sáng tác có thể như là một dấu chân cô đã đi và muốn lưu dấu thông qua vài con chữ lộn xộn.',
-      mainFrame: 'assets/img/calcifer/calcifer_talk_7.webp?v=20261021_dissolve', // cảm động rưng rưng giọt nước mắt xanh
+      id: 8,
+      marker: '💭',
+      title: 'Lắng đọng',
+      text: 'Vậy nên….',
+      mainFrame: 'assets/img/calcifer/calcifer_talk_7.webp?v=20261021_dissolve', // Cảm xúc lắng đọng
       talkFrames: [
         'assets/img/calcifer/calcifer_talk_7.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_talk_7.webp?v=20261021_dissolve',
+      delayAfter: 1400
     },
     {
-      title: 'Chinh phục những chân trời mới',
-      text: 'Chẳng xô bồ hay cũng chẳng cần trau chuốt để ngóng chờ một chàng hoàng tử của đời.\n\nCác con chữ chỉ đơn giản vẫn ở đó và lớn dần từng ngày để tự chinh phục những điều thú vị tiếp theo. ✨',
-      mainFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve', // cười rạng rỡ hạnh phúc
+      id: 9,
+      marker: '🐾',
+      title: 'Dấu chân con chữ',
+      text: 'Nhiều khi các bài viết hay các sáng tác có thể như là một dấu chân cô đã đi và muốn lưu dấu thông qua vài con chữ lộn xộn.',
+      mainFrame: 'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve', // Trầm ngâm
+      talkFrames: [
+        'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
+      ],
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve',
+      delayAfter: 1900
+    },
+    {
+      id: 10,
+      marker: '👑',
+      title: 'Tự tại ngắm đời',
+      text: 'Chẳng xô bồ hay cũng chẳng cần trau chuốt để ngóng chờ một chàng hoàng tử của đời.',
+      mainFrame: 'assets/img/calcifer/calcifer_smile_4.webp?v=20261021_dissolve', // Nháy mắt tự tin
+      talkFrames: [
+        'assets/img/calcifer/calcifer_smile_4.webp?v=20261021_dissolve',
+        'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
+      ],
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve',
+      delayAfter: 1900
+    },
+    {
+      id: 11,
+      marker: '🚀',
+      title: 'Tự chinh phục',
+      text: 'Các con chữ chỉ đơn giản vẫn ở đó và lớn dần từng ngày để tự chinh phục những điều thú vị tiếp theo. ✨',
+      mainFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve', // Cười rạng rỡ
       talkFrames: [
         'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve',
+      delayAfter: 2300
     }
   ];
 
@@ -112,26 +170,39 @@ const Calcifer = (() => {
   let flameEl = null;
   let containerEl = null;
   let dialogEl = null;
-  let titleEl = null;
-  let textEl = null;
+  let streamEl = null;
+  let progressFillEl = null;
   let counterEl = null;
-  let dotsEl = null;
-  let prevBtn = null;
-  let nextBtn = null;
-  let closeBtn = null;
+  let actionBtn = null;
+  let pauseBtn = null;
   let soundBtn = null;
+  let closeBtn = null;
+  let tipEl = null;
   let embersCanvas = null;
 
-  // State
-  let idleTimer = null;
-  let idleFrameIdx = 0;
-  let isAwake = false;
-  let currentPage = 0;
-  let talkingInterval = null;
-  let livingBreathTimer = null;
-  let typingTimer = null;
+  // Animation Engine State
+  const MODE_IDLE = 'IDLE';
+  const MODE_AWAKEN = 'AWAKEN';
+  const MODE_TALK = 'TALK';
+  const MODE_BREATHE = 'BREATHE';
+  const MODE_TIRED = 'TIRED';
+  const MODE_SLEEP = 'SLEEP';
+
+  let currentMode = MODE_IDLE;
+  let animTimer = null;
+  let animFrameIdx = 0;
+  let currentActiveFrames = [];
+  let animIntervalMs = 120;
+
+  // Cinematic Narrative State
+  let currentSegmentIdx = 0;
   let isTyping = false;
+  let typingTimer = null;
+  let autoAdvanceTimer = null;
+  let isPaused = false;
+  let isSleeping = false;
   let currentRawText = '';
+  let currentBlockContentEl = null;
 
   // ==========================================================================
   // HỆ THỐNG ÂM THANH LÒ SƯỞI & SFX (WEB AUDIO API TỔNG HỢP PROCEDURAL)
@@ -161,7 +232,6 @@ const Calcifer = (() => {
       return ctx;
     }
 
-    // Tạo bộ đệm tiếng rít hồng (pink noise) cho ngọn lửa
     function createPinkNoiseBuffer(c) {
       const bufferSize = c.sampleRate * 2.5;
       const buffer = c.createBuffer(1, bufferSize, c.sampleRate);
@@ -181,95 +251,95 @@ const Calcifer = (() => {
       return buffer;
     }
 
-    // Khởi động tiếng lửa bập bùng nổ lách tách ấm áp
-    function startFireCrackle() {
-      const c = getAudioContext();
-      if (!c || !isFireSoundEnabled) return;
+    function startFireCrackle(targetVolume = 0.16) {
+      try {
+        const c = getAudioContext();
+        if (!c || !isFireSoundEnabled) return;
 
-      if (!noiseBuffer) {
-        noiseBuffer = createPinkNoiseBuffer(c);
-      }
+        if (!noiseBuffer) {
+          noiseBuffer = createPinkNoiseBuffer(c);
+        }
 
-      if (!noiseNode) {
-        noiseNode = c.createBufferSource();
-        noiseNode.buffer = noiseBuffer;
-        noiseNode.loop = true;
+        if (!noiseNode) {
+          noiseNode = c.createBufferSource();
+          noiseNode.buffer = noiseBuffer;
+          noiseNode.loop = true;
 
-        noiseFilter = c.createBiquadFilter();
-        noiseFilter.type = 'lowpass';
-        noiseFilter.frequency.value = 850;
+          noiseFilter = c.createBiquadFilter();
+          noiseFilter.type = 'lowpass';
+          noiseFilter.frequency.value = 850;
 
-        crackleGain = c.createGain();
-        crackleGain.gain.setValueAtTime(0.001, c.currentTime);
-        crackleGain.gain.linearRampToValueAtTime(0.16, c.currentTime + 1.2);
+          crackleGain = c.createGain();
+          crackleGain.gain.setValueAtTime(0.001, c.currentTime);
+          crackleGain.gain.linearRampToValueAtTime(targetVolume, c.currentTime + 1.2);
 
-        noiseNode.connect(noiseFilter);
-        noiseFilter.connect(crackleGain);
-        crackleGain.connect(masterGain);
-        noiseNode.start();
-      }
+          noiseNode.connect(noiseFilter);
+          noiseFilter.connect(crackleGain);
+          crackleGain.connect(masterGain);
+          noiseNode.start();
+        } else if (crackleGain) {
+          crackleGain.gain.linearRampToValueAtTime(targetVolume, c.currentTime + 0.8);
+        }
 
-      // Vòng lặp bắn các tia than nổ tí tách ngẫu nhiên
-      scheduleCrackles();
+        scheduleCrackles();
+      } catch (err) {}
     }
 
     function scheduleCrackles() {
-      if (crackleTimer) clearTimeout(crackleTimer);
-      if (!isFireSoundEnabled || !noiseNode) return;
+      try {
+        if (crackleTimer) clearTimeout(crackleTimer);
+        if (!isFireSoundEnabled || !noiseNode) return;
 
-      playSingleCrackle();
-      const nextDelay = 70 + Math.random() * 220;
-      crackleTimer = setTimeout(scheduleCrackles, nextDelay);
+        playSingleCrackle();
+        const nextDelay = isSleeping ? 180 + Math.random() * 450 : 70 + Math.random() * 220;
+        crackleTimer = setTimeout(scheduleCrackles, nextDelay);
+      } catch (err) {}
     }
 
     function playSingleCrackle() {
-      const c = getAudioContext();
-      if (!c || !isFireSoundEnabled || !masterGain) return;
-
-      const isDeepWood = Math.random() < 0.15;
-      const osc = c.createOscillator();
-      const gain = c.createGain();
-      const filter = c.createBiquadFilter();
-
-      const t = c.currentTime;
-      if (isDeepWood) {
-        // Tiếng gỗ nổ thục sâu
-        osc.type = 'triangle';
-        osc.frequency.setValueAtTime(320 + Math.random() * 180, t);
-        filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(600, t);
-        gain.gain.setValueAtTime(0.045, t);
-        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.04);
-        osc.stop(t + 0.045);
-      } else {
-        // Tiếng than hồng nổ lách tách giòn tan
-        osc.type = 'sawtooth';
-        osc.frequency.setValueAtTime(2200 + Math.random() * 2500, t);
-        filter.type = 'bandpass';
-        filter.frequency.setValueAtTime(2800 + Math.random() * 1200, t);
-        filter.Q.value = 3.5;
-        gain.gain.setValueAtTime(0.028, t);
-        gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.015);
-        osc.stop(t + 0.02);
-      }
-
       try {
+        const c = getAudioContext();
+        if (!c || !isFireSoundEnabled || !masterGain) return;
+
+        const isDeepWood = Math.random() < 0.15;
+        const osc = c.createOscillator();
+        const gain = c.createGain();
+        const filter = c.createBiquadFilter();
+        const t = c.currentTime;
+
+        if (isDeepWood) {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(320 + Math.random() * 180, t);
+          filter.type = 'lowpass';
+          filter.frequency.setValueAtTime(600, t);
+          gain.gain.setValueAtTime(isSleeping ? 0.015 : 0.045, t);
+          gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.04);
+          osc.stop(t + 0.045);
+        } else {
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(2200 + Math.random() * 2500, t);
+          filter.type = 'bandpass';
+          filter.frequency.setValueAtTime(2800 + Math.random() * 1200, t);
+          filter.Q.value = 3.5;
+          gain.gain.setValueAtTime(isSleeping ? 0.01 : 0.028, t);
+          gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.015);
+          osc.stop(t + 0.02);
+        }
+
         osc.connect(filter);
         filter.connect(gain);
         gain.connect(masterGain);
         osc.start(t);
-      } catch (err) {
-        // Safe guard Web Audio scheduling
-      }
+      } catch (err) {}
     }
 
     function stopFireCrackle() {
-      if (crackleTimer) {
-        clearTimeout(crackleTimer);
-        crackleTimer = null;
-      }
-      if (crackleGain && ctx) {
-        try {
+      try {
+        if (crackleTimer) {
+          clearTimeout(crackleTimer);
+          crackleTimer = null;
+        }
+        if (crackleGain && ctx) {
           crackleGain.gain.linearRampToValueAtTime(0.0001, ctx.currentTime + 0.5);
           setTimeout(() => {
             if (noiseNode) {
@@ -278,75 +348,79 @@ const Calcifer = (() => {
               noiseNode = null;
             }
           }, 550);
-        } catch (e) {}
-      }
+        }
+      } catch (e) {}
     }
 
     // Âm thanh bừng sáng khi thức tỉnh Carte
     function playAwakenSFX() {
-      const c = getAudioContext();
-      if (!c || !isFireSoundEnabled) return;
+      try {
+        const c = getAudioContext();
+        if (!c || !isFireSoundEnabled) return;
+        const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
+        notes.forEach((f, i) => {
+          const t = c.currentTime + i * 0.06;
+          const o = c.createOscillator();
+          const g = c.createGain();
+          o.type = 'sine';
+          o.frequency.value = f;
+          g.gain.setValueAtTime(0.0001, t);
+          g.gain.linearRampToValueAtTime(0.065, t + 0.015);
+          g.gain.exponentialRampToValueAtTime(0.0001, t + 0.7);
+          o.connect(g);
+          g.connect(masterGain);
+          o.start(t);
+          o.stop(t + 0.75);
+        });
+      } catch (err) {}
+    }
 
-      const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
-      notes.forEach((f, i) => {
-        const t = c.currentTime + i * 0.06;
+    // Tiếng bloop nhẹ ấm áp khi Carte nói chữ
+    function playTalkBlip() {
+      try {
+        const c = getAudioContext();
+        if (!c || !isFireSoundEnabled) return;
+        const t = c.currentTime;
         const o = c.createOscillator();
         const g = c.createGain();
         o.type = 'sine';
-        o.frequency.value = f;
-        g.gain.setValueAtTime(0, t);
-        g.gain.linearRampToValueAtTime(0.065, t + 0.015);
-        g.gain.exponentialRampToValueAtTime(0.0001, t + 0.7);
+        o.frequency.setValueAtTime(340 + Math.random() * 120, t);
+        g.gain.setValueAtTime(0.018, t);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + 0.035);
         o.connect(g);
         g.connect(masterGain);
         o.start(t);
-        o.stop(t + 0.75);
-      });
+        o.stop(t + 0.04);
+      } catch (err) {}
     }
 
-    // Tiếng spark nhỏ khi lật trang
-    function playPageSFX() {
-      const c = getAudioContext();
-      if (!c || !isFireSoundEnabled) return;
-      const t = c.currentTime;
-      const o = c.createOscillator();
-      const g = c.createGain();
-      o.type = 'triangle';
-      o.frequency.setValueAtTime(880, t);
-      o.frequency.exponentialRampToValueAtTime(1318.51, t + 0.08);
-      g.gain.setValueAtTime(0.04, t);
-      g.gain.exponentialRampToValueAtTime(0.0001, t + 0.2);
-      o.connect(g);
-      g.connect(masterGain);
-      o.start(t);
-      o.stop(t + 0.22);
-    }
-
-    // Tiếng ru nhẹ nhàng khi Carte nhắm mắt ngủ
-    function playDismissSFX() {
-      const c = getAudioContext();
-      if (!c || !isFireSoundEnabled) return;
-      const notes = [1046.50, 783.99, 523.25];
-      notes.forEach((f, i) => {
-        const t = c.currentTime + i * 0.1;
-        const o = c.createOscillator();
-        const g = c.createGain();
-        o.type = 'sine';
-        o.frequency.value = f;
-        g.gain.setValueAtTime(0, t);
-        g.gain.linearRampToValueAtTime(0.045, t + 0.02);
-        g.gain.exponentialRampToValueAtTime(0.0001, t + 0.6);
-        o.connect(g);
-        g.connect(masterGain);
-        o.start(t);
-        o.stop(t + 0.65);
-      });
+    // Tiếng ru êm đềm khi Carte chuẩn bị ngủ
+    function playSleepSFX() {
+      try {
+        const c = getAudioContext();
+        if (!c || !isFireSoundEnabled) return;
+        const notes = [880, 783.99, 659.25, 523.25, 392]; // A5, G5, E5, C5, G4
+        notes.forEach((f, i) => {
+          const t = c.currentTime + i * 0.16;
+          const o = c.createOscillator();
+          const g = c.createGain();
+          o.type = 'sine';
+          o.frequency.value = f;
+          g.gain.setValueAtTime(0.0001, t);
+          g.gain.linearRampToValueAtTime(0.04, t + 0.03);
+          g.gain.exponentialRampToValueAtTime(0.0001, t + 0.9);
+          o.connect(g);
+          g.connect(masterGain);
+          o.start(t);
+          o.stop(t + 0.95);
+        });
+      } catch (err) {}
     }
 
     function toggleSound() {
       isFireSoundEnabled = !isFireSoundEnabled;
       if (isFireSoundEnabled) {
-        startFireCrackle();
+        startFireCrackle(isSleeping ? 0.06 : 0.16);
       } else {
         stopFireCrackle();
       }
@@ -357,8 +431,8 @@ const Calcifer = (() => {
       startFireCrackle,
       stopFireCrackle,
       playAwakenSFX,
-      playPageSFX,
-      playDismissSFX,
+      playTalkBlip,
+      playSleepSFX,
       toggleSound,
       isEnabled: () => isFireSoundEnabled
     };
@@ -371,12 +445,8 @@ const Calcifer = (() => {
     let canvas = null;
     let ctx = null;
     let particles = [];
-    let isRunning = false;
     let animId = null;
-
-    const COLORS = [
-      '#ffe58f', '#ffc069', '#ffa940', '#fa8c16', '#fa541c', '#ff7a45'
-    ];
+    let isRunning = false;
 
     class Ember {
       constructor(isBurst = false) {
@@ -384,66 +454,66 @@ const Calcifer = (() => {
       }
 
       reset(isBurst = false) {
-        if (!canvas) return;
-        const w = canvas.width;
-        const h = canvas.height;
+        const w = canvas ? canvas.width / (window.devicePixelRatio || 1) : 300;
+        const h = canvas ? canvas.height / (window.devicePixelRatio || 1) : 400;
 
-        // Điểm xuất phát ở lòng lò sưởi
-        const cx = w * 0.52;
-        const cy = h * 0.72;
+        const centerX = w * 0.52;
+        const baseY = h * 0.88;
 
         if (isBurst) {
-          this.x = cx + (Math.random() - 0.5) * 40;
-          this.y = cy + (Math.random() - 0.5) * 30;
-          const angle = Math.random() * Math.PI * 2;
-          const spd = 1.2 + Math.random() * 2.8;
-          this.vx = Math.cos(angle) * spd;
-          this.vy = Math.sin(angle) * spd - 0.8;
-          this.radius = 1.6 + Math.random() * 2.0;
-          this.maxLife = 35 + Math.random() * 45;
+          this.x = centerX + (Math.random() - 0.5) * 50;
+          this.y = baseY - Math.random() * 40;
+          this.vx = (Math.random() - 0.5) * 3.2;
+          this.vy = -(1.5 + Math.random() * 4.2);
+          this.size = 1.6 + Math.random() * 2.8;
+          this.alpha = 0.95;
+          this.decay = 0.014 + Math.random() * 0.02;
         } else {
-          this.x = cx + (Math.random() - 0.5) * 90;
-          this.y = cy + Math.random() * 30;
-          this.vx = (Math.random() - 0.5) * 0.55;
-          this.vy = - (0.6 + Math.random() * 1.3);
-          this.radius = 1.2 + Math.random() * 1.8;
-          this.maxLife = 70 + Math.random() * 90;
+          this.x = centerX + (Math.random() - 0.5) * 80;
+          this.y = baseY - Math.random() * 20;
+          this.vx = (Math.random() - 0.5) * 0.7;
+          this.vy = -(0.5 + Math.random() * 1.5);
+          this.size = 1.0 + Math.random() * 2.2;
+          this.alpha = 0.3 + Math.random() * 0.55;
+          this.decay = 0.005 + Math.random() * 0.012;
         }
 
-        this.life = 0;
-        this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
-        this.wobbleSpeed = 0.04 + Math.random() * 0.05;
-        this.wobbleAmp = 0.35 + Math.random() * 0.45;
+        const colors = [
+          '255, 120, 30',
+          '255, 175, 45',
+          '255, 215, 90',
+          '255, 75, 30',
+          '255, 245, 180'
+        ];
+        this.color = colors[Math.floor(Math.random() * colors.length)];
+        this.wobble = Math.random() * Math.PI * 2;
+        this.wobbleSpeed = 0.03 + Math.random() * 0.06;
       }
 
       update() {
-        this.life++;
-        this.x += this.vx + Math.sin(this.life * this.wobbleSpeed) * this.wobbleAmp;
+        this.x += this.vx + Math.sin(this.wobble) * 0.4;
         this.y += this.vy;
-        this.vy *= 0.99; // Lực cản không khí nhẹ
-        return this.life <= this.maxLife;
+        this.wobble += this.wobbleSpeed;
+        this.alpha -= this.decay;
+        return this.alpha > 0 && this.y > 0;
       }
 
       draw(c) {
-        const progress = this.life / this.maxLife;
-        const alpha = Math.sin(progress * Math.PI) * (1 - progress * 0.3);
-        if (alpha <= 0.01) return;
-
         c.save();
-        c.globalAlpha = Math.max(0, Math.min(1, alpha));
-        c.fillStyle = this.color;
-        c.shadowColor = this.color;
-        c.shadowBlur = 6;
+        c.globalAlpha = Math.max(0, this.alpha);
+        c.shadowColor = `rgb(${this.color})`;
+        c.shadowBlur = this.size * 3.5;
+        c.fillStyle = `rgb(${this.color})`;
         c.beginPath();
-        c.arc(this.x, this.y, this.radius * (1 - progress * 0.3), 0, Math.PI * 2);
+        c.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         c.fill();
         c.restore();
       }
     }
 
     function init(canvasEl) {
-      if (!canvasEl) return;
       canvas = canvasEl;
+      if (!canvas) return;
       ctx = canvas.getContext('2d');
       resize();
       window.addEventListener('resize', resize);
@@ -470,13 +540,11 @@ const Calcifer = (() => {
 
     function loop() {
       if (!isRunning || !ctx || !canvas) return;
-
       const w = canvas.width;
       const h = canvas.height;
       ctx.clearRect(0, 0, w, h);
 
-      // Mục tiêu số lượng hạt: 12 khi idle, 30 khi Carte đang nói chuyện
-      const targetCount = isAwake ? 28 : 12;
+      const targetCount = isSleeping ? 8 : (currentMode === MODE_TALK ? 30 : 12);
       while (particles.length < targetCount) {
         particles.push(new Ember(false));
       }
@@ -504,20 +572,18 @@ const Calcifer = (() => {
       if (animId) cancelAnimationFrame(animId);
     }
 
-    return {
-      init,
-      burst,
-      start,
-      stop
-    };
+    return { init, burst, start, stop };
   })();
 
   // ==========================================================================
-  // TIỀN TẢI HÌNH ẢNH (PRELOAD)
+  // TIỀN TẢI HÌNH ẢNH TOÀN DIỆN (PRELOAD TẤT CẢ 41 FRAMES VÀO BỘ NHỚ TRÌNH DUYỆT)
   // ==========================================================================
+  const preloadedImages = new Map();
+
   function preloadImages() {
     const all = [
       ...IDLE_FRAMES,
+      ...SLEEP_FRAMES,
       'assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_2.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve',
@@ -538,97 +604,71 @@ const Calcifer = (() => {
     all.forEach(src => {
       const img = new Image();
       img.src = src;
+      preloadedImages.set(src, img);
     });
   }
 
-  // Khởi động vòng lặp 8 frames lửa bập bùng tự nhiên (120ms/frame)
-  function startIdleLoop() {
-    stopIdleLoop();
-    stopTalkingLoop();
-    stopLivingBreath();
-    isAwake = false;
-    idleTimer = setInterval(() => {
-      idleFrameIdx = (idleFrameIdx + 1) % IDLE_FRAMES.length;
-      if (flameEl) {
-        flameEl.src = IDLE_FRAMES[idleFrameIdx];
-      }
-    }, 120);
-  }
+  // ==========================================================================
+  // ĐỘNG CƠ CHUYỂN ĐỘNG LIÊN TỤC KHÔNG KHỰNG (CONTINUOUS ANIMATION ENGINE)
+  // ==========================================================================
+  function setMode(mode, customFrames = null, intervalMs = 120) {
+    currentMode = mode;
+    animIntervalMs = intervalMs;
+    animFrameIdx = 0;
 
-  function stopIdleLoop() {
-    if (idleTimer) {
-      clearInterval(idleTimer);
-      idleTimer = null;
+    if (animTimer) {
+      clearInterval(animTimer);
+      animTimer = null;
+    }
+
+    if (mode === MODE_IDLE) {
+      currentActiveFrames = IDLE_FRAMES;
+      animIntervalMs = 120;
+    } else if (mode === MODE_SLEEP) {
+      // Ping-pong loop cho 5 frame ngủ: 0, 1, 2, 3, 4, 3, 2, 1
+      currentActiveFrames = [
+        SLEEP_FRAMES[0],
+        SLEEP_FRAMES[1],
+        SLEEP_FRAMES[2],
+        SLEEP_FRAMES[3],
+        SLEEP_FRAMES[4],
+        SLEEP_FRAMES[3],
+        SLEEP_FRAMES[2],
+        SLEEP_FRAMES[1]
+      ];
+      animIntervalMs = 280; // Nhịp thở ngủ sâu êm đềm
+    } else if (mode === MODE_TALK) {
+      currentActiveFrames = (customFrames && customFrames.length > 0) ? customFrames : [
+        'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve',
+        'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
+      ];
+      animIntervalMs = 170; // Nhịp mồm nói chuyện sinh động
+    } else if (mode === MODE_BREATHE) {
+      currentActiveFrames = customFrames || ['assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve'];
+      animIntervalMs = 400;
+    } else if (mode === MODE_TIRED) {
+      currentActiveFrames = ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'];
+      animIntervalMs = 600;
+    }
+
+    // Cập nhật ngay frame đầu tiên không để trễ
+    if (flameEl && currentActiveFrames.length > 0) {
+      flameEl.src = currentActiveFrames[0];
+    }
+
+    if (currentActiveFrames.length > 1) {
+      animTimer = setInterval(() => {
+        animFrameIdx = (animFrameIdx + 1) % currentActiveFrames.length;
+        if (flameEl) {
+          flameEl.src = currentActiveFrames[animFrameIdx];
+        }
+      }, animIntervalMs);
     }
   }
 
-  function stopTalkingLoop() {
-    if (talkingInterval) {
-      clearInterval(talkingInterval);
-      talkingInterval = null;
-    }
-  }
-
-  function stopLivingBreath() {
-    if (livingBreathTimer) {
-      clearTimeout(livingBreathTimer);
-      livingBreathTimer = null;
-    }
-  }
-
-  // Chuyển động miệng và ngọn lửa khi Carte nói
-  function animateTalking(talkFrames, mainFrame, durationMs = 1400) {
-    stopTalkingLoop();
-    stopLivingBreath();
-
-    if (!talkFrames || talkFrames.length === 0) {
-      if (flameEl) flameEl.src = mainFrame;
-      scheduleLivingBreath();
-      return;
-    }
-
-    let idx = 0;
-    talkingInterval = setInterval(() => {
-      idx = (idx + 1) % talkFrames.length;
-      if (flameEl) flameEl.src = talkFrames[idx];
-    }, 190);
-
-    setTimeout(() => {
-      stopTalkingLoop();
-      if (isAwake && flameEl) {
-        flameEl.src = mainFrame;
-        scheduleLivingBreath();
-      }
-    }, durationMs);
-  }
-
-  // Cử chỉ thở nhẹ và chớp mắt sống động khi người dùng đang đọc truyện
-  function scheduleLivingBreath() {
-    stopLivingBreath();
-    if (!isAwake) return;
-
-    const page = DIALOGUE_PAGES[currentPage];
-    if (!page) return;
-
-    const delay = 2400 + Math.random() * 1600;
-    livingBreathTimer = setTimeout(() => {
-      if (!isAwake || talkingInterval) return;
-
-      const alt = page.breatheFrame || page.talkFrames[0];
-      if (flameEl && alt) {
-        flameEl.src = alt;
-        // Bắn vài hạt tia lửa nhỏ khi Carte lay động
-        CalciferEmbers.burst(4);
-      }
-
-      setTimeout(() => {
-        if (!isAwake || talkingInterval) return;
-        if (flameEl) flameEl.src = page.mainFrame;
-        scheduleLivingBreath();
-      }, 340);
-    }, delay);
-  }
-
+  // ==========================================================================
+  // XỬ LÝ VĂN BẢN VÀ DÒNG CHẢY ĐIỆN ẢNH (CINEMATIC STORY STREAM)
+  // ==========================================================================
   function formatText(raw) {
     let esc = raw
       .replace(/&/g, '&amp;')
@@ -640,112 +680,265 @@ const Calcifer = (() => {
     return '<p>' + esc + '</p>';
   }
 
-  // Hiệu ứng Typewriter mượt mà có hỗ trợ click để hiện ngay
-  function typewriteText(rawText, onComplete) {
+  function scrollToStreamBottom() {
+    if (!streamEl) return;
+    streamEl.scrollTo({
+      top: streamEl.scrollHeight,
+      behavior: 'smooth'
+    });
+  }
+
+  function updateProgress() {
+    if (counterEl) {
+      counterEl.textContent = `${currentSegmentIdx + 1} / ${STORY_SEGMENTS.length}`;
+    }
+    if (progressFillEl) {
+      const pct = Math.min(100, Math.round(((currentSegmentIdx + 1) / STORY_SEGMENTS.length) * 100));
+      progressFillEl.style.width = `${pct}%`;
+    }
+  }
+
+  function startStream() {
+    if (!streamEl) return;
+    streamEl.innerHTML = '';
+    currentSegmentIdx = 0;
+    isSleeping = false;
+    isPaused = false;
+
+    if (pauseBtn) {
+      pauseBtn.innerHTML = '⏸ Dừng';
+      pauseBtn.classList.remove('is-paused');
+    }
+    if (actionBtn) {
+      actionBtn.innerHTML = 'Tiếp tục ▸';
+      actionBtn.classList.remove('is-replay');
+    }
+    if (tipEl) {
+      tipEl.innerHTML = 'Tự động cuộn theo dòng thời gian • Chạm để tua nhanh ▸';
+    }
+
+    runSegment(0);
+  }
+
+  function runSegment(idx) {
+    if (idx >= STORY_SEGMENTS.length) {
+      transitionToSleep();
+      return;
+    }
+
+    currentSegmentIdx = idx;
+    updateProgress();
+
+    const seg = STORY_SEGMENTS[idx];
+
+    // Đánh dấu các block cũ là đã xong
+    const prevBlocks = streamEl.querySelectorAll('.story-block');
+    prevBlocks.forEach(b => {
+      b.classList.remove('is-current', 'is-typing');
+      b.classList.add('is-done');
+    });
+
+    // Tạo block mới
+    const block = document.createElement('div');
+    block.className = 'story-block is-current is-typing';
+    block.id = `sb-${idx}`;
+
+    const marker = document.createElement('div');
+    marker.className = 'sb-marker';
+    marker.textContent = seg.marker;
+
+    const content = document.createElement('div');
+    content.className = 'sb-content';
+
+    block.appendChild(marker);
+    block.appendChild(content);
+    streamEl.appendChild(block);
+
+    currentBlockContentEl = content;
+    currentRawText = seg.text;
+
+    // Bắt đầu động cơ mồm Carte nói chuyện sinh động theo ngữ cảm
+    setMode(MODE_TALK, seg.talkFrames, 160);
+    CalciferEmbers.burst(8);
+
+    // Bắt đầu hiệu ứng gõ chữ
+    typewriteSegmentText(seg.text, block, () => {
+      // Khi gõ chữ xong cho block này:
+      block.classList.remove('is-typing');
+      // Chuyển biểu cảm sang trạng thái thở nhẹ / mỉm cười lắng đọng
+      setMode(MODE_BREATHE, [seg.breatheFrame], 400);
+
+      // Nếu là block cuối cùng thì chuẩn bị đi ngủ
+      if (idx === STORY_SEGMENTS.length - 1) {
+        if (actionBtn) {
+          actionBtn.innerHTML = 'Hoàn tất ✨';
+        }
+        scheduleAutoAdvance(idx + 1, seg.delayAfter + 600);
+      } else {
+        scheduleAutoAdvance(idx + 1, seg.delayAfter);
+      }
+    });
+
+    scrollToStreamBottom();
+  }
+
+  function typewriteSegmentText(rawText, blockEl, onComplete) {
     if (typingTimer) clearTimeout(typingTimer);
-    if (!textEl) return;
-
     isTyping = true;
-    textEl.classList.add('is-typing');
-    currentRawText = rawText;
 
-    const formattedFull = formatText(rawText);
     let charIdx = 0;
     const len = rawText.length;
+    let blipCounter = 0;
 
     function step() {
-      charIdx += 2; // Tốc độ đọc êm đềm
+      if (!isTyping) return;
+
+      if (isPaused) {
+        typingTimer = setTimeout(step, 100);
+        return;
+      }
+
+      charIdx += 2;
+      blipCounter++;
+
+      // Phát âm thanh bloop nhỏ ấm áp mỗi vài ký tự
+      if (blipCounter % 5 === 0) {
+        CalciferAudio.playTalkBlip();
+      }
+
       if (charIdx >= len) {
-        finishTyping();
+        finishCurrentTyping();
         if (typeof onComplete === 'function') onComplete();
         return;
       }
+
       const partial = rawText.slice(0, charIdx);
-      textEl.innerHTML = formatText(partial);
-      typingTimer = setTimeout(step, 24);
+      if (currentBlockContentEl) {
+        currentBlockContentEl.innerHTML = formatText(partial);
+      }
+      scrollToStreamBottom();
+
+      typingTimer = setTimeout(step, 30);
     }
 
     step();
   }
 
-  function finishTyping() {
-    if (typingTimer) clearTimeout(typingTimer);
+  function finishCurrentTyping() {
+    if (typingTimer) {
+      clearTimeout(typingTimer);
+      typingTimer = null;
+    }
     isTyping = false;
-    if (textEl) {
-      textEl.classList.remove('is-typing');
-      textEl.innerHTML = formatText(currentRawText);
+
+    if (currentBlockContentEl && currentRawText) {
+      currentBlockContentEl.innerHTML = formatText(currentRawText);
     }
+
+    const currentBlock = streamEl ? streamEl.querySelector('.story-block.is-current') : null;
+    if (currentBlock) {
+      currentBlock.classList.remove('is-typing');
+    }
+
+    scrollToStreamBottom();
   }
 
-  function renderPage(pageIdx) {
-    if (pageIdx < 0) pageIdx = 0;
-    if (pageIdx >= DIALOGUE_PAGES.length) pageIdx = DIALOGUE_PAGES.length - 1;
-    currentPage = pageIdx;
+  function scheduleAutoAdvance(nextIdx, delayMs) {
+    if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+    if (isSleeping) return;
 
-    const page = DIALOGUE_PAGES[currentPage];
-
-    if (titleEl) titleEl.textContent = page.title;
-    if (counterEl) {
-      counterEl.textContent = `${currentPage + 1} / ${DIALOGUE_PAGES.length}`;
-    }
-
-    if (dotsEl) {
-      dotsEl.innerHTML = '';
-      for (let i = 0; i < DIALOGUE_PAGES.length; i++) {
-        const dot = document.createElement('span');
-        dot.className = 'c-dot' + (i === currentPage ? ' active' : '');
-        dot.title = `Trang ${i + 1}`;
-        dot.addEventListener('click', (e) => {
-          e.stopPropagation();
-          renderPage(i);
-        });
-        dotsEl.appendChild(dot);
-      }
-    }
-
-    if (prevBtn) {
-      prevBtn.disabled = currentPage === 0;
-      prevBtn.style.opacity = currentPage === 0 ? '0.4' : '1';
-    }
-    if (nextBtn) {
-      if (currentPage === DIALOGUE_PAGES.length - 1) {
-        nextBtn.innerHTML = 'Hoàn tất ✨';
-        nextBtn.classList.add('is-finish');
+    autoAdvanceTimer = setTimeout(() => {
+      if (isPaused || isSleeping) return;
+      if (nextIdx < STORY_SEGMENTS.length) {
+        runSegment(nextIdx);
       } else {
-        nextBtn.innerHTML = 'Tiếp tục ▸';
-        nextBtn.classList.remove('is-finish');
+        transitionToSleep();
       }
-    }
-
-    // Âm thanh và hiệu ứng hạt bừng sáng
-    CalciferAudio.playPageSFX();
-    CalciferEmbers.burst(10);
-
-    // Bắt đầu nói và gõ chữ đồng thời
-    animateTalking(page.talkFrames, page.mainFrame, 1600);
-    typewriteText(page.text);
+    }, delayMs);
   }
 
-  // Thức tỉnh khi chạm vào lò sưởi
+  // ==========================================================================
+  // CHUYỂN CẢNH KHI KẾT THÚC: CARTE MỆT MỎI VÀ ĐI NGỦ (SLEEP MODE)
+  // ==========================================================================
+  function transitionToSleep() {
+    if (isSleeping) return;
+    if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+    isSleeping = true;
+
+    // Đánh dấu tất cả block là done
+    const prevBlocks = streamEl.querySelectorAll('.story-block');
+    prevBlocks.forEach(b => {
+      b.classList.remove('is-current', 'is-typing');
+      b.classList.add('is-done');
+    });
+
+    // 1. Carte ngáp mệt, mắt nhắm lại (calcifer_talk_1)
+    setMode(MODE_TIRED, ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'], 600);
+    CalciferAudio.playSleepSFX();
+
+    // 2. Thêm thông báo Carte say giấc nồng vào cuối stream
+    if (streamEl) {
+      const endPill = document.createElement('div');
+      endPill.className = 'story-end-pill';
+      endPill.innerHTML = `<span>😴</span><span>Carte đã kể xong và đang say giấc nồng... Nhấn nút hoặc chạm vào Carte để nghe lại!</span>`;
+      streamEl.appendChild(endPill);
+      scrollToStreamBottom();
+    }
+
+    // Cập nhật nút điều khiển
+    if (actionBtn) {
+      actionBtn.innerHTML = '↺ Kể lại từ đầu';
+      actionBtn.classList.add('is-replay');
+    }
+    if (tipEl) {
+      tipEl.innerHTML = 'Carte đang ngủ ngon zZ... • Chạm vào ngọn lửa để đánh thức';
+    }
+
+    // 3. Sau 900ms, Carte bắt đầu vòng lặp ngủ say êm đềm
+    setTimeout(() => {
+      if (!isSleeping) return;
+      setMode(MODE_SLEEP, null, 280);
+      CalciferAudio.startFireCrackle(0.06); // Âm thanh lửa thì thầm
+      CalciferEmbers.burst(4);
+    }, 900);
+  }
+
+  // ==========================================================================
+  // THỨC TỈNH KHI CHẠM VÀO LÒ SƯỞI (AWAKEN)
+  // ==========================================================================
   function awaken() {
-    if (isAwake) {
+    // Nếu Carte đang ngủ say, đánh thức và kể lại từ đầu
+    if (isSleeping) {
+      wakeUpFromSleep();
+      return;
+    }
+
+    // Nếu đang trong dòng kể:
+    if (currentMode !== MODE_IDLE) {
       if (isTyping) {
-        finishTyping();
+        finishCurrentTyping();
+        // Huỷ timer cũ và advance ngay
+        if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+        const seg = STORY_SEGMENTS[currentSegmentIdx];
+        setMode(MODE_BREATHE, [seg.breatheFrame], 400);
+        scheduleAutoAdvance(currentSegmentIdx + 1, 1400);
+      } else if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
+        if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+        runSegment(currentSegmentIdx + 1);
       } else {
-        nextPage();
+        transitionToSleep();
       }
       return;
     }
 
-    if (window.Ambience && typeof window.Ambience.start === 'function') {
-      window.Ambience.start();
-    }
+    try {
+      if (window.Ambience && typeof window.Ambience.start === 'function') {
+        window.Ambience.start();
+      }
+    } catch (e) {}
 
-    stopIdleLoop();
-    isAwake = true;
-
-    // Kích hoạt âm thanh lò sưởi và tiếng thức tỉnh
-    CalciferAudio.startFireCrackle();
+    // Kích hoạt âm thanh và hiệu ứng
+    CalciferAudio.startFireCrackle(0.16);
     CalciferAudio.playAwakenSFX();
     CalciferEmbers.burst(24);
 
@@ -754,118 +947,145 @@ const Calcifer = (() => {
     }
 
     // Chuỗi thức tỉnh sống động:
-    // 1. Nhắm mắt ngủ
-    if (flameEl) {
-      flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve';
-    }
+    // 1. Nhắm mắt chuẩn bị
+    setMode(MODE_AWAKEN, ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'], 300);
 
     // 2. Mở to mắt giật mình 'O'
     setTimeout(() => {
-      if (!isAwake) return;
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_2.webp?v=20261021_dissolve';
-      CalciferEmbers.burst(8);
-    }, 200);
+      setMode(MODE_AWAKEN, ['assets/img/calcifer/calcifer_talk_2.webp?v=20261021_dissolve'], 300);
+      CalciferEmbers.burst(10);
+    }, 220);
 
-    // 3. Giơ 2 tay lên reo chào mừng
+    // 3. Vươn 2 tay lên reo chào mừng!
     setTimeout(() => {
-      if (!isAwake) return;
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve';
-      CalciferEmbers.burst(14);
-    }, 450);
+      setMode(MODE_AWAKEN, ['assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve'], 400);
+      CalciferEmbers.burst(16);
+    }, 480);
 
-    // 4. Mở khung thoại tinh tế
+    // 4. Mở khung thoại và bắt đầu dòng kể
     setTimeout(() => {
-      if (!isAwake) return;
       if (dialogEl) {
         dialogEl.classList.add('active');
         dialogEl.setAttribute('aria-hidden', 'false');
       }
-      renderPage(0);
-    }, 720);
+      startStream();
+    }, 780);
   }
 
-  function nextPage() {
-    if (isTyping) {
-      finishTyping();
+  function wakeUpFromSleep() {
+    isSleeping = false;
+    CalciferAudio.playAwakenSFX();
+    CalciferAudio.startFireCrackle(0.16);
+    CalciferEmbers.burst(20);
+
+    // Giật mình thức dậy 'O'
+    setMode(MODE_AWAKEN, ['assets/img/calcifer/calcifer_talk_2.webp?v=20261021_dissolve'], 300);
+
+    setTimeout(() => {
+      setMode(MODE_AWAKEN, ['assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve'], 400);
+      CalciferEmbers.burst(14);
+    }, 260);
+
+    setTimeout(() => {
+      startStream();
+    }, 600);
+  }
+
+  // Bấm nút Action (Tiếp tục / Tua nhanh / Kể lại)
+  function handleActionClick() {
+    if (isSleeping) {
+      wakeUpFromSleep();
       return;
     }
-    if (currentPage < DIALOGUE_PAGES.length - 1) {
-      renderPage(currentPage + 1);
-    } else {
-      dismiss();
-    }
-  }
 
-  function prevPage() {
     if (isTyping) {
-      finishTyping();
-    }
-    if (currentPage > 0) {
-      renderPage(currentPage - 1);
+      finishCurrentTyping();
+      if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+      const seg = STORY_SEGMENTS[currentSegmentIdx];
+      setMode(MODE_BREATHE, [seg.breatheFrame], 400);
+      scheduleAutoAdvance(currentSegmentIdx + 1, 1400);
+    } else {
+      if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+      if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
+        runSegment(currentSegmentIdx + 1);
+      } else {
+        transitionToSleep();
+      }
     }
   }
 
-  // Kết thúc nói chuyện -> về lại ngọn lửa bập bùng tự nhiên
-  function dismiss() {
-    if (!isAwake) return;
-    stopTalkingLoop();
-    stopLivingBreath();
-    finishTyping();
+  // Tạm dừng / Tiếp tục
+  function togglePause() {
+    isPaused = !isPaused;
+    if (pauseBtn) {
+      if (isPaused) {
+        pauseBtn.innerHTML = '▶ Tiếp tục';
+        pauseBtn.classList.add('is-paused');
+      } else {
+        pauseBtn.innerHTML = '⏸ Dừng';
+        pauseBtn.classList.remove('is-paused');
+      }
+    }
+  }
 
-    CalciferAudio.playDismissSFX();
-    CalciferEmbers.burst(12);
+  // Đóng khung thoại
+  function dismiss() {
+    if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+    if (typingTimer) clearTimeout(typingTimer);
+    isTyping = false;
 
     if (dialogEl) {
       dialogEl.classList.remove('active');
       dialogEl.setAttribute('aria-hidden', 'true');
     }
-
     if (containerEl) {
       containerEl.classList.remove('is-awake');
     }
 
-    // Mỉm cười chào rồi nhắm mắt quay lại ngọn lửa bình thường
-    if (flameEl) {
-      flameEl.src = 'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve';
+    // Nếu đã ngủ say thì giữ tư thế ngủ say
+    if (isSleeping) {
+      setMode(MODE_SLEEP, null, 280);
+      CalciferAudio.startFireCrackle(0.06);
+      return;
     }
 
+    // Ngược lại, trở về ngọn lửa bập bùng tự nhiên
+    setMode(MODE_TIRED, ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'], 400);
     setTimeout(() => {
-      if (flameEl) flameEl.src = 'assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve';
-    }, 400);
-
-    setTimeout(() => {
-      startIdleLoop();
-    }, 800);
+      setMode(MODE_IDLE, null, 120);
+    }, 450);
   }
 
+  // ==========================================================================
+  // KHỞI TẠO VÀ GẮN SỰ KIỆN (INITIALIZE & BIND EVENTS)
+  // ==========================================================================
   function init() {
     flameEl = document.getElementById('calciferFlame');
     containerEl = document.getElementById('calciferContainer');
     dialogEl = document.getElementById('calciferDialog');
-    titleEl = document.getElementById('calciferTitle');
-    textEl = document.getElementById('calciferText');
+    streamEl = document.getElementById('calciferStream');
+    progressFillEl = document.getElementById('calciferProgressFill');
     counterEl = document.getElementById('calciferCounter');
-    dotsEl = document.getElementById('calciferDots');
-    prevBtn = document.getElementById('calciferPrev');
-    nextBtn = document.getElementById('calciferNext');
-    closeBtn = document.getElementById('calciferClose');
+    actionBtn = document.getElementById('calciferActionBtn');
+    pauseBtn = document.getElementById('calciferPauseBtn');
     soundBtn = document.getElementById('calciferSoundBtn');
+    closeBtn = document.getElementById('calciferClose');
+    tipEl = document.getElementById('calciferTip');
     embersCanvas = document.getElementById('calciferEmbers');
 
     preloadImages();
 
-    // Khởi tạo Canvas tia lửa bay
     if (embersCanvas) {
       CalciferEmbers.init(embersCanvas);
     }
 
+    // Chạm vào ngọn lửa / Carte trong lò sưởi
     if (containerEl) {
       containerEl.addEventListener('click', (e) => {
         e.stopPropagation();
         awaken();
       });
 
-      // Phản ứng khi rê chuột vào Carte
       containerEl.addEventListener('mouseenter', () => {
         CalciferEmbers.burst(6);
       });
@@ -878,26 +1098,40 @@ const Calcifer = (() => {
       });
     }
 
-    // Click vào thân dialog để chuyển trang (tiện cho đọc truyện)
-    if (dialogEl) {
-      dialogEl.addEventListener('click', (e) => {
-        // Tránh kích hoạt khi bấm trúng các nút bấm
-        if (e.target.closest('button') || e.target.closest('.c-dot')) return;
-        nextPage();
+    if (flameEl) {
+      flameEl.addEventListener('click', (e) => {
+        e.stopPropagation();
+        awaken();
       });
     }
 
-    if (nextBtn) {
-      nextBtn.addEventListener('click', (e) => {
+    const hintEl = document.getElementById('calciferHint');
+    if (hintEl) {
+      hintEl.addEventListener('click', (e) => {
         e.stopPropagation();
-        nextPage();
+        awaken();
       });
     }
 
-    if (prevBtn) {
-      prevBtn.addEventListener('click', (e) => {
+    // Chạm vào vùng stream để tua nhanh chữ hoặc chuyển đoạn
+    if (streamEl) {
+      streamEl.addEventListener('click', (e) => {
+        if (e.target.closest('button')) return;
+        handleActionClick();
+      });
+    }
+
+    if (actionBtn) {
+      actionBtn.addEventListener('click', (e) => {
         e.stopPropagation();
-        prevPage();
+        handleActionClick();
+      });
+    }
+
+    if (pauseBtn) {
+      pauseBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        togglePause();
       });
     }
 
@@ -908,7 +1142,6 @@ const Calcifer = (() => {
       });
     }
 
-    // Nút bật/tắt tiếng lửa
     if (soundBtn) {
       soundBtn.addEventListener('click', (e) => {
         e.stopPropagation();
@@ -925,20 +1158,17 @@ const Calcifer = (() => {
 
     // Phím tắt bàn phím
     document.addEventListener('keydown', (e) => {
-      if (!isAwake) return;
-
-      if (e.key === 'Escape') {
-        dismiss();
-      } else if (e.key === 'ArrowRight' || e.key === ' ') {
-        e.preventDefault();
-        nextPage();
-      } else if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        prevPage();
+      if (dialogEl && dialogEl.classList.contains('active')) {
+        if (e.key === 'Escape') {
+          dismiss();
+        } else if (e.key === ' ' || e.key === 'ArrowRight') {
+          e.preventDefault();
+          handleActionClick();
+        }
       }
     });
 
-    // Tạm dừng âm thanh và particles khi chuyển cảnh
+    // Tắt âm thanh khi người dùng nhấn 'Bắt đầu ngắm sao' hoặc đổi cảnh
     const observer = new MutationObserver(() => {
       const intro = document.getElementById('intro');
       if (intro && (intro.classList.contains('gone') || intro.classList.contains('zooming'))) {
@@ -954,15 +1184,16 @@ const Calcifer = (() => {
       observer.observe(intro, { attributes: true, attributeFilter: ['class'] });
     }
 
-    startIdleLoop();
+    // Bắt đầu ngọn lửa bập bùng tự nhiên
+    setMode(MODE_IDLE, null, 120);
   }
 
   return {
     init,
     awaken,
     dismiss,
-    nextPage,
-    prevPage,
+    handleActionClick,
+    togglePause,
     toggleSound: CalciferAudio.toggleSound
   };
 })();

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Press+Start+2P&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261018q">
+  <link rel="stylesheet" href="css/style.css?v=20261021_stream">
 </head>
 <body>
 <main id="app">
@@ -120,36 +120,42 @@
           <span class="pill-text">Carte</span>
         </div>
       </div>
-
-      <!-- Khung thoại sống động của Carte -->
-      <div class="calcifer-dialog" id="calciferDialog" role="region" aria-label="Lời kể của Carte" aria-hidden="true">
-        <div class="cd-tail" aria-hidden="true"></div>
-        <div class="cd-header">
-          <div class="cd-badge">
-            <span class="cd-flame-icon">🔥</span>
-            <span class="cd-speaker">Carte • Người Giữ Lửa</span>
-          </div>
-          <div class="cd-header-actions">
-            <button class="cd-sound-toggle" id="calciferSoundBtn" title="Bật/Tắt âm thanh lò sưởi" aria-label="Bật/Tắt âm thanh lò sưởi">🔥 Tiếng lửa</button>
-            <button class="cd-close" id="calciferClose" aria-label="Đóng cuộc trò chuyện">✕</button>
-          </div>
-        </div>
-        
-        <h4 class="cd-title" id="calciferTitle">Xin chào bạn!</h4>
-        
-        <div class="cd-body" id="calciferText"></div>
-
-        <div class="cd-footer">
-          <div class="cd-dots" id="calciferDots"></div>
-          <div class="cd-controls">
-            <button class="cd-btn cd-prev" id="calciferPrev" aria-label="Đoạn trước">‹ Trước</button>
-            <span class="cd-counter" id="calciferCounter">1 / 9</span>
-            <button class="cd-btn cd-next" id="calciferNext" aria-label="Đoạn tiếp">Tiếp tục ▸</button>
-          </div>
-        </div>
-        <div class="cd-tip">Nhấn Phím Cách (Space) hoặc bấm vào để tiếp tục ▸</div>
-      </div>
     </div>
+
+    <!-- Khung thoại dòng thời gian (Cinematic Story Stream) của Carte - Đặt trực tiếp trong #intro để luôn chuẩn tọa độ màn hình -->
+    <div class="calcifer-dialog" id="calciferDialog" role="region" aria-label="Lời kể của Carte" aria-hidden="true">
+      <div class="cd-tail" aria-hidden="true"></div>
+      <div class="cd-header">
+        <div class="cd-badge">
+          <span class="cd-flame-icon">🔥</span>
+          <span class="cd-speaker">Carte • Người Giữ Lửa</span>
+        </div>
+        <div class="cd-header-actions">
+          <button class="cd-pause-toggle" id="calciferPauseBtn" title="Tạm dừng / Tiếp tục dòng kể" aria-label="Tạm dừng tự động">⏸ Dừng</button>
+          <button class="cd-sound-toggle" id="calciferSoundBtn" title="Bật/Tắt âm thanh lò sưởi" aria-label="Bật/Tắt âm thanh lò sưởi">🔥 Tiếng lửa</button>
+          <button class="cd-close" id="calciferClose" aria-label="Đóng cuộc trò chuyện">✕</button>
+        </div>
+      </div>
+
+      <!-- Thanh tiến trình câu chuyện -->
+      <div class="cd-progress-bar-wrap" aria-hidden="true">
+        <div class="cd-progress-fill" id="calciferProgressFill"></div>
+      </div>
+      
+      <!-- Khung cuộn dòng thời gian liên tục -->
+      <div class="cd-stream" id="calciferStream" role="log" aria-live="polite"></div>
+
+      <div class="cd-footer">
+        <div class="cd-counter-wrap">
+          <span class="cd-counter" id="calciferCounter">1 / 11</span>
+        </div>
+        <div class="cd-controls">
+          <button class="cd-btn cd-action-btn" id="calciferActionBtn" aria-label="Tiếp tục">Tiếp tục ▸</button>
+        </div>
+      </div>
+      <div class="cd-tip" id="calciferTip">Tự động cuộn theo dòng thời gian • Chạm để tua nhanh ▸</div>
+    </div>
+
     <div class="portal-warp" id="portalWarp"></div>
     <div class="intro-shade"></div>
     <div class="intro-ui" id="introUi">
@@ -387,7 +393,7 @@
 <script src="js/shooting.js?v=20261018m"></script>
 <script src="js/galaxy.js?v=20261018m"></script>
 <script src="js/intro.js?v=20261018n"></script>
-<script src="js/calcifer.js?v=20261021_dissolve"></script>
+<script src="js/calcifer.js?v=20261021_stream"></script>
 <script src="js/main.js?v=20261018n"></script>
 <script src="js/dog.js?v=20261018m"></script>
 </body>
