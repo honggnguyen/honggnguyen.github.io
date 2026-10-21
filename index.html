@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Press+Start+2P&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261021_pill">
+  <link rel="stylesheet" href="css/style.css?v=20261021_ashes">
 </head>
 <body>
 <main id="app">
@@ -115,6 +115,84 @@
         <div class="calcifer-ember-bed" aria-hidden="true"></div>
         <canvas class="calcifer-embers" id="calciferEmbers"></canvas>
         <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp?v=20261021_dissolve" alt="Carte người giữ lửa">
+        
+        <!-- Lớp tàn tro & than hồng tiền cảnh che đường ghép đáy ngọn lửa (Phương án 3) -->
+        <div class="calcifer-foreground-ashes" aria-hidden="true">
+          <div class="cfa-glow"></div>
+          <svg class="cfa-coals" viewBox="0 0 170 24" preserveAspectRatio="none" shape-rendering="crispEdges">
+            <!-- 1. Than củi nền tối & bóng chân vỉ (Deep charcoal base) -->
+            <rect x="6" y="14" width="158" height="10" fill="#0d0402" opacity="0.95"/>
+            <rect x="12" y="10" width="146" height="6" fill="#180804"/>
+            <rect x="20" y="7" width="130" height="5" fill="#240d06"/>
+            
+            <!-- 2. Khối than củi gồ ghề bên trái (Left charcoal log chunk) -->
+            <rect x="10" y="11" width="38" height="11" fill="#1c0a05"/>
+            <rect x="14" y="8" width="30" height="5" fill="#2d1208"/>
+            <rect x="18" y="6" width="22" height="4" fill="#3d190b"/>
+            <rect x="22" y="5" width="14" height="2" fill="#52220f"/>
+            <!-- Tro xám trên vỏ củi trái -->
+            <rect x="16" y="7" width="6" height="2" fill="#4d444d"/>
+            <rect x="28" y="6" width="7" height="2" fill="#635763"/>
+
+            <!-- 3. Khối than củi gồ ghề trung tâm (Center coal mound) -->
+            <rect x="52" y="8" width="68" height="14" fill="#1b0904"/>
+            <rect x="58" y="6" width="56" height="5" fill="#2b0e06"/>
+            <rect x="64" y="4" width="44" height="4" fill="#3c1509"/>
+            <rect x="70" y="3" width="32" height="2" fill="#4f1d0d"/>
+            <rect x="78" y="2" width="16" height="2" fill="#662612"/>
+            <!-- Vệt tro tàn xám trắng trung tâm -->
+            <rect x="60" y="5" width="8" height="2" fill="#584c59"/>
+            <rect x="94" y="4" width="9" height="2" fill="#716273"/>
+            <rect x="74" y="15" width="20" height="2" fill="#4a3e4c"/>
+
+            <!-- 4. Khối than củi bên phải (Right charcoal log chunk) -->
+            <rect x="122" y="10" width="38" height="12" fill="#1a0904"/>
+            <rect x="126" y="7" width="30" height="5" fill="#2c1107"/>
+            <rect x="130" y="5" width="22" height="4" fill="#3e170a"/>
+            <rect x="134" y="4" width="14" height="2" fill="#56220e"/>
+            <!-- Tro xám bên phải -->
+            <rect x="132" y="6" width="6" height="2" fill="#564a57"/>
+            <rect x="144" y="5" width="6" height="2" fill="#6c5e6e"/>
+
+            <!-- 5. Kẽ nứt than hồng rực rỡ (Glowing incandescent coal fissures) -->
+            <!-- Cụm than hồng trái -->
+            <rect class="cfa-crack" x="26" y="9" width="8" height="3" fill="#ff3b00"/>
+            <rect class="cfa-crack" x="28" y="10" width="5" height="2" fill="#ff8c1a"/>
+            <rect class="cfa-crack" x="30" y="10" width="2" height="1" fill="#ffe066"/>
+            <rect class="cfa-crack" x="42" y="12" width="6" height="2" fill="#e62e00"/>
+            <rect class="cfa-crack" x="44" y="13" width="3" height="1" fill="#ff7a00"/>
+
+            <!-- Cụm than hồng trung tâm (mạch sống than thở) -->
+            <rect class="cfa-crack" x="66" y="7" width="12" height="3" fill="#ff4400"/>
+            <rect class="cfa-crack" x="69" y="8" width="7" height="2" fill="#ffa01e"/>
+            <rect class="cfa-crack" x="72" y="8" width="3" height="1" fill="#fff2a3"/>
+
+            <rect class="cfa-crack" x="84" y="6" width="14" height="3" fill="#ff3800"/>
+            <rect class="cfa-crack" x="87" y="7" width="9" height="2" fill="#ff941a"/>
+            <rect class="cfa-crack" x="90" y="7" width="4" height="1" fill="#ffea75"/>
+
+            <rect class="cfa-crack" x="76" y="11" width="18" height="3" fill="#d92b00"/>
+            <rect class="cfa-crack" x="80" y="12" width="11" height="2" fill="#ff6e00"/>
+            <rect class="cfa-crack" x="84" y="12" width="4" height="1" fill="#ffcc47"/>
+
+            <!-- Cụm than hồng phải -->
+            <rect class="cfa-crack" x="114" y="11" width="8" height="3" fill="#e62e00"/>
+            <rect class="cfa-crack" x="116" y="12" width="5" height="2" fill="#ff7a00"/>
+            <rect class="cfa-crack" x="136" y="8" width="10" height="3" fill="#ff4000"/>
+            <rect class="cfa-crack" x="138" y="9" width="6" height="2" fill="#ff901a"/>
+            <rect class="cfa-crack" x="140" y="9" width="3" height="1" fill="#ffe266"/>
+
+            <!-- 6. Đốm tàn than li ti trên bề mặt (Scattered hot ember flecks) -->
+            <rect class="cfa-spark" x="22" y="4" width="2" height="2" fill="#ff9d24"/>
+            <rect class="cfa-spark" x="38" y="5" width="2" height="1" fill="#ffcc40"/>
+            <rect class="cfa-spark" x="62" y="3" width="2" height="2" fill="#ff7a10"/>
+            <rect class="cfa-spark" x="88" y="1" width="2" height="2" fill="#ffe666"/>
+            <rect class="cfa-spark" x="106" y="2" width="2" height="1" fill="#ff9920"/>
+            <rect class="cfa-spark" x="124" y="3" width="2" height="2" fill="#ff6600"/>
+            <rect class="cfa-spark" x="148" y="3" width="2" height="2" fill="#ffaa30"/>
+          </svg>
+        </div>
+
         <div class="calcifer-hint-pill" id="calciferHint">
           <span class="pill-fire">🔥</span>
           <span class="pill-text">Carte</span>
@@ -393,7 +471,7 @@
 <script src="js/shooting.js?v=20261018m"></script>
 <script src="js/galaxy.js?v=20261018m"></script>
 <script src="js/intro.js?v=20261018n"></script>
-<script src="js/calcifer.js?v=20261021_compact"></script>
+<script src="js/calcifer.js?v=20261021_ashes"></script>
 <script src="js/main.js?v=20261018n"></script>
 <script src="js/dog.js?v=20261018m"></script>
 </body>

@@ -493,7 +493,7 @@ const Calcifer = (() => {
           this.alpha = 0.95;
           this.decay = 0.014 + Math.random() * 0.02;
         } else {
-          this.x = centerX + (Math.random() - 0.5) * 80;
+          this.x = centerX + (Math.random() - 0.5) * 115;
           this.y = baseY - Math.random() * 20;
           this.vx = (Math.random() - 0.5) * 0.7;
           this.vy = -(0.5 + Math.random() * 1.5);
