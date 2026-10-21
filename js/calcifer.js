@@ -101,15 +101,38 @@ const Calcifer = (() => {
       marker: '🎨',
       title: 'Tình yêu nghệ thuật',
       text: 'Nhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
-      mainFrame: 'assets/img/calcifer/frame_061.webp?v=20261021_dissolve',
+      mainFrame: 'assets/img/calcifer/calcifer_eat_01.webp?v=20261021_eat',
+      talkIntervalMs: 190,
       talkFrames: [
-        'assets/img/calcifer/frame_061.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_062.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_063.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_eat_01.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_02.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_03.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_04.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_05.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_06.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_07.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_08.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_09.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_10.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_11.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_12.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_13.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_14.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_15.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_16.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_17.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_18.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat'
       ],
-      breatheFrame: 'assets/img/calcifer/frame_064.webp?v=20261021_dissolve',
-      delayAfter: 1500
+      breatheFrame: 'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
+      breatheFrames: [
+        'assets/img/calcifer/calcifer_eat_18.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat',
+        'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat'
+      ],
+      delayAfter: 2600
     },
     {
       id: 7,
@@ -628,6 +651,9 @@ const Calcifer = (() => {
     STORY_SEGMENTS.forEach(seg => {
       if (seg.mainFrame) urls.add(seg.mainFrame);
       if (seg.breatheFrame) urls.add(seg.breatheFrame);
+      if (Array.isArray(seg.breatheFrames)) {
+        seg.breatheFrames.forEach(f => urls.add(f));
+      }
       if (Array.isArray(seg.talkFrames)) {
         seg.talkFrames.forEach(f => urls.add(f));
       }
@@ -676,7 +702,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ];
-      animIntervalMs = 230; // Nhịp mồm nói chuyện thong thả, rõ nét biểu cảm
+      animIntervalMs = intervalMs || 230; // Nhịp mồm nói chuyện thong thả, rõ nét biểu cảm
     } else if (mode === MODE_BREATHE) {
       // Chu kỳ thở/nghe lắng đọng sống động (đảm bảo Carte không bao giờ bị đứng hình)
       if (customFrames && customFrames.length > 1) {
@@ -807,8 +833,8 @@ const Calcifer = (() => {
     currentBlockContentEl = content;
     currentRawText = seg.text;
 
-    // Bắt đầu động cơ mồm Carte nói chuyện sinh động theo ngữ cảm (nhịp 230ms êm dịu, rõ biểu cảm)
-    setMode(MODE_TALK, seg.talkFrames, 230);
+    // Bắt đầu động cơ mồm Carte nói chuyện sinh động theo ngữ cảm
+    setMode(MODE_TALK, seg.talkFrames, seg.talkIntervalMs || 230);
     CalciferEmbers.burst(8);
 
     // Bắt đầu hiệu ứng gõ chữ
@@ -817,7 +843,7 @@ const Calcifer = (() => {
       block.classList.remove('is-typing');
 
       // Chuyển biểu cảm sang chuỗi frame thở nhẹ / mỉm cười lắng đọng sống động (nhịp 340ms thư thái)
-      const livingBreatheFrames = [
+      const livingBreatheFrames = seg.breatheFrames || [
         seg.breatheFrame,
         seg.talkFrames[0] || seg.breatheFrame,
         seg.breatheFrame,
@@ -982,7 +1008,7 @@ const Calcifer = (() => {
         // Huỷ timer cũ và advance ngay
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
         const seg = STORY_SEGMENTS[currentSegmentIdx];
-        const livingBreatheFrames = [
+        const livingBreatheFrames = seg.breatheFrames || [
           seg.breatheFrame,
           seg.talkFrames[0] || seg.breatheFrame,
           seg.breatheFrame,
@@ -1070,7 +1096,7 @@ const Calcifer = (() => {
       finishCurrentTyping();
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       const seg = STORY_SEGMENTS[currentSegmentIdx];
-      const livingBreatheFrames = [
+      const livingBreatheFrames = seg.breatheFrames || [
         seg.breatheFrame,
         seg.talkFrames[0] || seg.breatheFrame,
         seg.breatheFrame,
