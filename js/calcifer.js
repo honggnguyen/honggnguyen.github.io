@@ -71,15 +71,38 @@ const Calcifer = (() => {
       title: 'Gần hơn tới các vì sao',
       text: 'Mình hay gọi cô là **Vivi** luôn cho gọn.\n\nVivi rất thích các chòm sao nên tôi đã luôn phải cháy rực rỡ để đưa cô gần hơn tới các vì sao ✨ — một góc nhỏ ấm áp nơi cô có thể quan sát, nhìn ngắm, chiêm nghiệm về những điều cô đọc được, cô đi qua hay những sáng tác của cô.',
       mainFrame: 'assets/img/calcifer/frame_085.webp?v=20261021_dissolve',
+      talkIntervalMs: 190,
       talkFrames: [
         'assets/img/calcifer/frame_085.webp?v=20261021_dissolve',
         'assets/img/calcifer/frame_086.webp?v=20261021_dissolve',
         'assets/img/calcifer/frame_087.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve',
+        'assets/img/calcifer/calcifer_spark_01.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_02.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_03.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_04.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_05.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_06.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_07.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_08.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_09.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_10.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_11.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_12.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_13.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_15.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_16.webp?v=20261022_spark'
       ],
-      breatheFrame: 'assets/img/calcifer/frame_088.webp?v=20261021_dissolve',
-      delayAfter: 2200
+      breatheFrame: 'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark',
+      breatheFrames: [
+        'assets/img/calcifer/calcifer_spark_13.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_15.webp?v=20261022_spark',
+        'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark'
+      ],
+      delayAfter: 2000
     },
     {
       id: 5,
