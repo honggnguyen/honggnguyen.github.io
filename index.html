@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Press+Start+2P&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261021_organic_ash">
+  <link rel="stylesheet" href="css/style.css?v=20261021_pure_flame">
 </head>
 <body>
 <main id="app">
@@ -111,138 +111,9 @@
 
       <!-- Carte (Calcifer) trong lò sưởi -->
       <div class="calcifer-container" id="calciferContainer" role="button" tabindex="0" title="Chạm vào Carte để trò chuyện" aria-label="Carte - Người giữ lửa của lâu đài">
-        <div class="calcifer-contact-shadow" aria-hidden="true"></div>
-        <div class="calcifer-ember-bed" aria-hidden="true"></div>
         <canvas class="calcifer-embers" id="calciferEmbers"></canvas>
-        <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp?v=20261021_dissolve" alt="Carte người giữ lửa">
+        <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp?v=20261021_pure" alt="Carte người giữ lửa">
         
-        <!-- Lớp tàn tro & than hồng tiền cảnh che đường ghép đáy ngọn lửa (Phương án 3 tối ưu màu sắc & vị trí) -->
-        <div class="calcifer-foreground-ashes" aria-hidden="true">
-          <div class="cfa-glow"></div>
-          <svg class="cfa-coals" viewBox="0 0 160 24" preserveAspectRatio="none" shape-rendering="crispEdges">
-            <!-- 1. Mẩu củi & tàn tro góc trái (ôm khít mép củi trái) -->
-            <rect x="4" y="9" width="12" height="6" fill="#2b121d"/>
-            <rect x="2" y="11" width="8" height="4" fill="#1f0e18"/>
-            <rect x="8" y="6" width="10" height="5" fill="#3d1623"/>
-            <rect x="12" y="3" width="8" height="4" fill="#541c26"/>
-            <rect x="15" y="1" width="5" height="3" fill="#72251f"/>
-            <rect x="18" y="8" width="14" height="7" fill="#2b121d"/>
-            <rect x="22" y="5" width="12" height="5" fill="#3d1623"/>
-            <rect x="26" y="2" width="8" height="4" fill="#541c26"/>
-            <rect x="4" y="15" width="8" height="3" fill="#483b47"/>
-            <rect x="7" y="17" width="6" height="2" fill="#5e4f5d"/>
-            <rect x="14" y="14" width="10" height="3" fill="#483b47"/>
-            <rect x="18" y="16" width="7" height="2" fill="#5e4f5d"/>
-            <rect x="26" y="14" width="8" height="3" fill="#483b47"/>
-            <rect x="9" y="4" width="6" height="2" fill="#746473"/>
-            <rect x="15" y="1" width="4" height="1" fill="#8a7988"/>
-            <rect x="23" y="4" width="5" height="2" fill="#746473"/>
-            <rect x="28" y="1" width="4" height="1" fill="#a08f9e"/>
-            <rect class="cfa-crack" x="8" y="8" width="6" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="10" y="8" width="3" height="1" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="20" y="7" width="8" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="22" y="7" width="4" height="2" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="24" y="7" width="2" height="1" fill="#f56e1a"/>
-
-            <!-- 2. Khối chuyển tiếp trái -> giữa -->
-            <rect x="34" y="8" width="14" height="7" fill="#2b121d"/>
-            <rect x="38" y="5" width="10" height="5" fill="#3d1623"/>
-            <rect x="42" y="2" width="7" height="4" fill="#541c26"/>
-            <rect x="46" y="7" width="16" height="8" fill="#2b121d"/>
-            <rect x="50" y="4" width="12" height="5" fill="#3d1623"/>
-            <rect x="54" y="1" width="8" height="4" fill="#541c26"/>
-            <rect x="58" y="0" width="5" height="2" fill="#72251f"/>
-            <rect x="34" y="15" width="8" height="3" fill="#483b47"/>
-            <rect x="37" y="17" width="6" height="2" fill="#5e4f5d"/>
-            <rect x="44" y="14" width="10" height="3" fill="#483b47"/>
-            <rect x="48" y="16" width="8" height="2" fill="#5e4f5d"/>
-            <rect x="52" y="18" width="5" height="2" fill="#746473"/>
-            <rect x="40" y="3" width="5" height="2" fill="#746473"/>
-            <rect x="52" y="2" width="6" height="2" fill="#8a7988"/>
-            <rect class="cfa-crack" x="36" y="7" width="7" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="38" y="7" width="4" height="1" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="48" y="6" width="9" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="50" y="6" width="5" height="2" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="52" y="6" width="2" height="1" fill="#ffaa28"/>
-
-            <!-- 3. Khối than hồng rực rỡ trung tâm (che vệt cắt tiếp giáp) -->
-            <rect x="62" y="7" width="16" height="8" fill="#2b121d"/>
-            <rect x="66" y="4" width="12" height="5" fill="#3d1623"/>
-            <rect x="70" y="1" width="9" height="4" fill="#541c26"/>
-            <rect x="74" y="0" width="5" height="2" fill="#72251f"/>
-            <rect x="76" y="7" width="18" height="9" fill="#2b121d"/>
-            <rect x="80" y="4" width="14" height="6" fill="#3d1623"/>
-            <rect x="84" y="1" width="10" height="4" fill="#541c26"/>
-            <rect x="88" y="0" width="6" height="2" fill="#72251f"/>
-            <rect x="92" y="7" width="16" height="8" fill="#2b121d"/>
-            <rect x="96" y="4" width="12" height="5" fill="#3d1623"/>
-            <rect x="100" y="1" width="8" height="4" fill="#541c26"/>
-            <rect x="62" y="15" width="10" height="3" fill="#483b47"/>
-            <rect x="66" y="17" width="7" height="2" fill="#5e4f5d"/>
-            <rect x="74" y="15" width="12" height="3" fill="#483b47"/>
-            <rect x="78" y="17" width="9" height="2" fill="#5e4f5d"/>
-            <rect x="82" y="19" width="5" height="2" fill="#746473"/>
-            <rect x="88" y="15" width="12" height="3" fill="#483b47"/>
-            <rect x="92" y="17" width="8" height="2" fill="#5e4f5d"/>
-            <rect x="98" y="15" width="10" height="3" fill="#483b47"/>
-            <rect x="102" y="17" width="6" height="2" fill="#5e4f5d"/>
-            <rect x="68" y="2" width="6" height="2" fill="#746473"/>
-            <rect x="72" y="0" width="4" height="1" fill="#8a7988"/>
-            <rect x="82" y="2" width="6" height="2" fill="#746473"/>
-            <rect x="86" y="0" width="5" height="1" fill="#a08f9e"/>
-            <rect x="98" y="2" width="5" height="2" fill="#746473"/>
-            <rect class="cfa-crack" x="64" y="6" width="10" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="67" y="6" width="6" height="2" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="69" y="6" width="3" height="1" fill="#ffaa28"/>
-            <rect class="cfa-crack" x="78" y="6" width="12" height="3" fill="#992014"/>
-            <rect class="cfa-crack" x="81" y="6" width="7" height="2" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="84" y="6" width="3" height="1" fill="#f56e1a"/>
-            <rect class="cfa-crack" x="94" y="6" width="11" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="97" y="6" width="6" height="2" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="99" y="6" width="3" height="1" fill="#ffaa28"/>
-            <rect class="cfa-spark" x="101" y="6" width="1" height="1" fill="#ffe66b"/>
-
-            <!-- 4. Khối củi & tàn tro góc phải -->
-            <rect x="108" y="8" width="14" height="7" fill="#2b121d"/>
-            <rect x="112" y="5" width="10" height="5" fill="#3d1623"/>
-            <rect x="116" y="2" width="7" height="4" fill="#541c26"/>
-            <rect x="120" y="7" width="16" height="8" fill="#2b121d"/>
-            <rect x="124" y="4" width="12" height="5" fill="#3d1623"/>
-            <rect x="128" y="1" width="9" height="4" fill="#541c26"/>
-            <rect x="134" y="8" width="15" height="7" fill="#2b121d"/>
-            <rect x="138" y="5" width="11" height="5" fill="#3d1623"/>
-            <rect x="142" y="2" width="8" height="4" fill="#541c26"/>
-            <rect x="148" y="9" width="10" height="6" fill="#2b121d"/>
-            <rect x="151" y="6" width="7" height="4" fill="#3d1623"/>
-            <rect x="110" y="15" width="8" height="3" fill="#483b47"/>
-            <rect x="114" y="17" width="6" height="2" fill="#5e4f5d"/>
-            <rect x="122" y="14" width="10" height="3" fill="#483b47"/>
-            <rect x="126" y="16" width="8" height="2" fill="#5e4f5d"/>
-            <rect x="136" y="14" width="9" height="3" fill="#483b47"/>
-            <rect x="140" y="16" width="7" height="2" fill="#5e4f5d"/>
-            <rect x="148" y="14" width="8" height="3" fill="#483b47"/>
-            <rect x="114" y="3" width="5" height="2" fill="#8a7988"/>
-            <rect x="126" y="2" width="6" height="2" fill="#a08f9e"/>
-            <rect x="140" y="3" width="5" height="2" fill="#746473"/>
-            <rect class="cfa-crack" x="112" y="7" width="7" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="114" y="7" width="4" height="1" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="124" y="6" width="9" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="126" y="6" width="5" height="2" fill="#ce3f16"/>
-            <rect class="cfa-crack" x="128" y="6" width="2" height="1" fill="#f56e1a"/>
-            <rect class="cfa-crack" x="138" y="7" width="8" height="2" fill="#992014"/>
-            <rect class="cfa-crack" x="140" y="7" width="4" height="1" fill="#ce3f16"/>
-
-            <!-- 5. Đốm tàn than rơi rải rác trên bề mặt -->
-            <rect class="cfa-spark" x="15" y="18" width="2" height="2" fill="#f56e1a"/>
-            <rect x="38" y="19" width="2" height="2" fill="#8a7988"/>
-            <rect class="cfa-spark" x="58" y="20" width="2" height="2" fill="#ffaa28"/>
-            <rect class="cfa-spark" x="75" y="21" width="2" height="2" fill="#f56e1a"/>
-            <rect x="104" y="20" width="2" height="2" fill="#a08f9e"/>
-            <rect class="cfa-spark" x="128" y="19" width="2" height="2" fill="#ffaa28"/>
-            <rect class="cfa-spark" x="145" y="18" width="2" height="2" fill="#ce3f16"/>
-          </svg>
-        </div>
-
         <div class="calcifer-hint-pill" id="calciferHint">
           <span class="pill-fire">🔥</span>
           <span class="pill-text">Carte</span>
@@ -521,7 +392,7 @@
 <script src="js/shooting.js?v=20261018m"></script>
 <script src="js/galaxy.js?v=20261018m"></script>
 <script src="js/intro.js?v=20261018n"></script>
-<script src="js/calcifer.js?v=20261021_organic_ash"></script>
+<script src="js/calcifer.js?v=20261021_pure_flame"></script>
 <script src="js/main.js?v=20261018n"></script>
 <script src="js/dog.js?v=20261018m"></script>
 </body>

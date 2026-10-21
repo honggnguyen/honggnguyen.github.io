@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex,nofollow">
   <title>Admin · Đăng bài lên thiên hà</title>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin.css?v=20261021_constellation_pos">
 </head>
 <body>
 <header class="top">
@@ -21,13 +21,20 @@
 <main class="layout">
   <aside class="side">
     <button id="newBtn" class="btn primary wide">＋ Bài mới</button>
-    <div id="postList" class="post-list"><p class="muted">Hãy kết nối GitHub để tải danh sách bài.</p></div>
+    <div class="side-filter">
+      <select id="filterGalaxy" title="Lọc theo chòm sao">
+        <option value="">✦ Tất cả chòm sao (13)</option>
+      </select>
+      <input type="text" id="searchPost" placeholder="🔍 Tìm bài thơ..." autocomplete="off">
+    </div>
+    <div id="postList" class="post-list"><p class="muted">Hãy kết nối GitHub hoặc mở cục bộ để tải danh sách bài.</p></div>
   </aside>
 
   <section class="editor-pane">
     <div class="grid2">
-      <label>Thiên hà
-        <select id="fGalaxy"></select>
+      <label>Chòm sao (Thiên hà)
+        <select id="fGalaxy" title="Đổi chòm sao cho bài thơ"></select>
+        <small id="galaxyMoveHint" class="hint-text"></small>
       </label>
       <label>Nhãn (tag)
         <input id="fTag" placeholder="Thơ tình / Nhật ký du hành…">
@@ -50,8 +57,21 @@
         </div>
       </div>
       <div>
-        <span class="lbl">Vị trí ngôi sao (bấm lên bản đồ) <em id="posText"></em></span>
-        <div id="picker" class="picker"></div>
+        <div class="lbl-row">
+          <span class="lbl">Vị trí ngôi sao trên chòm sao:</span>
+          <div class="pos-inputs">
+            <label>X: <input type="number" id="fPosX" min="1" max="99" step="0.1" value="50"> %</label>
+            <label>Y: <input type="number" id="fPosY" min="1" max="99" step="0.1" value="50"> %</label>
+            <button type="button" id="resetPosBtn" class="btn ghost small" title="Đặt lại về tâm bản đồ">⊙ Căn giữa</button>
+          </div>
+        </div>
+        <div class="picker-wrapper">
+          <div id="picker" class="picker" title="Nhấp hoặc kéo thả để đổi vị trí ngôi sao"></div>
+          <div class="picker-legend">
+            <span><i class="legend-existing"></i> Bài khác trong chòm sao</span>
+            <span><i class="legend-current"></i> Vị trí bài này (kéo/bấm)</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -114,6 +134,6 @@
 </dialog>
 
 <script src="js/render.js"></script>
-<script src="js/admin.js"></script>
+<script src="js/admin.js?v=20261021_constellation_pos"></script>
 </body>
 </html>
