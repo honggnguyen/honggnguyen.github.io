@@ -1345,8 +1345,8 @@ body.blog-open{
   position: relative;
   z-index: 2;
   filter: drop-shadow(0 0 10px rgba(255, 140, 40, 0.35));
-  mask-image: linear-gradient(to bottom, #000 0%, #000 77.5%, rgba(0, 0, 0, 0.92) 78.8%, rgba(0, 0, 0, 0.35) 80%);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 77.5%, rgba(0, 0, 0, 0.92) 78.8%, rgba(0, 0, 0, 0.35) 80%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 78.5%, rgba(0, 0, 0, 0.95) 79.5%, rgba(0, 0, 0, 0.4) 80.5%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 78.5%, rgba(0, 0, 0, 0.95) 79.5%, rgba(0, 0, 0, 0.4) 80.5%);
   transition: filter 0.3s ease;
 }
 
@@ -1366,35 +1366,35 @@ body.blog-open{
    ========================================================================== */
 .calcifer-foreground-ashes {
   position: absolute;
-  left: 36%;
-  top: 75.2%;
-  width: 52%;
-  height: 6.8%;
+  left: 39%;
+  top: 76.2%;
+  width: 47%;
+  height: 4.8%;
   z-index: 4;
   pointer-events: none;
 }
 
 .calcifer-foreground-ashes .cfa-glow {
   position: absolute;
-  left: -8%;
-  right: -8%;
-  top: -25%;
-  bottom: -35%;
-  background: radial-gradient(ellipse 65% 55% at 50% 50%, rgba(255, 115, 30, 0.72) 0%, rgba(255, 60, 10, 0.38) 45%, rgba(160, 20, 0, 0.12) 75%, transparent 100%);
+  left: -6%;
+  right: -6%;
+  top: -20%;
+  bottom: -25%;
+  background: radial-gradient(ellipse 65% 55% at 50% 50%, rgba(255, 110, 25, 0.45) 0%, rgba(200, 50, 10, 0.22) 45%, rgba(120, 20, 5, 0.08) 75%, transparent 100%);
   mix-blend-mode: screen;
-  filter: blur(5px);
+  filter: blur(4px);
   animation: cfaGlowPulse 2.8s ease-in-out infinite;
   pointer-events: none;
 }
 
 @keyframes cfaGlowPulse {
   0%, 100% {
-    opacity: 0.72;
+    opacity: 0.75;
     transform: scaleY(1);
   }
   50% {
     opacity: 1;
-    transform: scaleY(1.09);
+    transform: scaleY(1.08);
   }
 }
 
@@ -1404,7 +1404,7 @@ body.blog-open{
   display: block;
   position: relative;
   z-index: 2;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.65));
+  filter: drop-shadow(0 1px 3px rgba(25, 8, 18, 0.6));
 }
 
 .calcifer-foreground-ashes .cfa-crack {
@@ -1412,8 +1412,8 @@ body.blog-open{
 }
 
 @keyframes cfaCrackPulse {
-  0% { opacity: 0.75; }
-  100% { opacity: 1; filter: drop-shadow(0 0 2px rgba(255, 120, 40, 0.9)); }
+  0% { opacity: 0.8; filter: none; }
+  100% { opacity: 1; filter: drop-shadow(0 0 1.5px rgba(255, 110, 30, 0.85)); }
 }
 
 .calcifer-foreground-ashes .cfa-spark {
@@ -1421,17 +1421,17 @@ body.blog-open{
 }
 
 @keyframes cfaSparkFlicker {
-  0%, 100% { opacity: 0.55; }
-  50% { opacity: 1; transform: translateY(-0.8px); }
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; transform: translateY(-0.5px); }
 }
 
 .calcifer-container:hover .calcifer-foreground-ashes .cfa-glow {
   opacity: 1.25;
-  filter: blur(6px) brightness(1.2);
+  filter: blur(5px) brightness(1.2);
 }
 .calcifer-container.is-awake .calcifer-foreground-ashes .cfa-glow {
   opacity: 1.35;
-  filter: blur(7px) brightness(1.3);
+  filter: blur(6px) brightness(1.3);
 }
 
 .calcifer-container:hover .calcifer-flame {
