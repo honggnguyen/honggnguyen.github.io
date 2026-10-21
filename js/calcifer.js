@@ -87,7 +87,11 @@ const Calcifer = (() => {
       title: 'Những khoảng ở giữa & Nghệ thuật',
       text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi,.... Cô là sự kết hợp của nhiều khoảng ở giữa….\n\nNhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
       mainFrame: 'assets/img/calcifer/calcifer_eat_01.webp?v=20261021_eat',
-      talkIntervalMs: 190,
+      talkIntervalMs: 260,
+      playOnce: true,
+      keepTalkAnimation: true,
+      typeStep: 2,
+      typeIntervalMs: 23,
       talkFrames: [
         'assets/img/calcifer/calcifer_eat_01.webp?v=20261021_eat',
         'assets/img/calcifer/calcifer_eat_02.webp?v=20261021_eat',
@@ -110,14 +114,9 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
         'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
-      breatheFrames: [
-        'assets/img/calcifer/calcifer_eat_18.webp?v=20261021_eat',
-        'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat',
-        'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat',
-        'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat'
-      ],
-      delayAfter: 2600
+      breatheFrame: 'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat',
+      breatheFrames: null,
+      delayAfter: 1600
     },
     {
       id: 6,
@@ -658,10 +657,11 @@ const Calcifer = (() => {
   // ==========================================================================
   // ĐỘNG CƠ CHUYỂN ĐỘNG LIÊN TỤC KHÔNG KHỰNG (CONTINUOUS ANIMATION ENGINE)
   // ==========================================================================
-  function setMode(mode, customFrames = null, intervalMs = 120) {
+  function setMode(mode, customFrames = null, intervalMs = 120, options = {}) {
     currentMode = mode;
     animIntervalMs = intervalMs;
     animFrameIdx = 0;
+    const shouldLoop = options.loop !== undefined ? options.loop : true;
 
     if (animTimer) {
       clearInterval(animTimer);
@@ -720,9 +720,21 @@ const Calcifer = (() => {
 
     if (currentActiveFrames.length > 1) {
       animTimer = setInterval(() => {
-        animFrameIdx = (animFrameIdx + 1) % currentActiveFrames.length;
-        if (flameEl) {
-          flameEl.src = currentActiveFrames[animFrameIdx];
+        if (shouldLoop) {
+          animFrameIdx = (animFrameIdx + 1) % currentActiveFrames.length;
+          if (flameEl) {
+            flameEl.src = currentActiveFrames[animFrameIdx];
+          }
+        } else {
+          if (animFrameIdx < currentActiveFrames.length - 1) {
+            animFrameIdx++;
+            if (flameEl) {
+              flameEl.src = currentActiveFrames[animFrameIdx];
+            }
+          } else {
+            clearInterval(animTimer);
+            animTimer = null;
+          }
         }
       }, animIntervalMs);
     }
@@ -817,46 +829,73 @@ const Calcifer = (() => {
 
     currentBlockContentEl = content;
     currentRawText = seg.text;
+    const segStartTime = Date.now();
 
     // Bắt đầu động cơ mồm Carte nói chuyện sinh động theo ngữ cảm
-    setMode(MODE_TALK, seg.talkFrames, seg.talkIntervalMs || 230);
+    setMode(MODE_TALK, seg.talkFrames, seg.talkIntervalMs || 230, {
+      loop: !seg.playOnce
+    });
     CalciferEmbers.burst(8);
 
     // Bắt đầu hiệu ứng gõ chữ
-    typewriteSegmentText(seg.text, block, () => {
-      // Khi gõ chữ xong cho block này:
-      block.classList.remove('is-typing');
+    typewriteSegmentText(
+      seg.text,
+      block,
+      () => {
+        // Khi gõ chữ xong cho block này:
+        block.classList.remove('is-typing');
 
-      // Chuyển biểu cảm sang chuỗi frame thở nhẹ / mỉm cười lắng đọng sống động (nhịp 340ms thư thái)
-      const livingBreatheFrames = seg.breatheFrames || [
-        seg.breatheFrame,
-        seg.talkFrames[0] || seg.breatheFrame,
-        seg.breatheFrame,
-        (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
-      ];
-      setMode(MODE_BREATHE, livingBreatheFrames, 340);
+        if (seg.keepTalkAnimation) {
+          // Tính thời gian còn lại của chuỗi frame để khớp hoàn hảo thời gian hội thoại + chờ
+          const elapsed = Date.now() - segStartTime;
+          const totalAnimTime = (seg.talkFrames.length) * (seg.talkIntervalMs || 260);
+          const remainingDelay = Math.max(600, totalAnimTime - elapsed);
 
-      // Nếu là block cuối cùng thì chuẩn bị đi ngủ
-      if (idx === STORY_SEGMENTS.length - 1) {
-        if (actionBtn) {
-          actionBtn.innerHTML = 'Hoàn tất ✨';
+          if (idx === STORY_SEGMENTS.length - 1) {
+            if (actionBtn) actionBtn.innerHTML = 'Hoàn tất ✨';
+            scheduleAutoAdvance(idx + 1, remainingDelay + 600);
+          } else {
+            scheduleAutoAdvance(idx + 1, remainingDelay);
+          }
+        } else {
+          // Chuyển biểu cảm sang chuỗi frame thở nhẹ / mỉm cười lắng đọng sống động (nhịp 340ms thư thái)
+          const livingBreatheFrames = seg.breatheFrames || [
+            seg.breatheFrame,
+            seg.talkFrames[0] || seg.breatheFrame,
+            seg.breatheFrame,
+            (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
+          ];
+          setMode(MODE_BREATHE, livingBreatheFrames, 340);
+
+          // Nếu là block cuối cùng thì chuẩn bị đi ngủ
+          if (idx === STORY_SEGMENTS.length - 1) {
+            if (actionBtn) {
+              actionBtn.innerHTML = 'Hoàn tất ✨';
+            }
+            scheduleAutoAdvance(idx + 1, seg.delayAfter + 600);
+          } else {
+            scheduleAutoAdvance(idx + 1, seg.delayAfter);
+          }
         }
-        scheduleAutoAdvance(idx + 1, seg.delayAfter + 600);
-      } else {
-        scheduleAutoAdvance(idx + 1, seg.delayAfter);
+      },
+      {
+        step: seg.typeStep || 2,
+        interval: seg.typeIntervalMs || 30
       }
-    });
+    );
 
     scrollToStreamBottom(true);
   }
 
-  function typewriteSegmentText(rawText, blockEl, onComplete) {
+  function typewriteSegmentText(rawText, blockEl, onComplete, speedConfig = {}) {
     if (typingTimer) clearTimeout(typingTimer);
     isTyping = true;
 
     let charIdx = 0;
     const len = rawText.length;
     let blipCounter = 0;
+    const stepSize = (speedConfig && speedConfig.step) ? speedConfig.step : 2;
+    const stepInterval = (speedConfig && speedConfig.interval) ? speedConfig.interval : 30;
 
     function step() {
       if (!isTyping) return;
@@ -866,7 +905,7 @@ const Calcifer = (() => {
         return;
       }
 
-      charIdx += 2;
+      charIdx += stepSize;
       blipCounter++;
 
       // Phát âm thanh bloop nhỏ ấm áp mỗi vài ký tự
@@ -889,7 +928,7 @@ const Calcifer = (() => {
         streamEl.scrollTop = streamEl.scrollHeight;
       }
 
-      typingTimer = setTimeout(step, 30);
+      typingTimer = setTimeout(step, stepInterval);
     }
 
     step();
@@ -993,14 +1032,18 @@ const Calcifer = (() => {
         // Huỷ timer cũ và advance ngay
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
         const seg = STORY_SEGMENTS[currentSegmentIdx];
-        const livingBreatheFrames = seg.breatheFrames || [
-          seg.breatheFrame,
-          seg.talkFrames[0] || seg.breatheFrame,
-          seg.breatheFrame,
-          (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
-        ];
-        setMode(MODE_BREATHE, livingBreatheFrames, 340);
-        scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
+        if (seg && seg.keepTalkAnimation) {
+          scheduleAutoAdvance(currentSegmentIdx + 1, 900);
+        } else {
+          const livingBreatheFrames = seg.breatheFrames || [
+            seg.breatheFrame,
+            seg.talkFrames[0] || seg.breatheFrame,
+            seg.breatheFrame,
+            (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
+          ];
+          setMode(MODE_BREATHE, livingBreatheFrames, 340);
+          scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
+        }
       } else if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
         runSegment(currentSegmentIdx + 1);
@@ -1081,14 +1124,18 @@ const Calcifer = (() => {
       finishCurrentTyping();
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       const seg = STORY_SEGMENTS[currentSegmentIdx];
-      const livingBreatheFrames = seg.breatheFrames || [
-        seg.breatheFrame,
-        seg.talkFrames[0] || seg.breatheFrame,
-        seg.breatheFrame,
-        (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
-      ];
-      setMode(MODE_BREATHE, livingBreatheFrames, 340);
-      scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
+      if (seg && seg.keepTalkAnimation) {
+        scheduleAutoAdvance(currentSegmentIdx + 1, 900);
+      } else {
+        const livingBreatheFrames = seg.breatheFrames || [
+          seg.breatheFrame,
+          seg.talkFrames[0] || seg.breatheFrame,
+          seg.breatheFrame,
+          (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
+        ];
+        setMode(MODE_BREATHE, livingBreatheFrames, 340);
+        scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
+      }
     } else {
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
