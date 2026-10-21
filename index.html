@@ -101,15 +101,20 @@
       <img class="bg bg-close" src="assets/img/bg_close.webp?v=20261020_v3" alt="Căn phòng với khung cửa sổ vòm nhìn ra bầu trời đêm">
       <img class="bg bg-open"  src="assets/img/bg_open.webp?v=20261020_v3" alt="">
       <div class="window-sky" id="windowSky"></div>
-      <div class="fire-glow"></div>
+      <!-- Vầng sáng phản chiếu của lửa lên tường gạch & vòm lò sưởi -->
+      <div class="fireplace-back-glow" id="fireplaceBackGlow" aria-hidden="true"></div>
+      <!-- Vầng sáng của lửa phản chiếu lên thềm đá lò sưởi -->
+      <div class="fireplace-hearth-glow" id="fireplaceHearthGlow" aria-hidden="true"></div>
       <div class="candle-glow"></div>
       <img class="sprite dog"  src="assets/img/dog.webp"  alt="Chú cún đang ngủ">
       <img class="sprite girl" src="assets/img/girl.webp" alt="Hồng ngồi đọc sách trên ghế bập bênh">
 
       <!-- Carte (Calcifer) trong lò sưởi -->
       <div class="calcifer-container" id="calciferContainer" role="button" tabindex="0" title="Chạm vào Carte để trò chuyện" aria-label="Carte - Người giữ lửa của lâu đài">
+        <div class="calcifer-contact-shadow" aria-hidden="true"></div>
+        <div class="calcifer-ember-bed" aria-hidden="true"></div>
         <canvas class="calcifer-embers" id="calciferEmbers"></canvas>
-        <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp?v=20261021_nobarrier" alt="Carte người giữ lửa">
+        <img class="calcifer-flame" id="calciferFlame" src="assets/img/calcifer/flame_idle_1.webp?v=20261021_hearth" alt="Carte người giữ lửa">
         <div class="calcifer-hint-pill" id="calciferHint">
           <span class="pill-fire">🔥</span>
           <span class="pill-text">Carte</span>
@@ -382,7 +387,7 @@
 <script src="js/shooting.js?v=20261018m"></script>
 <script src="js/galaxy.js?v=20261018m"></script>
 <script src="js/intro.js?v=20261018n"></script>
-<script src="js/calcifer.js?v=20261021_nologo"></script>
+<script src="js/calcifer.js?v=20261021_hearth"></script>
 <script src="js/main.js?v=20261018n"></script>
 <script src="js/dog.js?v=20261018m"></script>
 </body>

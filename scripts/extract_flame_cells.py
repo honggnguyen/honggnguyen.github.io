@@ -36,6 +36,16 @@ def clean_cell(rgb):
             keep |= lab == i
     solid &= ndi.binary_dilation(keep, iterations=3)
 
+    # Remove barrier feet and bottom pink/purple artifacts
+    y_m, x_m = np.ogrid[:rgb.shape[0], :rgb.shape[1]]
+    is_barrier_foot = (
+        (y_m >= 412) |
+        ((y_m >= 400) & (x_m >= 280) & ((p[:, :, 2] >= 45) | (p[:, :, 1] >= 70))) |
+        ((y_m >= 404) & (x_m >= 355)) |
+        ((y_m >= 408) & (x_m <= 115))
+    )
+    solid &= ~is_barrier_foot
+
     # soft aura from the sprite silhouette
     body = ndi.binary_fill_holes(ndi.binary_closing(solid & (sat > 0.75), iterations=6))
     glow = ndi.gaussian_filter(body.astype(np.float32), 16)
@@ -45,6 +55,7 @@ def clean_cell(rgb):
     out[:, :, 3] = glow * 255
     out[solid, :3] = p[solid]
     out[solid, 3] = 255
+    out[415:, :, 3] = 0  # clear any aura below log line
     return out.astype(np.uint8), solid
 
 

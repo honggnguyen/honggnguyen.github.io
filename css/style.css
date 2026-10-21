@@ -49,9 +49,83 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   opacity:1;transform:scale(3.5);
 }
 
-.fire-glow{position:absolute;left:79%;top:60%;width:18%;height:28%;pointer-events:none;
-  background:radial-gradient(ellipse at 50% 70%,rgba(255,150,60,.45),transparent 65%);
-  mix-blend-mode:screen;animation:flicker 2.3s infinite}
+/* ================= FIREPLACE AMBIENT LIGHTING & HEARTH REFLECTION ================= */
+.fireplace-back-glow {
+  position: absolute;
+  left: 77.5%;
+  top: 42%;
+  width: 22.5%;
+  height: 44%;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(ellipse 68% 62% at 56% 62%, rgba(255, 145, 35, 0.78) 0%, rgba(255, 95, 15, 0.48) 42%, rgba(200, 45, 10, 0.22) 68%, transparent 100%);
+  mix-blend-mode: screen;
+  filter: blur(12px);
+  animation: fireplaceBackGlowFlicker 2.4s infinite ease-in-out;
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+.fireplace-hearth-glow {
+  position: absolute;
+  left: 76.5%;
+  top: 74.5%;
+  width: 23.5%;
+  height: 19%;
+  pointer-events: none;
+  z-index: 2;
+  background: radial-gradient(ellipse 72% 38% at 57% 32%, rgba(255, 175, 55, 0.72) 0%, rgba(255, 110, 25, 0.45) 38%, rgba(210, 55, 10, 0.2) 68%, transparent 100%);
+  mix-blend-mode: screen;
+  filter: blur(8px);
+  animation: hearthLightBreathe 3.1s infinite ease-in-out;
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+@keyframes fireplaceBackGlowFlicker {
+  0%, 100% {
+    opacity: 0.88;
+    transform: scale(1) translateY(0);
+  }
+  16% {
+    opacity: 0.72;
+    transform: scale(0.97) translateY(1px);
+  }
+  33% {
+    opacity: 1;
+    transform: scale(1.03) translateY(-1px);
+  }
+  52% {
+    opacity: 0.78;
+    transform: scale(0.98) translateY(0);
+  }
+  74% {
+    opacity: 0.95;
+    transform: scale(1.02) translateY(-0.5px);
+  }
+  88% {
+    opacity: 0.82;
+    transform: scale(0.99) translateY(0.5px);
+  }
+}
+
+@keyframes hearthLightBreathe {
+  0%, 100% {
+    opacity: 0.82;
+    transform: scaleX(1) scaleY(1);
+  }
+  24% {
+    opacity: 0.68;
+    transform: scaleX(0.97) scaleY(0.94);
+  }
+  48% {
+    opacity: 0.98;
+    transform: scaleX(1.04) scaleY(1.05);
+  }
+  70% {
+    opacity: 0.75;
+    transform: scaleX(0.98) scaleY(0.96);
+  }
+}
+
 .candle-glow{position:absolute;left:85%;top:30%;width:10%;height:25%;pointer-events:none;
   background:radial-gradient(ellipse at 50% 50%,rgba(255,200,120,.3),transparent 65%);
   mix-blend-mode:screen;animation:flicker 3.1s infinite .6s}
@@ -1215,6 +1289,50 @@ body.blog-open{
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Grounding contact shadow under wood logs into ash bed */
+.calcifer-contact-shadow {
+  position: absolute;
+  left: 36%;
+  top: 77.8%;
+  width: 51%;
+  height: 5.5%;
+  pointer-events: none;
+  z-index: 0;
+  background: radial-gradient(ellipse 58% 46% at 50% 46%, rgba(12, 4, 3, 0.92) 0%, rgba(22, 8, 4, 0.7) 42%, rgba(35, 12, 6, 0.28) 75%, transparent 100%);
+  filter: blur(4px);
+  transform: scaleY(0.72);
+}
+
+/* Warm live-coal ember glow along the bottom contact line */
+.calcifer-ember-bed {
+  position: absolute;
+  left: 39%;
+  top: 77.2%;
+  width: 46%;
+  height: 4.8%;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(ellipse 62% 48% at 50% 48%, rgba(255, 125, 30, 0.75) 0%, rgba(255, 65, 10, 0.45) 44%, rgba(180, 30, 5, 0.15) 75%, transparent 100%);
+  mix-blend-mode: screen;
+  filter: blur(3px);
+  animation: emberGlowPulse 2.7s infinite ease-in-out;
+}
+
+@keyframes emberGlowPulse {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.62;
+    transform: scale(0.96);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
 .calcifer-flame {
   width: 100%;
   height: 100%;
@@ -1223,7 +1341,11 @@ body.blog-open{
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   pointer-events: none;
+  position: relative;
+  z-index: 2;
   filter: drop-shadow(0 0 10px rgba(255, 140, 40, 0.35));
+  mask-image: linear-gradient(to bottom, #000 0%, #000 77.5%, rgba(0, 0, 0, 0.92) 78.8%, rgba(0, 0, 0, 0.35) 80%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 77.5%, rgba(0, 0, 0, 0.92) 78.8%, rgba(0, 0, 0, 0.35) 80%);
   transition: filter 0.3s ease;
 }
 
@@ -1244,6 +1366,18 @@ body.blog-open{
 
 .calcifer-container.is-awake .calcifer-flame {
   filter: drop-shadow(0 0 24px rgba(255, 170, 60, 0.85)) drop-shadow(0 0 40px rgba(255, 120, 30, 0.5));
+}
+
+#intro:has(.calcifer-container:hover) .fireplace-back-glow,
+#intro:has(.calcifer-container.is-awake) .fireplace-back-glow {
+  opacity: 1.15;
+  filter: blur(14px) brightness(1.2);
+}
+
+#intro:has(.calcifer-container:hover) .fireplace-hearth-glow,
+#intro:has(.calcifer-container.is-awake) .fireplace-hearth-glow {
+  opacity: 1.15;
+  filter: blur(9px) brightness(1.25);
 }
 
 /* Floating Hint Pill above Carte */
@@ -1580,8 +1714,12 @@ body.blog-open{
 /* Hide on scene transitions */
 #intro.zooming .calcifer-container,
 #intro.zooming .calcifer-dialog,
+#intro.zooming .fireplace-back-glow,
+#intro.zooming .fireplace-hearth-glow,
 #intro.gone .calcifer-container,
-#intro.gone .calcifer-dialog {
+#intro.gone .calcifer-dialog,
+#intro.gone .fireplace-back-glow,
+#intro.gone .fireplace-hearth-glow {
   opacity: 0 !important;
   pointer-events: none !important;
 }
