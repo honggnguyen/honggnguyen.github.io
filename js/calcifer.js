@@ -83,24 +83,9 @@ const Calcifer = (() => {
     },
     {
       id: 5,
-      marker: '🎭',
-      title: 'Những khoảng ở giữa',
-      text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi,.... Cô là sự kết hợp của nhiều khoảng ở giữa….',
-      mainFrame: 'assets/img/calcifer/frame_069.webp?v=20261021_dissolve',
-      talkFrames: [
-        'assets/img/calcifer/frame_069.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_070.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_073.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_074.webp?v=20261021_dissolve'
-      ],
-      breatheFrame: 'assets/img/calcifer/frame_071.webp?v=20261021_dissolve',
-      delayAfter: 1800
-    },
-    {
-      id: 6,
       marker: '🎨',
-      title: 'Tình yêu nghệ thuật',
-      text: 'Nhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
+      title: 'Những khoảng ở giữa & Nghệ thuật',
+      text: 'Vivi vừa hiền lành cũng vừa ghê gớm, vừa sâu sắc vừa vô tri, vừa chăm chỉ cũng vừa lười biếng, vừa thích đi nhưng cũng lười đi,.... Cô là sự kết hợp của nhiều khoảng ở giữa….\n\nNhưng có lẽ điều mà cô luôn thích đó là **nghệ thuật**.\n\nCô thích khám phá về thế giới, thích ghi lại những chiêm nghiệm về cuộc đời.',
       mainFrame: 'assets/img/calcifer/calcifer_eat_01.webp?v=20261021_eat',
       talkIntervalMs: 190,
       talkFrames: [
@@ -135,7 +120,7 @@ const Calcifer = (() => {
       delayAfter: 2600
     },
     {
-      id: 7,
+      id: 6,
       marker: '🔥',
       title: 'Phương châm viết',
       text: 'Vivi hay nói với mình là cô:\n\n🔥 **« VIẾT ĐỂ KHÔNG QUÊN »** 🔥',
@@ -151,7 +136,7 @@ const Calcifer = (() => {
       delayAfter: 1400
     },
     {
-      id: 8,
+      id: 7,
       marker: '💭',
       title: 'Lắng đọng',
       text: 'Vậy nên….',
@@ -166,7 +151,7 @@ const Calcifer = (() => {
       delayAfter: 1100
     },
     {
-      id: 9,
+      id: 8,
       marker: '🐾',
       title: 'Dấu chân con chữ',
       text: 'Nhiều khi các bài viết hay các sáng tác có thể như là một dấu chân cô đã đi và muốn lưu dấu thông qua vài con chữ lộn xộn.',
@@ -181,7 +166,7 @@ const Calcifer = (() => {
       delayAfter: 1700
     },
     {
-      id: 10,
+      id: 9,
       marker: '👑',
       title: 'Tự tại ngắm đời',
       text: 'Chẳng xô bồ hay cũng chẳng cần trau chuốt để ngóng chờ một chàng hoàng tử của đời.',
@@ -196,7 +181,7 @@ const Calcifer = (() => {
       delayAfter: 1600
     },
     {
-      id: 11,
+      id: 10,
       marker: '🚀',
       title: 'Tự chinh phục',
       text: 'Các con chữ chỉ đơn giản vẫn ở đó và lớn dần từng ngày để tự chinh phục những điều thú vị tiếp theo. ✨',
