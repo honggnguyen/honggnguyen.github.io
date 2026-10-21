@@ -32,7 +32,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_031.webp?v=20261021_dissolve',
-      delayAfter: 1900
+      delayAfter: 3200
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_028.webp?v=20261021_dissolve',
-      delayAfter: 1600
+      delayAfter: 2600
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_043.webp?v=20261021_dissolve',
-      delayAfter: 1900
+      delayAfter: 3400
     },
     {
       id: 4,
@@ -79,7 +79,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_088.webp?v=20261021_dissolve',
-      delayAfter: 2100
+      delayAfter: 4200
     },
     {
       id: 5,
@@ -91,11 +91,10 @@ const Calcifer = (() => {
         'assets/img/calcifer/frame_069.webp?v=20261021_dissolve',
         'assets/img/calcifer/frame_070.webp?v=20261021_dissolve',
         'assets/img/calcifer/frame_073.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_talk_6.webp?v=20261021_dissolve',
         'assets/img/calcifer/frame_074.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_071.webp?v=20261021_dissolve',
-      delayAfter: 2000
+      delayAfter: 3500
     },
     {
       id: 6,
@@ -110,7 +109,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_064.webp?v=20261021_dissolve',
-      delayAfter: 1700
+      delayAfter: 3000
     },
     {
       id: 7,
@@ -126,7 +125,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_056.webp?v=20261021_dissolve',
-      delayAfter: 1900
+      delayAfter: 2800
     },
     {
       id: 8,
@@ -141,7 +140,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_079.webp?v=20261021_dissolve',
-      delayAfter: 1400
+      delayAfter: 2200
     },
     {
       id: 9,
@@ -156,7 +155,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_084.webp?v=20261021_dissolve',
-      delayAfter: 1900
+      delayAfter: 3400
     },
     {
       id: 10,
@@ -171,7 +170,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve',
-      delayAfter: 1900
+      delayAfter: 3200
     },
     {
       id: 11,
@@ -187,7 +186,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_094.webp?v=20261021_dissolve',
-      delayAfter: 2300
+      delayAfter: 4000
     }
   ];
 
@@ -614,7 +613,6 @@ const Calcifer = (() => {
       'assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve',
-      'assets/img/calcifer/calcifer_talk_6.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_7.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve',
@@ -638,6 +636,10 @@ const Calcifer = (() => {
     urls.forEach(src => {
       const img = new Image();
       img.src = src;
+      // Giải pháp 2: Tiền giải mã ảnh vào GPU để Carte đổi frame siêu mượt 60fps
+      if (typeof img.decode === 'function') {
+        img.decode().catch(() => {});
+      }
       preloadedImages.set(src, img);
     });
   }
@@ -676,8 +678,25 @@ const Calcifer = (() => {
       ];
       animIntervalMs = 170; // Nhịp mồm nói chuyện sinh động
     } else if (mode === MODE_BREATHE) {
-      currentActiveFrames = customFrames || ['assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve'];
-      animIntervalMs = 400;
+      // Chu kỳ thở/nghe lắng đọng sống động (đảm bảo Carte không bao giờ bị đứng hình)
+      if (customFrames && customFrames.length > 1) {
+        currentActiveFrames = customFrames;
+      } else if (customFrames && customFrames.length === 1) {
+        currentActiveFrames = [
+          customFrames[0],
+          'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve',
+          customFrames[0],
+          'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve'
+        ];
+      } else {
+        currentActiveFrames = [
+          'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve',
+          'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve',
+          'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve',
+          'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve'
+        ];
+      }
+      animIntervalMs = intervalMs || 280; // Nhịp thở bập bùng êm đềm
     } else if (mode === MODE_TIRED) {
       currentActiveFrames = ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'];
       animIntervalMs = 600;
@@ -712,12 +731,16 @@ const Calcifer = (() => {
     return '<p>' + esc + '</p>';
   }
 
-  function scrollToStreamBottom() {
+  function scrollToStreamBottom(smooth = false) {
     if (!streamEl) return;
-    streamEl.scrollTo({
-      top: streamEl.scrollHeight,
-      behavior: 'smooth'
-    });
+    if (smooth) {
+      streamEl.scrollTo({
+        top: streamEl.scrollHeight,
+        behavior: 'smooth'
+      });
+    } else {
+      streamEl.scrollTop = streamEl.scrollHeight;
+    }
   }
 
   function updateProgress() {
@@ -770,19 +793,14 @@ const Calcifer = (() => {
       b.classList.add('is-done');
     });
 
-    // Tạo block mới
+    // Tạo block mới (đã bỏ icon ở đầu theo yêu cầu)
     const block = document.createElement('div');
     block.className = 'story-block is-current is-typing';
     block.id = `sb-${idx}`;
 
-    const marker = document.createElement('div');
-    marker.className = 'sb-marker';
-    marker.textContent = seg.marker;
-
     const content = document.createElement('div');
     content.className = 'sb-content';
 
-    block.appendChild(marker);
     block.appendChild(content);
     streamEl.appendChild(block);
 
@@ -797,8 +815,15 @@ const Calcifer = (() => {
     typewriteSegmentText(seg.text, block, () => {
       // Khi gõ chữ xong cho block này:
       block.classList.remove('is-typing');
-      // Chuyển biểu cảm sang trạng thái thở nhẹ / mỉm cười lắng đọng
-      setMode(MODE_BREATHE, [seg.breatheFrame], 400);
+
+      // Chuyển biểu cảm sang chuỗi frame thở nhẹ / mỉm cười lắng đọng sống động (KHÔNG BAO GIỜ ĐỨNG HÌNH)
+      const livingBreatheFrames = [
+        seg.breatheFrame,
+        seg.talkFrames[0] || seg.breatheFrame,
+        seg.breatheFrame,
+        (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
+      ];
+      setMode(MODE_BREATHE, livingBreatheFrames, 280);
 
       // Nếu là block cuối cùng thì chuẩn bị đi ngủ
       if (idx === STORY_SEGMENTS.length - 1) {
@@ -811,7 +836,7 @@ const Calcifer = (() => {
       }
     });
 
-    scrollToStreamBottom();
+    scrollToStreamBottom(true);
   }
 
   function typewriteSegmentText(rawText, blockEl, onComplete) {
@@ -848,7 +873,10 @@ const Calcifer = (() => {
       if (currentBlockContentEl) {
         currentBlockContentEl.innerHTML = formatText(partial);
       }
-      scrollToStreamBottom();
+      // Giải pháp 3: Cuộn trực tiếp scrollTop để không xung đột compositor mượt khi gõ từng ký tự
+      if (streamEl) {
+        streamEl.scrollTop = streamEl.scrollHeight;
+      }
 
       typingTimer = setTimeout(step, 30);
     }
@@ -872,7 +900,9 @@ const Calcifer = (() => {
       currentBlock.classList.remove('is-typing');
     }
 
-    scrollToStreamBottom();
+    if (streamEl) {
+      streamEl.scrollTop = streamEl.scrollHeight;
+    }
   }
 
   function scheduleAutoAdvance(nextIdx, delayMs) {

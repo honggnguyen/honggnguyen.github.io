@@ -29,7 +29,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .sprite{position:absolute;image-rendering:pixelated;pointer-events:none;transition:opacity 1.6s ease}
 .girl{left:56%;top:27.5%;width:28.2%;z-index:5;transform-origin:50% 94%;
   animation:rock 5.2s ease-in-out infinite;filter:drop-shadow(0 6px 0 rgba(0,0,0,.18))}
-.dog{left:41%;top:71%;width:27%;z-index:2;transform-origin:50% 100%;
+.dog{left:41%;top:71%;width:27%;z-index:6;transform-origin:50% 100%;
   animation:breathe 4.4s ease-in-out infinite}
 @keyframes rock{0%,100%{transform:rotate(-1.5deg)}50%{transform:rotate(1.5deg)}}
 @keyframes breathe{0%,100%{transform:scale(1,1)}50%{transform:scale(.996,1.025)}}
@@ -1431,8 +1431,8 @@ body.blog-open{
   position: absolute;
   right: 28px;
   top: 32px;
-  width: 380px;
-  max-width: calc(100vw - 56px);
+  width: 440px;
+  max-width: calc(100vw - 44px);
   z-index: 100;
   background: rgba(24, 10, 36, 0.94);
   border: 1.5px solid rgba(255, 180, 80, 0.45);
@@ -1458,7 +1458,7 @@ body.blog-open{
 .calcifer-dialog .cd-tail {
   position: absolute;
   bottom: -11px;
-  right: 76px;
+  right: 80px;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -1613,12 +1613,11 @@ body.blog-open{
   font-size: 0.92rem;
   line-height: 1.68;
   color: #f7edff;
-  height: 245px;
-  max-height: 255px;
+  height: 275px;
+  max-height: 310px;
   overflow-y: auto;
   overflow-x: hidden;
   padding-right: 6px;
-  scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1645,7 +1644,7 @@ body.blog-open{
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  padding: 9px 13px;
+  padding: 10px 14px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 200, 120, 0.08);
@@ -1674,9 +1673,7 @@ body.blog-open{
 }
 
 .sb-marker {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  flex-shrink: 0;
+  display: none !important;
 }
 
 .sb-content {
