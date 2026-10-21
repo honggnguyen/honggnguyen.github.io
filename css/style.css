@@ -1429,23 +1429,23 @@ body.blog-open{
 /* Carte Speech Dialog Balloon - Placed above fireplace mantle to not block the reading girl */
 .calcifer-dialog {
   position: absolute;
-  right: 28px;
-  top: 32px;
-  width: 440px;
-  max-width: calc(100vw - 44px);
+  right: 24px;
+  top: 24px;
+  width: 370px;
+  max-width: calc(100vw - 32px);
   z-index: 100;
-  background: rgba(24, 10, 36, 0.94);
-  border: 1.5px solid rgba(255, 180, 80, 0.45);
-  border-radius: 18px;
-  padding: 18px 22px;
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 16px 45px rgba(5, 0, 15, 0.75), 0 0 25px rgba(255, 130, 40, 0.2);
+  background: rgba(22, 9, 34, 0.94);
+  border: 1.5px solid rgba(255, 180, 80, 0.42);
+  border-radius: 15px;
+  padding: 13px 16px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 36px rgba(5, 0, 15, 0.75), 0 0 20px rgba(255, 130, 40, 0.18);
   color: #f7edff;
   opacity: 0;
-  transform: translateY(-10px) scale(0.96);
+  transform: translateY(-8px) scale(0.96);
   pointer-events: none;
-  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .calcifer-dialog.active {
@@ -1458,7 +1458,7 @@ body.blog-open{
 .calcifer-dialog .cd-tail {
   position: absolute;
   bottom: -11px;
-  right: 80px;
+  right: 64px;
   width: 0;
   height: 0;
   border-left: 10px solid transparent;
@@ -1483,24 +1483,24 @@ body.blog-open{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   border-bottom: 1px solid rgba(255, 200, 120, 0.15);
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 .cd-badge {
   display: inline-flex;
   align-items: center;
-  gap: 7px;
-  font-size: 0.85rem;
+  gap: 6px;
+  font-size: 0.82rem;
   font-weight: 600;
   color: #ffc470;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   text-shadow: 0 0 10px rgba(255, 160, 50, 0.4);
 }
 
 .cd-flame-icon {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   animation: flameFlicker 1.8s ease-in-out infinite;
 }
 
@@ -1512,14 +1512,14 @@ body.blog-open{
 .cd-header-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .cd-sound-toggle {
   font-family: 'Be Vietnam Pro', system-ui, sans-serif;
-  font-size: 0.74rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  padding: 3px 9px;
+  padding: 2.5px 8px;
   border-radius: 999px;
   border: 1px solid rgba(255, 180, 80, 0.45);
   background: rgba(255, 140, 40, 0.18);
@@ -1527,7 +1527,7 @@ body.blog-open{
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   transition: all 0.2s ease;
 }
 .cd-sound-toggle:hover {
@@ -1545,9 +1545,9 @@ body.blog-open{
 /* Pause Toggle Button */
 .cd-pause-toggle {
   font-family: 'Be Vietnam Pro', system-ui, sans-serif;
-  font-size: 0.74rem;
+  font-size: 0.7rem;
   font-weight: 500;
-  padding: 3px 9px;
+  padding: 2.5px 8px;
   border-radius: 999px;
   border: 1px solid rgba(255, 200, 100, 0.45);
   background: rgba(255, 180, 50, 0.15);
@@ -1555,7 +1555,7 @@ body.blog-open{
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   transition: all 0.2s ease;
 }
 .cd-pause-toggle:hover {
@@ -1570,8 +1570,8 @@ body.blog-open{
 }
 
 .cd-close {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.08);
@@ -1579,7 +1579,7 @@ body.blog-open{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -1593,11 +1593,11 @@ body.blog-open{
 /* Story Progress Bar */
 .cd-progress-bar-wrap {
   width: 100%;
-  height: 3px;
+  height: 2px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 3px;
+  border-radius: 2px;
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .cd-progress-fill {
   width: 9%;
@@ -1610,22 +1610,22 @@ body.blog-open{
 /* Continuous Story Stream Container */
 .cd-stream {
   font-family: 'Be Vietnam Pro', system-ui, sans-serif;
-  font-size: 0.92rem;
-  line-height: 1.68;
+  font-size: 0.86rem;
+  line-height: 1.56;
   color: #f7edff;
-  height: 275px;
-  max-height: 310px;
+  height: 195px;
+  max-height: 220px;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-right: 6px;
+  padding-right: 5px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 /* Custom aesthetic scrollbar */
 .cd-stream::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 .cd-stream::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.04);
@@ -1642,15 +1642,15 @@ body.blog-open{
 /* Story Block */
 .story-block {
   display: flex;
-  gap: 10px;
+  gap: 8px;
   align-items: flex-start;
-  padding: 10px 14px;
-  border-radius: 12px;
+  padding: 8px 11px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(255, 200, 120, 0.08);
   opacity: 0;
-  transform: translateY(12px);
-  animation: storyBlockSlideIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform: translateY(8px);
+  animation: storyBlockSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   transition: opacity 0.3s ease, border-color 0.3s ease, background 0.3s ease;
 }
 
@@ -1664,12 +1664,12 @@ body.blog-open{
 .story-block.is-current {
   background: rgba(255, 140, 40, 0.1);
   border-color: rgba(255, 180, 80, 0.42);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 0 14px rgba(255, 140, 40, 0.18);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.22), 0 0 10px rgba(255, 140, 40, 0.15);
 }
 
 .story-block.is-done {
-  opacity: 0.82;
-  border-color: rgba(255, 255, 255, 0.06);
+  opacity: 0.8;
+  border-color: rgba(255, 255, 255, 0.05);
 }
 
 .sb-marker {
@@ -1681,7 +1681,7 @@ body.blog-open{
   word-break: break-word;
 }
 .sb-content p {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .sb-content p:last-child {
   margin-bottom: 0;
@@ -1698,7 +1698,7 @@ body.blog-open{
   display: inline-block;
   color: #ff9e42;
   margin-left: 3px;
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   animation: cdCursorBlink 0.65s steps(2) infinite;
 }
 @keyframes cdCursorBlink {
@@ -1710,26 +1710,26 @@ body.blog-open{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 10px 14px;
+  gap: 7px;
+  padding: 7px 12px;
   border-radius: 999px;
   background: rgba(45, 18, 65, 0.7);
   border: 1px dashed rgba(255, 180, 220, 0.4);
   color: #ffd6f0;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-style: italic;
   text-align: center;
-  margin-top: 4px;
-  animation: storyBlockSlideIn 0.5s ease forwards;
+  margin-top: 3px;
+  animation: storyBlockSlideIn 0.4s ease forwards;
 }
 
 .cd-tip {
   font-family: 'Be Vietnam Pro', system-ui, sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.67rem;
   color: rgba(255, 220, 180, 0.55);
   letter-spacing: 0.03em;
   font-style: italic;
-  margin-top: 6px;
+  margin-top: 4px;
   text-align: right;
   pointer-events: none;
 }
@@ -1739,38 +1739,38 @@ body.blog-open{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 12px;
-  padding-top: 8px;
+  margin-top: 8px;
+  padding-top: 6px;
   border-top: 1px solid rgba(255, 200, 120, 0.15);
-  gap: 10px;
+  gap: 8px;
 }
 
 .cd-counter-wrap {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 .cd-counter {
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   font-weight: 500;
   color: rgba(255, 220, 180, 0.75);
   letter-spacing: 0.04em;
-  padding: 0 4px;
+  padding: 0 3px;
 }
 
 .cd-controls {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   margin-left: auto;
 }
 
 .cd-btn {
   font-family: 'Be Vietnam Pro', system-ui, sans-serif;
-  font-size: 0.84rem;
+  font-size: 0.78rem;
   font-weight: 500;
-  padding: 6px 14px;
+  padding: 4.5px 11px;
   border-radius: 999px;
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.2, 0.8, 0.3, 1);
@@ -1782,15 +1782,16 @@ body.blog-open{
   border: 1px solid rgba(255, 180, 90, 0.6);
   color: #fff;
   font-weight: 600;
-  padding: 6px 16px;
+  padding: 4.5px 13px;
+  font-size: 0.8rem;
   border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(255, 87, 34, 0.35);
+  box-shadow: 0 3px 12px rgba(255, 87, 34, 0.35);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.2, 0.8, 0.3, 1);
 }
 .cd-action-btn:hover {
   background: linear-gradient(135deg, #ffa24d, #ff6b3d);
-  box-shadow: 0 6px 18px rgba(255, 87, 34, 0.5);
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.5);
   transform: translateY(-1px) scale(1.02);
 }
 .cd-action-btn.is-replay {
@@ -1816,15 +1817,15 @@ body.blog-open{
 @media (max-width: 860px) {
   .calcifer-dialog {
     position: fixed;
-    left: 16px;
-    right: 16px;
-    bottom: 24px;
+    left: 14px;
+    right: 14px;
+    bottom: 20px;
     top: auto;
     width: auto;
-    max-width: 480px;
+    max-width: 390px;
     margin: 0 auto;
-    padding: 16px 18px;
-    border-radius: 16px;
+    padding: 12px 14px;
+    border-radius: 14px;
     z-index: 100;
   }
   .calcifer-dialog .cd-tail {

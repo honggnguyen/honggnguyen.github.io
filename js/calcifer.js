@@ -32,7 +32,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_031.webp?v=20261021_dissolve',
-      delayAfter: 3200
+      delayAfter: 1700
     },
     {
       id: 2,
@@ -47,7 +47,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_028.webp?v=20261021_dissolve',
-      delayAfter: 2600
+      delayAfter: 1300
     },
     {
       id: 3,
@@ -63,7 +63,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_043.webp?v=20261021_dissolve',
-      delayAfter: 3400
+      delayAfter: 1800
     },
     {
       id: 4,
@@ -79,7 +79,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_088.webp?v=20261021_dissolve',
-      delayAfter: 4200
+      delayAfter: 2200
     },
     {
       id: 5,
@@ -94,7 +94,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/frame_074.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_071.webp?v=20261021_dissolve',
-      delayAfter: 3500
+      delayAfter: 1800
     },
     {
       id: 6,
@@ -109,7 +109,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_1.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_064.webp?v=20261021_dissolve',
-      delayAfter: 3000
+      delayAfter: 1500
     },
     {
       id: 7,
@@ -125,7 +125,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_056.webp?v=20261021_dissolve',
-      delayAfter: 2800
+      delayAfter: 1400
     },
     {
       id: 8,
@@ -140,7 +140,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_079.webp?v=20261021_dissolve',
-      delayAfter: 2200
+      delayAfter: 1100
     },
     {
       id: 9,
@@ -155,7 +155,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_084.webp?v=20261021_dissolve',
-      delayAfter: 3400
+      delayAfter: 1700
     },
     {
       id: 10,
@@ -170,7 +170,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve',
-      delayAfter: 3200
+      delayAfter: 1600
     },
     {
       id: 11,
@@ -186,7 +186,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_094.webp?v=20261021_dissolve',
-      delayAfter: 4000
+      delayAfter: 2200
     }
   ];
 
@@ -659,7 +659,7 @@ const Calcifer = (() => {
 
     if (mode === MODE_IDLE) {
       currentActiveFrames = IDLE_FRAMES;
-      animIntervalMs = 120;
+      animIntervalMs = 140;
     } else if (mode === MODE_SLEEP) {
       // Ping-pong loop cho 4 frame ngủ (không dùng flame_sleep_5): 0, 1, 2, 3, 2, 1
       currentActiveFrames = [
@@ -670,13 +670,13 @@ const Calcifer = (() => {
         SLEEP_FRAMES[2],
         SLEEP_FRAMES[1]
       ];
-      animIntervalMs = 280; // Nhịp thở ngủ sâu êm đềm
+      animIntervalMs = 320; // Nhịp thở ngủ sâu êm đềm
     } else if (mode === MODE_TALK) {
       currentActiveFrames = (customFrames && customFrames.length > 0) ? customFrames : [
         'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ];
-      animIntervalMs = 170; // Nhịp mồm nói chuyện sinh động
+      animIntervalMs = 230; // Nhịp mồm nói chuyện thong thả, rõ nét biểu cảm
     } else if (mode === MODE_BREATHE) {
       // Chu kỳ thở/nghe lắng đọng sống động (đảm bảo Carte không bao giờ bị đứng hình)
       if (customFrames && customFrames.length > 1) {
@@ -696,7 +696,7 @@ const Calcifer = (() => {
           'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve'
         ];
       }
-      animIntervalMs = intervalMs || 280; // Nhịp thở bập bùng êm đềm
+      animIntervalMs = intervalMs || 340; // Nhịp thở bập bùng thư thái êm đềm
     } else if (mode === MODE_TIRED) {
       currentActiveFrames = ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'];
       animIntervalMs = 600;
@@ -807,8 +807,8 @@ const Calcifer = (() => {
     currentBlockContentEl = content;
     currentRawText = seg.text;
 
-    // Bắt đầu động cơ mồm Carte nói chuyện sinh động theo ngữ cảm
-    setMode(MODE_TALK, seg.talkFrames, 160);
+    // Bắt đầu động cơ mồm Carte nói chuyện sinh động theo ngữ cảm (nhịp 230ms êm dịu, rõ biểu cảm)
+    setMode(MODE_TALK, seg.talkFrames, 230);
     CalciferEmbers.burst(8);
 
     // Bắt đầu hiệu ứng gõ chữ
@@ -816,14 +816,14 @@ const Calcifer = (() => {
       // Khi gõ chữ xong cho block này:
       block.classList.remove('is-typing');
 
-      // Chuyển biểu cảm sang chuỗi frame thở nhẹ / mỉm cười lắng đọng sống động (KHÔNG BAO GIỜ ĐỨNG HÌNH)
+      // Chuyển biểu cảm sang chuỗi frame thở nhẹ / mỉm cười lắng đọng sống động (nhịp 340ms thư thái)
       const livingBreatheFrames = [
         seg.breatheFrame,
         seg.talkFrames[0] || seg.breatheFrame,
         seg.breatheFrame,
         (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
       ];
-      setMode(MODE_BREATHE, livingBreatheFrames, 280);
+      setMode(MODE_BREATHE, livingBreatheFrames, 340);
 
       // Nếu là block cuối cùng thì chuẩn bị đi ngủ
       if (idx === STORY_SEGMENTS.length - 1) {
@@ -982,8 +982,14 @@ const Calcifer = (() => {
         // Huỷ timer cũ và advance ngay
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
         const seg = STORY_SEGMENTS[currentSegmentIdx];
-        setMode(MODE_BREATHE, [seg.breatheFrame], 400);
-        scheduleAutoAdvance(currentSegmentIdx + 1, 1400);
+        const livingBreatheFrames = [
+          seg.breatheFrame,
+          seg.talkFrames[0] || seg.breatheFrame,
+          seg.breatheFrame,
+          (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
+        ];
+        setMode(MODE_BREATHE, livingBreatheFrames, 340);
+        scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
       } else if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
         runSegment(currentSegmentIdx + 1);
@@ -1064,8 +1070,14 @@ const Calcifer = (() => {
       finishCurrentTyping();
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       const seg = STORY_SEGMENTS[currentSegmentIdx];
-      setMode(MODE_BREATHE, [seg.breatheFrame], 400);
-      scheduleAutoAdvance(currentSegmentIdx + 1, 1400);
+      const livingBreatheFrames = [
+        seg.breatheFrame,
+        seg.talkFrames[0] || seg.breatheFrame,
+        seg.breatheFrame,
+        (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
+      ];
+      setMode(MODE_BREATHE, livingBreatheFrames, 340);
+      scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
     } else {
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
