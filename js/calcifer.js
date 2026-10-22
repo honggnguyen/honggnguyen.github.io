@@ -181,15 +181,39 @@ const Calcifer = (() => {
       marker: '🐾',
       title: 'Dấu chân con chữ',
       text: 'Nhiều khi các bài viết hay các sáng tác có thể như là một dấu chân cô đã đi và muốn lưu dấu thông qua vài con chữ lộn xộn.',
-      mainFrame: 'assets/img/calcifer/frame_081.webp?v=20261021_dissolve',
+      mainFrame: 'assets/img/calcifer/calcifer_hide_01.webp?v=20261022_d8',
+      talkIntervalMs: 220,
+      playOnce: true,
       talkFrames: [
-        'assets/img/calcifer/frame_081.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_082.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_083.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_hide_01.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_02.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_03.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_04.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_05.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_06.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_07.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_09.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_10.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_11.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_12.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_13.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_14.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_15.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_16.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_19.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_20.webp?v=20261022_d8'
       ],
-      breatheFrame: 'assets/img/calcifer/frame_084.webp?v=20261021_dissolve',
-      delayAfter: 1700
+      breatheFrame: 'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_d8',
+      breatheFrames: [
+        'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_19.webp?v=20261022_d8',
+        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_d8'
+      ],
+      delayAfter: 1600
     },
     {
       id: 9,

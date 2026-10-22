@@ -1954,5 +1954,325 @@
       621,
       770
     ]
+  },
+  {
+    "index": 157,
+    "id": "frame_157",
+    "source_file": "Flame11_r1c1.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 1)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_01",
+    "match_x": 170,
+    "match_y": 315,
+    "paste_x": 83,
+    "paste_y": 255
+  },
+  {
+    "index": 158,
+    "id": "frame_158",
+    "source_file": "Flame11_r1c2.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 2)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_02",
+    "match_x": 170,
+    "match_y": 315,
+    "paste_x": 83,
+    "paste_y": 255
+  },
+  {
+    "index": 159,
+    "id": "frame_159",
+    "source_file": "Flame11_r1c3.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 3)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_03",
+    "match_x": 170,
+    "match_y": 315,
+    "paste_x": 83,
+    "paste_y": 255
+  },
+  {
+    "index": 160,
+    "id": "frame_160",
+    "source_file": "Flame11_r1c4.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 4)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_04",
+    "match_x": 170,
+    "match_y": 315,
+    "paste_x": 83,
+    "paste_y": 255
+  },
+  {
+    "index": 161,
+    "id": "frame_161",
+    "source_file": "Flame11_r2c1.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 5)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_05",
+    "match_x": 170,
+    "match_y": 255,
+    "paste_x": 83,
+    "paste_y": 315
+  },
+  {
+    "index": 162,
+    "id": "frame_162",
+    "source_file": "Flame11_r2c2.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 6)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_06",
+    "match_x": 170,
+    "match_y": 255,
+    "paste_x": 83,
+    "paste_y": 315
+  },
+  {
+    "index": 163,
+    "id": "frame_163",
+    "source_file": "Flame11_r2c3.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 7)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_07",
+    "match_x": 170,
+    "match_y": 255,
+    "paste_x": 83,
+    "paste_y": 315
+  },
+  {
+    "index": 164,
+    "id": "frame_164",
+    "source_file": "Flame11_r2c4.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 8)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_08",
+    "match_x": 170,
+    "match_y": 255,
+    "paste_x": 83,
+    "paste_y": 315
+  },
+  {
+    "index": 165,
+    "id": "frame_165",
+    "source_file": "Flame11_r3c1.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 9)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_09",
+    "match_x": 170,
+    "match_y": 244,
+    "paste_x": 83,
+    "paste_y": 326
+  },
+  {
+    "index": 166,
+    "id": "frame_166",
+    "source_file": "Flame11_r3c2.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 10)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_10",
+    "match_x": 170,
+    "match_y": 244,
+    "paste_x": 83,
+    "paste_y": 326
+  },
+  {
+    "index": 167,
+    "id": "frame_167",
+    "source_file": "Flame11_r3c3.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 11)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_11",
+    "match_x": 170,
+    "match_y": 244,
+    "paste_x": 83,
+    "paste_y": 326
+  },
+  {
+    "index": 168,
+    "id": "frame_168",
+    "source_file": "Flame11_r3c4.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 12)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_12",
+    "match_x": 170,
+    "match_y": 244,
+    "paste_x": 83,
+    "paste_y": 326
+  },
+  {
+    "index": 169,
+    "id": "frame_169",
+    "source_file": "Flame11_r4c1.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 13)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_13",
+    "match_x": 170,
+    "match_y": 234,
+    "paste_x": 83,
+    "paste_y": 336
+  },
+  {
+    "index": 170,
+    "id": "frame_170",
+    "source_file": "Flame11_r4c2.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 14)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_14",
+    "match_x": 170,
+    "match_y": 234,
+    "paste_x": 83,
+    "paste_y": 336
+  },
+  {
+    "index": 171,
+    "id": "frame_171",
+    "source_file": "Flame11_r4c3.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 15)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_15",
+    "match_x": 170,
+    "match_y": 234,
+    "paste_x": 83,
+    "paste_y": 336
+  },
+  {
+    "index": 172,
+    "id": "frame_172",
+    "source_file": "Flame11_r4c4.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 16)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_16",
+    "match_x": 170,
+    "match_y": 234,
+    "paste_x": 83,
+    "paste_y": 336
+  },
+  {
+    "index": 173,
+    "id": "frame_173",
+    "source_file": "Flame11_r5c1.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 17)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_17",
+    "match_x": 170,
+    "match_y": 276,
+    "paste_x": 83,
+    "paste_y": 294
+  },
+  {
+    "index": 174,
+    "id": "frame_174",
+    "source_file": "Flame11_r5c2.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 18)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_18",
+    "match_x": 170,
+    "match_y": 276,
+    "paste_x": 83,
+    "paste_y": 294
+  },
+  {
+    "index": 175,
+    "id": "frame_175",
+    "source_file": "Flame11_r5c3.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 19)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_19",
+    "match_x": 170,
+    "match_y": 276,
+    "paste_x": 83,
+    "paste_y": 294
+  },
+  {
+    "index": 176,
+    "id": "frame_176",
+    "source_file": "Flame11_r5c4.png",
+    "category": "hide_peek_laugh",
+    "description": "Biểu cảm Calcifer ẩn nấp, ngó nghiêng và cười đùa (Flame11 frame 20)",
+    "canvas_size": [
+      621,
+      770
+    ],
+    "alias": "calcifer_hide_20",
+    "match_x": 170,
+    "match_y": 276,
+    "paste_x": 83,
+    "paste_y": 294
   }
 ]
