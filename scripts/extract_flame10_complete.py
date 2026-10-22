@@ -33,6 +33,7 @@ def clean_cell(cell, r_idx, c_idx):
     mx, mn = p.max(2), p.min(2)
     diff = mx - mn
     sat = diff / np.maximum(mx, 1)
+    mean = p.mean(2)
 
     # 1. Flame body
     is_flame = (sat > 0.55) & (p[:, :, 0] > 175) & (p[:, :, 2] < 85)
@@ -59,10 +60,41 @@ def clean_cell(cell, r_idx, c_idx):
     body_mask = is_flame | is_wood | is_dark_face
     body_filled = ndi.binary_fill_holes(body_mask)
 
-    solid = body_filled | is_head_sparks | is_breath
+    # 4. Smoke plumes in Row 3 (cells 9-12)
+    if r_idx == 2:
+        r = p[:, :, 0]
+        g = p[:, :, 1]
+        b = p[:, :, 2]
+        is_dark_smoke = (mean >= 115) & (mean <= 155) & (diff < 20)
+        is_med_smoke = (mean >= 155) & (mean <= 188) & (diff >= 5) & (diff <= 16) & (r - b >= 2) & (r - b <= 12) & (r - g >= 2) & (r - g <= 12)
+        smoke = is_dark_smoke | is_med_smoke
+
+        # Zone constraint per cell in Row 3
+        zone = np.zeros_like(smoke)
+        if c_idx == 0:
+            zone[180:320, 410:520] = True
+        elif c_idx == 1:
+            zone[100:320, 370:520] = True
+        elif c_idx == 2:
+            zone[40:280, 180:530] = True
+        elif c_idx == 3:
+            zone[30:240, 160:520] = True
+        smoke &= zone
+
+        # Filter out tiny specks (< 25 px)
+        lab_s, n_s = ndi.label(smoke)
+        if n_s > 0:
+            sizes = ndi.sum(smoke, lab_s, range(1, n_s + 1))
+            for i in range(1, n_s + 1):
+                if sizes[i-1] < 25:
+                    smoke[lab_s == i] = False
+    else:
+        smoke = np.zeros_like(is_flame)
+
+    solid = body_filled | is_head_sparks | is_breath | smoke
 
     # Strict checkerboard exclusion:
-    is_checker = (diff < 22) & (p.mean(2) > 130) & (p.mean(2) < 240)
+    is_checker = (diff < 22) & (p.mean(2) > 130) & (p.mean(2) < 240) & ~smoke
     solid &= ~is_checker
 
     # Drop number in top-left
@@ -88,7 +120,7 @@ def clean_cell(cell, r_idx, c_idx):
     solid &= ~(y_m > match_y + 57)
 
     # Soft golden aura purely around flame body
-    body = ndi.binary_fill_holes(ndi.binary_closing(solid & (sat > 0.5), iterations=5))
+    body = ndi.binary_fill_holes(ndi.binary_closing(body_filled & (sat > 0.5), iterations=5))
     glow = ndi.gaussian_filter(body.astype(np.float32), 14)
     glow = np.clip(glow * 1.5 - 0.12, 0, 1) * 0.50
 
