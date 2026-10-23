@@ -16,6 +16,8 @@ const Calcifer = (() => {
   // 4 frame Carte nhắm mắt ngủ say êm đềm (loại bỏ flame_sleep_5)
   const SLEEP_FRAMES = Array.from({ length: 4 }, (_, i) => `assets/img/calcifer/flame_sleep_${i + 1}.webp?v=20261021_dissolve`);
 
+  const TIRED_FRAMES = Array.from({ length: 17 }, (_, i) => `assets/img/calcifer/calcifer_yawn_${String(i + 1).padStart(2, '0')}.webp?v=20261023_flame12_f9`);
+
   // 11 Phân đoạn câu chuyện chính xác theo lời dặn của người dùng
   const STORY_SEGMENTS = [
     {
@@ -32,7 +34,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_031.webp?v=20261021_dissolve',
-      delayAfter: 1700
+      delayAfter: 700
     },
     {
       id: 2,
@@ -47,7 +49,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_028.webp?v=20261021_dissolve',
-      delayAfter: 1300
+      delayAfter: 500
     },
     {
       id: 3,
@@ -63,7 +65,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_043.webp?v=20261021_dissolve',
-      delayAfter: 1800
+      delayAfter: 700
     },
     {
       id: 4,
@@ -78,31 +80,31 @@ const Calcifer = (() => {
         'assets/img/calcifer/frame_087.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_smile_2.webp?v=20261021_dissolve',
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_spark_01.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_02.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_03.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_04.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_05.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_06.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_07.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_08.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_09.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_10.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_11.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_12.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_13.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_15.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_16.webp?v=20261022_spark_smoke'
+        'assets/img/calcifer/calcifer_spark_01.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_02.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_03.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_04.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_05.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_06.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_07.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_08.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_09.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_10.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_11.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_12.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_13.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_14.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_15.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_16.webp?v=20261023_spark_full_v3'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark_smoke',
+      breatheFrame: 'assets/img/calcifer/calcifer_spark_14.webp?v=20261023_spark_full_v3',
       breatheFrames: [
-        'assets/img/calcifer/calcifer_spark_13.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_15.webp?v=20261022_spark_smoke',
-        'assets/img/calcifer/calcifer_spark_14.webp?v=20261022_spark_smoke'
+        'assets/img/calcifer/calcifer_spark_13.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_14.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_15.webp?v=20261023_spark_full_v3',
+        'assets/img/calcifer/calcifer_spark_14.webp?v=20261023_spark_full_v3'
       ],
-      delayAfter: 2000
+      delayAfter: 800
     },
     {
       id: 5,
@@ -143,7 +145,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat',
         'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat'
       ],
-      delayAfter: 1500
+      delayAfter: 750
     },
     {
       id: 6,
@@ -159,92 +161,109 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_056.webp?v=20261021_dissolve',
-      delayAfter: 1400
+      delayAfter: 600
     },
     {
       id: 7,
       marker: '💭',
       title: 'Lắng đọng',
       text: 'Vậy nên….',
-      mainFrame: 'assets/img/calcifer/frame_077.webp?v=20261021_dissolve',
+      mainFrame: 'assets/img/calcifer/calcifer_hide_01.webp?v=20261022_hide',
+      talkIntervalMs: 180,
+      playOnce: true,
       talkFrames: [
-        'assets/img/calcifer/frame_077.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_078.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_talk_7.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_talk_8.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_hide_01.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_02.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_03.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_04.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_05.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_06.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_07.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_hide'
       ],
-      breatheFrame: 'assets/img/calcifer/frame_079.webp?v=20261021_dissolve',
-      delayAfter: 1100
+      breatheFrame: 'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_hide',
+      breatheFrames: [
+        'assets/img/calcifer/calcifer_hide_07.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_07.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_hide'
+      ],
+      delayAfter: 500
     },
     {
       id: 8,
       marker: '🐾',
       title: 'Dấu chân con chữ',
       text: 'Nhiều khi các bài viết hay các sáng tác có thể như là một dấu chân cô đã đi và muốn lưu dấu thông qua vài con chữ lộn xộn.',
-      mainFrame: 'assets/img/calcifer/calcifer_hide_01.webp?v=20261022_d8',
+      mainFrame: 'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_hide',
       talkIntervalMs: 220,
       playOnce: true,
+      typeStep: 2,
+      typeIntervalMs: 25,
       talkFrames: [
-        'assets/img/calcifer/calcifer_hide_01.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_02.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_03.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_04.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_05.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_06.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_07.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_09.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_10.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_11.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_12.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_13.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_14.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_15.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_16.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_19.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_20.webp?v=20261022_d8'
+        'assets/img/calcifer/calcifer_hide_09.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_10.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_11.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_12.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_13.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_14.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_15.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_16.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_19.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_20.webp?v=20261022_hide'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_d8',
+      breatheFrame: 'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_hide',
       breatheFrames: [
-        'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_19.webp?v=20261022_d8',
-        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_d8'
+        'assets/img/calcifer/calcifer_hide_17.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_19.webp?v=20261022_hide',
+        'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_hide'
       ],
-      delayAfter: 1600
+      delayAfter: 650
     },
     {
       id: 9,
       marker: '👑',
-      title: 'Tự tại ngắm đời',
-      text: 'Chẳng xô bồ hay cũng chẳng cần trau chuốt để ngóng chờ một chàng hoàng tử của đời.',
-      mainFrame: 'assets/img/calcifer/frame_071.webp?v=20261021_dissolve',
+      title: 'Tự tại & Tự chinh phục',
+      text: 'Chẳng xô bồ hay cũng chẳng cần trau chuốt để ngóng chờ một chàng hoàng tử của đời.\n\nCác con chữ chỉ đơn giản vẫn ở đó và lớn dần từng ngày để tự chinh phục những điều thú vị tiếp theo. ✨',
+      mainFrame: 'assets/img/calcifer/calcifer_sneeze_01.webp?v=20261023_sneeze_v4',
+      talkIntervalMs: 230,
+      playOnce: true,
+      typeStep: 1,
+      typeIntervalMs: 25,
       talkFrames: [
-        'assets/img/calcifer/frame_071.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_072.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_smile_4.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
+        'assets/img/calcifer/calcifer_sneeze_01.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_02.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_03.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_04.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_05.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_06.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_07.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_08.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_09.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_10.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_11.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_12.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_13.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_14.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_15.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_16.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_17.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_18.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_19.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_20.webp?v=20261023_sneeze_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/calcifer_smile_5.webp?v=20261021_dissolve',
-      delayAfter: 1600
-    },
-    {
-      id: 10,
-      marker: '🚀',
-      title: 'Tự chinh phục',
-      text: 'Các con chữ chỉ đơn giản vẫn ở đó và lớn dần từng ngày để tự chinh phục những điều thú vị tiếp theo. ✨',
-      mainFrame: 'assets/img/calcifer/frame_089.webp?v=20261021_dissolve',
-      talkFrames: [
-        'assets/img/calcifer/frame_089.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_090.webp?v=20261021_dissolve',
-        'assets/img/calcifer/frame_093.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_smile_7.webp?v=20261021_dissolve',
-        'assets/img/calcifer/calcifer_smile_3.webp?v=20261021_dissolve'
+      breatheFrame: 'assets/img/calcifer/calcifer_sneeze_17.webp?v=20261023_sneeze_v4',
+      breatheFrames: [
+        'assets/img/calcifer/calcifer_sneeze_14.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_17.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_19.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_20.webp?v=20261023_sneeze_v4',
+        'assets/img/calcifer/calcifer_sneeze_17.webp?v=20261023_sneeze_v4'
       ],
-      breatheFrame: 'assets/img/calcifer/frame_094.webp?v=20261021_dissolve',
-      delayAfter: 2200
+      delayAfter: 850
     }
   ];
 
@@ -666,6 +685,7 @@ const Calcifer = (() => {
     const urls = new Set([
       ...IDLE_FRAMES,
       ...SLEEP_FRAMES,
+      ...TIRED_FRAMES,
       'assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_2.webp?v=20261021_dissolve',
       'assets/img/calcifer/calcifer_talk_3.webp?v=20261021_dissolve',
@@ -760,8 +780,8 @@ const Calcifer = (() => {
       }
       animIntervalMs = intervalMs || 340; // Nhịp thở bập bùng thư thái êm đềm
     } else if (mode === MODE_TIRED) {
-      currentActiveFrames = ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'];
-      animIntervalMs = 600;
+      currentActiveFrames = (customFrames && customFrames.length > 0) ? customFrames : TIRED_FRAMES;
+      animIntervalMs = intervalMs || 210;
     }
 
     // Cập nhật ngay frame đầu tiên không để trễ
@@ -911,15 +931,15 @@ const Calcifer = (() => {
 
         if (seg.playOnce) {
           // Đối với đoạn có chuỗi diễn hoạt 1 lần (như 20 frame ăn củi):
-          // Chờ 20 frame chạy xong + thở nhẹ nhàng một khoảng rồi chuyển đoạn
+          // Chờ diễn hoạt chạy xong nếu chưa xong, rồi chuyển tiếp nhanh nhẹn
           const elapsed = Date.now() - segStartTime;
           const totalAnimTime = (seg.talkFrames.length) * (seg.talkIntervalMs || 230);
           const remainingToAnimFinish = Math.max(0, totalAnimTime - elapsed);
-          const waitTime = Math.max(seg.delayAfter || 1500, remainingToAnimFinish + (seg.delayAfter || 1500));
+          const waitTime = Math.max(seg.delayAfter || 750, remainingToAnimFinish + 150);
 
           if (idx === STORY_SEGMENTS.length - 1) {
             if (actionBtn) actionBtn.innerHTML = 'Hoàn tất ✨';
-            scheduleAutoAdvance(idx + 1, waitTime + 600);
+            scheduleAutoAdvance(idx + 1, waitTime + 300);
           } else {
             scheduleAutoAdvance(idx + 1, waitTime);
           }
@@ -938,9 +958,9 @@ const Calcifer = (() => {
             if (actionBtn) {
               actionBtn.innerHTML = 'Hoàn tất ✨';
             }
-            scheduleAutoAdvance(idx + 1, seg.delayAfter + 600);
+            scheduleAutoAdvance(idx + 1, (seg.delayAfter || 700) + 300);
           } else {
-            scheduleAutoAdvance(idx + 1, seg.delayAfter);
+            scheduleAutoAdvance(idx + 1, seg.delayAfter || 700);
           }
         }
       },
@@ -1050,11 +1070,7 @@ const Calcifer = (() => {
       b.classList.add('is-done');
     });
 
-    // 1. Carte ngáp mệt, mắt nhắm lại (calcifer_talk_1)
-    setMode(MODE_TIRED, ['assets/img/calcifer/calcifer_talk_1.webp?v=20261021_dissolve'], 600);
-    CalciferAudio.playSleepSFX();
-
-    // 2. Thêm thông báo Carte say giấc nồng vào cuối stream
+    // Thêm thông báo Carte say giấc nồng vào cuối stream
     if (streamEl) {
       const endPill = document.createElement('div');
       endPill.className = 'story-end-pill';
@@ -1069,16 +1085,27 @@ const Calcifer = (() => {
       actionBtn.classList.add('is-replay');
     }
     if (tipEl) {
-      tipEl.innerHTML = 'Carte đang ngủ ngon zZ... • Chạm vào ngọn lửa để đánh thức';
+      tipEl.innerHTML = 'Carte ngáp mệt, chuẩn bị chìm vào giấc ngủ ngon zZ...';
     }
 
-    // 3. Sau 900ms, Carte bắt đầu vòng lặp ngủ say êm đềm
-    setTimeout(() => {
-      if (!isSleeping) return;
-      setMode(MODE_SLEEP, null, 280);
-      CalciferAudio.startFireCrackle(0.06); // Âm thanh lửa thì thầm
-      CalciferEmbers.burst(4);
-    }, 900);
+    // 1. Chạy chuỗi 17 frame Carte ngáp mệt, vươn vai, thở khói zZ và nhắm mắt buồn ngủ (Flame12 cells 2..18)
+    // Tốc độ: 210ms / frame -> tổng 17 frame kéo dài ~3.5s rất tự nhiên và thư thái
+    setMode(MODE_TIRED, TIRED_FRAMES, 210, {
+      loop: false,
+      onComplete: () => {
+        if (!isSleeping) return;
+        if (tipEl) {
+          tipEl.innerHTML = 'Carte đang ngủ ngon zZ... • Chạm vào ngọn lửa để đánh thức';
+        }
+        // 2. Chuyển sang vòng lặp ngủ say êm đềm (MODE_SLEEP)
+        setMode(MODE_SLEEP, null, 320);
+        CalciferAudio.startFireCrackle(0.06); // Âm thanh lửa thì thầm
+        CalciferEmbers.burst(4);
+      }
+    });
+
+    // Phát âm thanh tiếng ngáp / thở êm đềm
+    CalciferAudio.playSleepSFX();
   }
 
   // ==========================================================================
@@ -1099,7 +1126,7 @@ const Calcifer = (() => {
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
         const seg = STORY_SEGMENTS[currentSegmentIdx];
         if (seg && seg.playOnce) {
-          scheduleAutoAdvance(currentSegmentIdx + 1, 1200);
+          scheduleAutoAdvance(currentSegmentIdx + 1, 450);
         } else {
           const livingBreatheFrames = seg.breatheFrames || [
             seg.breatheFrame,
@@ -1108,7 +1135,7 @@ const Calcifer = (() => {
             (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
           ];
           setMode(MODE_BREATHE, livingBreatheFrames, 340);
-          scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
+          scheduleAutoAdvance(currentSegmentIdx + 1, 400);
         }
       } else if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
         if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
@@ -1191,7 +1218,7 @@ const Calcifer = (() => {
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       const seg = STORY_SEGMENTS[currentSegmentIdx];
       if (seg && seg.playOnce) {
-        scheduleAutoAdvance(currentSegmentIdx + 1, 1200);
+        scheduleAutoAdvance(currentSegmentIdx + 1, 450);
       } else {
         const livingBreatheFrames = seg.breatheFrames || [
           seg.breatheFrame,
@@ -1200,7 +1227,7 @@ const Calcifer = (() => {
           (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
         ];
         setMode(MODE_BREATHE, livingBreatheFrames, 340);
-        scheduleAutoAdvance(currentSegmentIdx + 1, 1100);
+        scheduleAutoAdvance(currentSegmentIdx + 1, 400);
       }
     } else {
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);

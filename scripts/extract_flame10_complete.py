@@ -15,7 +15,7 @@ os.makedirs(ALIGNED_DIR, exist_ok=True)
 os.makedirs(WEB_DIR, exist_ok=True)
 
 GLOW = np.array([255, 120, 40], np.float32)
-CANVAS_W, CANVAS_H = 621, 770
+CANVAS_W, CANVAS_H = 700, 770
 
 # Load reference template from Flame4_r1c1.png
 ref_im = np.array(Image.open(f'{FRAMES_DIR}/Flame4_r1c1.png'))
@@ -65,28 +65,27 @@ def clean_cell(cell, r_idx, c_idx):
         r = p[:, :, 0]
         g = p[:, :, 1]
         b = p[:, :, 2]
-        is_dark_smoke = (mean >= 115) & (mean <= 155) & (diff < 20)
-        is_med_smoke = (mean >= 155) & (mean <= 188) & (diff >= 5) & (diff <= 16) & (r - b >= 2) & (r - b <= 12) & (r - g >= 2) & (r - g <= 12)
-        smoke = is_dark_smoke | is_med_smoke
+        # New smoke is dark slate/charcoal: mean < 135, b >= r - 15, r < 140, mean > 25
+        smoke = (mean < 135) & (b >= r - 15) & (r < 140) & (mean > 25)
 
         # Zone constraint per cell in Row 3
         zone = np.zeros_like(smoke)
         if c_idx == 0:
-            zone[180:320, 410:520] = True
+            zone[180:330, 400:530] = True
         elif c_idx == 1:
-            zone[100:320, 370:520] = True
+            zone[65:330, 360:535] = True
         elif c_idx == 2:
-            zone[40:280, 180:530] = True
+            zone[25:310, 175:495] = True
         elif c_idx == 3:
-            zone[30:240, 160:520] = True
+            zone[15:285, 175:485] = True
         smoke &= zone
 
-        # Filter out tiny specks (< 25 px)
+        # Filter out tiny specks (< 15 px)
         lab_s, n_s = ndi.label(smoke)
         if n_s > 0:
             sizes = ndi.sum(smoke, lab_s, range(1, n_s + 1))
             for i in range(1, n_s + 1):
-                if sizes[i-1] < 25:
+                if sizes[i-1] < 15:
                     smoke[lab_s == i] = False
     else:
         smoke = np.zeros_like(is_flame)
@@ -94,7 +93,7 @@ def clean_cell(cell, r_idx, c_idx):
     solid = body_filled | is_head_sparks | is_breath | smoke
 
     # Strict checkerboard exclusion:
-    is_checker = (diff < 22) & (p.mean(2) > 130) & (p.mean(2) < 240) & ~smoke
+    is_checker = (diff < 25) & (p.mean(2) > 140) & ~smoke
     solid &= ~is_checker
 
     # Drop number in top-left
@@ -180,7 +179,7 @@ for idx in range(1, 17):
             "source_file": f"Flame10_r{r}c{c}.png",
             "category": "spark_stars",
             "description": f"Biểu cảm phun tia lửa tạo sao (Flame10 frame {idx})",
-            "canvas_size": [621, 770]
+            "canvas_size": [700, 770]
         })
 
 with open(manifest_path, 'w', encoding='utf-8') as f:

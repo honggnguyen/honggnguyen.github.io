@@ -2,5 +2,16 @@
 .DS_Store
 Thumbs.db
 *.Zone.Identifier
+*:Zone.Identifier
+*Zone.Identifier*
+scripts/test_*.png
+scripts/smoke_*.png
+scripts/raw_*.png
+scripts/mouth_*.png
+scripts/new_audit_*.png
+scripts/row*.png
+scripts/zone_*.png
+Fig/Flame/frames_aligned/test_*.png
+Fig/Flame/frames_aligned/f184_*.png
 *.log
 /tmp/
