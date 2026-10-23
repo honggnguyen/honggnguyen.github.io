@@ -5,6 +5,136 @@ const Intro = (() => {
   let busy = false;
   const WIN = { x: 0.265, y: 0.40 };   // tâm cửa sổ (tỉ lệ trong stage)
 
+  // Mobile Room Camera: Cho phép người dùng điện thoại vuốt ngang khám phá phòng & chuyển góc nhìn
+  const POSITIONS = {
+    window: 0.265,     // Khung cửa sổ vòm ngắm sao
+    center: 0.50,      // Bé gái & chú cún Bond
+    fireplace: 0.82    // Lò sưởi & Carte
+  };
+  let currentTarget = 'center';
+  let currentPanX = 0;
+  let isDragging = false;
+  let dragStartX = 0;
+  let panStartX = 0;
+
+  function isMobileViewport() {
+    return window.innerWidth <= 860 || (window.innerHeight > window.innerWidth);
+  }
+
+  function getPanLimits() {
+    const stageWidth = stage ? (stage.getBoundingClientRect().width || (window.innerHeight * 1.7917)) : (window.innerHeight * 1.7917);
+    const viewWidth = window.innerWidth;
+    const maxOffset = Math.max(0, (stageWidth - viewWidth) / 2);
+    return { minX: -maxOffset, maxX: maxOffset, stageWidth };
+  }
+
+  function panTo(targetKey, smooth = true) {
+    if (!stage || busy) return;
+    if (POSITIONS[targetKey] === undefined) targetKey = 'center';
+    currentTarget = targetKey;
+
+    if (!isMobileViewport()) {
+      currentPanX = 0;
+      stage.style.transform = '';
+      updateNavPills(targetKey);
+      return;
+    }
+
+    const { minX, maxX, stageWidth } = getPanLimits();
+    const ratio = POSITIONS[targetKey];
+    let targetX = -(ratio - 0.5) * stageWidth;
+    targetX = Math.max(minX, Math.min(maxX, targetX));
+    currentPanX = targetX;
+
+    stage.style.transition = smooth ? 'transform 0.65s cubic-bezier(0.22, 1, 0.36, 1)' : 'none';
+    stage.style.transform = `translate3d(${targetX}px, 0, 0)`;
+    updateNavPills(targetKey);
+  }
+
+  function updateNavPills(activeKey) {
+    const pills = document.querySelectorAll('.mrn-btn');
+    pills.forEach(p => {
+      if (p.getAttribute('data-target') === activeKey) {
+        p.classList.add('active');
+      } else {
+        p.classList.remove('active');
+      }
+    });
+  }
+
+  function initMobileRoomCamera() {
+    if (!intro || !stage) return;
+
+    // Chạm vuốt ngang màn hình để lia camera trong phòng
+    intro.addEventListener('touchstart', (e) => {
+      if (busy || !isMobileViewport()) return;
+      if (e.target.closest('button, .calcifer-dialog, .calcifer-container, input, a')) return;
+      isDragging = true;
+      dragStartX = e.touches[0].clientX;
+      panStartX = currentPanX;
+      stage.style.transition = 'none';
+    }, { passive: true });
+
+    intro.addEventListener('touchmove', (e) => {
+      if (!isDragging || busy || !isMobileViewport()) return;
+      const dx = e.touches[0].clientX - dragStartX;
+      const { minX, maxX } = getPanLimits();
+      let nextX = panStartX + dx;
+      if (nextX < minX) nextX = minX + (nextX - minX) * 0.3;
+      if (nextX > maxX) nextX = maxX + (nextX - maxX) * 0.3;
+      currentPanX = nextX;
+      stage.style.transform = `translate3d(${nextX}px, 0, 0)`;
+    }, { passive: true });
+
+    intro.addEventListener('touchend', () => {
+      if (!isDragging) return;
+      isDragging = false;
+      const { minX, maxX, stageWidth } = getPanLimits();
+      currentPanX = Math.max(minX, Math.min(maxX, currentPanX));
+      
+      // Snap về góc nhìn gần nhất
+      const currentRatio = 0.5 - (currentPanX / stageWidth);
+      let closest = 'center';
+      let minDist = Infinity;
+      for (const [key, ratio] of Object.entries(POSITIONS)) {
+        const dist = Math.abs(currentRatio - ratio);
+        if (dist < minDist) {
+          minDist = dist;
+          closest = key;
+        }
+      }
+      panTo(closest, true);
+    });
+
+    // Bắt sự kiện click vào các nút trên thanh mobileRoomNav
+    const nav = $('mobileRoomNav');
+    if (nav) {
+      nav.addEventListener('click', (e) => {
+        const btn = e.target.closest('.mrn-btn');
+        if (!btn) return;
+        const target = btn.getAttribute('data-target');
+        if (target) {
+          panTo(target, true);
+          if (target === 'fireplace' && window.Calcifer && typeof window.Calcifer.awaken === 'function') {
+            window.Calcifer.awaken();
+          }
+        }
+      });
+    }
+
+    // Reset khi xoay màn hình (orientationchange / resize)
+    window.addEventListener('resize', () => {
+      if (!busy && !intro.classList.contains('gone')) {
+        panTo(currentTarget, false);
+      }
+    });
+
+    // Mặc định khởi động
+    if (isMobileViewport()) {
+      setTimeout(() => panTo('center', false), 150);
+    }
+  }
+
   function init() {
     startShooting($('windowSky'), { minGap: 3000, maxGap: 7000, len: 100, dist: 260, angle: 32, area: [0, 0, .7, .35] });
     const btn = $('enterBtn');
@@ -13,6 +143,8 @@ const Intro = (() => {
     btn.addEventListener('mouseleave', () => { if (!busy) intro.classList.remove('open'); });
     btn.addEventListener('click', enter);
     addEventListener('keydown', e => { if (e.key === 'Enter' && !busy && !intro.classList.contains('gone')) enter(); });
+
+    initMobileRoomCamera();
   }
 
   function enter() {
@@ -74,8 +206,11 @@ const Intro = (() => {
     intro.classList.remove('gone');
     galaxy.classList.remove('active');
     document.body.classList.remove('in-galaxy');
+    if (isMobileViewport()) {
+      panTo('center', false);
+    }
   }
 
   function Audio_start() { try { Ambience.start(); } catch (e) { console.warn(e); } }
-  return { init, back };
+  return { init, back, panTo, getCurrentTarget: () => currentTarget };
 })();

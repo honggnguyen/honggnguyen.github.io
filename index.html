@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Press+Start+2P&family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=20261021_pure_flame">
+  <link rel="stylesheet" href="css/style.css?v=20261023_mobile_opt">
 </head>
 <body>
 <main id="app">
@@ -97,6 +97,13 @@
 
   <!-- ============ INTRO (căn phòng) ============ -->
   <section id="intro" class="scene" aria-label="Căn phòng bên khung cửa sổ">
+    <!-- Điều hướng góc nhìn căn phòng cho điện thoại di động -->
+    <nav class="mobile-room-nav" id="mobileRoomNav" aria-label="Góc nhìn căn phòng">
+      <button class="mrn-btn" data-target="window" aria-label="Khung cửa sổ vòm">🪟 Cửa sổ</button>
+      <button class="mrn-btn active" data-target="center" aria-label="Bé gái & Cún Bond">👧 Căn phòng</button>
+      <button class="mrn-btn" data-target="fireplace" aria-label="Lò sưởi Carte">🔥 Carte</button>
+    </nav>
+
     <div class="stage" id="introStage">
       <img class="bg bg-close" src="assets/img/bg_close.webp?v=20261020_v3" alt="Căn phòng với khung cửa sổ vòm nhìn ra bầu trời đêm">
       <img class="bg bg-open"  src="assets/img/bg_open.webp?v=20261020_v3" alt="">
@@ -146,7 +153,7 @@
 
       <div class="cd-footer">
         <div class="cd-counter-wrap">
-          <span class="cd-counter" id="calciferCounter">1 / 11</span>
+          <span class="cd-counter" id="calciferCounter">1 / 9</span>
         </div>
         <div class="cd-controls">
           <button class="cd-btn cd-action-btn" id="calciferActionBtn" aria-label="Tiếp tục">Tiếp tục ▸</button>
@@ -391,8 +398,8 @@
 <script src="js/timeline.js?v=20261018m"></script>
 <script src="js/shooting.js?v=20261018m"></script>
 <script src="js/galaxy.js?v=20261018m"></script>
-<script src="js/intro.js?v=20261018n"></script>
-<script src="js/calcifer.js?v=20261023_flame12_pure"></script>
+<script src="js/intro.js?v=20261023_mobile_opt"></script>
+<script src="js/calcifer.js?v=20261023_mobile_opt"></script>
 <script src="js/main.js?v=20261018n"></script>
 <script src="js/dog.js?v=20261018m"></script>
 </body>

@@ -34,7 +34,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_4.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_031.webp?v=20261021_dissolve',
-      delayAfter: 700
+      delayAfter: 1800
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_8.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_028.webp?v=20261021_dissolve',
-      delayAfter: 500
+      delayAfter: 1500
     },
     {
       id: 3,
@@ -65,7 +65,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_talk_5.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_043.webp?v=20261021_dissolve',
-      delayAfter: 700
+      delayAfter: 1800
     },
     {
       id: 4,
@@ -104,7 +104,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_spark_15.webp?v=20261023_spark_full_v3',
         'assets/img/calcifer/calcifer_spark_14.webp?v=20261023_spark_full_v3'
       ],
-      delayAfter: 800
+      delayAfter: 2000
     },
     {
       id: 5,
@@ -145,7 +145,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_eat_20.webp?v=20261021_eat',
         'assets/img/calcifer/calcifer_eat_19.webp?v=20261021_eat'
       ],
-      delayAfter: 750
+      delayAfter: 2200
     },
     {
       id: 6,
@@ -161,7 +161,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_smile_6.webp?v=20261021_dissolve'
       ],
       breatheFrame: 'assets/img/calcifer/frame_056.webp?v=20261021_dissolve',
-      delayAfter: 600
+      delayAfter: 1600
     },
     {
       id: 7,
@@ -188,7 +188,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_hide_07.webp?v=20261022_hide',
         'assets/img/calcifer/calcifer_hide_08.webp?v=20261022_hide'
       ],
-      delayAfter: 500
+      delayAfter: 1400
     },
     {
       id: 8,
@@ -221,7 +221,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_hide_19.webp?v=20261022_hide',
         'assets/img/calcifer/calcifer_hide_18.webp?v=20261022_hide'
       ],
-      delayAfter: 650
+      delayAfter: 1800
     },
     {
       id: 9,
@@ -263,7 +263,7 @@ const Calcifer = (() => {
         'assets/img/calcifer/calcifer_sneeze_20.webp?v=20261023_sneeze_v4',
         'assets/img/calcifer/calcifer_sneeze_17.webp?v=20261023_sneeze_v4'
       ],
-      delayAfter: 850
+      delayAfter: 2400
     }
   ];
 
@@ -1146,6 +1146,10 @@ const Calcifer = (() => {
       return;
     }
 
+    if (window.Intro && typeof window.Intro.panTo === 'function') {
+      window.Intro.panTo('fireplace');
+    }
+
     try {
       if (window.Ambience && typeof window.Ambience.start === 'function') {
         window.Ambience.start();
@@ -1189,6 +1193,9 @@ const Calcifer = (() => {
 
   function wakeUpFromSleep() {
     isSleeping = false;
+    if (window.Intro && typeof window.Intro.panTo === 'function') {
+      window.Intro.panTo('fireplace');
+    }
     CalciferAudio.playAwakenSFX();
     CalciferAudio.startFireCrackle(0.16);
     CalciferEmbers.burst(20);
@@ -1217,19 +1224,20 @@ const Calcifer = (() => {
       finishCurrentTyping();
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       const seg = STORY_SEGMENTS[currentSegmentIdx];
-      if (seg && seg.playOnce) {
-        scheduleAutoAdvance(currentSegmentIdx + 1, 450);
-      } else {
-        const livingBreatheFrames = seg.breatheFrames || [
-          seg.breatheFrame,
-          seg.talkFrames[0] || seg.breatheFrame,
-          seg.breatheFrame,
-          (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
-        ];
-        setMode(MODE_BREATHE, livingBreatheFrames, 340);
-        scheduleAutoAdvance(currentSegmentIdx + 1, 400);
-      }
+      const livingBreatheFrames = seg ? (seg.breatheFrames || [
+        seg.breatheFrame,
+        seg.talkFrames[0] || seg.breatheFrame,
+        seg.breatheFrame,
+        (seg.talkFrames[1] || seg.talkFrames[0]) || seg.breatheFrame
+      ]) : [];
+      setMode(MODE_BREATHE, livingBreatheFrames, 340);
+
+      // Chạm lần 1 khi đang gõ: hiện ngay chữ và cho người dùng thời gian đọc thoải mái
+      const readWait = Math.max(1600, seg ? (seg.delayAfter || 1800) : 1800);
+      scheduleAutoAdvance(currentSegmentIdx + 1, readWait);
+      return;
     } else {
+      // Chạm lần 2 khi chữ đã xong: chuyển ngay sang đoạn tiếp theo
       if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
       if (currentSegmentIdx < STORY_SEGMENTS.length - 1) {
         runSegment(currentSegmentIdx + 1);
@@ -1338,8 +1346,20 @@ const Calcifer = (() => {
       });
     }
 
-    // Chạm vào vùng stream để tua nhanh chữ hoặc chuyển đoạn
+    // Chạm vào vùng stream để tua nhanh chữ hoặc chuyển đoạn (hỗ trợ Touch trên Mobile)
     if (streamEl) {
+      streamEl.addEventListener('touchstart', () => {
+        if (autoAdvanceTimer) clearTimeout(autoAdvanceTimer);
+      }, { passive: true });
+
+      streamEl.addEventListener('touchend', () => {
+        if (!isTyping && !isPaused && !isSleeping) {
+          const seg = STORY_SEGMENTS[currentSegmentIdx];
+          const readWait = Math.max(1600, seg ? (seg.delayAfter || 1800) : 1800);
+          scheduleAutoAdvance(currentSegmentIdx + 1, readWait);
+        }
+      }, { passive: true });
+
       streamEl.addEventListener('click', (e) => {
         if (e.target.closest('button')) return;
         handleActionClick();

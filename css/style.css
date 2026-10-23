@@ -1775,27 +1775,217 @@ body.blog-open{
   pointer-events: none !important;
 }
 
-/* Responsive adjustments for tablet & mobile */
-@media (max-width: 860px) {
+/* ==========================================================================
+   MOBILE ROOM NAVIGATION (ĐIỀU HƯỚNG GÓC NHÌN CĂN PHÒNG CHO DI ĐỘNG)
+   ========================================================================== */
+.mobile-room-nav {
+  display: none;
+}
+
+/* ==========================================================================
+   RESPONSIVE OPTIMIZATION FOR TABLETS & SMARTPHONES (≤ 860px & Portrait)
+   ========================================================================== */
+@media (max-width: 860px), (orientation: portrait) {
+  /* 1. Mobile Room Navigation Pills (Góc nhìn căn phòng) */
+  .mobile-room-nav {
+    display: flex;
+    position: fixed;
+    top: max(14px, env(safe-area-inset-top));
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 40;
+    gap: 6px;
+    padding: 5px 7px;
+    background: rgba(18, 7, 30, 0.88);
+    border: 1px solid rgba(255, 180, 100, 0.38);
+    border-radius: 999px;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 16px rgba(255, 140, 40, 0.22);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .mrn-btn {
+    font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+    font-size: 0.76rem;
+    font-weight: 500;
+    color: #e5d2f5;
+    background: transparent;
+    border: none;
+    border-radius: 999px;
+    padding: 6px 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mrn-btn:hover, .mrn-btn:focus {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .mrn-btn.active {
+    color: #fff;
+    background: linear-gradient(135deg, rgba(255, 120, 40, 0.9), rgba(180, 50, 200, 0.9));
+    box-shadow: 0 2px 10px rgba(255, 100, 30, 0.45);
+    font-weight: 600;
+  }
+
+  #intro.zooming .mobile-room-nav,
+  #intro.gone .mobile-room-nav {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
+
+  /* 2. Intro Room Camera & UI */
+  #introStage {
+    touch-action: pan-x;
+  }
+
+  .intro-ui {
+    bottom: max(28px, env(safe-area-inset-bottom));
+  }
+
+  .enter-key {
+    display: none !important; /* Điện thoại không có bàn phím vật lý Enter */
+  }
+
+  .pixel-btn {
+    padding: 13px 26px;
+    font-size: 0.84rem;
+    border-radius: 6px;
+    touch-action: manipulation;
+  }
+
+  /* 3. Carte Speech Dialog - Cinematic Mobile Bottom Sheet */
   .calcifer-dialog {
     position: fixed;
-    left: 14px;
-    right: 14px;
-    bottom: 20px;
+    left: 12px;
+    right: 12px;
+    bottom: max(12px, env(safe-area-inset-bottom));
     top: auto;
     width: auto;
-    max-width: 390px;
+    max-width: 480px;
     margin: 0 auto;
-    padding: 12px 14px;
-    border-radius: 14px;
-    z-index: 100;
+    border-radius: 20px 20px 18px 18px;
+    padding: 10px 14px 14px;
+    background: rgba(18, 7, 28, 0.95);
+    border: 1.5px solid rgba(255, 180, 80, 0.52);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 140, 40, 0.22);
+    max-height: 48vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 120;
+    touch-action: manipulation;
   }
+
+  /* Sheet drag handle bar */
+  .calcifer-dialog::before {
+    content: '';
+    display: block;
+    width: 38px;
+    height: 4px;
+    border-radius: 999px;
+    background: rgba(255, 200, 120, 0.45);
+    margin: 2px auto 8px;
+    flex-shrink: 0;
+  }
+
   .calcifer-dialog .cd-tail {
-    display: none;
+    display: none !important;
   }
+
+  .cd-header {
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+  }
+
+  .cd-stream {
+    height: auto;
+    max-height: calc(48vh - 128px);
+    font-size: 0.92rem;
+    line-height: 1.62;
+    padding-right: 4px;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .cd-header-actions {
+    gap: 8px;
+  }
+
+  .cd-sound-toggle, .cd-pause-toggle {
+    font-size: 0.74rem;
+    padding: 5px 11px;
+    min-height: 32px;
+    touch-action: manipulation;
+  }
+
+  .cd-close {
+    width: 32px;
+    height: 32px;
+    font-size: 0.88rem;
+    touch-action: manipulation;
+  }
+
+  .cd-footer {
+    padding-top: 8px;
+    margin-top: 6px;
+  }
+
+  .cd-action-btn {
+    padding: 9px 20px;
+    font-size: 0.88rem;
+    min-height: 38px;
+    touch-action: manipulation;
+  }
+
   .calcifer-hint-pill {
-    font-size: 0.7rem;
-    padding: 3px 8px;
+    font-size: 0.72rem;
+    padding: 5px 11px;
+  }
+
+  /* 4. Galaxy & Constellations Touch Optimization */
+  .g-title h1 {
+    font-size: clamp(1.4rem, 6vw, 2.1rem);
+    letter-spacing: .12em;
+  }
+  .g-title p {
+    font-size: 0.75rem;
+  }
+
+  .star .hit {
+    r: 28 !important; /* Mở rộng hitbox sao cho ngón tay dễ chạm trên màn hình cảm ứng */
+  }
+
+  .nav-arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 1.7rem;
+    touch-action: manipulation;
+  }
+
+  .travel-btn {
+    top: max(14px, env(safe-area-inset-top));
+    padding: 8px 14px;
+    font-size: 0.75rem;
+  }
+
+  .article-menu-wrap {
+    top: max(14px, env(safe-area-inset-top));
+  }
+
+  .article-dropdown {
+    width: calc(100vw - 28px);
+    max-width: 400px;
+    max-height: 82vh;
+    border-radius: 18px;
   }
 }
 
