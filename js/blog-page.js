@@ -243,7 +243,10 @@
       if (imgUrl) {
         coverImg.src = imgUrl;
         coverImg.alt = post.title || 'Ảnh kỷ niệm';
-        if (coverCap) coverCap.textContent = post.caption || post.title || '';
+        if (coverCap) {
+          coverCap.textContent = '';
+          coverCap.style.display = 'none';
+        }
         coverFig.style.display = 'block';
       } else {
         coverFig.style.display = 'none';
