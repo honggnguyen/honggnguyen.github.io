@@ -16,7 +16,7 @@
   --border-light: rgba(145, 46, 82, 0.1);
   --border-hover: rgba(145, 46, 82, 0.3);
   --shadow-card: 0 8px 30px rgba(45, 20, 35, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-serif: 'Times New Roman', Times, Georgia, serif;
   --font-sans: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
   --sidebar-w: 268px;
 }
@@ -625,9 +625,9 @@ body.sidebar-collapsed .article-main-card {
 /* Thân nội dung văn xuôi (Cỡ chữ chuẩn mực văn học, không bị to quá) */
 .article-body-content {
   font-family: var(--font-serif);
-  font-size: 1.18rem;
-  line-height: 1.88;
-  color: #30202b;
+  font-size: 1.22rem;
+  line-height: 1.85;
+  color: #241620;
   font-weight: 400;
   margin-bottom: 38px;
 }
