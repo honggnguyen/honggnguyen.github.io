@@ -176,6 +176,10 @@ const TravelTimeline = (() => {
       const card = cards[idx];
       const targetLeft = card.offsetLeft - (track.clientWidth - card.clientWidth) / 2;
       track.scrollTo({ left: targetLeft, behavior: 'smooth' });
+      const inner = card.querySelector('.station-card-inner');
+      if (inner) {
+        inner.scrollTop = 0;
+      }
     }
   }
 

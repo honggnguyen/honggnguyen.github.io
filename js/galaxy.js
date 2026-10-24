@@ -246,17 +246,14 @@ const Galaxy = (() => {
   function open(s, c, node) {
     lastFocus = node; tip.classList.remove('show');
 
-    // Nếu thuộc chòm sao Kỷ Niệm -> Mở giao diện Blog bài viết dài toàn cảnh nền nhạt
+    // Nếu thuộc chòm sao Kỷ Niệm -> Mở trang nhánh Blog chuyên biệt với thanh Sidebar
     if (c.category === 'kyniem' || s.category === 'kyniem' || c.id === 'ky-niem' || (c.name && c.name.includes('Kỷ Niệm'))) {
-      const blog = window.BlogView || (typeof BlogView !== 'undefined' ? BlogView : null);
-      if (blog && typeof blog.open === 'function') {
-        blog.open(s, c, node);
-        read.add(s.id);
-        localStorage.setItem(KEY, JSON.stringify([...read]));
-        if (node) node.classList.add('read');
-        updateProgress();
-        return;
-      }
+      read.add(s.id);
+      localStorage.setItem(KEY, JSON.stringify([...read]));
+      if (node) node.classList.add('read');
+      updateProgress();
+      window.location.href = `blog.html?post=${encodeURIComponent(s.id)}`;
+      return;
     }
 
     $('mKind').textContent = s.tag || c.name;
@@ -321,8 +318,27 @@ const Galaxy = (() => {
 
     modal.classList.add('show'); modal.setAttribute('aria-hidden', 'false');
     read.add(s.id); localStorage.setItem(KEY, JSON.stringify([...read]));
-    node.classList.add('read'); updateProgress();
-    $('closeBtn2').focus();
+    if (node) node.classList.add('read');
+    updateProgress();
+
+    // Luôn cuộn lên đầu bài để người dùng đọc ngay từ đầu, cả khi mở bài lẫn khi chuyển bài tiếp theo
+    const card = modal.querySelector('.card.blog-card') || modal.querySelector('.card');
+    if (card) {
+      card.scrollTop = 0;
+      requestAnimationFrame(() => {
+        card.scrollTop = 0;
+      });
+    }
+
+    // Tiêu điểm vào nút đóng trên cùng, dùng preventScroll: true để KHÔNG cuộn xuống chân trang
+    const topClose = $('closeBtn');
+    if (topClose) {
+      try {
+        topClose.focus({ preventScroll: true });
+      } catch (e) {
+        topClose.focus();
+      }
+    }
   }
 
   function closeModal() {
@@ -561,6 +577,14 @@ const Galaxy = (() => {
     });
   }
 
-  return { init, go };
+  function showCategory(catId) {
+    if (!constellations.length) return;
+    const idx = constellations.findIndex(c => c.category === catId || c.id === catId || (c.name && c.name.toLowerCase().includes(catId.toLowerCase())));
+    if (idx !== -1) {
+      show(idx);
+    }
+  }
+
+  return { init, go, show, showCategory };
 })();
 window.Galaxy = Galaxy;

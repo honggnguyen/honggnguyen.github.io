@@ -64,6 +64,11 @@ const MemoryModal = (() => {
 
     modal.classList.add('show');
     modal.setAttribute('aria-hidden', 'false');
+
+    const card = modal.querySelector('.card.memory-card') || modal.querySelector('.card');
+    if (card) {
+      card.scrollTop = 0;
+    }
   }
 
   function close() {

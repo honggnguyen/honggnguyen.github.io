@@ -211,6 +211,15 @@ const Intro = (() => {
     }
   }
 
+  function skipToGalaxy() {
+    intro.style.display = 'none';
+    intro.classList.add('gone', 'open', 'zooming');
+    galaxy.classList.add('active');
+    document.body.classList.add('in-galaxy');
+    warp.classList.remove('active');
+    busy = false;
+  }
+
   function Audio_start() { try { Ambience.start(); } catch (e) { console.warn(e); } }
-  return { init, back, panTo, getCurrentTarget: () => currentTarget };
+  return { init, back, skipToGalaxy, panTo, getCurrentTarget: () => currentTarget };
 })();
